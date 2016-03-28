@@ -11,3 +11,8 @@ wp-content/cache/
 wp-content/upgrade/
 wp-content/uploads/
 wp-content/wp-cache-config.php
+
+
+// Ignorar temas de exemplo
+wp-content/themes/awe-wp
+wp-content/themes/zerif-lite
