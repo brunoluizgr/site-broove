@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 
-  <div id="content">
-    <div id="inner-content" class="cf">
+  <div id="conteudo">
+    <div id="conteudo-interno">
 
-      <main id="main" class="m-all t-2of3 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+      <main role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
         <section class="inicio" id="inicio">
-          <?php get_template_part('sections/home'); ?>
+          <?php get_template_part('sections/inicio'); ?>
         </section>
 
         <section class="ep" id="ep">

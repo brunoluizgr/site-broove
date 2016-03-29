@@ -1,3 +1,5 @@
-<div class="" style="height:1366px;">
-<h3><?php _e( 'Letras', 'temadebroove' ); ?></h3>
+<div class="secao-letras">
+
+  <h3 class="titulo-letras"><?php _e( 'Letras', 'temadebroove' ); ?></h3>
+  
 </div>

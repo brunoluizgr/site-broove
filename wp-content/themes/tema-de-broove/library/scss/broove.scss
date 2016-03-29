@@ -1,0 +1,118 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Admin Stylesheet
+
+If you like living on the edge, you can add some styles here to
+customize the dashboard and WordPress admin area. This stylesheet
+is empty, but you can just start dropping your styles here to
+start customizing. All admin functions are located in lib/admin/
+
+******************************************************************/
+@import "partials/variables";
+@import "partials/typography";
+@import "partials/functions";
+
+
+html, body {
+    padding:0;
+    margin: 0;
+    height:100%;
+    width:100%;
+}
+
+#inicio {
+  background: $white;
+  .secao-inicio {
+    display: block;
+    width:100vw;
+    height:100vh;
+    margin: 1em 1em 1em 1em;
+    .titulo-inicio h3 {
+      font-size: 5em;
+      font-family: 'Mari David';
+      text-align: center;
+      color: $cor-fita-ep;
+    }
+  }
+}
+
+#ep {
+  background: $white;
+  .secao-ep{
+    display: block;
+    width:100vw;
+    height:100vh;
+    background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-1.png");
+    background-repeat: repeat-x;
+    margin: 0 1em 1em 1em;
+    .titulo-ep h3 {
+      font-size: 5em;
+      font-family: 'Mari David';
+      text-align: center;
+      color: $white;
+    }
+  }
+}
+
+#making-of {
+  display: block;
+  width:100vw;
+  height:100vh;
+  background: $white;
+  .secao-making-of {
+    background-color: $black;
+    .titulo-making-of h3 {
+      font-size: 5em;
+      font-family: 'Mari David';
+      text-align: center;
+      color: $white;
+    }
+  }
+}
+
+#fotos {
+  display: block;
+  width:100vw;
+  height:100vh;
+  background: $white;
+  .secao-fotos {
+    background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-2.png");
+    .titulo-fotos h3 {
+      font-size: 5em;
+      font-family: 'Mari David';
+      text-align: center;
+      color: $cor-capa-ep;
+    }
+  }
+}
+
+#letras {
+  display: block;
+  width:100vw;
+  height:100vh;
+  background: $white;
+  .secao-letras {
+    .titulo-letras {
+
+    }
+  }
+}
+
+#contato {
+  display: block;
+  width:100vw;
+  height:100vh;
+  background: $white;
+  .secao-contato{
+    background-color: $white;
+    border: 3px solid $cor-fita-interna-ep;
+    .titulo-contato {
+      font-size: 5em;
+      font-family: 'Mari David';
+      text-align: center;
+      color: $cor-fita-interna-ep;
+    }
+  }
+}
