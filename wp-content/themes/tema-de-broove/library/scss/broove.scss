@@ -175,6 +175,21 @@ html, body {
       color: $cor-fita-interna-ep;
       border-top: 3px solid $cor-fita-interna-ep;
     }
+    .corpo-contato{
+      .wpcf7-form{
+        p{
+          font-size: 2em;
+          font-family: 'Mari David';
+          color: $cor-fita-interna-ep;
+        }
+        input,
+        textarea{
+          font-family: 'Mari David';
+          background-color: $cor-capa-ep;
+          color: $cor-fita-ep;
+        }
+      }
+    }
   }
 }
 
@@ -221,6 +236,13 @@ html, body {
     .developed-broove{
       text-align: center;
       font-size: 1.8em;
+      .by-brunoluizgr{}
+      .brunoluizgr-logo img{
+        position: relative;
+        top: 5px;
+        width: 1.2em;
+        height: 1.2em;
+      }
     }
 
   }
