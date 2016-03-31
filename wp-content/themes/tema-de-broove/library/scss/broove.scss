@@ -41,9 +41,28 @@ html, body {
     .logo-broove{
       padding: 10vh 0;
       text-align: center;
-      img{
+      #fita{
         width:80vh;
         height:80vh;
+      }
+      .miolo{
+        width:4.2vh;
+        height:4.2vh;
+        position: absolute;
+        -webkit-animation:spin 4s linear infinite;
+        -moz-animation:spin 4s linear infinite;
+        animation:spin 4s linear infinite;
+        @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+        @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+        @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+      }
+      #miolo-esq {
+        top: 56.8vh;
+        right: 100.4vh;
+      }
+      #miolo-dir {
+        top: 56.8vh;
+        right: 85.2vh;
       }
     }
   }
@@ -51,20 +70,35 @@ html, body {
 
 #ep {
   display: block;
+  text-align: center;
   width:100vw;
   background: $white;
   .secao-ep{
-    z-index: -1;
     height:100vh;
     margin: 0 1.5em 1em 1.5em;
     background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-1.png");
     background-repeat: repeat-x;
     .titulo-ep h3 {
-      z-index: 0;
-      font-size: 4.5em;
+      font-size: 5em;
       font-family: 'Mari David';
-      text-align: center;
       color: $white;
+    }
+    .corpo-ep{
+      a{
+        display: block;
+        font-family: 'Mari David';
+        font-size: 2em;
+        color: $white;
+        text-decoration: none;
+      }
+      #corpo-ep-col-1 {
+        position: relative;
+        float: left;
+      }
+      #corpo-ep-col-2 {
+        position: relative;
+        float: right;
+      }
     }
   }
 }
@@ -78,7 +112,7 @@ html, body {
     margin: 0 1.5em 1em 1.5em;
     background-color: $black;
     .titulo-making-of h3 {
-      font-size: 4.5em;
+      font-size: 5em;
       font-family: 'Mari David';
       text-align: center;
       color: $white;
@@ -95,7 +129,7 @@ html, body {
     margin: 0 1.5em 1em 1.5em;
     background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-2.png");
     .titulo-fotos h3 {
-      font-size: 4.5em;
+      font-size: 5em;
       font-family: 'Mari David';
       text-align: center;
       color: $cor-capa-ep;
@@ -112,7 +146,7 @@ html, body {
     margin: 0 1.5em 1em 1.5em;
     background: $light-black;
     .titulo-letras h3 {
-      font-size: 4.5em;
+      font-size: 5em;
       font-family: 'Mari David';
       text-align: center;
       color: $white;
@@ -135,7 +169,7 @@ html, body {
     border-bottom: 3px solid $cor-fita-interna-ep;
     border-left: 3px solid $cor-fita-interna-ep;
     .titulo-contato h3 {
-      font-size: 4.5em;
+      font-size: 5em;
       font-family: 'Mari David';
       text-align: center;
       color: $cor-fita-interna-ep;
@@ -144,21 +178,59 @@ html, body {
   }
 }
 
-.footer{
+.footer {
   background-color: $cor-fita-ep;
   font-family: 'Mari David';
-  #rodape-row-1{
-    a{
+  #rodape-row-1 {
+    padding: 1em 0 1em 0;
+    a {
       color: $white;
+      text-decoration: none;
+      transition: color 0.3s ease-out;
+      -webkit-transition: color 0.3s ease-out;
       &:hover{
         color: $cor-fita-interna-ep;
+        text-decoration: none;
+        transition: color 0.2s ease-in;
+        -webkit-transition: color 0.2s ease-in;
       }
     }
+
+    .maito-broove {
+      text-align: center;
+      .mail-broove {
+        font-size: 1.8em;
+      }
+    }
+
+    .socialnetwork-broove {
+      text-align: center;
+      .facebook-broove {
+        margin: 0 10px;
+      }
+
+      .youtube-broove {
+        margin: 0 10px;
+      }
+
+      .instagram-broove {
+        margin: 0 10px;
+      }
+    }
+
+    .developed-broove{
+      text-align: center;
+      font-size: 1.8em;
+    }
+
   }
   #rodape-row-2{
-    text-align: center;
-    .source-org span{
-        font-size: 1.5em;
+    padding-top: 3em;
+    .source-org {
+      text-align: center;
+      span{
+        font-size: 1em;
+      }
     }
   }
 }
