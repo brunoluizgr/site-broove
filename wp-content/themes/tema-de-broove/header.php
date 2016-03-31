@@ -11,7 +11,7 @@
 		<?php // force Internet Explorer to use the latest rendering engine available ?>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-		<title><?php wp_title(''); ?></title>
+		<title><?php wp_title('-'); ?></title>
 
 		<?php // mobile meta (hooray!) ?>
 		<meta name="HandheldFriendly" content="True">
@@ -19,15 +19,30 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
 
 		<?php // icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) ?>
-		<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-touch-icon.png">
-		<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
+			<link rel="apple-touch-icon" sizes="57x57" href="<?php echo get_template_directory_uri(); ?>/library/favicon/apple-touch-icon-57x57.png">
+			<link rel="apple-touch-icon" sizes="60x60" href="<?php echo get_template_directory_uri(); ?>/library/favicon/apple-touch-icon-60x60.png">
+			<link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/library/favicon/apple-touch-icon-72x72.png">
+			<link rel="apple-touch-icon" sizes="76x76" href="<?php echo get_template_directory_uri(); ?>/library/favicon/apple-touch-icon-76x76.png">
+			<link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_template_directory_uri(); ?>/library/favicon/apple-touch-icon-114x114.png">
+			<link rel="apple-touch-icon" sizes="120x120" href="<?php echo get_template_directory_uri(); ?>/library/favicon/apple-touch-icon-120x120.png">
+			<link rel="apple-touch-icon" sizes="144x144" href="<?php echo get_template_directory_uri(); ?>/library/favicon/apple-touch-icon-144x144.png">
+			<link rel="apple-touch-icon" sizes="152x152" href="<?php echo get_template_directory_uri(); ?>/library/favicon/apple-touch-icon-152x152.png">
+			<link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/library/favicon/apple-touch-icon-180x180.png">
+			<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/library/favicon/favicon-32x32.png" sizes="32x32">
+			<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/library/favicon/favicon-194x194.png" sizes="194x194">
+			<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/library/favicon/favicon-96x96.png" sizes="96x96">
+			<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/library/favicon/android-chrome-192x192.png" sizes="192x192">
+			<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/library/favicon/favicon-16x16.png" sizes="16x16">
+			<link rel="manifest" href="<?php echo get_template_directory_uri(); ?>/library/favicon/manifest.json">
+			<link rel="mask-icon" href="<?php echo get_template_directory_uri(); ?>/library/favicon/safari-pinned-tab.svg" color="#000000">
+
 		<!--[if IE]>
 			<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 		<![endif]-->
 		<?php // or, set /favicon.ico for IE10 win ?>
-		<meta name="msapplication-TileColor" content="#f01d4f">
-		<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/images/win8-tile-icon.png">
-            <meta name="theme-color" content="#121212">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/favicon/mstile-144x144.png">
+		<meta name="theme-color" content="#ffffff">
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
@@ -48,18 +63,8 @@
 
 				<div id="inner-header" class="wrap cf">
 
-					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
-					<p id="logo" class="h1" itemscope itemtype="http://schema.org/Organization">
-						<a href="<?php echo home_url(); ?>" rel="nofollow">
-							<?php bloginfo('name'); ?>
-						</a>
-					</p>
-
-					<?php // if you'd like to use the site description you can un-comment it below ?>
-					<?php // bloginfo('description'); ?>
-
-
 					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+
 						<?php wp_nav_menu(array(
     					         'container' => false,                           // remove nav container
     					         'container_class' => 'menu cf',                 // class of container (should you choose to use it)

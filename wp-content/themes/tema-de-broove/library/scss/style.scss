@@ -42,11 +42,6 @@ the whole project.
 @import "partials/grid";
 
 /*********************
-MEU STYLESHEET DO BROOVE
-*********************/
-@import "broove";
-
-/*********************
 IMPORTING MODULES
 Modules are reusable blocks or elements we use throughout the project.
 We can break them up as much as we want or just keep them all in one.
@@ -150,3 +145,8 @@ be set to display none.
 	@import "partials/print";
 
 }
+
+/*********************
+MEU STYLESHEET DO BROOVE
+*********************/
+@import "broove";

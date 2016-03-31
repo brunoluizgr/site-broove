@@ -18,17 +18,20 @@
 						)); ?>
 					</nav>
 
-					<div>
+					<div id="rodape-row-1">
 
-						<div class="maito-broove">
+						<section class="maito-broove d-1of3">
+
 							<span class="mail-broove">
 								<a href="mailto:contato@broove.com.br?Subject=[Contato-Site]" target="_top">
 									contato@broove.com.br
 								</a>
 							</span>
-						</div>
 
-						<div class="socialnetwork-broove">
+						</section>
+
+						<section class="socialnetwork-broove d-1of3">
+
 							<span class="facebook-broove">
 								<a href="https://www.facebook.com/projetobroove" target="_blank">
 									<i class="fa fa-2x fa-facebook"></i>
@@ -46,22 +49,30 @@
 									<i class="fa fa-2x fa-instagram"></i>
 								</a>
 							</span>
-						</div>
 
-						<div class="developed-broove">
+						</section>
+
+						<section class="developed-broove d-1of3">
 
 							<span class="by-brunoluizgr">
 								<?php _e( 'Desenvolvido por', 'temadebroove' ); ?>
 							</span>
-							<span>MINHA SVG</span>
-						</div>
+							<span>
+								MINHA SVG
+							</span>
+
+						</section>
 
 					</div>
 
-					<div class="copyright-broove">
+					<div id="rodape-row-2">
+
 						<p class="source-org copyright">
-							<?php bloginfo( 'name' ); ?><span>.com.br</span> . <?php echo date('Y'); ?>
+							<span><?php bloginfo( 'name' ); ?></span>
+							<span> . </span>
+							<span><?php echo date('Y'); ?></span>
 						</p>
+
 					</div>
 
 				</div>

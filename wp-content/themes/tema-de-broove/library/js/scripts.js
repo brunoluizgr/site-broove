@@ -116,5 +116,10 @@ jQuery(document).ready(function($) {
   */
   loadGravatars();
 
+	/*
+	 *
+	 *
+ 	*/
+	//$("body").css("overflow", "hidden");
 
 }); /* end of as page load scripts */

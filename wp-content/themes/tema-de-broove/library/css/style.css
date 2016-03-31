@@ -849,240 +849,6 @@ them however you see fit.
     padding-right: 0.75em;
     width: 8.33%; } }
 /*********************
-MEU STYLESHEET DO BROOVE
-*********************/
-/******************************************************************
-Site Name:
-Author:
-
-Stylesheet: Admin Stylesheet
-
-If you like living on the edge, you can add some styles here to
-customize the dashboard and WordPress admin area. This stylesheet
-is empty, but you can just start dropping your styles here to
-start customizing. All admin functions are located in lib/admin/
-
-******************************************************************/
-/******************************************************************
-Site Name:
-Author:
-
-Stylesheet: Variables
-
-Here is where we declare all our variables like colors, fonts,
-base values, and defaults. We want to make sure this file ONLY
-contains variables that way our files don't get all messy.
-No one likes a mess.
-
-******************************************************************/
-/*********************
-COLORS
-Need help w/ choosing your colors? Try this site out:
-http://0to255.com/
-*********************/
-/*
-Here's a great tutorial on how to
-use color variables properly:
-http://sachagreif.com/sass-color-variables/
-*/
-/******************************************************************
-Site Name:
-Author:
-
-Stylesheet: Typography
-
-Need to import a font or set of icons for your site? Drop them in
-here or just use this to establish your typographical grid. Or not.
-Do whatever you want to...GOSH!
-
-Helpful Articles:
-http://trentwalton.com/2012/06/19/fluid-type/
-http://ia.net/blog/responsive-typography-the-basics/
-http://alistapart.com/column/responsive-typography-is-a-physical-discipline
-
-******************************************************************/
-/*********************
-FONT FACE (IN YOUR FACE)
-*********************/
-/*  To embed your own fonts, use this syntax
-  and place your fonts inside the
-  library/fonts folder. For more information
-  on embedding fonts, go to:
-  http://www.fontsquirrel.com/
-  Be sure to remove the comment brackets.
-*/
-/*  @font-face {
-      font-family: 'Font Name';
-      src: url('library/fonts/font-name.eot');
-      src: url('library/fonts/font-name.eot?#iefix') format('embedded-opentype'),
-             url('library/fonts/font-name.woff') format('woff'),
-             url('library/fonts/font-name.ttf') format('truetype'),
-             url('library/fonts/font-name.svg#font-name') format('svg');
-      font-weight: normal;
-      font-style: normal;
-  }
-*/
-@font-face {
-  font-family: 'Mari David';
-  src: url("../fonts/maridavid.eot");
-  src: url("../fonts/maridavid.eot?#iefix") format("embedded-opentype"), url("../fonts/maridavid.woff") format("woff"), url("../fonts/maridavid.ttf") format("truetype"), url("../fonts/maridavid.svg#font-name") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-/*
-The following is based of Typebase:
-https://github.com/devinhunt/typebase.css
-I've edited it a bit, but it's a nice starting point.
-*/
-/*
- i imported this one in the functions file so bones would look sweet.
- don't forget to remove it for your site.
-*/
-/*
-some nice typographical defaults
-more here: http://www.newnet-soft.com/blog/csstypography
-*/
-p {
-  -ms-word-wrap: break-word;
-  word-break: break-word;
-  word-wrap: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto;
-  -webkit-hyphenate-before: 2;
-  -webkit-hyphenate-after: 3;
-  hyphenate-lines: 3;
-  -webkit-font-feature-settings: "liga", "dlig";
-  -moz-font-feature-settings: "liga=1, dlig=1";
-  -ms-font-feature-settings: "liga", "dlig";
-  -o-font-feature-settings: "liga", "dlig";
-  font-feature-settings: "liga", "dlig"; }
-
-/******************************************************************
-Site Name:
-Author:
-
-Stylesheet: Sass Functions
-
-You can do a lot of really cool things in Sass. Functions help you
-make repeated actions a lot easier. They are really similar to mixins,
-but can be used for so much more.
-
-Anyway, keep them all in here so it's easier to find when you're
-looking for one.
-
-For more info on functions, go here:
-http://sass-lang.com/documentation/Sass/Script/Functions.html
-
-******************************************************************/
-/*********************
-COLOR FUNCTIONS
-These are helpful when you're working
-with shadows and such things. It's essentially
-a quicker way to write RGBA.
-
-Example:
-box-shadow: 0 0 4px black(0.3);
-compiles to:
-box-shadow: 0 0 4px rgba(0,0,0,0.3);
-*********************/
-/*********************
-RESPONSIVE HELPER FUNCTION
-If you're creating a responsive site, then
-you've probably already read
-Responsive Web Design: http://www.abookapart.com/products/responsive-web-design
-
-Here's a nice little helper function for calculating
-target / context
-as mentioned in that book.
-
-Example:
-width: cp(650px, 1000px);
-or
-width: calc-percent(650px, 1000px);
-both compile to:
-width: 65%;
-*********************/
-html, body {
-  padding: 0;
-  margin: 0;
-  height: 100%;
-  width: 100%; }
-
-#inicio {
-  background: #fff; }
-  #inicio .secao-inicio {
-    display: block;
-    width: 100vw;
-    height: 100vh;
-    margin: 1em 1em 1em 1em; }
-    #inicio .secao-inicio .titulo-inicio h3 {
-      font-size: 5em;
-      font-family: 'Mari David';
-      text-align: center;
-      color: #6C6145; }
-
-#ep {
-  background: #fff; }
-  #ep .secao-ep {
-    display: block;
-    width: 100vw;
-    height: 100vh;
-    background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-1.png");
-    background-repeat: repeat-x;
-    margin: 0 1em 1em 1em; }
-    #ep .secao-ep .titulo-ep h3 {
-      font-size: 5em;
-      font-family: 'Mari David';
-      text-align: center;
-      color: #fff; }
-
-#making-of {
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  background: #fff; }
-  #making-of .secao-making-of {
-    background-color: #323944; }
-    #making-of .secao-making-of .titulo-making-of h3 {
-      font-size: 5em;
-      font-family: 'Mari David';
-      text-align: center;
-      color: #fff; }
-
-#fotos {
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  background: #fff; }
-  #fotos .secao-fotos {
-    background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-2.png"); }
-    #fotos .secao-fotos .titulo-fotos h3 {
-      font-size: 5em;
-      font-family: 'Mari David';
-      text-align: center;
-      color: #EDE7D9; }
-
-#letras {
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  background: #fff; }
-
-#contato {
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  background: #fff; }
-  #contato .secao-contato {
-    background-color: #fff;
-    border: 3px solid #D2C496; }
-    #contato .secao-contato .titulo-contato {
-      font-size: 5em;
-      font-family: 'Mari David';
-      text-align: center;
-      color: #D2C496; }
-
-/*********************
 IMPORTING MODULES
 Modules are reusable blocks or elements we use throughout the project.
 We can break them up as much as we want or just keep them all in one.
@@ -1493,7 +1259,7 @@ body {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.5;
-  color: #323944;
+  color: #000;
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -1548,7 +1314,7 @@ LAYOUT & GRID STYLES
 LINK STYLES
 *********************/
 a, a:visited {
-  color: #D2C496;
+  color: #D1C498;
   /* on hover */
   /* on click */
   /* mobile tap color */ }
@@ -1602,7 +1368,7 @@ h5, .h5 {
 HEADER STYLES
 *********************/
 .header {
-  background-color: #323944; }
+  background-color: #000; }
 
 #logo {
   margin: 0.75em 0; }
@@ -1749,7 +1515,7 @@ POSTS & CONTENT STYLES
     max-width: 100%;
     height: auto; }
   .entry-content pre {
-    background: #323944;
+    background: #000;
     color: #f8f9fa;
     font-size: 0.9em;
     padding: 1.5em;
@@ -1979,7 +1745,7 @@ FOOTER STYLES
 *********************/
 .footer {
   clear: both;
-  background-color: #323944;
+  background-color: #000;
   color: #f8f9fa; }
 
 /*
@@ -2112,7 +1878,7 @@ you can add resource intensive styles.
     /* highlight current page */
     /* end current highlighters */ }
     .nav ul {
-      background: #323944;
+      background: #000;
       margin-top: 0; }
     .nav li {
       float: left;
@@ -2360,5 +2126,278 @@ be set to display none.
   .respond-form,
   nav {
     display: none; } }
+/*********************
+MEU STYLESHEET DO BROOVE
+*********************/
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Admin Stylesheet
+
+If you like living on the edge, you can add some styles here to
+customize the dashboard and WordPress admin area. This stylesheet
+is empty, but you can just start dropping your styles here to
+start customizing. All admin functions are located in lib/admin/
+
+******************************************************************/
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Variables
+
+Here is where we declare all our variables like colors, fonts,
+base values, and defaults. We want to make sure this file ONLY
+contains variables that way our files don't get all messy.
+No one likes a mess.
+
+******************************************************************/
+/*********************
+COLORS
+Need help w/ choosing your colors? Try this site out:
+http://0to255.com/
+*********************/
+/*
+Here's a great tutorial on how to
+use color variables properly:
+http://sachagreif.com/sass-color-variables/
+*/
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Typography
+
+Need to import a font or set of icons for your site? Drop them in
+here or just use this to establish your typographical grid. Or not.
+Do whatever you want to...GOSH!
+
+Helpful Articles:
+http://trentwalton.com/2012/06/19/fluid-type/
+http://ia.net/blog/responsive-typography-the-basics/
+http://alistapart.com/column/responsive-typography-is-a-physical-discipline
+
+******************************************************************/
+/*********************
+FONT FACE (IN YOUR FACE)
+*********************/
+/*  To embed your own fonts, use this syntax
+  and place your fonts inside the
+  library/fonts folder. For more information
+  on embedding fonts, go to:
+  http://www.fontsquirrel.com/
+  Be sure to remove the comment brackets.
+*/
+/*  @font-face {
+      font-family: 'Font Name';
+      src: url('library/fonts/font-name.eot');
+      src: url('library/fonts/font-name.eot?#iefix') format('embedded-opentype'),
+             url('library/fonts/font-name.woff') format('woff'),
+             url('library/fonts/font-name.ttf') format('truetype'),
+             url('library/fonts/font-name.svg#font-name') format('svg');
+      font-weight: normal;
+      font-style: normal;
+  }
+*/
+@font-face {
+  font-family: 'Mari David';
+  src: url("../fonts/maridavid.eot");
+  src: url("../fonts/maridavid.eot?#iefix") format("embedded-opentype"), url("../fonts/maridavid.woff") format("woff"), url("../fonts/maridavid.ttf") format("truetype"), url("../fonts/maridavid.svg#font-name") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/*
+The following is based of Typebase:
+https://github.com/devinhunt/typebase.css
+I've edited it a bit, but it's a nice starting point.
+*/
+/*
+ i imported this one in the functions file so bones would look sweet.
+ don't forget to remove it for your site.
+*/
+/*
+some nice typographical defaults
+more here: http://www.newnet-soft.com/blog/csstypography
+*/
+p {
+  -ms-word-wrap: break-word;
+  word-break: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  -webkit-hyphenate-before: 2;
+  -webkit-hyphenate-after: 3;
+  hyphenate-lines: 3;
+  -webkit-font-feature-settings: "liga", "dlig";
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -ms-font-feature-settings: "liga", "dlig";
+  -o-font-feature-settings: "liga", "dlig";
+  font-feature-settings: "liga", "dlig"; }
+
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Sass Functions
+
+You can do a lot of really cool things in Sass. Functions help you
+make repeated actions a lot easier. They are really similar to mixins,
+but can be used for so much more.
+
+Anyway, keep them all in here so it's easier to find when you're
+looking for one.
+
+For more info on functions, go here:
+http://sass-lang.com/documentation/Sass/Script/Functions.html
+
+******************************************************************/
+/*********************
+COLOR FUNCTIONS
+These are helpful when you're working
+with shadows and such things. It's essentially
+a quicker way to write RGBA.
+
+Example:
+box-shadow: 0 0 4px black(0.3);
+compiles to:
+box-shadow: 0 0 4px rgba(0,0,0,0.3);
+*********************/
+/*********************
+RESPONSIVE HELPER FUNCTION
+If you're creating a responsive site, then
+you've probably already read
+Responsive Web Design: http://www.abookapart.com/products/responsive-web-design
+
+Here's a nice little helper function for calculating
+target / context
+as mentioned in that book.
+
+Example:
+width: cp(650px, 1000px);
+or
+width: calc-percent(650px, 1000px);
+both compile to:
+width: 65%;
+*********************/
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  z-index: -1; }
+
+#inicio {
+  display: block;
+  width: 100vw;
+  background: #fff; }
+  #inicio .secao-inicio {
+    height: 100vh;
+    margin: 1em 1.5em 1em 1.5em;
+    background-color: #EEE6D9; }
+    #inicio .secao-inicio .titulo-inicio h3 {
+      font-size: 4.5em;
+      font-family: 'Mari David';
+      text-align: center;
+      color: #6C6145; }
+    #inicio .secao-inicio .logo-broove {
+      padding: 10vh 0;
+      text-align: center; }
+      #inicio .secao-inicio .logo-broove img {
+        width: 80vh;
+        height: 80vh; }
+
+#ep {
+  display: block;
+  width: 100vw;
+  background: #fff; }
+  #ep .secao-ep {
+    z-index: -1;
+    height: 100vh;
+    margin: 0 1.5em 1em 1.5em;
+    background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-1.png");
+    background-repeat: repeat-x; }
+    #ep .secao-ep .titulo-ep h3 {
+      z-index: 0;
+      font-size: 4.5em;
+      font-family: 'Mari David';
+      text-align: center;
+      color: #fff; }
+
+#making-of {
+  display: block;
+  width: 100vw;
+  background: #fff; }
+  #making-of .secao-making-of {
+    height: 100vh;
+    margin: 0 1.5em 1em 1.5em;
+    background-color: #000; }
+    #making-of .secao-making-of .titulo-making-of h3 {
+      font-size: 4.5em;
+      font-family: 'Mari David';
+      text-align: center;
+      color: #fff; }
+
+#fotos {
+  display: block;
+  width: 100vw;
+  background: #fff; }
+  #fotos .secao-fotos {
+    height: 100vh;
+    margin: 0 1.5em 1em 1.5em;
+    background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-2.png"); }
+    #fotos .secao-fotos .titulo-fotos h3 {
+      font-size: 4.5em;
+      font-family: 'Mari David';
+      text-align: center;
+      color: #EEE6D9; }
+
+#letras {
+  display: block;
+  width: 100vw;
+  background: #fff; }
+  #letras .secao-letras {
+    height: 100vh;
+    margin: 0 1.5em 1em 1.5em;
+    background: #323944; }
+    #letras .secao-letras .titulo-letras h3 {
+      font-size: 4.5em;
+      font-family: 'Mari David';
+      text-align: center;
+      color: #fff; }
+
+#contato {
+  display: block;
+  width: 100vw;
+  background: #fff;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+  #contato .secao-contato {
+    height: 100vh;
+    margin: 0 1.5em 1em 1.5em;
+    background-color: #FFF;
+    border-right: 3px solid #D1C498;
+    border-bottom: 3px solid #D1C498;
+    border-left: 3px solid #D1C498; }
+    #contato .secao-contato .titulo-contato h3 {
+      font-size: 4.5em;
+      font-family: 'Mari David';
+      text-align: center;
+      color: #D1C498;
+      border-top: 3px solid #D1C498; }
+
+.footer {
+  background-color: #6C6145;
+  font-family: 'Mari David'; }
+  .footer #rodape-row-1 a {
+    color: #fff; }
+    .footer #rodape-row-1 a:hover {
+      color: #D1C498; }
+  .footer #rodape-row-2 {
+    text-align: center; }
+    .footer #rodape-row-2 .source-org span {
+      font-size: 1.5em; }
 
 /*# sourceMappingURL=style.css.map */

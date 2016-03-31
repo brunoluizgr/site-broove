@@ -17,38 +17,51 @@ start customizing. All admin functions are located in lib/admin/
 
 html, body {
     padding:0;
-    margin: 0;
+    margin:0;
     height:100%;
     width:100%;
+    background-color: $white;
+    z-index: -1;
 }
 
 #inicio {
+  display: block;
+  width:100vw;
   background: $white;
   .secao-inicio {
-    display: block;
-    width:100vw;
     height:100vh;
-    margin: 1em 1em 1em 1em;
+    margin: 1em 1.5em 1em 1.5em;
+    background-color: $cor-capa-ep;
     .titulo-inicio h3 {
-      font-size: 5em;
+      font-size: 4.5em;
       font-family: 'Mari David';
       text-align: center;
       color: $cor-fita-ep;
+    }
+    .logo-broove{
+      padding: 10vh 0;
+      text-align: center;
+      img{
+        width:80vh;
+        height:80vh;
+      }
     }
   }
 }
 
 #ep {
+  display: block;
+  width:100vw;
   background: $white;
   .secao-ep{
-    display: block;
-    width:100vw;
+    z-index: -1;
     height:100vh;
+    margin: 0 1.5em 1em 1.5em;
     background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-1.png");
     background-repeat: repeat-x;
-    margin: 0 1em 1em 1em;
     .titulo-ep h3 {
-      font-size: 5em;
+      z-index: 0;
+      font-size: 4.5em;
       font-family: 'Mari David';
       text-align: center;
       color: $white;
@@ -59,12 +72,13 @@ html, body {
 #making-of {
   display: block;
   width:100vw;
-  height:100vh;
   background: $white;
   .secao-making-of {
+    height:100vh;
+    margin: 0 1.5em 1em 1.5em;
     background-color: $black;
     .titulo-making-of h3 {
-      font-size: 5em;
+      font-size: 4.5em;
       font-family: 'Mari David';
       text-align: center;
       color: $white;
@@ -75,12 +89,13 @@ html, body {
 #fotos {
   display: block;
   width:100vw;
-  height:100vh;
   background: $white;
   .secao-fotos {
+    height:100vh;
+    margin: 0 1.5em 1em 1.5em;
     background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-2.png");
     .titulo-fotos h3 {
-      font-size: 5em;
+      font-size: 4.5em;
       font-family: 'Mari David';
       text-align: center;
       color: $cor-capa-ep;
@@ -91,11 +106,16 @@ html, body {
 #letras {
   display: block;
   width:100vw;
-  height:100vh;
   background: $white;
   .secao-letras {
-    .titulo-letras {
-
+    height:100vh;
+    margin: 0 1.5em 1em 1.5em;
+    background: $light-black;
+    .titulo-letras h3 {
+      font-size: 4.5em;
+      font-family: 'Mari David';
+      text-align: center;
+      color: $white;
     }
   }
 }
@@ -103,16 +123,42 @@ html, body {
 #contato {
   display: block;
   width:100vw;
-  height:100vh;
   background: $white;
-  .secao-contato{
-    background-color: $white;
-    border: 3px solid $cor-fita-interna-ep;
-    .titulo-contato {
-      font-size: 5em;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  .secao-contato {
+    height:100vh;
+    margin: 0 1.5em 1em 1.5em;
+    background-color: $cor-contracapa-ep;
+    border-right: 3px solid $cor-fita-interna-ep;
+    border-bottom: 3px solid $cor-fita-interna-ep;
+    border-left: 3px solid $cor-fita-interna-ep;
+    .titulo-contato h3 {
+      font-size: 4.5em;
       font-family: 'Mari David';
       text-align: center;
       color: $cor-fita-interna-ep;
+      border-top: 3px solid $cor-fita-interna-ep;
+    }
+  }
+}
+
+.footer{
+  background-color: $cor-fita-ep;
+  font-family: 'Mari David';
+  #rodape-row-1{
+    a{
+      color: $white;
+      &:hover{
+        color: $cor-fita-interna-ep;
+      }
+    }
+  }
+  #rodape-row-2{
+    text-align: center;
+    .source-org span{
+        font-size: 1.5em;
     }
   }
 }
