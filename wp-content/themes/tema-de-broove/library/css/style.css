@@ -1,7 +1,7 @@
 /*! Made with Bones: http://themble.com/bones :) */
 /******************************************************************
-Site Name:
-Author:
+Site Name: Tema de Broove
+Author: @brunoluizgr
 
 Stylesheet: Main Stylesheet
 
@@ -496,10 +496,18 @@ FONT FACE (IN YOUR FACE)
       font-style: normal;
   }
 */
+/* Fonte site */
 @font-face {
   font-family: 'Mari David';
   src: url("../fonts/maridavid.eot");
-  src: url("../fonts/maridavid.eot?#iefix") format("embedded-opentype"), url("../fonts/maridavid.woff") format("woff"), url("../fonts/maridavid.ttf") format("truetype"), url("../fonts/maridavid.svg#font-name") format("svg");
+  src: url("../fonts/maridavid.eot?#iefix") format("embedded-opentype"), url("../fonts/maridavid.woff") format("woff"), url("../fonts/maridavid.ttf") format("truetype"), url("../fonts/maridavid.svg#MARI_DAVID") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* Fonte logotipo da Broove */
+@font-face {
+  font-family: 'Consolas-Bold';
+  src: url("../fonts/consolasbold.eot");
+  src: url("../fonts/consolasbold.eot?#iefix") format("embedded-opentype"), url("../fonts/consolasbold.woff") format("woff"), url("../fonts/consolasbold.ttf") format("truetype"), url("../fonts/consolasbold.svg#Consolas-Bold") format("svg");
   font-weight: normal;
   font-style: normal; }
 /*
@@ -2200,10 +2208,18 @@ FONT FACE (IN YOUR FACE)
       font-style: normal;
   }
 */
+/* Fonte site */
 @font-face {
   font-family: 'Mari David';
   src: url("../fonts/maridavid.eot");
-  src: url("../fonts/maridavid.eot?#iefix") format("embedded-opentype"), url("../fonts/maridavid.woff") format("woff"), url("../fonts/maridavid.ttf") format("truetype"), url("../fonts/maridavid.svg#font-name") format("svg");
+  src: url("../fonts/maridavid.eot?#iefix") format("embedded-opentype"), url("../fonts/maridavid.woff") format("woff"), url("../fonts/maridavid.ttf") format("truetype"), url("../fonts/maridavid.svg#MARI_DAVID") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* Fonte logotipo da Broove */
+@font-face {
+  font-family: 'Consolas-Bold';
+  src: url("../fonts/consolasbold.eot");
+  src: url("../fonts/consolasbold.eot?#iefix") format("embedded-opentype"), url("../fonts/consolasbold.woff") format("woff"), url("../fonts/consolasbold.ttf") format("truetype"), url("../fonts/consolasbold.svg#Consolas-Bold") format("svg");
   font-weight: normal;
   font-style: normal; }
 /*
@@ -2281,60 +2297,131 @@ both compile to:
 width: 65%;
 *********************/
 html, body {
+  width: 100%;
+  height: 100%;
   padding: 0;
   margin: 0;
-  height: 100%;
-  width: 100%;
   background-color: #fff;
   z-index: -1; }
 
 #inicio {
   display: block;
   width: 100vw;
-  background: #fff; }
+  height: 100vh;
+  padding: 2vw 1vw;
+  background-color: #fff;
+  z-index: -1; }
   #inicio .secao-inicio {
-    height: 100vh;
-    margin: 1em 1.5em 1em 1.5em;
-    background-color: #EEE6D9; }
-    #inicio .secao-inicio .titulo-inicio h3 {
-      font-size: 4.5em;
-      font-family: 'Mari David';
-      text-align: center;
-      color: #6C6145; }
+    background-color: #EEE6D9;
+    width: 90.25vw;
+    height: 100%;
+    margin: 0 auto; }
     #inicio .secao-inicio .logo-broove {
-      padding: 10vh 0;
       text-align: center; }
-      #inicio .secao-inicio .logo-broove img {
-        width: 80vh;
-        height: 80vh; }
+      #inicio .secao-inicio .logo-broove #fita {
+        position: absolute;
+        z-index: 0;
+        height: 17.75vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0; }
+      #inicio .secao-inicio .logo-broove #miolo-esq,
+      #inicio .secao-inicio .logo-broove #miolo-dir {
+        width: 3.5vw;
+        height: 3.5vw;
+        -webkit-animation: rotation 2s infinite linear;
+        -moz-animation: rotation 2s infinite linear;
+        -o-animation: rotation 2s infinite linear;
+        animation: rotation 2s infinite linear;
+        transform-origin: 50% 50%;
+        -webkit-transform-origin: 50% 50%;
+        -moz-transform-origin: 50% 50%; }
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(359deg); } }
+@-moz-keyframes rotation {
+  from {
+    -moz-transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(359deg); } }
+@-o-keyframes rotation {
+  from {
+    -o-transform: rotate(0deg); }
+  to {
+    -o-transform: rotate(359deg); } }
+@keyframes rotation {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+      #inicio .secao-inicio .logo-broove #miolo-esq {
+        position: absolute;
+        display: block;
+        z-index: 1;
+        margin-top: auto;
+        margin-bottom: auto;
+        top: 0;
+        bottom: 1vw;
+        left: 41.95vw; }
+      #inicio .secao-inicio .logo-broove #miolo-dir {
+        position: absolute;
+        display: block;
+        z-index: 1;
+        margin-top: auto;
+        margin-bottom: auto;
+        top: 0;
+        bottom: 1vw;
+        right: 41.5vw; }
 
 #ep {
   display: block;
   width: 100vw;
-  background: #fff; }
+  height: 100vh;
+  padding: 2vw 1vw;
+  background-color: #fff;
+  z-index: -1; }
   #ep .secao-ep {
-    z-index: -1;
-    height: 100vh;
-    margin: 0 1.5em 1em 1.5em;
+    width: 90.25vw;
+    height: 100%;
+    margin: 0 auto;
     background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-1.png");
     background-repeat: repeat-x; }
-    #ep .secao-ep .titulo-ep h3 {
-      z-index: 0;
-      font-size: 4.5em;
+    #ep .secao-ep .titulo-ep span {
+      font-size: 12vh;
       font-family: 'Mari David';
-      text-align: center;
-      color: #fff; }
+      color: #fff;
+      margin: 0 auto;
+      padding: 50%; }
+    #ep .secao-ep .corpo-ep a {
+      display: block;
+      font-family: 'Mari David';
+      font-size: 2em;
+      color: #fff;
+      text-decoration: none; }
+    #ep .secao-ep .corpo-ep #corpo-ep-col-1 {
+      position: relative;
+      float: left; }
+    #ep .secao-ep .corpo-ep #corpo-ep-col-2 {
+      position: relative;
+      float: right; }
 
 #making-of {
   display: block;
   width: 100vw;
   background: #fff; }
   #making-of .secao-making-of {
-    height: 100vh;
+    height: 99vh;
     margin: 0 1.5em 1em 1.5em;
     background-color: #000; }
     #making-of .secao-making-of .titulo-making-of h3 {
-      font-size: 4.5em;
+      font-size: 5em;
       font-family: 'Mari David';
       text-align: center;
       color: #fff; }
@@ -2344,11 +2431,11 @@ html, body {
   width: 100vw;
   background: #fff; }
   #fotos .secao-fotos {
-    height: 100vh;
+    height: 99vh;
     margin: 0 1.5em 1em 1.5em;
     background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-2.png"); }
     #fotos .secao-fotos .titulo-fotos h3 {
-      font-size: 4.5em;
+      font-size: 5em;
       font-family: 'Mari David';
       text-align: center;
       color: #EEE6D9; }
@@ -2358,11 +2445,11 @@ html, body {
   width: 100vw;
   background: #fff; }
   #letras .secao-letras {
-    height: 100vh;
+    height: 99vh;
     margin: 0 1.5em 1em 1.5em;
     background: #323944; }
     #letras .secao-letras .titulo-letras h3 {
-      font-size: 4.5em;
+      font-size: 5em;
       font-family: 'Mari David';
       text-align: center;
       color: #fff; }
@@ -2375,29 +2462,68 @@ html, body {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box; }
   #contato .secao-contato {
-    height: 100vh;
+    height: 99vh;
     margin: 0 1.5em 1em 1.5em;
     background-color: #FFF;
     border-right: 3px solid #D1C498;
     border-bottom: 3px solid #D1C498;
     border-left: 3px solid #D1C498; }
     #contato .secao-contato .titulo-contato h3 {
-      font-size: 4.5em;
+      font-size: 5em;
       font-family: 'Mari David';
       text-align: center;
       color: #D1C498;
       border-top: 3px solid #D1C498; }
+    #contato .secao-contato .corpo-contato .wpcf7-form p {
+      font-size: 2em;
+      font-family: 'Mari David';
+      color: #D1C498; }
+    #contato .secao-contato .corpo-contato .wpcf7-form input,
+    #contato .secao-contato .corpo-contato .wpcf7-form textarea {
+      font-family: 'Mari David';
+      background-color: #EEE6D9;
+      color: #6C6145; }
 
 .footer {
   background-color: #6C6145;
   font-family: 'Mari David'; }
-  .footer #rodape-row-1 a {
-    color: #fff; }
-    .footer #rodape-row-1 a:hover {
-      color: #D1C498; }
+  .footer #rodape-row-1 {
+    padding: 1em 0 1em 0; }
+    .footer #rodape-row-1 a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease-out;
+      -webkit-transition: color 0.3s ease-out; }
+      .footer #rodape-row-1 a:hover {
+        color: #D1C498;
+        text-decoration: none;
+        transition: color 0.2s ease-in;
+        -webkit-transition: color 0.2s ease-in; }
+    .footer #rodape-row-1 .maito-broove {
+      text-align: center; }
+      .footer #rodape-row-1 .maito-broove .mail-broove {
+        font-size: 1.8em; }
+    .footer #rodape-row-1 .socialnetwork-broove {
+      text-align: center; }
+      .footer #rodape-row-1 .socialnetwork-broove .facebook-broove {
+        margin: 0 10px; }
+      .footer #rodape-row-1 .socialnetwork-broove .youtube-broove {
+        margin: 0 10px; }
+      .footer #rodape-row-1 .socialnetwork-broove .instagram-broove {
+        margin: 0 10px; }
+    .footer #rodape-row-1 .developed-broove {
+      text-align: center;
+      font-size: 1.8em; }
+      .footer #rodape-row-1 .developed-broove .brunoluizgr-logo img {
+        position: relative;
+        top: 5px;
+        width: 1.2em;
+        height: 1.2em; }
   .footer #rodape-row-2 {
-    text-align: center; }
-    .footer #rodape-row-2 .source-org span {
-      font-size: 1.5em; }
+    padding-top: 3em; }
+    .footer #rodape-row-2 .source-org {
+      text-align: center; }
+      .footer #rodape-row-2 .source-org span {
+        font-size: 1em; }
 
 /*# sourceMappingURL=style.css.map */

@@ -43,7 +43,6 @@ var waitForFinalEvent = (function () {
 // how long to wait before deciding the resize has stopped, in ms. Around 50-100 should work ok.
 var timeToWaitForLast = 100;
 
-
 /*
  * Here's an example so you can see how we're using the above function
  *
@@ -104,7 +103,6 @@ function loadGravatars() {
 	}
 } // end function
 
-
 /*
  * Put all your regular jQuery in here.
 */
@@ -117,9 +115,17 @@ jQuery(document).ready(function($) {
   loadGravatars();
 
 	/*
-	 *
-	 *
- 	*/
-	//$("body").css("overflow", "hidden");
+	* Minhas funções
+	*/
+	var larguraSecao = $('#secao-inicio').width();
+	var larguraFita = $('#fita').width();
+	var mioloEPosX = (larguraFita/larguraSecao);
+	var mioloDPosX = (larguraFita/larguraSecao);
+
+
+	//$('#miolo-esq').css('top', );
+	//$('#miolo-esq').css('right', );
+	//$('#miolo-dir').css('top', );
+	//$('#miolo-dir').css('right', );
 
 }); /* end of as page load scripts */
