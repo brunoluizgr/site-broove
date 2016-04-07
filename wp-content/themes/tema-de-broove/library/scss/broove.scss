@@ -16,73 +16,122 @@ start customizing. All admin functions are located in lib/admin/
 
 
 html, body {
+    width: 100%;
+    height:100%;
     padding:0;
     margin:0;
-    height:100%;
-    width:100%;
     background-color: $white;
     z-index: -1;
 }
 
+// Falta Media QUERIES
 #inicio {
-  display: block;
+  display:block;
   width:100vw;
-  background: $white;
+  height:100vh;
+  padding: 2vw 1vw;
+  background-color:$white;
+  z-index:-1;
+
   .secao-inicio {
-    height:100vh;
-    margin: 1em 1.5em 1em 1.5em;
-    background-color: $cor-capa-ep;
-    .titulo-inicio h3 {
-      font-size: 4.5em;
-      font-family: 'Mari David';
-      text-align: center;
-      color: $cor-fita-ep;
-    }
+    background-color:$cor-capa-ep;
+    width:90.25vw;
+    height:100%;
+    margin:0 auto;
+
     .logo-broove{
-      padding: 10vh 0;
       text-align: center;
       #fita{
-        width:80vh;
-        height:80vh;
+        position:absolute;
+        z-index:0;
+        // Tamanho
+        height:17.75vw;
+        // Localização
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:auto;
+        margin-bottom:auto;
+        top:0;
+        bottom:0;
+        left: 0;
+        right: 0;
       }
-      .miolo{
-        width:4.2vh;
-        height:4.2vh;
-        position: absolute;
-        -webkit-animation:spin 4s linear infinite;
-        -moz-animation:spin 4s linear infinite;
-        animation:spin 4s linear infinite;
-        @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-        @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-        @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+      #miolo-esq,
+      #miolo-dir{
+        width:3.5vw;
+        height:3.5vw;
+        -webkit-animation: rotation 2s infinite linear;
+        -moz-animation: rotation 2s infinite linear;
+        -o-animation: rotation 2s infinite linear;
+        animation: rotation 2s infinite linear;
+        transform-origin: 50% 50%;
+        -webkit-transform-origin: 50% 50%;
+        -moz-transform-origin: 50% 50%;
       }
-      #miolo-esq {
-        top: 56.8vh;
-        right: 100.4vh;
+      @-webkit-keyframes rotation {
+          from {-webkit-transform: rotate(0deg);}
+          to   {-webkit-transform: rotate(359deg);}
       }
-      #miolo-dir {
-        top: 56.8vh;
-        right: 85.2vh;
+      @-moz-keyframes rotation {
+          from {-moz-transform: rotate(0deg);}
+          to   {-moz-transform: rotate(359deg);}
       }
+      @-o-keyframes rotation {
+          from {-o-transform: rotate(0deg);}
+          to   {-o-transform: rotate(359deg);}
+      }
+      @keyframes rotation {
+          from {transform: rotate(0deg);}
+          to   {transform: rotate(359deg);}
+      }
+      #miolo-esq{
+        position:absolute;
+        display:block;
+        z-index:1;
+        margin-top:auto;
+        margin-bottom:auto;
+        top:0;
+        bottom:1vw;
+        left:41.95vw;
+      }
+      #miolo-dir{
+        position:absolute;
+        display:block;
+        z-index:1;
+        margin-top:auto;
+        margin-bottom:auto;
+        top:0;
+        bottom:1vw;
+        right:41.5vw;
+      }
+
     }
   }
 }
 
 #ep {
-  display: block;
-  text-align: center;
+  display:block;
   width:100vw;
-  background: $white;
+  height:100vh;
+  padding: 2vw 1vw;
+  background-color:$white;
+  z-index:-1;
+
   .secao-ep{
-    height:100vh;
-    margin: 0 1.5em 1em 1.5em;
+    width:90.25vw;
+    height:100%;
+    margin:0 auto;
     background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-1.png");
     background-repeat: repeat-x;
-    .titulo-ep h3 {
-      font-size: 5em;
+
+    .titulo-ep span {
+      font-size: 12vh;
       font-family: 'Mari David';
       color: $white;
+      margin: 0 auto;
+      padding: 50%;
     }
+
     .corpo-ep{
       a{
         display: block;
@@ -108,7 +157,7 @@ html, body {
   width:100vw;
   background: $white;
   .secao-making-of {
-    height:100vh;
+    height:99vh;
     margin: 0 1.5em 1em 1.5em;
     background-color: $black;
     .titulo-making-of h3 {
@@ -125,7 +174,7 @@ html, body {
   width:100vw;
   background: $white;
   .secao-fotos {
-    height:100vh;
+    height:99vh;
     margin: 0 1.5em 1em 1.5em;
     background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-2.png");
     .titulo-fotos h3 {
@@ -142,7 +191,7 @@ html, body {
   width:100vw;
   background: $white;
   .secao-letras {
-    height:100vh;
+    height:99vh;
     margin: 0 1.5em 1em 1.5em;
     background: $light-black;
     .titulo-letras h3 {
@@ -162,7 +211,7 @@ html, body {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   .secao-contato {
-    height:100vh;
+    height:99vh;
     margin: 0 1.5em 1em 1.5em;
     background-color: $cor-contracapa-ep;
     border-right: 3px solid $cor-fita-interna-ep;
