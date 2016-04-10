@@ -1,7 +1,4 @@
 /******************************************************************
-Site Name:
-Author:
-
 Stylesheet: Variables
 
 Here is where we declare all our variables like colors, fonts,
@@ -16,41 +13,31 @@ COLORS
 Need help w/ choosing your colors? Try this site out:
 http://0to255.com/
 *********************/
-
 $alert-yellow:      #ebe16f;
 $alert-red:         #fbe3e4;
 $alert-green:       #e6efc2;
 $alert-blue:        #d5edf8;
 
 $black:             #000;
-$light-black:             #323944;
+$light-black:       #323944;
 $white:             #fff;
-
 $light-gray:        #f8f9fa;
 $gray:              #eaedf2;
 $text-color:        #5c6b80;
 $meta-gray:         #9fa6b4;
-
 $tan:               #eceee5;
-
 $green:             #7dd667;
-
 $bones-pink:        #f01d4f;
 $blue:              #2980b9;
-
 $link-color:        $bones-pink;
 $link-hover:        darken($link-color, 9%);
-
 $border-color:      #ccc;
 $disabled-gray:     #cfcfcf;
 
+/*
+ Minhas Cores
+*/
 $cor-capa-ep: #EEE6D9;
 $cor-contracapa-ep: #FFF;
 $cor-fita-ep: #6C6145;
 $cor-fita-interna-ep: #D1C498;
-
-/*
-Here's a great tutorial on how to
-use color variables properly:
-http://sachagreif.com/sass-color-variables/
-*/

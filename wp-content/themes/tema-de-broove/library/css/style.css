@@ -438,9 +438,6 @@ span.amp {
   font-style: italic; }
 
 /******************************************************************
-Site Name:
-Author:
-
 Stylesheet: Variables
 
 Here is where we declare all our variables like colors, fonts,
@@ -455,9 +452,7 @@ Need help w/ choosing your colors? Try this site out:
 http://0to255.com/
 *********************/
 /*
-Here's a great tutorial on how to
-use color variables properly:
-http://sachagreif.com/sass-color-variables/
+ Minhas Cores
 */
 /******************************************************************
 Site Name:
@@ -864,14 +859,10 @@ I mean, you can do whatever you want. The world is your oyster. Unless
 you hate oysters, then the world is your peanut butter & jelly sandwich.
 *********************/
 /******************************************************************
-Site Name:
-Author:
-
 Stylesheet: Alert Styles
 
 If you want to use these alerts in your design, you can. If not,
 you can just remove this stylesheet.
-
 ******************************************************************/
 .alert-help, .alert-info, .alert-error, .alert-success {
   margin: 10px;
@@ -895,9 +886,6 @@ you can just remove this stylesheet.
   background: #e6efc2; }
 
 /******************************************************************
-Site Name:
-Author:
-
 Stylesheet: Button Styles
 
 Buttons are a pretty important part of your site's style, so it's
@@ -906,7 +894,6 @@ to create all kinds of buttons.
 
 Helpful Links:
 http://galp.in/blog/2011/08/02/the-ui-guide-part-1-buttons/
-
 ******************************************************************/
 /*********************
 BUTTON DEFAULTS
@@ -954,9 +941,6 @@ and it will create a button dependant on those variables.
     background-color: #2472a4; }
 
 /******************************************************************
-Site Name:
-Author:
-
 Stylesheet: Form Styles
 
 We put all the form and button styles in here to setup a consistent
@@ -968,7 +952,6 @@ sure what they are, check this link out:
 http://css-tricks.com/data-uris/
 If you want to create your own, use this helpful link:
 http://websemantics.co.uk/online_tools/image_to_data_uri_convertor/
-
 ******************************************************************/
 /*********************
 INPUTS
@@ -1241,6 +1224,177 @@ select {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAHCAYAAADXhRcnAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpEOEZCMjYxMEYwNUUxMUUyOTI4REZGQTEzMzA2MDcyNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpEOEZCMjYxMUYwNUUxMUUyOTI4REZGQTEzMzA2MDcyNiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkQ4RkIyNjBFRjA1RTExRTI5MjhERkZBMTMzMDYwNzI2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkQ4RkIyNjBGRjA1RTExRTI5MjhERkZBMTMzMDYwNzI2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Vxkp9gAAAI9JREFUeNpidHFxucHAwKAOxE+AmJmBMPgLxDJAfJMFSKwD4kqoAClgA+P///8ZXF1dPaCGcBKh6QcQB+3evXs7WDMIAA2QB1I7gFgDj0aQFz2BGh+AOEwwUaDAQyBlCMR7cGjcC5KHaQQBuM3IAOiKTiBVhiTUDdRUhq4Oq2aoAelAahIQ5wM1zsCmBiDAADhYMJXVZ9u9AAAAAElFTkSuQmCC);
   background-repeat: no-repeat;
   background-position: 97.5% center; }
+
+/******************************************************************
+Stylesheet: Margin Styles
+
+We put all the form and button styles in here to setup a consistent
+look. If we need to customize them, we can do this in the main
+stylesheets and just override them. Easy Peasy.
+
+You're gonna see a few data-uri thingies down there. If you're not
+sure what they are, check this link out:
+http://css-tricks.com/data-uris/
+If you want to create your own, use this helpful link:
+http://websemantics.co.uk/online_tools/image_to_data_uri_convertor/
+******************************************************************/
+/* Biblioteca de PADDING */
+.padding-no {
+  padding: 0em; }
+
+.padding-t-no {
+  padding-top: 0em; }
+
+.padding-r-no {
+  padding-right: 0em; }
+
+.padding-b-no {
+  padding-bottom: 0em; }
+
+.padding-l-no {
+  padding-left: 0em; }
+
+.padding-t-0-5 {
+  padding-top: 0.5em; }
+
+.padding-t-1 {
+  padding-top: 1em; }
+
+.padding-t-2 {
+  padding-top: 2em; }
+
+.padding-t-4 {
+  padding-top: 4em; }
+
+.padding-t-5 {
+  padding-top: 5em; }
+
+.padding-t-10 {
+  padding-top: 10em; }
+
+.padding-r-0-5 {
+  padding-right: 0.5em; }
+
+.padding-r-1 {
+  padding-right: 1em; }
+
+.padding-r-2 {
+  padding-right: 2em; }
+
+.padding-r-4 {
+  padding-right: 4em; }
+
+.padding-r-5 {
+  padding-right: 5em; }
+
+.padding-b-0-5 {
+  padding-bottom: 0.5em; }
+
+.padding-b-1 {
+  padding-bottom: 1em; }
+
+.padding-b-2 {
+  padding-bottom: 2em; }
+
+.padding-b-4 {
+  padding-bottom: 4em; }
+
+.padding-b-5 {
+  padding-bottom: 5em; }
+
+.padding-b-10 {
+  padding-bottom: 10em; }
+
+.padding-l-0-5 {
+  padding-left: 0.5em; }
+
+.padding-l-1 {
+  padding-left: 1em; }
+
+.padding-l-2 {
+  padding-left: 2em; }
+
+.padding-l-4 {
+  padding-left: 4em; }
+
+.padding-l-5 {
+  padding-left: 5em; }
+
+/* Biblioteca de MARGIN */
+.margin-no {
+  margin: 0em; }
+
+.margin-t-no {
+  margin-top: 0em; }
+
+.margin-r-no {
+  margin-right: 0em; }
+
+.margin-b-no {
+  margin-bottom: 0em; }
+
+.margin-l-no {
+  margin-left: 0em; }
+
+.margin-t-0-5 {
+  margin-top: 0.5em; }
+
+.margin-t-1 {
+  margin-top: 1em; }
+
+.margin-t-2 {
+  margin-top: 2em; }
+
+.margin-t-3 {
+  margin-top: 3em; }
+
+.margin-t-4 {
+  margin-top: 4em; }
+
+.margin-t-5 {
+  margin-top: 5em; }
+
+.margin-t-10 {
+  margin-top: 10em; }
+
+.margin-r-0-5 {
+  margin-right: 0.5em; }
+
+.margin-r-1 {
+  margin-right: 1em; }
+
+.margin-r-2 {
+  margin-right: 2em; }
+
+.margin-r-3 {
+  margin-right: 3em; }
+
+.margin-b-0-5 {
+  margin-bottom: 0.5em; }
+
+.margin-b-1 {
+  margin-bottom: 1em; }
+
+.margin-b-2 {
+  margin-bottom: 2em; }
+
+.margin-b-3 {
+  margin-bottom: 3em; }
+
+.margin-b-10 {
+  margin-bottom: 10em; }
+
+.margin-l-0-5 {
+  margin-left: 0.5em; }
+
+.margin-l-1 {
+  margin-left: 1em; }
+
+.margin-l-2 {
+  margin-left: 2em; }
+
+.margin-l-3 {
+  margin-left: 3em; }
 
 /*********************
 BASE (MOBILE) SIZE
@@ -2150,9 +2304,6 @@ start customizing. All admin functions are located in lib/admin/
 
 ******************************************************************/
 /******************************************************************
-Site Name:
-Author:
-
 Stylesheet: Variables
 
 Here is where we declare all our variables like colors, fonts,
@@ -2167,9 +2318,7 @@ Need help w/ choosing your colors? Try this site out:
 http://0to255.com/
 *********************/
 /*
-Here's a great tutorial on how to
-use color variables properly:
-http://sachagreif.com/sass-color-variables/
+ Minhas Cores
 */
 /******************************************************************
 Site Name:
@@ -2296,6 +2445,81 @@ width: calc-percent(650px, 1000px);
 both compile to:
 width: 65%;
 *********************/
+/******************************************************************
+Stylesheet: EP-Miolo
+Media queries para ajustar os dois miolos do EP.
+******************************************************************/
+/******************************************************************
+  Celulares
+******************************************************************/
+/* ----------- iPhone 4 and 4S ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- iPhone 5 and 5S ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- iPhone 6 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- iPhone 6+ ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Galaxy S3 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Galaxy S4 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Galaxy S5 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- HTC One ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/******************************************************************
+  Tablets
+******************************************************************/
+/* ----------- iPad mini ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- iPad 1 and 2 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- iPad 3 and 4 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Galaxy Tab 10.1 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Asus Nexus 7 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Kindle Fire HD 7" ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Kindle Fire HD 8.9" ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/******************************************************************
+  Desktops
+******************************************************************/
+/* ----------- Non-Retina Screens ----------- */
+/* ----------- Retina Screens ----------- */
 html, body {
   width: 100%;
   height: 100%;
@@ -2415,11 +2639,15 @@ html, body {
 #making-of {
   display: block;
   width: 100vw;
-  background: #fff; }
+  height: 100vh;
+  padding: 2vw 1vw;
+  background-color: #fff;
+  z-index: -1; }
   #making-of .secao-making-of {
-    height: 99vh;
-    margin: 0 1.5em 1em 1.5em;
-    background-color: #000; }
+    background-color: #000;
+    width: 90.25vw;
+    height: 100%;
+    margin: 0 auto; }
     #making-of .secao-making-of .titulo-making-of h3 {
       font-size: 5em;
       font-family: 'Mari David';
@@ -2429,11 +2657,15 @@ html, body {
 #fotos {
   display: block;
   width: 100vw;
-  background: #fff; }
+  height: 100vh;
+  padding: 2vw 1vw;
+  background-color: #fff;
+  z-index: -1; }
   #fotos .secao-fotos {
-    height: 99vh;
-    margin: 0 1.5em 1em 1.5em;
-    background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-2.png"); }
+    background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-2.png");
+    width: 90.25vw;
+    height: 100%;
+    margin: 0 auto; }
     #fotos .secao-fotos .titulo-fotos h3 {
       font-size: 5em;
       font-family: 'Mari David';
@@ -2443,11 +2675,15 @@ html, body {
 #letras {
   display: block;
   width: 100vw;
-  background: #fff; }
+  height: 100vh;
+  padding: 2vw 1vw;
+  background-color: #fff;
+  z-index: -1; }
   #letras .secao-letras {
-    height: 99vh;
-    margin: 0 1.5em 1em 1.5em;
-    background: #323944; }
+    background: #323944;
+    width: 90.25vw;
+    height: 100%;
+    margin: 0 auto; }
     #letras .secao-letras .titulo-letras h3 {
       font-size: 5em;
       font-family: 'Mari David';
@@ -2457,17 +2693,21 @@ html, body {
 #contato {
   display: block;
   width: 100vw;
-  background: #fff;
+  height: 100vh;
+  padding: 2vw 1vw;
+  background-color: #fff;
+  z-index: -1;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box; }
   #contato .secao-contato {
-    height: 99vh;
-    margin: 0 1.5em 1em 1.5em;
     background-color: #FFF;
     border-right: 3px solid #D1C498;
     border-bottom: 3px solid #D1C498;
-    border-left: 3px solid #D1C498; }
+    border-left: 3px solid #D1C498;
+    width: 90.25vw;
+    height: 100%;
+    margin: 0 auto; }
     #contato .secao-contato .titulo-contato h3 {
       font-size: 5em;
       font-family: 'Mari David';
@@ -2488,6 +2728,7 @@ html, body {
   background-color: #6C6145;
   font-family: 'Mari David'; }
   .footer #rodape-row-1 {
+    font-size: 5vh;
     padding: 1em 0 1em 0; }
     .footer #rodape-row-1 a {
       color: #fff;
@@ -2499,31 +2740,9 @@ html, body {
         text-decoration: none;
         transition: color 0.2s ease-in;
         -webkit-transition: color 0.2s ease-in; }
-    .footer #rodape-row-1 .maito-broove {
-      text-align: center; }
-      .footer #rodape-row-1 .maito-broove .mail-broove {
-        font-size: 1.8em; }
-    .footer #rodape-row-1 .socialnetwork-broove {
-      text-align: center; }
-      .footer #rodape-row-1 .socialnetwork-broove .facebook-broove {
-        margin: 0 10px; }
-      .footer #rodape-row-1 .socialnetwork-broove .youtube-broove {
-        margin: 0 10px; }
-      .footer #rodape-row-1 .socialnetwork-broove .instagram-broove {
-        margin: 0 10px; }
-    .footer #rodape-row-1 .developed-broove {
-      text-align: center;
-      font-size: 1.8em; }
-      .footer #rodape-row-1 .developed-broove .brunoluizgr-logo img {
-        position: relative;
-        top: 5px;
-        width: 1.2em;
-        height: 1.2em; }
+    .footer #rodape-row-1 img {
+      max-height: 10vh; }
   .footer #rodape-row-2 {
-    padding-top: 3em; }
-    .footer #rodape-row-2 .source-org {
-      text-align: center; }
-      .footer #rodape-row-2 .source-org span {
-        font-size: 1em; }
+    font-size: 3vh; }
 
 /*# sourceMappingURL=style.css.map */
