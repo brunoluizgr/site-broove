@@ -103,6 +103,23 @@ function loadGravatars() {
 	}
 } // end function
 
+//
+function getTamanhos(){
+	var a =  jQuery(window).height();
+	var b =  jQuery(window).width();
+	var c =  jQuery(document).height();
+	var d =  jQuery(document).width();
+	var e = screen.height;
+	var f = screen.width;
+
+	console.log('$(window).height() = ' + a);
+	console.log('$(window).width() = ' + b);
+	console.log('$(document).height() = ' + c);
+	console.log('$(document).width() = ' + d);
+	console.log('screen.height = ' + e);
+	console.log('screen.width = ' + f);
+} // end function
+
 /*
  * Put all your regular jQuery in here.
 */
@@ -117,21 +134,24 @@ jQuery(document).ready(function($) {
 	/*
 	* Minhas funções
 	*/
-	var a =  $(window).height();
-	var b =  $(window).width();
-	var c =  $(document).height();
-	var d =  $(document).width();
-	var e = screen.height;
-	var f = screen.width;
-
-	console.log('$(window).height() = ' + a);
-	console.log('$(window).width() = ' + b);
-	console.log('$(document).height() = ' + c);
-	console.log('$(document).width() = ' + d);
-	console.log('screen.height = ' + e);
-	console.log('screen.width = ' + f);
+	//getTamanhos();
 
 	// Remove 2º <br> da seção de Contato
-	$('.wpcf7-form').filter(":contains(br)").remove();
+	var menu = ['inicio', 'ep', 'making-of', 'fotos', 'letras', 'contato'];
+	var i=0;
+
+	$('#menu-sobe').click(function () {
+		i--;
+		if(i<=0){i=0};
+		window.location.hash = menu[i];
+    return false;
+	});
+
+	$('#menu-desce').click(function () {
+		i++;
+		if(i>=5){i=5};
+		window.location.hash = menu[i];
+		return false;
+	});
 
 }); /* end of as page load scripts */
