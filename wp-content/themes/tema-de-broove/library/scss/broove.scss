@@ -28,7 +28,7 @@ html, body {
   display:block;
   width:100vw;
   height:100vh;
-  padding: 2vw 1vw;
+  padding:2vw 1vw;
   background-color:$white;
   z-index:-1;
 
@@ -91,7 +91,12 @@ html, body {
         margin-bottom:auto;
         top:0;
         bottom:1vw;
-        left:41.95vw;
+        left:42.45vw;
+        @media all and (min-device-aspect-ratio:1.95/1){
+          #miolo-esq{
+            left:42vw;
+          }
+        }
       }
       #miolo-dir{
         position:absolute;
@@ -101,126 +106,141 @@ html, body {
         margin-bottom:auto;
         top:0;
         bottom:1vw;
-        right:41.5vw;
+        right:42vw;
+        @media all and (min-device-aspect-ratio:1.95/1){
+          #miolo-esq{
+            right:41.5vw;
+          }
+        }
       }
 
     }
   }
 }
 
-#ep {
+#ep{
   display:block;
   width:100vw;
   height:100vh;
-  padding: 2vw 1vw;
+  padding:2vw 1vw;
   background-color:$white;
   z-index:-1;
 
-  .secao-ep{
+  #secao-ep{
     width:90.25vw;
     height:100%;
     margin:0 auto;
     background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-1.png");
     background-repeat: repeat-x;
 
-    .titulo-ep span {
-      font-size: 12vh;
-      font-family: 'Mari David';
-      color: $white;
-      margin: 0 auto;
-      padding: 50%;
+    #titulo-ep h3{
+      font-size:12vh;
+      font-family:'Mari David';
+      margin:6vh auto 0;
+      color:$white;
     }
 
-    .corpo-ep{
-      a{
-        display: block;
-        font-family: 'Mari David';
-        font-size: 2em;
-        color: $white;
-        text-decoration: none;
+    #corpo-ep{
+      #corpo-ep-col-1{}
+      #corpo-ep-col-2{
+        a{
+          display: block;
+          font-family: 'Mari David';
+          font-size: 2em;
+          color: $white;
+          text-decoration: none;
+        }
+        #btn-ouca-agora,
+        #btn-baixar{
+          color: $cor-fita-ep;
+          background-color: rgba(255,255,255,0.75);
+          font-size: 5vh;
+        }
+
       }
-      #corpo-ep-col-1 {
-        position: relative;
-        float: left;
-      }
-      #corpo-ep-col-2 {
-        position: relative;
-        float: right;
-      }
+
     }
+
   }
+
 }
 
-#making-of {
+#making-of{
   display:block;
   width:100vw;
   height:100vh;
-  padding: 2vw 1vw;
+  padding:2vw 1vw;
   background-color:$white;
   z-index:-1;
 
-  .secao-making-of {
+  #secao-making-of{
+    width:90.25vw;
+    height:100%;
+    margin:0 auto;
     background-color: $black;
-    width:90.25vw;
-    height:100%;
-    margin:0 auto;
 
-    .titulo-making-of h3 {
-      font-size: 5em;
-      font-family: 'Mari David';
-      text-align: center;
-      color: $white;
+    #titulo-making-of h3{
+      font-size:12vh;
+      font-family:'Mari David';
+      margin:6vh auto 0;
+      color:$white;
     }
+
   }
+
 }
 
-#fotos {
+#fotos{
   display:block;
   width:100vw;
   height:100vh;
-  padding: 2vw 1vw;
+  padding:2vw 1vw;
   background-color:$white;
   z-index:-1;
 
-  .secao-fotos {
-    background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-2.png");
+  #secao-fotos{
     width:90.25vw;
     height:100%;
     margin:0 auto;
+    background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-2.png");
 
-    .titulo-fotos h3 {
-      font-size: 5em;
-      font-family: 'Mari David';
-      text-align: center;
+    #titulo-fotos h3{
+      font-size:12vh;
+      font-family:'Mari David';
+      margin:6vh auto 0;
       color: $cor-capa-ep;
     }
+
   }
+
 }
 
-#letras {
+#letras{
   display:block;
   width:100vw;
   height:100vh;
-  padding: 2vw 1vw;
+  padding:2vw 1vw;
   background-color:$white;
   z-index:-1;
 
-  .secao-letras {
-    background: $light-black;
+  #secao-letras{
     width:90.25vw;
     height:100%;
     margin:0 auto;
+    background: $light-black;
 
-    .titulo-letras h3 {
-      font-size: 5em;
-      font-family: 'Mari David';
-      text-align: center;
+    #titulo-letras h3{
+      font-size:12vh;
+      font-family:'Mari David';
+      margin:6vh auto 0;
       color: $white;
     }
+
   }
+
 }
 
-#contato {
+#contato{
   display:block;
   width:100vw;
   height:100vh;
@@ -231,7 +251,7 @@ html, body {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 
-  .secao-contato {
+  #secao-contato{
     background-color: $cor-contracapa-ep;
     border-right: 3px solid $cor-fita-interna-ep;
     border-bottom: 3px solid $cor-fita-interna-ep;
@@ -240,14 +260,17 @@ html, body {
     height:100%;
     margin:0 auto;
 
-    .titulo-contato h3 {
-      font-size: 5em;
-      font-family: 'Mari David';
-      text-align: center;
-      color: $cor-fita-interna-ep;
+    #titulo-contato{
       border-top: 3px solid $cor-fita-interna-ep;
+      h3 {
+        font-size:12vh;
+        font-family:'Mari David';
+        margin:6vh auto 0;
+        color: $cor-fita-interna-ep;
+      }
     }
-    .corpo-contato{
+
+    #corpo-contato{
       .wpcf7-form{
         p{
           font-size: 2em;
@@ -260,9 +283,15 @@ html, body {
           background-color: $cor-capa-ep;
           color: $cor-fita-ep;
         }
+        textarea{
+          resize:none;
+          height:35vh;
+        }
       }
     }
+
   }
+
 }
 
 .footer {

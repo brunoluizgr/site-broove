@@ -1,11 +1,10 @@
-<div class="secao-contato">
+<div id="secao-contato" class="row">
 
-  <div class="titulo-contato">
-    <h3>
-      <?php _e( 'Contato', 'temadebroove' ); ?>
-    </h3>
+  <div id="titulo-contato" class="col-md-12 col-lg-12 text-center">
+    <h3><?php _e( 'Contato', 'temadebroove' ); ?></h3>
   </div>
-  <div class="corpo-contato">
+
+  <div id="corpo-contato" class="col-md-12 col-lg-12">
     <?php echo do_shortcode('[contact-form-7 id="4" title="Contato"]');?>
   </div>
 

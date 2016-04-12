@@ -117,15 +117,21 @@ jQuery(document).ready(function($) {
 	/*
 	* Minhas funções
 	*/
-	var larguraSecao = $('#secao-inicio').width();
-	var larguraFita = $('#fita').width();
-	var mioloEPosX = (larguraFita/larguraSecao);
-	var mioloDPosX = (larguraFita/larguraSecao);
+	var a =  $(window).height();
+	var b =  $(window).width();
+	var c =  $(document).height();
+	var d =  $(document).width();
+	var e = screen.height;
+	var f = screen.width;
 
+	console.log('$(window).height() = ' + a);
+	console.log('$(window).width() = ' + b);
+	console.log('$(document).height() = ' + c);
+	console.log('$(document).width() = ' + d);
+	console.log('screen.height = ' + e);
+	console.log('screen.width = ' + f);
 
-	//$('#miolo-esq').css('top', );
-	//$('#miolo-esq').css('right', );
-	//$('#miolo-dir').css('top', );
-	//$('#miolo-dir').css('right', );
+	// Remove 2º <br> da seção de Contato
+	$('.wpcf7-form').filter(":contains(br)").remove();
 
 }); /* end of as page load scripts */

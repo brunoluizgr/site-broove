@@ -1,6 +1,6 @@
 		<footer id="rodape" class="footer container-fluid padding-l-no padding-r-no" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
 
-				<div id="rodape-row-1" class="row">
+				<div id="rodape-row-1" class="row padding-l-no padding-r-no">
 
 					<section class="maito-broove text-center col-xs-12 col-sm-12 col-md-3 col-lg-3 margin-b-0-5">
 						<span class="mail-broove">
@@ -41,7 +41,7 @@
 
 				</div>
 
-				<div id="rodape-row-2" class="row text-center">
+				<div id="rodape-row-2" class="row padding-l-no padding-r-no text-center">
 
 					<p class="source-org copyright">
 						<span><?php bloginfo( 'name' ); ?></span>

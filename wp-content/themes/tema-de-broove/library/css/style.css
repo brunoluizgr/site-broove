@@ -2593,7 +2593,10 @@ html, body {
         margin-bottom: auto;
         top: 0;
         bottom: 1vw;
-        left: 41.95vw; }
+        left: 42.45vw; }
+        @media all and (min-device-aspect-ratio: 1.95 / 1) {
+          #inicio .secao-inicio .logo-broove #miolo-esq #miolo-esq {
+            left: 42vw; } }
       #inicio .secao-inicio .logo-broove #miolo-dir {
         position: absolute;
         display: block;
@@ -2602,7 +2605,10 @@ html, body {
         margin-bottom: auto;
         top: 0;
         bottom: 1vw;
-        right: 41.5vw; }
+        right: 42vw; }
+        @media all and (min-device-aspect-ratio: 1.95 / 1) {
+          #inicio .secao-inicio .logo-broove #miolo-dir #miolo-esq {
+            right: 41.5vw; } }
 
 #ep {
   display: block;
@@ -2611,30 +2617,28 @@ html, body {
   padding: 2vw 1vw;
   background-color: #fff;
   z-index: -1; }
-  #ep .secao-ep {
+  #ep #secao-ep {
     width: 90.25vw;
     height: 100%;
     margin: 0 auto;
     background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-1.png");
     background-repeat: repeat-x; }
-    #ep .secao-ep .titulo-ep span {
+    #ep #secao-ep #titulo-ep h3 {
       font-size: 12vh;
       font-family: 'Mari David';
-      color: #fff;
-      margin: 0 auto;
-      padding: 50%; }
-    #ep .secao-ep .corpo-ep a {
+      margin: 6vh auto 0;
+      color: #fff; }
+    #ep #secao-ep #corpo-ep #corpo-ep-col-2 a {
       display: block;
       font-family: 'Mari David';
       font-size: 2em;
       color: #fff;
       text-decoration: none; }
-    #ep .secao-ep .corpo-ep #corpo-ep-col-1 {
-      position: relative;
-      float: left; }
-    #ep .secao-ep .corpo-ep #corpo-ep-col-2 {
-      position: relative;
-      float: right; }
+    #ep #secao-ep #corpo-ep #corpo-ep-col-2 #btn-ouca-agora,
+    #ep #secao-ep #corpo-ep #corpo-ep-col-2 #btn-baixar {
+      color: #6C6145;
+      background-color: rgba(255, 255, 255, 0.75);
+      font-size: 5vh; }
 
 #making-of {
   display: block;
@@ -2643,15 +2647,15 @@ html, body {
   padding: 2vw 1vw;
   background-color: #fff;
   z-index: -1; }
-  #making-of .secao-making-of {
-    background-color: #000;
+  #making-of #secao-making-of {
     width: 90.25vw;
     height: 100%;
-    margin: 0 auto; }
-    #making-of .secao-making-of .titulo-making-of h3 {
-      font-size: 5em;
+    margin: 0 auto;
+    background-color: #000; }
+    #making-of #secao-making-of #titulo-making-of h3 {
+      font-size: 12vh;
       font-family: 'Mari David';
-      text-align: center;
+      margin: 6vh auto 0;
       color: #fff; }
 
 #fotos {
@@ -2661,15 +2665,15 @@ html, body {
   padding: 2vw 1vw;
   background-color: #fff;
   z-index: -1; }
-  #fotos .secao-fotos {
-    background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-2.png");
+  #fotos #secao-fotos {
     width: 90.25vw;
     height: 100%;
-    margin: 0 auto; }
-    #fotos .secao-fotos .titulo-fotos h3 {
-      font-size: 5em;
+    margin: 0 auto;
+    background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-2.png"); }
+    #fotos #secao-fotos #titulo-fotos h3 {
+      font-size: 12vh;
       font-family: 'Mari David';
-      text-align: center;
+      margin: 6vh auto 0;
       color: #EEE6D9; }
 
 #letras {
@@ -2679,15 +2683,15 @@ html, body {
   padding: 2vw 1vw;
   background-color: #fff;
   z-index: -1; }
-  #letras .secao-letras {
-    background: #323944;
+  #letras #secao-letras {
     width: 90.25vw;
     height: 100%;
-    margin: 0 auto; }
-    #letras .secao-letras .titulo-letras h3 {
-      font-size: 5em;
+    margin: 0 auto;
+    background: #323944; }
+    #letras #secao-letras #titulo-letras h3 {
+      font-size: 12vh;
       font-family: 'Mari David';
-      text-align: center;
+      margin: 6vh auto 0;
       color: #fff; }
 
 #contato {
@@ -2700,7 +2704,7 @@ html, body {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box; }
-  #contato .secao-contato {
+  #contato #secao-contato {
     background-color: #FFF;
     border-right: 3px solid #D1C498;
     border-bottom: 3px solid #D1C498;
@@ -2708,21 +2712,25 @@ html, body {
     width: 90.25vw;
     height: 100%;
     margin: 0 auto; }
-    #contato .secao-contato .titulo-contato h3 {
-      font-size: 5em;
-      font-family: 'Mari David';
-      text-align: center;
-      color: #D1C498;
+    #contato #secao-contato #titulo-contato {
       border-top: 3px solid #D1C498; }
-    #contato .secao-contato .corpo-contato .wpcf7-form p {
+      #contato #secao-contato #titulo-contato h3 {
+        font-size: 12vh;
+        font-family: 'Mari David';
+        margin: 6vh auto 0;
+        color: #D1C498; }
+    #contato #secao-contato #corpo-contato .wpcf7-form p {
       font-size: 2em;
       font-family: 'Mari David';
       color: #D1C498; }
-    #contato .secao-contato .corpo-contato .wpcf7-form input,
-    #contato .secao-contato .corpo-contato .wpcf7-form textarea {
+    #contato #secao-contato #corpo-contato .wpcf7-form input,
+    #contato #secao-contato #corpo-contato .wpcf7-form textarea {
       font-family: 'Mari David';
       background-color: #EEE6D9;
       color: #6C6145; }
+    #contato #secao-contato #corpo-contato .wpcf7-form textarea {
+      resize: none;
+      height: 35vh; }
 
 .footer {
   background-color: #6C6145;
