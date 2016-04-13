@@ -20,8 +20,10 @@ html, body {
     height:100%;
     padding:0;
     margin:0;
-    background-color: $white;
     z-index: -1;
+    font-family:'Mari David';
+    font-size:3vh;
+    background-color: $white;
 }
 
 #btn-controla-menu{
@@ -37,17 +39,19 @@ html, body {
   }
   #menu-sobe{
     top:36vh;
-    right:5vw;
-    background-image: url("/wp-content/themes/tema-de-broove/library/images/btn_sobe.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
+    right:4vw;
+    background-image:url("/wp-content/themes/tema-de-broove/library/images/btn_sobe.svg");
+    background-size:auto;
+    background-repeat:no-repeat;
+    background-position:center center;
   }
   #menu-desce{
     top:44vh;
-    right:5vw;
-    background-image: url("/wp-content/themes/tema-de-broove/library/images/btn_desce.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
+    right:4vw;
+    background-image:url("/wp-content/themes/tema-de-broove/library/images/btn_desce.svg");
+    background-size:auto;
+    background-repeat:no-repeat;
+    background-position:center center;
   }
 }
 
@@ -157,11 +161,11 @@ html, body {
     width:90.25vw;
     height:100%;
     margin:0 auto;
-    background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-1.png");
-    background-repeat: repeat-x;
+    background-image:url("/wp-content/themes/tema-de-broove/library/images/pattern-1.png");
+    background-repeat:repeat;
 
     #titulo-ep h3{
-      font-size:12vh;
+      font-size:10vh;
       font-family:'Mari David';
       margin:6vh auto 0;
       color:$white;
@@ -209,7 +213,7 @@ html, body {
     background-color: $black;
 
     #titulo-making-of h3{
-      font-size:12vh;
+      font-size:10vh;
       font-family:'Mari David';
       margin:6vh auto 0;
       color:$white;
@@ -234,7 +238,7 @@ html, body {
     background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-2.png");
 
     #titulo-fotos h3{
-      font-size:12vh;
+      font-size:10vh;
       font-family:'Mari David';
       margin:6vh auto 0;
       color: $cor-capa-ep;
@@ -259,14 +263,12 @@ html, body {
     background: $light-black;
 
     #titulo-letras h3{
-      font-size:12vh;
+      font-size:10vh;
       font-family:'Mari David';
       margin:6vh auto 0;
       color: $white;
     }
-
   }
-
 }
 
 #contato{
@@ -282,17 +284,16 @@ html, body {
 
   #secao-contato{
     background-color: $cor-contracapa-ep;
-    border-right: 3px solid $cor-fita-interna-ep;
-    border-bottom: 3px solid $cor-fita-interna-ep;
-    border-left: 3px solid $cor-fita-interna-ep;
     width:90.25vw;
     height:100%;
     margin:0 auto;
 
     #titulo-contato{
       border-top: 3px solid $cor-fita-interna-ep;
+      border-left: 3px solid $cor-fita-interna-ep;
+      border-right: 3px solid $cor-fita-interna-ep;
       h3 {
-        font-size:12vh;
+        font-size:10vh;
         font-family:'Mari David';
         margin:6vh auto 0;
         color: $cor-fita-interna-ep;
@@ -300,6 +301,9 @@ html, body {
     }
 
     #corpo-contato{
+      border-left: 3px solid $cor-fita-interna-ep;
+      border-right: 3px solid $cor-fita-interna-ep;
+      border-bottom: 3px solid $cor-fita-interna-ep;
       .wpcf7-form{
         p{
           font-size: 2em;
@@ -316,16 +320,22 @@ html, body {
           resize:none;
           height:35vh;
         }
+        input[type="submit"]{
+          font-size: 5vh;
+          padding: 5px 10px;
+          border:none;
+        }
+      }
+      span.wpcf7-not-valid-tip{
+        font-size:3.5vh;
       }
     }
-
   }
-
 }
 
-.footer {
+#rodape{
   background-color: $cor-fita-ep;
-  font-family: 'Mari David';
+  margin-top:10px;
 
   #rodape-row-1 {
     font-size: 5vh;
