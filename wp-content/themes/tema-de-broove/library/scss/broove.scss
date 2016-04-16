@@ -122,7 +122,7 @@ html, body {
         margin-bottom:auto;
         top:0;
         bottom:1vw;
-        left:42.45vw;
+        left:42.00vw;
         @media all and (min-device-aspect-ratio:1.95/1){
           #miolo-esq{
             left:42vw;
@@ -137,7 +137,7 @@ html, body {
         margin-bottom:auto;
         top:0;
         bottom:1vw;
-        right:42vw;
+        right:41.5vw;
         @media all and (min-device-aspect-ratio:1.95/1){
           #miolo-esq{
             right:41.5vw;
@@ -312,9 +312,9 @@ html, body {
         }
         input,
         textarea{
-          font-family: 'Mari David';
-          background-color: $cor-capa-ep;
-          color: $cor-fita-ep;
+          font-family:'Mari David';
+          background-color:$cor-capa-ep;
+          color:$cor-fita-ep;
         }
         textarea{
           resize:none;
@@ -324,6 +324,10 @@ html, body {
           font-size: 5vh;
           padding: 5px 10px;
           border:none;
+          &:hover{
+            color:$cor-capa-ep;
+            background-color:$cor-fita-ep;
+          }
         }
       }
       span.wpcf7-not-valid-tip{

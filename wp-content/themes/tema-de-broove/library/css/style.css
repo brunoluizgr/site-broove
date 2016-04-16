@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! Made with Bones: http://themble.com/bones :) */
 /******************************************************************
 Site Name: Tema de Broove
@@ -438,22 +439,14 @@ span.amp {
   font-style: italic; }
 
 /******************************************************************
-Stylesheet: Variables
-
-Here is where we declare all our variables like colors, fonts,
-base values, and defaults. We want to make sure this file ONLY
-contains variables that way our files don't get all messy.
-No one likes a mess.
-
+Stylesheet: Variáveis
 ******************************************************************/
 /*********************
-COLORS
-Need help w/ choosing your colors? Try this site out:
-http://0to255.com/
+CORES
 *********************/
-/*
- Minhas Cores
-*/
+/*********************
+ MINHAS CORES
+*********************/
 /******************************************************************
 Site Name:
 Author:
@@ -2304,22 +2297,14 @@ start customizing. All admin functions are located in lib/admin/
 
 ******************************************************************/
 /******************************************************************
-Stylesheet: Variables
-
-Here is where we declare all our variables like colors, fonts,
-base values, and defaults. We want to make sure this file ONLY
-contains variables that way our files don't get all messy.
-No one likes a mess.
-
+Stylesheet: Variáveis
 ******************************************************************/
 /*********************
-COLORS
-Need help w/ choosing your colors? Try this site out:
-http://0to255.com/
+CORES
 *********************/
-/*
- Minhas Cores
-*/
+/*********************
+ MINHAS CORES
+*********************/
 /******************************************************************
 Site Name:
 Author:
@@ -2619,7 +2604,7 @@ html, body {
         margin-bottom: auto;
         top: 0;
         bottom: 1vw;
-        left: 42.45vw; }
+        left: 42.00vw; }
         @media all and (min-device-aspect-ratio: 1.95 / 1) {
           #inicio .secao-inicio .logo-broove #miolo-esq #miolo-esq {
             left: 42vw; } }
@@ -2631,7 +2616,7 @@ html, body {
         margin-bottom: auto;
         top: 0;
         bottom: 1vw;
-        right: 42vw; }
+        right: 41.5vw; }
         @media all and (min-device-aspect-ratio: 1.95 / 1) {
           #inicio .secao-inicio .logo-broove #miolo-dir #miolo-esq {
             right: 41.5vw; } }
@@ -2766,6 +2751,9 @@ html, body {
         font-size: 5vh;
         padding: 5px 10px;
         border: none; }
+        #contato #secao-contato #corpo-contato .wpcf7-form input[type="submit"]:hover {
+          color: #EEE6D9;
+          background-color: #6C6145; }
       #contato #secao-contato #corpo-contato span.wpcf7-not-valid-tip {
         font-size: 3.5vh; }
 

@@ -65,7 +65,7 @@
 
           <div class="row margin-b-1">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <a href="javascript:void(0)" target="_self">
+              <a href="https://soundcloud.com/projetobroove/sets/broove-ep" target="_self">
                 <i class="fa fa-1x fa-soundcloud"></i>
                 <span class="broove-social-network"><?php _e( 'SoundCloud', 'temadebroove' ); ?></span>
               </a>
