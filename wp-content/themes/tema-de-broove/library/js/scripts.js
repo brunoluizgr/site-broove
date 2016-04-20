@@ -134,10 +134,12 @@ jQuery(document).ready(function($) {
 	/*
 	* Minhas funções
 	*/
-	//getTamanhos();
+
+	// AudioJs
 	audiojs.events.ready(function() {
 	 var as = audiojs.createAll();
  	});
+
 	// Remove 2º <br> da seção de Contato
 	var menu = ['inicio', 'ep', 'making-of', 'fotos', 'letras', 'contato'];
 	var i=0;
