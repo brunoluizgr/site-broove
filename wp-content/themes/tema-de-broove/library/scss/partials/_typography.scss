@@ -42,11 +42,11 @@ FONT FACE (IN YOUR FACE)
   /* Fonte site */
   @font-face {
       font-family: 'Mari David';
-      src: url('../fonts/maridavid.eot');
-      src: url('../fonts/maridavid.eot?#iefix') format('embedded-opentype'),
-             url('../fonts/maridavid.woff') format('woff'),
-             url('../fonts/maridavid.ttf') format('truetype'),
-             url('../fonts/maridavid.svg#MARI_DAVID') format('svg');
+      src: url('../fonts/MariDavid/maridavid.eot');
+      src: url('../fonts/MariDavid/maridavid.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/MariDavid/maridavid.woff') format('woff'),
+             url('../fonts/MariDavid/maridavid.ttf') format('truetype'),
+             url('../fonts/MariDavid/maridavid.svg#MARI_DAVID') format('svg');
       font-weight: normal;
       font-style: normal;
   }
@@ -54,11 +54,11 @@ FONT FACE (IN YOUR FACE)
   /* Fonte logotipo da Broove */
   @font-face {
       font-family: 'Consolas-Bold';
-      src: url('../fonts/consolasbold.eot');
-      src: url('../fonts/consolasbold.eot?#iefix') format('embedded-opentype'),
-             url('../fonts/consolasbold.woff') format('woff'),
-             url('../fonts/consolasbold.ttf') format('truetype'),
-             url('../fonts/consolasbold.svg#Consolas-Bold') format('svg');
+      src: url('../fonts/Consolas/consolasbold.eot');
+      src: url('../fonts/Consolas/consolasbold.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/Consolas/consolasbold.woff') format('woff'),
+             url('../fonts/Consolas/consolasbold.ttf') format('truetype'),
+             url('../fonts/Consolas/consolasbold.svg#Consolas-Bold') format('svg');
       font-weight: normal;
       font-style: normal;
   }

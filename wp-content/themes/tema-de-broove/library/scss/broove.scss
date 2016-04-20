@@ -365,3 +365,51 @@ html, body {
     font-size: 3vh;
   }
 }
+
+#apresentacao-ep{
+  #cabecalho{
+    #capa-do-ep{
+      #imagem-de-fundo{
+        /*
+        position: fixed;
+        display: block;
+        left: 0;
+        right: 0;
+        z-index: 0;
+        background-image: url('/wp-content/themes/tema-de-broove/library/images/capa-ep.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width:100vw;
+        height:800px;
+        -webkit-filter: blur(5px);
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+        filter: blur(5px);
+        */
+      }
+    }
+  }
+  #corpo{
+    color:$cor-texto-1;
+    background-color:$cor-fundo;
+    .titulo-musica{
+      font-size:2rem;
+    }
+    .autor-musica{
+      font-size:1rem;
+    }
+    .tocador-musica{
+      .audiojs{
+        background:$cor-fita-ep!important;
+        .play-pause{}
+        .scrubber{
+          .progress{}
+          .loaded{}
+        }
+      }
+    }
+  }
+
+}
