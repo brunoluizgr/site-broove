@@ -2706,6 +2706,8 @@ html, body {
       font-family: 'Mari David';
       margin: 6vh auto 0;
       color: #fff; }
+    #letras #secao-letras #corpo-letras p a {
+      color: #fff; }
 
 #contato {
   display: block;
@@ -2778,42 +2780,73 @@ html, body {
   #rodape #rodape-row-2 {
     font-size: 3vh; }
 
-#apresentacao-ep #cabecalho #capa-do-ep #imagem-de-fundo {
-  /*
+#apresentacao-ep #cabecalho #imagem-de-fundo {
   position: fixed;
   display: block;
   left: 0;
   right: 0;
-  z-index: 0;
-  background-image: url('/wp-content/themes/tema-de-broove/library/images/capa-ep.png');
+  z-index: -1;
+  width: 100vw;
+  height: 800px;
+  background-image: url("/wp-content/themes/tema-de-broove/library/images/capa-ep.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  width:100vw;
-  height:800px;
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
-  filter: blur(5px);
-  */ }
+  filter: blur(5px); }
+#apresentacao-ep #cabecalho #capa-do-ep {
+  z-index: 0; }
 #apresentacao-ep #corpo {
+  z-index: 0;
   color: #272727;
   background-color: #ededed; }
-  #apresentacao-ep #corpo .titulo-musica {
-    font-size: 2rem; }
-  #apresentacao-ep #corpo .autor-musica {
-    font-size: 1rem; }
-  #apresentacao-ep #corpo .tocador-musica .audiojs {
-    background: #6c6145 !important;
-    overflow: hidden;
-    font-family: monospace;
-    font-size: 12px;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #444), color-stop(0.5, #555), color-stop(0.51, #444), color-stop(1, #444));
-    background-image: -moz-linear-gradient(center top, #444 0%, #555 50%, #444 51%, #444 100%);
-    -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
-    -o-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
-    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3); }
+  #apresentacao-ep #corpo #corpo-col-1 #titulo-ep {
+    font-family: 'Consolas-Black', Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #272727;
+    margin-bottom: 0; }
+  #apresentacao-ep #corpo #corpo-col-1 #autor-ep {
+    font-family: 'Consolas-Black', Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    color: #272727; }
+    #apresentacao-ep #corpo #corpo-col-1 #autor-ep #autor-broove {
+      text-decoration: underline; }
+  #apresentacao-ep #corpo #corpo-col-1 #btn-download-ep {
+    font-family: 'Mari David', Arial, sans-serif;
+    font-size: 1rem;
+    color: #eee6d9;
+    background-color: #272727;
+    padding: 15px 10px;
+    border-radius: 35%;
+    border: 0; }
+  #apresentacao-ep #corpo #corpo-col-1 #bio-ep {
+    font-family: 'Consolas-Black', Arial, sans-serif;
+    font-size: .8rem;
+    font-weight: lighter;
+    color: #272727;
+    margin-bottom: 0; }
+  #apresentacao-ep #corpo #corpo-col-1 #data-ep {
+    font-family: 'Consolas-Black', Arial, sans-serif;
+    font-size: .5rem;
+    font-weight: lighter;
+    color: #272727; }
+  #apresentacao-ep #corpo #corpo-col-2 .titulo-musica {
+    font-size: 1.2rem; }
+  #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs {
+    background: #6c6145 !important; }
+    #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .play-pause {
+      width: 40px;
+      border-right: 0; }
+    #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber .progress {
+      background-color: #b5a05a !important; }
+    #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber .loaded {
+      background-image: -moz-linear-gradient(center top, #d1c498 0%, #d7cba5 50%, #d1c498 51%, #d1c498 100%) !important; }
+    #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
+      border-left: 0; }
 
 /*# sourceMappingURL=style.css.map */
