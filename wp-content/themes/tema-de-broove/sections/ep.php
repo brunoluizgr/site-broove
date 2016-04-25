@@ -38,7 +38,7 @@
 
           <div class="row margin-b-1">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <a href="javascript:void(0)" target="_self">
+              <a href="https://play.spotify.com/album/1ANIapDrWUqdkq0w8f72Mh" target="_self">
                 <i class="fa fa-1x fa-spotify"></i>
                 <span class="broove-social-network"><?php _e( 'Spotify', 'temadebroove' ); ?></span>
               </a>
@@ -47,7 +47,7 @@
 
           <div class="row margin-b-1">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <a href="javascript:void(0)" target="_self">
+              <a href="https://itunes.apple.com/us/album/broove-ep/id1101543757" target="_self">
                 <i class="fa fa-1x fa-apple"></i>
                 <span class="broove-social-network"><?php _e( 'iTunes', 'temadebroove' ); ?></span>
               </a>
@@ -56,7 +56,7 @@
 
           <div class="row margin-b-1">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <a href="javascript:void(0)" target="_self">
+              <a href="https://www.youtube.com/watch?v=S5yqB3pgIIs&list=PLzPfgmb-E3NKkH1SpO2a5G7iDso1QAPyH" target="_self">
                 <i class="fa fa-1x fa-youtube"></i>
                 <span class="broove-social-network"><?php _e( 'YouTube', 'temadebroove' ); ?></span>
               </a>

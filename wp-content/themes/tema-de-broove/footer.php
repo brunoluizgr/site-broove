@@ -1,6 +1,6 @@
-		<footer id="rodape" class="footer container-fluid padding-l-no padding-r-no" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+		<footer id="rodape" class="footer container-fluid margin-r-no margin-l-no">
 
-				<div id="rodape-row-1" class="row padding-l-no padding-r-no">
+				<div id="rodape-row-1" class="row margin-r-no margin-l-no">
 
 					<section class="maito-broove text-center col-xs-12 col-sm-12 col-md-3 col-lg-3 margin-b-0-5">
 						<span class="mail-broove">
@@ -34,7 +34,7 @@
 						</span>
 						<span class="brunoluizgr-logo col-xs-12 col-sm-12 col-md-2 col-lg-2">
 							<a href="http://brunoluizgr.com" target="_blank">
-								<img src="<?php echo get_template_directory_uri() . '/library/images/brunoluizgr-logo-bp.svg'?>" alt="<?php _e( './>runoluizgr', 'temadebroove' ); ?>" width="100%" height="100%"/>
+								<div id="logo"></div>
 							</a>
 						</span>
 					</section>
@@ -58,4 +58,4 @@
 		<?php // all js scripts are loaded in library/bones.php ?>
 		<?php wp_footer(); ?>
 	</body>
-</html> <!-- end of site. what a ride! -->
+</html>

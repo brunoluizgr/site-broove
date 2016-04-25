@@ -2539,6 +2539,20 @@ html, body {
   background-repeat: no-repeat;
   background-position: center center; }
 
+#menu-principal {
+  background-color: #443d2b; }
+  #menu-principal #menu li a {
+    color: #f4efe7;
+    background-color: #443d2b;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in;
+    -webkit-transition: background-color 0.3s ease-in; }
+    #menu-principal #menu li a:hover {
+      background-color: #6c6145;
+      transition: background-color 0.2s ease-out;
+      -webkit-transition: background-color 0.2s ease-out; }
+
 #inicio {
   display: block;
   width: 100vw;
@@ -2760,8 +2774,7 @@ html, body {
         font-size: 3.5vh; }
 
 #rodape {
-  background-color: #6c6145;
-  margin-top: 10px; }
+  background-color: #6c6145; }
   #rodape #rodape-row-1 {
     font-size: 5vh;
     padding: 1em 0 1em 0; }
@@ -2775,19 +2788,27 @@ html, body {
         text-decoration: none;
         transition: color 0.2s ease-in;
         -webkit-transition: color 0.2s ease-in; }
-    #rodape #rodape-row-1 img {
-      max-height: 10vh; }
+    #rodape #rodape-row-1 .brunoluizgr-logo #logo {
+      width: 100%;
+      height: 7vh;
+      margin: 0;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-image: url("/wp-content/themes/tema-de-broove/library/images/brunoluizgr-logo-bp.svg");
+      transition: background-image 2s ease-in;
+      -webkit-transition: background-image 2s ease-in; }
+      #rodape #rodape-row-1 .brunoluizgr-logo #logo:hover {
+        background-image: url("/wp-content/themes/tema-de-broove/library/images/brunoluizgr-logo-pb.svg");
+        transition: background-image 2s ease-out;
+        -webkit-transition: background-image 2s ease-out; }
   #rodape #rodape-row-2 {
     font-size: 3vh; }
 
 #apresentacao-ep #cabecalho #imagem-de-fundo {
   position: fixed;
   display: block;
-  left: 0;
-  right: 0;
   z-index: -1;
-  width: 100vw;
-  height: 800px;
   background-image: url("/wp-content/themes/tema-de-broove/library/images/capa-ep.png");
   background-size: cover;
   background-position: center center;
@@ -2796,9 +2817,11 @@ html, body {
   -moz-filter: blur(5px);
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
-  filter: blur(5px); }
-#apresentacao-ep #cabecalho #capa-do-ep {
-  z-index: 0; }
+  filter: blur(5px);
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100%; }
 #apresentacao-ep #corpo {
   z-index: 0;
   color: #272727;
@@ -2819,11 +2842,19 @@ html, body {
   #apresentacao-ep #corpo #corpo-col-1 #btn-download-ep {
     font-family: 'Mari David', Arial, sans-serif;
     font-size: 1rem;
+    text-decoration: none;
     color: #eee6d9;
     background-color: #272727;
     padding: 15px 10px;
-    border-radius: 35%;
-    border: 0; }
+    border-radius: 50%;
+    border: 0;
+    transition: background-color 0.2s ease-in;
+    -webkit-transition: background-color 0.2s ease-in; }
+    #apresentacao-ep #corpo #corpo-col-1 #btn-download-ep:hover {
+      color: #eee6d9;
+      background-color: #9c8846;
+      transition: background-color 0.3s ease-out;
+      -webkit-transition: background-color 0.3s ease-out; }
   #apresentacao-ep #corpo #corpo-col-1 #bio-ep {
     font-family: 'Consolas-Black', Arial, sans-serif;
     font-size: .8rem;
@@ -2837,13 +2868,24 @@ html, body {
     color: #272727; }
   #apresentacao-ep #corpo #corpo-col-2 .titulo-musica {
     font-size: 1.2rem; }
+  #apresentacao-ep #corpo #corpo-col-2 .icon-letras {
+    color: #272727;
+    transition: color 0.2s ease-in;
+    -webkit-transition: color 0.2s ease-in; }
+    #apresentacao-ep #corpo #corpo-col-2 .icon-letras:hover {
+      color: #9c8846;
+      transition: color 0.3s ease-out;
+      -webkit-transition: color 0.3s ease-out; }
+  #apresentacao-ep #corpo #corpo-col-2 .letra-da-musica {
+    font-family: 'Consolas-Black', Arial, sans-serif;
+    font-size: 1rem; }
   #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs {
     background: #6c6145 !important; }
     #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .play-pause {
       width: 40px;
       border-right: 0; }
     #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber .progress {
-      background-color: #b5a05a !important; }
+      background: #b5a05a !important; }
     #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber .loaded {
       background-image: -moz-linear-gradient(center top, #d1c498 0%, #d7cba5 50%, #d1c498 51%, #d1c498 100%) !important; }
     #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {

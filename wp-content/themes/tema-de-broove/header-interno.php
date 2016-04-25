@@ -10,7 +10,6 @@
 	<?php // Codificação ?>
 		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 		<meta content="utf-8" http-equiv="encoding">
-		<meta charset="utf-8">
 
 	<?php // Force Internet Explorer to use the latest rendering engine available ?>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -69,24 +68,24 @@
 
 </head>
 
-<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
-  <div id="inner-header" class="wrap cf">
-    <nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-
-      <?php wp_nav_menu(array(
-                 'container' => false,                           // remove nav container
-                 'container_class' => 'menu cf',                 // class of container (should you choose to use it)
-                 'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
-                 'menu_class' => 'nav top-nav cf',               // adding custom nav class
-                 'theme_location' => 'main-nav',                 // where it's located in the theme
-                 'before' => '',                                 // before the menu
-                       'after' => '',                                  // after the menu
-                       'link_before' => '',                            // before each link
-                       'link_after' => '',                             // after each link
-                       'depth' => 0,                                   // limit the depth of the nav
-                 'fallback_cb' => ''                             // fallback function (if there is one)
-      )); ?>
-
+<header>
+    <nav id="menu-principal" class="navbar navbar-fixed-top">
+			<div class="container-fluid">
+				<a class="navbar-brand col-xs-12 col-sm-12 col-md-2 col-lg-2 text-center" href="/">
+					<img src="<?php echo get_template_directory_uri() .'/library/images/broove-logo-ep-navbar.svg'?>" alt="<?php _e('Broove','temadebroove') ?>" title="<?php _e('Broove','temadebroove') ?>" height="30vh" width="100%"></img>
+				</a>
+	      <?php wp_nav_menu(array(
+	                 'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
+	                 'menu_class' => 'nav navbar-nav pull-right',               // adding custom nav class
+									 'menu_id' => 'menu',
+	                 'theme_location' => 'main-nav',                 // where it's located in the theme
+	                 'before' => '',                                 // before the menu
+	                       'after' => '',                                  // after the menu
+	                       'link_before' => '',                            // before each link
+	                       'link_after' => '',                             // after each link
+	                       'depth' => 0,                                   // limit the depth of the nav
+	                 'fallback_cb' => ''                             // fallback function (if there is one)
+	      )); ?>
+			</div>
     </nav>
-  </div>
 </header>

@@ -10,7 +10,6 @@
 	<?php // Codificação ?>
 		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 		<meta content="utf-8" http-equiv="encoding">
-		<meta charset="utf-8">
 
 	<?php // Force Internet Explorer to use the latest rendering engine available ?>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -69,4 +68,4 @@
 
 </head>
 
-<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
+<body <?php body_class(); ?>>

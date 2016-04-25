@@ -55,6 +55,25 @@ html, body {
   }
 }
 
+#menu-principal{
+  background-color:$cor-fita-ep-6;
+  #menu{
+    li a{
+      color:$cor-capa-ep-1;
+      background-color:$cor-fita-ep-6;
+      font-size:1.5rem;
+      text-decoration: none;
+      transition: background-color 0.3s ease-in;
+      -webkit-transition: background-color 0.3s ease-in;
+      &:hover{
+        background-color:$cor-fita-ep;
+        transition: background-color 0.2s ease-out;
+        -webkit-transition: background-color 0.2s ease-out;
+      }
+    }
+  }
+}
+
 #inicio{
   display:block;
   width:100vw;
@@ -344,8 +363,6 @@ html, body {
 
 #rodape{
   background-color: $cor-fita-ep;
-  margin-top:10px;
-
   #rodape-row-1 {
     font-size: 5vh;
     padding: 1em 0 1em 0;
@@ -361,8 +378,23 @@ html, body {
         -webkit-transition: color 0.2s ease-in;
       }
     }
-    img{
-      max-height:10vh;
+    .brunoluizgr-logo{
+      #logo{
+        width:100%;
+        height:7vh;
+        margin:0;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-image: url("/wp-content/themes/tema-de-broove/library/images/brunoluizgr-logo-bp.svg");
+        transition: background-image 2s ease-in;
+        -webkit-transition: background-image 2s ease-in;
+        &:hover{
+          background-image: url("/wp-content/themes/tema-de-broove/library/images/brunoluizgr-logo-pb.svg");
+          transition: background-image 2s ease-out;
+          -webkit-transition: background-image 2s ease-out;
+        }
+      }
     }
   }
 
@@ -376,11 +408,7 @@ html, body {
     #imagem-de-fundo{
       position:fixed;
       display:block;
-      left:0;
-      right:0;
       z-index:-1;
-      width:100vw;
-      height:800px;
       background-image: url('/wp-content/themes/tema-de-broove/library/images/capa-ep.png');
       background-size: cover;
       background-position: center center;
@@ -390,9 +418,12 @@ html, body {
       -o-filter: blur(5px);
       -ms-filter: blur(5px);
       filter: blur(5px);
+      left:0;
+      right:0;
+      width:100vw;
+      height:100%;
     }
-    #capa-do-ep{
-      z-index:0;
+    #imagem-da-frente{
     }
   }
   #corpo{
@@ -419,11 +450,20 @@ html, body {
       #btn-download-ep{
         font-family:'Mari David', Arial, sans-serif;
         font-size:1rem;
+        text-decoration:none;
         color:$cor-capa-ep;
         background-color:$cor-texto-1;
         padding:15px 10px;
-        border-radius:35%;
+        border-radius:50%;
         border:0;
+        transition: background-color 0.2s ease-in;
+        -webkit-transition: background-color 0.2s ease-in;
+        &:hover{
+          color:$cor-capa-ep;
+          background-color:$cor-fita-interna-ep-6;
+          transition: background-color 0.3s ease-out;
+          -webkit-transition: background-color 0.3s ease-out;
+        }
       }
       #bio-ep{
         font-family:'Consolas-Black', Arial, sans-serif;
@@ -443,6 +483,20 @@ html, body {
       .titulo-musica{
         font-size:1.2rem;
       }
+      .icon-letras{
+        color:$cor-texto-1;
+        transition: color 0.2s ease-in;
+        -webkit-transition: color 0.2s ease-in;
+        &:hover{
+          color:$cor-fita-interna-ep-6;
+          transition: color 0.3s ease-out;
+          -webkit-transition: color 0.3s ease-out;
+        }
+      }
+      .letra-da-musica{
+        font-family:'Consolas-Black', Arial, sans-serif;
+        font-size: 1rem;
+      }
       .tocador-musica{
         .audiojs{
           background:$cor-fita-ep!important;
@@ -452,11 +506,10 @@ html, body {
           }
           .scrubber{
             .progress{
-              background-color:$cor-fita-interna-ep-5!important;
+              background:$cor-fita-interna-ep-5!important;
             }
             .loaded{
               background-image:-moz-linear-gradient(center top, $cor-fita-interna-ep 0%, $cor-fita-interna-ep-3 50%, $cor-fita-interna-ep 51%, $cor-fita-interna-ep 100%)!important;
-
             }
           }
           .time{
@@ -465,7 +518,5 @@ html, body {
         }
       }
     }
-
   }
-
 }
