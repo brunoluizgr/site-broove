@@ -18,31 +18,40 @@
 
 				<div id="corpo" class="row padding-t-2 padding-b-2">
 
-					<div id="corpo-col-1" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-right">
-						<div class="margin-b-2">
+					<div id="corpo-col-1" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+						<div class="col-xs-6">
 							<p id="titulo-ep"><?php _e('Broove EP','temadebroove') ?></p>
 							<p id="autor-ep"><?php _e('por', 'temadebroove') ?> <span id="autor-broove"><?php _e('Broove', 'temadebroove') ?></span></p>
 						</div>
-							<a id="btn-download-ep" href="/baixe" download="Broove-Broove[EP].zip">
+						<div class="col-xs-6">
+							<a id="btn-download-ep" href="/baixe/Broove-Broove[EP].zip" download>
 								<?php _e('Baixar Album', 'temadebroove') ?>
 							</a>
-						<div class="margin-t-2">
+						</div>
+						<div class="col-xs-12">
 							<p id="bio-ep"><?php _e('Banda brasileira de verdades.', 'temadebroove') ?></p>
 							<p id="data-ep"><?php _e('Lancamento 2016', 'temadebroove') ?></p>
 						</div>
 					</div>
 
-					<div id="corpo-col-2" class="col-md-5 col-lg-5">
+					<div id="corpo-col-2" class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
 
 						<div class="row margin-b-2">
 							<span class="col-md-8 col-lg-8 text-left titulo-musica">
 								<?php _e('Tema de Broove','temadebroove') ?>
 							</span>
-							<span class="col-md-2 col-lg-2 text-right">
-								<a class="icon-letras" href="#TemaDeBroove" data-toggle="modal" data-target="#modalTemaDeBroove">
-									<i class="fa fa-music"></i>
-								</a>
-							</span>
+							<div class="col-md-4 col-lg-4">
+								<span class="col-md-2 col-lg-2 text-right" title="<?php _e('Letra', 'temadebroove') ?>">
+									<a class="icon-letras" href="#TemaDeBroove" data-toggle="modal" data-target="#modalTemaDeBroove">
+										<i class="fa fa-music"></i>
+									</a>
+								</span>
+								<span class="col-md-2 col-lg-2 text-right" title="<?php _e('Download', 'temadebroove') ?>">
+										<a class="icon-letras" href="<?php echo('/baixe/Broove - Tema de Broove.mp3'); ?>" download>
+											<i class="fa fa-download"></i>
+										</a>
+								</span>
+							</div>
 							<div id="modalTemaDeBroove" aria-labelledby="modalTemaDeBroove" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
 								<div class="modal-dialog">
 										<div class="modal-content">
@@ -113,7 +122,7 @@
 								</div>
 							</div>
 							<span class="col-md-12 col-lg-12 tocador-musica">
-								<audio class="col-md-12 col-lg-12" src="<?php echo get_template_directory_uri() . '/library/songs/1-Tema-de-Broove.mp3'; ?>" preload="auto">
+								<audio class="col-md-12 col-lg-12" src="<?php echo(get_template_directory_uri () . '/library/songs/broove_tema-de-broove.mp3'); ?>" preload="auto">
 									<p><?php _e('Seu navegador não suporta o elemento de áudio.','temadebroove') ?></p>
 								</audio>
 							</span>
@@ -123,11 +132,18 @@
 							<span class="col-md-8 col-lg-8 text-left titulo-musica">
 								<?php _e('Olhar','temadebroove') ?>
 							</span>
-							<span class="col-md-2 col-lg-2 text-right">
-								<a class="icon-letras" href="#Olhar" data-toggle="modal" data-target="#modalOlhar">
-									<i class="fa fa-music"></i>
-								</a>
-							</span>
+							<div class="col-md-4 col-lg-4">
+								<span class="col-md-2 col-lg-2 text-right" title="<?php _e('Letra', 'temadebroove') ?>">
+									<a class="icon-letras" href="#Olhar" data-toggle="modal" data-target="#modalOlhar">
+										<i class="fa fa-music"></i>
+									</a>
+								</span>
+								<span class="col-md-2 col-lg-2 text-right" title="<?php _e('Download', 'temadebroove') ?>">
+										<a class="icon-letras" href="<?php echo('/baixe/Broove - Olhar.mp3'); ?>" download>
+											<i class="fa fa-download"></i>
+										</a>
+								</span>
+							</div>
 							<div id="modalOlhar" aria-labelledby="modalOlhar" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
 								<div class="modal-dialog">
 										<div class="modal-content">
@@ -168,7 +184,7 @@
 								</div>
 							</div>
 							<span class="col-md-12 col-lg-12 tocador-musica">
-								<audio class="col-md-12 col-lg-12" src="<?php echo get_template_directory_uri() . '/library/songs/2-Olhar.mp3'; ?>" preload="auto">
+								<audio class="col-md-12 col-lg-12" src="<?php echo(get_template_directory_uri () . '/library/songs/broove_olhar.mp3'); ?>" preload="auto">
 									<p><?php _e('Seu navegador não suporta o elemento de áudio.','temadebroove') ?></p>
 								</audio>
 						</div>
@@ -177,11 +193,18 @@
 							<span class="col-md-8 col-lg-8 text-left titulo-musica">
 								<?php _e('Sesdotempo','temadebroove') ?>
 							</span>
-							<span class="col-md-2 col-lg-2 text-right">
-								<a class="icon-letras" href="#Sesdotempo" data-toggle="modal" data-target="#modalSesdotempo">
-									<i class="fa fa-music"></i>
-								</a>
-							</span>
+							<div class="col-md-4 col-lg-4">
+								<span class="col-md-2 col-lg-2 text-right" title="<?php _e('Letra', 'temadebroove') ?>">
+									<a class="icon-letras" href="#Sesdotempo" data-toggle="modal" data-target="#modalSesdotempo">
+										<i class="fa fa-music"></i>
+									</a>
+								</span>
+								<span class="col-md-2 col-lg-2 text-right" title="<?php _e('Download', 'temadebroove') ?>">
+										<a class="icon-letras" href="<?php echo('/baixe/Broove - Sesdotempo.mp3'); ?>" download>
+											<i class="fa fa-download"></i>
+										</a>
+								</span>
+							</div>
 							<div id="modalSesdotempo" aria-labelledby="modalSesdotempo" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
 								<div class="modal-dialog">
 										<div class="modal-content">
@@ -223,7 +246,7 @@
 								</div>
 							</div>
 							<span class="col-md-12 col-lg-12 tocador-musica">
-								<audio class="col-md-12 col-lg-12" src="<?php echo get_template_directory_uri() . '/library/songs/3-Sesdotempo.mp3'; ?>" preload="auto">
+								<audio class="col-md-12 col-lg-12" src="<?php echo(get_template_directory_uri () . '/library/songs/broove_sesdotempo.mp3'); ?>" preload="auto">
 									<p><?php _e('Seu navegador não suporta o elemento de áudio.','temadebroove') ?></p>
 								</audio>
 							</span>
@@ -233,11 +256,18 @@
 							<span class="col-md-8 col-lg-8 text-left titulo-musica">
 								<?php _e('Icaro','temadebroove') ?>
 							</span>
-							<span class="col-md-2 col-lg-2 text-right">
-								<a class="icon-letras" href="#Icaro" data-toggle="modal" data-target="#modalIcaro">
-									<i class="fa fa-music"></i>
-								</a>
-							</span>
+							<div class="col-md-4 col-lg-4">
+								<span class="col-md-2 col-lg-2 text-right" title="<?php _e('Letra', 'temadebroove') ?>">
+									<a class="icon-letras" href="#Icaro" data-toggle="modal" data-target="#modalIcaro">
+										<i class="fa fa-music"></i>
+									</a>
+								</span>
+								<span class="col-md-2 col-lg-2 text-right" title="<?php _e('Download', 'temadebroove') ?>">
+										<a class="icon-letras" href="<?php echo('/baixe/Broove - Icaro.mp3'); ?>" download>
+											<i class="fa fa-download"></i>
+										</a>
+								</span>
+							</div>
 							<div id="modalIcaro" aria-labelledby="modalIcaro" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
 								<div class="modal-dialog">
 										<div class="modal-content">
@@ -314,7 +344,7 @@
 								</div>
 							</div>
 							<span class="col-md-12 col-lg-12 tocador-musica">
-								<audio class="col-md-12 col-lg-12" src="<?php echo get_template_directory_uri() . '/library/songs/4-Icaro.mp3'; ?>" preload="auto">
+								<audio class="col-md-12 col-lg-12" src="<?php echo(get_template_directory_uri () . '/library/songs/broove_icaro.mp3'); ?>" preload="auto">
 									<p><?php _e('Seu navegador não suporta o elemento de áudio.','temadebroove') ?></p>
 								</audio>
 							</span>
@@ -324,11 +354,18 @@
 							<span class="col-md-8 col-lg-8 text-left titulo-musica">
 								<?php _e('Plin','temadebroove') ?>
 							</span>
-							<span class="col-md-2 col-lg-2 text-right">
-								<a class="icon-letras" href="#Plin" data-toggle="modal" data-target="#modalPlin">
-									<i class="fa fa-music"></i>
-								</a>
-							</span>
+							<div class="col-md-4 col-lg-4">
+								<span class="col-md-2 col-lg-2 text-right" title="<?php _e('Letra', 'temadebroove') ?>">
+									<a class="icon-letras" href="#Plin" data-toggle="modal" data-target="#modalPlin">
+										<i class="fa fa-music"></i>
+									</a>
+								</span>
+								<span class="col-md-2 col-lg-2 text-right" title="<?php _e('Download', 'temadebroove') ?>">
+										<a class="icon-letras" href="<?php echo('/baixe/Broove - Plin.mp3'); ?>" download>
+											<i class="fa fa-download"></i>
+										</a>
+								</span>
+							</div>
 							<div id="modalPlin" aria-labelledby="modalPlin" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
 								<div class="modal-dialog">
 										<div class="modal-content">
@@ -373,7 +410,7 @@
 								</div>
 							</div>
 							<span class="col-md-12 col-lg-12 tocador-musica">
-								<audio src="<?php echo get_template_directory_uri() . '/library/songs/5-Plin.mp3'; ?>" preload="auto">
+								<audio src="<?php echo(get_template_directory_uri () . '/library/songs/broove_plin.mp3'); ?>" preload="auto">
 									<p><?php _e('Seu navegador não suporta o elemento de áudio.','temadebroove') ?></p>
 								</audio>
 							</span>
@@ -383,11 +420,18 @@
 							<span class="col-md-8 col-lg-8 text-left titulo-musica">
 								<?php _e('De Hoje Nao Passa','temadebroove') ?>
 							</span>
-							<span class="col-md-2 col-lg-2 text-right">
-								<a class="icon-letras" href="#DeHojeNaoPassa" data-toggle="modal" data-target="#modalDeHojeNaoPassa">
-									<i class="fa fa-music"></i>
-								</a>
-							</span>
+							<div class="col-md-4 col-lg-4">
+								<span class="col-md-2 col-lg-2 text-right" title="<?php _e('Letra', 'temadebroove') ?>">
+									<a class="icon-letras" href="#DeHojeNaoPassa" data-toggle="modal" data-target="#modalDeHojeNaoPassa">
+										<i class="fa fa-music"></i>
+									</a>
+								</span>
+								<span class="col-md-2 col-lg-2 text-right" title="<?php _e('Download', 'temadebroove') ?>">
+										<a class="icon-letras" href="<?php echo('/baixe/Broove - De Hoje Nao Passa.mp3'); ?>" download>
+											<i class="fa fa-download"></i>
+										</a>
+								</span>
+							</div>
 							<div id="modalDeHojeNaoPassa" aria-labelledby="modalDeHojeNaoPassa" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
 								<div class="modal-dialog">
 										<div class="modal-content">
@@ -427,7 +471,7 @@
 								</div>
 							</div>
 							<span class="col-md-12 col-lg-12 tocador-musica">
-								<audio class="col-md-12 col-lg-12" src="<?php echo get_template_directory_uri() . '/library/songs/6-De-hoje-nao-passa.mp3'; ?>" preload="auto">
+								<audio class="col-md-12 col-lg-12" src="<?php echo(get_template_directory_uri () . '/library/songs/broove_de-hoje-nao-passa.mp3'); ?>" preload="auto">
 									<p><?php _e('Seu navegador não suporta o elemento de áudio.','temadebroove') ?></p>
 								</audio>
 							</span>

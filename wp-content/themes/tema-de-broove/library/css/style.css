@@ -16,10 +16,7 @@ http://thesassway.com/advanced/modular-css-naming-conventions
 
 ******************************************************************/
 /*********************
-IMPORTING PARTIALS
-These files are needed at the beginning so that we establish all
-our mixins, functions, and variables that we'll be using across
-the whole project.
+ IMPORTANDO PARCIAIS
 *********************/
 /* normalize.css 2012-07-07T09:50 UTC - http://github.com/necolas/normalize.css */
 /* ==========================================================================
@@ -422,12 +419,12 @@ table {
   white-space: nowrap;
   overflow: hidden; }
 
-.clearfix, .cf, .comment-respond {
+.clearfix, .cf {
   zoom: 1; }
-  .clearfix:before, .clearfix:after, .cf:before, .comment-respond:before, .cf:after, .comment-respond:after {
+  .clearfix:before, .clearfix:after, .cf:before, .cf:after {
     content: "";
     display: table; }
-  .clearfix:after, .cf:after, .comment-respond:after {
+  .clearfix:after, .cf:after {
     clear: both; }
 
 /*
@@ -442,7 +439,7 @@ span.amp {
 Stylesheet: Variáveis
 ******************************************************************/
 /*********************
-CORES
+CORES PADRÕES
 *********************/
 /*********************
  MINHAS CORES
@@ -526,6 +523,177 @@ p {
   -ms-font-feature-settings: "liga", "dlig";
   -o-font-feature-settings: "liga", "dlig";
   font-feature-settings: "liga", "dlig"; }
+
+/******************************************************************
+Stylesheet: Margin Styles
+
+We put all the form and button styles in here to setup a consistent
+look. If we need to customize them, we can do this in the main
+stylesheets and just override them. Easy Peasy.
+
+You're gonna see a few data-uri thingies down there. If you're not
+sure what they are, check this link out:
+http://css-tricks.com/data-uris/
+If you want to create your own, use this helpful link:
+http://websemantics.co.uk/online_tools/image_to_data_uri_convertor/
+******************************************************************/
+/* Biblioteca de PADDING */
+.padding-no {
+  padding: 0rem; }
+
+.padding-t-no {
+  padding-top: 0rem; }
+
+.padding-r-no {
+  padding-right: 0rem; }
+
+.padding-b-no {
+  padding-bottom: 0rem; }
+
+.padding-l-no {
+  padding-left: 0rem; }
+
+.padding-t-0-5 {
+  padding-top: 0.5rem; }
+
+.padding-t-1 {
+  padding-top: 1rem; }
+
+.padding-t-2 {
+  padding-top: 2rem; }
+
+.padding-t-4 {
+  padding-top: 4rem; }
+
+.padding-t-5 {
+  padding-top: 5rem; }
+
+.padding-t-10 {
+  padding-top: 10rem; }
+
+.padding-r-0-5 {
+  padding-right: 0.5rem; }
+
+.padding-r-1 {
+  padding-right: 1rem; }
+
+.padding-r-2 {
+  padding-right: 2rem; }
+
+.padding-r-4 {
+  padding-right: 4rem; }
+
+.padding-r-5 {
+  padding-right: 5rem; }
+
+.padding-b-0-5 {
+  padding-bottom: 0.5rem; }
+
+.padding-b-1 {
+  padding-bottom: 1rem; }
+
+.padding-b-2 {
+  padding-bottom: 2rem; }
+
+.padding-b-4 {
+  padding-bottom: 4rem; }
+
+.padding-b-5 {
+  padding-bottom: 5rem; }
+
+.padding-b-10 {
+  padding-bottom: 10rem; }
+
+.padding-l-0-5 {
+  padding-left: 0.5rem; }
+
+.padding-l-1 {
+  padding-left: 1rem; }
+
+.padding-l-2 {
+  padding-left: 2rem; }
+
+.padding-l-4 {
+  padding-left: 4rem; }
+
+.padding-l-5 {
+  padding-left: 5rem; }
+
+/* Biblioteca de MARGIN */
+.margin-no {
+  margin: 0rem; }
+
+.margin-t-no {
+  margin-top: 0rem; }
+
+.margin-r-no {
+  margin-right: 0rem; }
+
+.margin-b-no {
+  margin-bottom: 0rem; }
+
+.margin-l-no {
+  margin-left: 0rem; }
+
+.margin-t-0-5 {
+  margin-top: 0.5rem; }
+
+.margin-t-1 {
+  margin-top: 1rem; }
+
+.margin-t-2 {
+  margin-top: 2rem; }
+
+.margin-t-3 {
+  margin-top: 3rem; }
+
+.margin-t-4 {
+  margin-top: 4rem; }
+
+.margin-t-5 {
+  margin-top: 5rem; }
+
+.margin-t-10 {
+  margin-top: 10rem; }
+
+.margin-r-0-5 {
+  margin-right: 0.5rem; }
+
+.margin-r-1 {
+  margin-right: 1rem; }
+
+.margin-r-2 {
+  margin-right: 2rem; }
+
+.margin-r-3 {
+  margin-right: 3rem; }
+
+.margin-b-0-5 {
+  margin-bottom: 0.5rem; }
+
+.margin-b-1 {
+  margin-bottom: 1rem; }
+
+.margin-b-2 {
+  margin-bottom: 2rem; }
+
+.margin-b-3 {
+  margin-bottom: 3rem; }
+
+.margin-b-10 {
+  margin-bottom: 10rem; }
+
+.margin-l-0-5 {
+  margin-left: 0.5rem; }
+
+.margin-l-1 {
+  margin-left: 1rem; }
+
+.margin-l-2 {
+  margin-left: 2rem; }
+
+.margin-l-3 {
+  margin-left: 3rem; }
 
 /******************************************************************
 Site Name:
@@ -614,242 +782,8 @@ BOX SIZING
 /* @include box-sizing(border-box); */
 /* NOTE: value of "padding-box" is only supported in Gecko. So
 probably best not to use it. I mean, were you going to anyway? */
-/******************************************************************
-Site Name:
-Author:
-
-Stylesheet: Grid Stylesheet
-
-I've seperated the grid so you can swap it out easily. It's
-called at the top the style.scss stylesheet.
-
-There are a ton of grid solutions out there. You should definitely
-experiment with your own. Here are some recommendations:
-
-http://gridsetapp.com - Love this site. Responsive Grids made easy.
-http://susy.oddbird.net/ - Grids using Compass. Very elegant.
-http://gridpak.com/ - Create your own responsive grid.
-https://github.com/dope/lemonade - Neat lightweight grid.
-
-
-The grid below is a custom built thingy I modeled a bit after
-Gridset. It's VERY basic and probably shouldn't be used on
-your client projects. The idea is you learn how to roll your
-own grids. It's better in the long run and allows you full control
-over your project's layout.
-
-******************************************************************/
-.last-col {
-  float: right;
-  padding-right: 0 !important; }
-
-/*
-Mobile Grid Styles
-These are the widths for the mobile grid.
-There are four types, but you can add or customize
-them however you see fit.
-*/
-@media (max-width: 767px) {
-  .m-all {
-    float: left;
-    padding-right: 0.75em;
-    width: 100%;
-    padding-right: 0; }
-
-  .m-1of2 {
-    float: left;
-    padding-right: 0.75em;
-    width: 50%; }
-
-  .m-1of3 {
-    float: left;
-    padding-right: 0.75em;
-    width: 33.33%; }
-
-  .m-2of3 {
-    float: left;
-    padding-right: 0.75em;
-    width: 66.66%; }
-
-  .m-1of4 {
-    float: left;
-    padding-right: 0.75em;
-    width: 25%; }
-
-  .m-3of4 {
-    float: left;
-    padding-right: 0.75em;
-    width: 75%; } }
-/* Portrait tablet to landscape */
-@media (min-width: 768px) and (max-width: 1029px) {
-  .t-all {
-    float: left;
-    padding-right: 0.75em;
-    width: 100%;
-    padding-right: 0; }
-
-  .t-1of2 {
-    float: left;
-    padding-right: 0.75em;
-    width: 50%; }
-
-  .t-1of3 {
-    float: left;
-    padding-right: 0.75em;
-    width: 33.33%; }
-
-  .t-2of3 {
-    float: left;
-    padding-right: 0.75em;
-    width: 66.66%; }
-
-  .t-1of4 {
-    float: left;
-    padding-right: 0.75em;
-    width: 25%; }
-
-  .t-3of4 {
-    float: left;
-    padding-right: 0.75em;
-    width: 75%; }
-
-  .t-1of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 20%; }
-
-  .t-2of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 40%; }
-
-  .t-3of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 60%; }
-
-  .t-4of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 80%; } }
-/* Landscape to small desktop */
-@media (min-width: 1030px) {
-  .d-all {
-    float: left;
-    padding-right: 0.75em;
-    width: 100%;
-    padding-right: 0; }
-
-  .d-1of2 {
-    float: left;
-    padding-right: 0.75em;
-    width: 50%; }
-
-  .d-1of3 {
-    float: left;
-    padding-right: 0.75em;
-    width: 33.33%; }
-
-  .d-2of3 {
-    float: left;
-    padding-right: 0.75em;
-    width: 66.66%; }
-
-  .d-1of4 {
-    float: left;
-    padding-right: 0.75em;
-    width: 25%; }
-
-  .d-3of4 {
-    float: left;
-    padding-right: 0.75em;
-    width: 75%; }
-
-  .d-1of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 20%; }
-
-  .d-2of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 40%; }
-
-  .d-3of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 60%; }
-
-  .d-4of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 80%; }
-
-  .d-1of6 {
-    float: left;
-    padding-right: 0.75em;
-    width: 16.6666666667%; }
-
-  .d-1of7 {
-    float: left;
-    padding-right: 0.75em;
-    width: 14.2857142857%; }
-
-  .d-2of7 {
-    float: left;
-    padding-right: 0.75em;
-    width: 28.5714286%; }
-
-  .d-3of7 {
-    float: left;
-    padding-right: 0.75em;
-    width: 42.8571429%; }
-
-  .d-4of7 {
-    float: left;
-    padding-right: 0.75em;
-    width: 57.1428572%; }
-
-  .d-5of7 {
-    float: left;
-    padding-right: 0.75em;
-    width: 71.4285715%; }
-
-  .d-6of7 {
-    float: left;
-    padding-right: 0.75em;
-    width: 85.7142857%; }
-
-  .d-1of8 {
-    float: left;
-    padding-right: 0.75em;
-    width: 12.5%; }
-
-  .d-1of9 {
-    float: left;
-    padding-right: 0.75em;
-    width: 11.1111111111%; }
-
-  .d-1of10 {
-    float: left;
-    padding-right: 0.75em;
-    width: 10%; }
-
-  .d-1of11 {
-    float: left;
-    padding-right: 0.75em;
-    width: 9.09090909091%; }
-
-  .d-1of12 {
-    float: left;
-    padding-right: 0.75em;
-    width: 8.33%; } }
 /*********************
-IMPORTING MODULES
-Modules are reusable blocks or elements we use throughout the project.
-We can break them up as much as we want or just keep them all in one.
-I mean, you can do whatever you want. The world is your oyster. Unless
-you hate oysters, then the world is your peanut butter & jelly sandwich.
+ IMPORTANDO MÓDULOS
 *********************/
 /******************************************************************
 Stylesheet: Alert Styles
@@ -898,7 +832,7 @@ Here's a quick video to show how it works:
 http://www.youtube.com/watch?v=hwdVpKiJzac
 
 *********************/
-.blue-btn, .comment-reply-link, #submit {
+.blue-btn {
   display: inline-block;
   position: relative;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -914,11 +848,11 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   cursor: pointer;
   -webkit-transition: background-color 0.14s ease-in-out;
   transition: background-color 0.14s ease-in-out; }
-  .blue-btn:hover, .comment-reply-link:hover, #submit:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus {
+  .blue-btn:hover, .blue-btn:focus {
     color: #fff;
     text-decoration: none;
     outline: none; }
-  .blue-btn:active, .comment-reply-link:active, #submit:active {
+  .blue-btn:active {
     top: 1px; }
 
 /*
@@ -926,11 +860,11 @@ An example button.
 You can use this example if you want. Just replace all the variables
 and it will create a button dependant on those variables.
 */
-.blue-btn, .comment-reply-link, #submit {
+.blue-btn {
   background-color: #2980b9; }
-  .blue-btn:hover, .comment-reply-link:hover, #submit:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus {
+  .blue-btn:hover, .blue-btn:focus {
     background-color: #2574a8; }
-  .blue-btn:active, .comment-reply-link:active, #submit:active {
+  .blue-btn:active {
     background-color: #2472a4; }
 
 /******************************************************************
@@ -1218,799 +1152,507 @@ select {
   background-repeat: no-repeat;
   background-position: 97.5% center; }
 
-/******************************************************************
-Stylesheet: Margin Styles
-
-We put all the form and button styles in here to setup a consistent
-look. If we need to customize them, we can do this in the main
-stylesheets and just override them. Easy Peasy.
-
-You're gonna see a few data-uri thingies down there. If you're not
-sure what they are, check this link out:
-http://css-tricks.com/data-uris/
-If you want to create your own, use this helpful link:
-http://websemantics.co.uk/online_tools/image_to_data_uri_convertor/
-******************************************************************/
-/* Biblioteca de PADDING */
-.padding-no {
-  padding: 0em; }
-
-.padding-t-no {
-  padding-top: 0em; }
-
-.padding-r-no {
-  padding-right: 0em; }
-
-.padding-b-no {
-  padding-bottom: 0em; }
-
-.padding-l-no {
-  padding-left: 0em; }
-
-.padding-t-0-5 {
-  padding-top: 0.5em; }
-
-.padding-t-1 {
-  padding-top: 1em; }
-
-.padding-t-2 {
-  padding-top: 2em; }
-
-.padding-t-4 {
-  padding-top: 4em; }
-
-.padding-t-5 {
-  padding-top: 5em; }
-
-.padding-t-10 {
-  padding-top: 10em; }
-
-.padding-r-0-5 {
-  padding-right: 0.5em; }
-
-.padding-r-1 {
-  padding-right: 1em; }
-
-.padding-r-2 {
-  padding-right: 2em; }
-
-.padding-r-4 {
-  padding-right: 4em; }
-
-.padding-r-5 {
-  padding-right: 5em; }
-
-.padding-b-0-5 {
-  padding-bottom: 0.5em; }
-
-.padding-b-1 {
-  padding-bottom: 1em; }
-
-.padding-b-2 {
-  padding-bottom: 2em; }
-
-.padding-b-4 {
-  padding-bottom: 4em; }
-
-.padding-b-5 {
-  padding-bottom: 5em; }
-
-.padding-b-10 {
-  padding-bottom: 10em; }
-
-.padding-l-0-5 {
-  padding-left: 0.5em; }
-
-.padding-l-1 {
-  padding-left: 1em; }
-
-.padding-l-2 {
-  padding-left: 2em; }
-
-.padding-l-4 {
-  padding-left: 4em; }
-
-.padding-l-5 {
-  padding-left: 5em; }
-
-/* Biblioteca de MARGIN */
-.margin-no {
-  margin: 0em; }
-
-.margin-t-no {
-  margin-top: 0em; }
-
-.margin-r-no {
-  margin-right: 0em; }
-
-.margin-b-no {
-  margin-bottom: 0em; }
-
-.margin-l-no {
-  margin-left: 0em; }
-
-.margin-t-0-5 {
-  margin-top: 0.5em; }
-
-.margin-t-1 {
-  margin-top: 1em; }
-
-.margin-t-2 {
-  margin-top: 2em; }
-
-.margin-t-3 {
-  margin-top: 3em; }
-
-.margin-t-4 {
-  margin-top: 4em; }
-
-.margin-t-5 {
-  margin-top: 5em; }
-
-.margin-t-10 {
-  margin-top: 10em; }
-
-.margin-r-0-5 {
-  margin-right: 0.5em; }
-
-.margin-r-1 {
-  margin-right: 1em; }
-
-.margin-r-2 {
-  margin-right: 2em; }
-
-.margin-r-3 {
-  margin-right: 3em; }
-
-.margin-b-0-5 {
-  margin-bottom: 0.5em; }
-
-.margin-b-1 {
-  margin-bottom: 1em; }
-
-.margin-b-2 {
-  margin-bottom: 2em; }
-
-.margin-b-3 {
-  margin-bottom: 3em; }
-
-.margin-b-10 {
-  margin-bottom: 10em; }
-
-.margin-l-0-5 {
-  margin-left: 0.5em; }
-
-.margin-l-1 {
-  margin-left: 1em; }
-
-.margin-l-2 {
-  margin-left: 2em; }
-
-.margin-l-3 {
-  margin-left: 3em; }
-
 /*********************
-BASE (MOBILE) SIZE
-This are the mobile styles. It's what people see on their phones. If
-you set a great foundation, you won't need to add too many styles in
-the other stylesheets. Remember, keep it light: Speed is Important.
+STYLESHEETS (de acordo com o Bootstrap 3)
 *********************/
-/******************************************************************
-Site Name:
-Author:
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  /******************************************************************
+  Site Name: Tema de Broove
+  Author: brunoluizgr
+  
+  Stylesheet: 320px and Up Stylesheet
+  ******************************************************************/
+  /******************************************************************
+  Stylesheet: EP-Miolo
+  Media queries para ajustar os dois miolos do EP.
+  ******************************************************************/
+  /******************************************************************
+    Celulares
+  ******************************************************************/
+  /* ----------- iPhone 4 and 4S ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- iPhone 5 and 5S ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- iPhone 6 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- iPhone 6+ ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- Galaxy S3 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- Galaxy S4 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- Galaxy S5 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- HTC One ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /******************************************************************
+    Tablets
+  ******************************************************************/
+  /* ----------- iPad mini ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- iPad 1 and 2 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- iPad 3 and 4 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- Galaxy Tab 10.1 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- Asus Nexus 7 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- Kindle Fire HD 7" ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- Kindle Fire HD 8.9" ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /******************************************************************
+    Desktops
+  ******************************************************************/
+  /* ----------- Non-Retina Screens ----------- */
+  /* ----------- Retina Screens ----------- */
+  /*********************
+  GENERAL STYLES
+  *********************/
+  body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    color: #000;
+    background-color: #fff;
+    font-family: 'Mari David';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 100%;
+    line-height: 1.5;
+    z-index: -1; }
 
-Stylesheet: Base Mobile Stylesheet
+  #inicio {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    padding: 2vw 1vw;
+    background-color: #fff;
+    z-index: -1; }
+    #inicio .secao-inicio {
+      background-color: #eee6d9;
+      width: 90.25vw;
+      height: 100%;
+      margin: 0 auto; }
+      #inicio .secao-inicio .logo-broove {
+        text-align: center; }
+        #inicio .secao-inicio .logo-broove #fita {
+          position: absolute;
+          z-index: 0;
+          height: 17.75vw;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: auto;
+          margin-bottom: auto;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0; }
+        #inicio .secao-inicio .logo-broove #miolo-esq,
+        #inicio .secao-inicio .logo-broove #miolo-dir {
+          width: 3.5vw;
+          height: 3.5vw;
+          -webkit-animation: rotation 2s infinite linear;
+          -moz-animation: rotation 2s infinite linear;
+          -o-animation: rotation 2s infinite linear;
+          animation: rotation 2s infinite linear;
+          transform-origin: 50% 50%;
+          -webkit-transform-origin: 50% 50%;
+          -moz-transform-origin: 50% 50%; }
+  @-webkit-keyframes rotation {
+    from {
+      -webkit-transform: rotate(0deg); }
+    to {
+      -webkit-transform: rotate(359deg); } }
+  @-moz-keyframes rotation {
+    from {
+      -moz-transform: rotate(0deg); }
+    to {
+      -moz-transform: rotate(359deg); } }
+  @-o-keyframes rotation {
+    from {
+      -o-transform: rotate(0deg); }
+    to {
+      -o-transform: rotate(359deg); } }
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg); }
+    to {
+      transform: rotate(359deg); } }
+        #inicio .secao-inicio .logo-broove #miolo-esq {
+          position: absolute;
+          display: block;
+          z-index: 1;
+          margin-top: auto;
+          margin-bottom: auto;
+          top: 0;
+          bottom: 1vw;
+          left: 42.00vw; }
+        #inicio .secao-inicio .logo-broove #miolo-dir {
+          position: absolute;
+          display: block;
+          z-index: 1;
+          margin-top: auto;
+          margin-bottom: auto;
+          top: 0;
+          bottom: 1vw;
+          right: 41.5vw; }
+  #ep {
+    display: block;
+    width: 100vw;
+    height: 100%;
+    padding: 2vw 1vw;
+    background-color: #fff;
+    z-index: -1; }
+    #ep #secao-ep {
+      width: 90.25vw;
+      height: 100%;
+      margin: 0 auto;
+      background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-1.png");
+      background-repeat: repeat; }
+      #ep #secao-ep #titulo-ep {
+        font-size: 3rem;
+        color: #fff;
+        text-shadow: 1px 1px #443d2b; }
+      #ep #secao-ep #corpo-ep #corpo-ep-2 {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem; }
+        #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link,
+        #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link {
+          display: block;
+          text-decoration: none;
+          color: white;
+          transition: color 0.2s ease-in;
+          -webkit-transition: color 0.2s ease-in;
+          -moz-transition: color 0.2s ease-in;
+          -o-transition: color 0.2s ease-in;
+          text-shadow: 1px 1px #443d2b;
+          transition: text-shadow 0.2s ease;
+          -webkit-transition: text-shadow 0.2s ease;
+          -moz-transition: text-shadow 0.2s ease;
+          -o-transition: text-shadow 0.2s ease; }
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link:active, #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link:focus, #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link:hover,
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link:active,
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link:focus,
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link:hover {
+            color: #443d2b;
+            transition: color 0.2s ease-in;
+            -webkit-transition: color 0.2s ease-in;
+            -o-transition: color 0.2s ease-in;
+            text-shadow: 1px 1px #fff;
+            transition: text-shadow 0.2s ease;
+            -webkit-transition: text-shadow 0.2s ease;
+            -o-transition: text-shadow 0.2s ease; }
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4,
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link h4 {
+            font-size: 2.5rem;
+            color: #443d2b;
+            transition: color 0.2s ease-in;
+            -webkit-transition: color 0.2s ease-in;
+            -moz-transition: color 0.2s ease-in;
+            -o-transition: color 0.2s ease-in;
+            text-shadow: 1px 1px #fff;
+            transition: text-shadow 0.2s ease;
+            -webkit-transition: text-shadow 0.2s ease;
+            -moz-transition: text-shadow 0.2s ease;
+            -o-transition: text-shadow 0.2s ease;
+            background-color: rgba(237, 237, 237, 0.6); }
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4:active, #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4:focus, #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4:hover,
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link h4:active,
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link h4:focus,
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link h4:hover {
+              color: #fff;
+              transition: color 0.2s ease-in;
+              -webkit-transition: color 0.2s ease-in;
+              -moz-transition: color 0.2s ease-in;
+              -o-transition: color 0.2s ease-in;
+              text-shadow: 1px 1px #443d2b;
+              transition: text-shadow 0.2s ease;
+              -webkit-transition: text-shadow 0.2s ease;
+              -moz-transition: text-shadow 0.2s ease;
+              -o-transition: text-shadow 0.2s ease; }
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4:active, #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4:focus, #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4:hover,
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link h4:active,
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link h4:focus,
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link h4:hover {
+              background-color: rgba(156, 136, 70, 0.5); }
+        #ep #secao-ep #corpo-ep #corpo-ep-2 .social-link {
+          display: block;
+          font-size: 1.6rem;
+          text-decoration: none;
+          color: #fff;
+          transition: color 0.2s ease-in;
+          -webkit-transition: color 0.2s ease-in;
+          -o-transition: color 0.2s ease-in;
+          text-shadow: 1px 1px #443d2b;
+          transition: text-shadow 0.2s ease;
+          -webkit-transition: text-shadow 0.2s ease;
+          -o-transition: text-shadow 0.2s ease; }
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .social-link:active, #ep #secao-ep #corpo-ep #corpo-ep-2 .social-link:focus, #ep #secao-ep #corpo-ep #corpo-ep-2 .social-link:hover {
+            color: #443d2b;
+            transition: color 0.2s ease-in;
+            -webkit-transition: color 0.2s ease-in;
+            -o-transition: color 0.2s ease-in;
+            text-shadow: 1px 1px #fff;
+            transition: text-shadow 0.2s ease;
+            -webkit-transition: text-shadow 0.2s ease;
+            -o-transition: text-shadow 0.2s ease; }
 
-Be light and don't over style since everything here will be
-loaded by mobile devices. You want to keep it as minimal as
-possible. This is called at the top of the main stylsheet
-and will be used across all viewports.
+  #making-of {
+    display: block;
+    width: 100vw;
+    height: 100%;
+    padding: 2vw 1vw;
+    background-color: #fff;
+    z-index: -1; }
+    #making-of #secao-making-of {
+      width: 90.25vw;
+      height: 100%;
+      margin: 0 auto;
+      background-color: #000; }
+      #making-of #secao-making-of #titulo-making-of {
+        font-size: 3rem;
+        color: #fff;
+        text-shadow: 1px 1px #f4efe7; }
+      #making-of #secao-making-of #corpo-making-of {
+        margin-bottom: 2rem; }
+        #making-of #secao-making-of #corpo-making-of .video-container {
+          position: relative;
+          padding-bottom: 56.25%;
+          padding-top: 30px;
+          height: 0;
+          overflow: hidden; }
+        #making-of #secao-making-of #corpo-making-of .video-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%; }
 
-******************************************************************/
-/*********************
-GENERAL STYLES
-*********************/
-body {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 100%;
-  line-height: 1.5;
-  color: #000;
-  background-color: #fff;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  #fotos {
+    display: block;
+    width: 100vw;
+    height: 100%;
+    padding: 2vw 1vw;
+    background-color: #fff;
+    z-index: -1; }
+    #fotos #secao-fotos {
+      width: 90.25vw;
+      height: 100%;
+      margin: 0 auto;
+      background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-2.png"); }
+      #fotos #secao-fotos #titulo-fotos {
+        font-size: 3rem;
+        color: #eee6d9;
+        text-shadow: 1px 1px #5f553c; }
+      #fotos #secao-fotos #corpo-fotos {
+        margin-bottom: 3rem; }
+        #fotos #secao-fotos #corpo-fotos #bwg_container1_0 #bwg_container2_0 .bwg_slideshow_image_wrap_0 {
+          background-color: transparent !important; }
+          #fotos #secao-fotos #corpo-fotos #bwg_container1_0 #bwg_container2_0 .bwg_slideshow_image_wrap_0 .bwg_slideshow_dots_0 {
+            display: none !important; }
 
-/********************
-WORDPRESS BODY CLASSES
-style a page via class
-********************/
-/* for sites that are read right to left (i.e. hebrew) */
-/* home page */
-/* blog template page */
-/* archive page */
-/* date archive page */
-/* replace the number to the corresponding page number */
-/* search page */
-/* search result page */
-/* no results search page */
-/* individual paged search (i.e. body.search-paged-3) */
-/* 404 page */
-/* single post page */
-/* individual post page by id (i.e. body.postid-73) */
-/* individual paged single (i.e. body.single-paged-3) */
-/* attatchment page */
-/* individual attatchment page (i.e. body.attachmentid-763) */
-/* style mime type pages */
-/* author page */
-/* user nicename (i.e. body.author-samueladams) */
-/* paged author archives (i.e. body.author-paged-4) for page 4 */
-/* category page */
-/* individual category page (i.e. body.category-6) */
-/* replace the number to the corresponding page number */
-/* tag page */
-/* individual tag page (i.e. body.tag-news) */
-/* replace the number to the corresponding page number */
-/* custom page template page */
-/* individual page template (i.e. body.page-template-contact-php */
-/* replace the number to the corresponding page number */
-/* parent page template */
-/* child page template */
-/* replace the number to the corresponding page number */
-/* if user is logged in */
-/* paged items like search results or archives */
-/* individual paged (i.e. body.paged-3) */
-/*********************
-LAYOUT & GRID STYLES
-*********************/
-.wrap {
-  width: 96%;
-  margin: 0 auto; }
+  #contato {
+    display: block;
+    width: 100vw;
+    height: 100%;
+    padding: 2vw 1vw;
+    background-color: #fff;
+    z-index: -1;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box; }
+    #contato #secao-contato {
+      background-color: white;
+      width: 90.25vw;
+      height: 100%;
+      margin: 0 auto; }
+      #contato #secao-contato .borda-titulo-contato {
+        border-top: 3px solid #d1c498;
+        border-left: 3px solid #d1c498;
+        border-right: 3px solid #d1c498; }
+        #contato #secao-contato .borda-titulo-contato #titulo-contato {
+          font-size: 3rem;
+          color: #443d2b;
+          text-shadow: 1px 1px #aea180; }
+      #contato #secao-contato #corpo-contato {
+        border-left: 3px solid #d1c498;
+        border-right: 3px solid #d1c498;
+        border-bottom: 3px solid #d1c498; }
+        #contato #secao-contato #corpo-contato .wpcf7-form p {
+          font-size: 2rem;
+          color: #d1c498; }
+        #contato #secao-contato #corpo-contato .wpcf7-form input,
+        #contato #secao-contato #corpo-contato .wpcf7-form textarea {
+          font-family: 'Lato';
+          color: #6c6145;
+          background-color: #eee6d9; }
+        #contato #secao-contato #corpo-contato .wpcf7-form textarea {
+          resize: none;
+          height: 35vh; }
+        #contato #secao-contato #corpo-contato .wpcf7-form input[type="submit"] {
+          font-family: 'Mari David';
+          font-size: 2.2rem;
+          padding: 5px 10px;
+          color: #6c6145;
+          transition: color 0.3s ease-in;
+          -webkit-transition: color 0.3s ease-in;
+          -moz-transition: color 0.3s ease-in;
+          -o-transition: color 0.3s ease-in;
+          background-color: #eee6d9;
+          transition: background-color 0.2s ease-out;
+          -webkit-transition: background-color 0.2s ease-out;
+          -moz-transition: background-color 0.2s ease-out;
+          -o-transition: background-color 0.2s ease-out;
+          border: 2px solid #cbb28a;
+          transition: border 0.2s ease;
+          -webkit-transition: border 0.2s ease;
+          -moz-transition: border 0.2s ease;
+          -o-transition: border 0.2s ease; }
+          #contato #secao-contato #corpo-contato .wpcf7-form input[type="submit"]:active, #contato #secao-contato #corpo-contato .wpcf7-form input[type="submit"]:focus, #contato #secao-contato #corpo-contato .wpcf7-form input[type="submit"]:hover {
+            color: #b99863;
+            transition: color 0.3s ease-out;
+            -webkit-transition: color 0.3s ease-out;
+            -moz-transition: color 0.3s ease-out;
+            -o-transition: color 0.3s ease-out;
+            background-color: #5f553c;
+            transition: background-color 0.2s ease-in;
+            -webkit-transition: background-color 0.2s ease-in;
+            -moz-transition: background-color 0.2s ease-in;
+            -o-transition: background-color 0.2s ease-in;
+            border: 2px solid #b99863;
+            transition: border 0.2s ease;
+            -webkit-transition: border 0.2s ease;
+            -moz-transition: border 0.2s ease;
+            -o-transition: border 0.2s ease; }
+        #contato #secao-contato #corpo-contato .wpcf7-not-valid-tip {
+          font-size: 1.5rem; }
+        #contato #secao-contato #corpo-contato .wpcf7-response-output,
+        #contato #secao-contato #corpo-contato .wpcf7-display-none,
+        #contato #secao-contato #corpo-contato .wpcf7-validation-errors {
+          font-size: 1.4rem; }
 
-/*********************
-LINK STYLES
-*********************/
-a, a:visited {
-  color: #d1c498;
-  /* on hover */
-  /* on click */
-  /* mobile tap color */ }
-  a:hover, a:focus, a:visited:hover, a:visited:focus {
-    color: #6c6145; }
-  a:link, a:visited:link {
-    /*
-    this highlights links on iPhones/iPads.
-    so it basically works like the :hover selector
-    for mobile devices.
-    */
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
-
-/******************************************************************
-H1, H2, H3, H4, H5 STYLES
-******************************************************************/
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-  text-rendering: optimizelegibility;
-  font-weight: 500;
-  /*
-  if you're going to use webfonts, be sure to check your weights
-  http://css-tricks.com/watch-your-font-weight/
-  */
-  /* removing text decoration from all headline links */ }
-  h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
-    text-decoration: none; }
-
-h1, .h1 {
-  font-size: 2.5em;
-  line-height: 1.333em; }
-
-h2, .h2 {
-  font-size: 1.75em;
-  line-height: 1.4em;
-  margin-bottom: 0.375em; }
-
-h3, .h3 {
-  font-size: 1.125em; }
-
-h4, .h4 {
-  font-size: 1.1em;
-  font-weight: 700; }
-
-h5, .h5 {
-  font-size: 0.846em;
-  line-height: 2.09em;
-  text-transform: uppercase;
-  letter-spacing: 2px; }
-
-/*********************
-HEADER STYLES
-*********************/
-.header {
-  background-color: #000; }
-
-#logo {
-  margin: 0.75em 0; }
-  #logo a {
-    color: #fff; }
-
-/*********************
-NAVIGATION STYLES
-*********************/
-/*
-all navs have a .nav class applied via
-the wp_menu function; this is so we can
-easily write one group of styles for
-the navs on the site so our css is cleaner
-and more scalable.
-*/
-.nav {
-  border-bottom: 0;
-  margin: 0;
-  /* end .menu li */
-  /* highlight current page */
-  /* end current highlighters */ }
-  .nav li {
-    /*
-    so you really have to rethink your dropdowns for mobile.
-    you don't want to have it expand too much because the
-    screen is so small. How you manage your menu should
-    depend on the project. Here's some great info on it:
-    http://www.alistapart.com/articles/organizing-mobile/
-    */ }
-    .nav li a {
-      display: block;
+  #rodape {
+    background-color: #6c6145; }
+    #rodape #rodape-row-1 a {
+      font-size: 1.8rem;
       color: #fff;
       text-decoration: none;
-      padding: 0.75em;
-      /*
-      remember this is for mobile ONLY, so there's no need
-      to even declare hover styles here, you can do it in
-      the style.scss file where it's relevant. We want to
-      keep this file as small as possible!
-      */ }
-    .nav li ul.sub-menu li a,
-    .nav li ul.children li a {
-      padding-left: 30px; }
-
-/* end .nav */
-/*********************
-POSTS & CONTENT STYLES
-*********************/
-#content {
-  margin-top: 1.5em; }
-
-.hentry {
-  background-color: #fff;
-  border-radius: 3px;
-  margin-bottom: 1.5em;
-  border: 1px solid #ccc; }
-  .hentry header {
-    border-bottom: 1px solid #f8f9fa;
-    padding: 1.5em; }
-  .hentry footer {
-    padding: 1.5em;
-    border-top: 1px solid #f8f9fa; }
-    .hentry footer p {
+      transition: color 0.3s ease-out;
+      -webkit-transition: color 0.3s ease-out;
+      -moz-transition: color 0.3s ease-out;
+      -o-transition: color 0.3s ease-out; }
+      #rodape #rodape-row-1 a:hover {
+        color: #d1c498;
+        text-decoration: none;
+        transition: color 0.2s ease-in;
+        -webkit-transition: color 0.2s ease-in;
+        -moz-transition: color 0.2s ease-in;
+        -o-transition: color 0.2s ease-in; }
+    #rodape #rodape-row-1 h3 {
+      font-size: 1.5rem;
+      color: #fff;
+      text-decoration: none;
       margin: 0; }
-
-/* end .hentry */
-.single-title,
-.page-title,
-.entry-title {
-  margin: 0; }
-
-/* want to style individual post classes? Booya! */
-/* post by id (i.e. post-3) */
-/* general post style */
-/* general article on a page style */
-/* general style on an attatchment */
-/* sticky post style */
-/* hentry class */
-/* style by category (i.e. category-videos) */
-/* style by tag (i.e. tag-news) */
-/* post meta */
-.byline {
-  color: #9fa6b4;
-  font-style: italic;
-  margin: 0; }
-
-/* entry content */
-.entry-content {
-  padding: 1.5em 1.5em 0;
-  /*
-  image alignment on a screen this size may be
-  a bit difficult. It's set to start aligning
-  and floating images at the next breakpoint,
-  but it's up to you. Feel free to change it up.
-  */ }
-  .entry-content p {
-    margin: 0 0 1.5em; }
-  .entry-content table {
-    width: 100%;
-    border: 1px solid #eaedf2;
-    margin-bottom: 1.5em; }
-    .entry-content table caption {
-      margin: 0 0 7px;
-      font-size: 0.75em;
-      color: #9fa6b4;
-      text-transform: uppercase;
-      letter-spacing: 1px; }
-  .entry-content tr {
-    border-bottom: 1px solid #eaedf2; }
-    .entry-content tr:nth-child(even) {
-      background-color: #f8f9fa; }
-  .entry-content td {
-    padding: 7px;
-    border-right: 1px solid #eaedf2; }
-    .entry-content td:last-child {
-      border-right: 0; }
-  .entry-content th {
-    background-color: #f8f9fa;
-    border-bottom: 1px solid #eaedf2;
-    border-right: 1px solid #eaedf2; }
-    .entry-content th:last-child {
-      border-right: 0; }
-  .entry-content blockquote {
-    margin: 0 0 1.5em 0.75em;
-    padding: 0 0 0 0.75em;
-    border-left: 3px solid #2980b9;
-    font-style: italic;
-    color: #9fa6b4; }
-  .entry-content dd {
-    margin-left: 0;
-    font-size: 0.9em;
-    color: #787878;
-    margin-bottom: 1.5em; }
-  .entry-content img {
-    margin: 0 0 1.5em 0;
-    max-width: 100%;
-    height: auto; }
-  .entry-content .size-auto,
-  .entry-content .size-full,
-  .entry-content .size-large,
-  .entry-content .size-medium,
-  .entry-content .size-thumbnail {
-    max-width: 100%;
-    height: auto; }
-  .entry-content pre {
-    background: #000;
-    color: #f8f9fa;
-    font-size: 0.9em;
-    padding: 1.5em;
-    margin: 0 0 1.5em;
-    border-radius: 3px; }
-
-/* end .entry-content */
-.wp-caption {
-  max-width: 100%;
-  background: #eee;
-  padding: 5px;
-  /* images inside wp-caption */ }
-  .wp-caption img {
-    max-width: 100%;
-    margin-bottom: 0;
-    width: 100%; }
-  .wp-caption p.wp-caption-text {
-    font-size: 0.85em;
-    margin: 4px 0 7px;
-    text-align: center; }
-
-/* end .wp-caption */
-/* image gallery styles */
-/* end .gallery */
-/* gallery caption styles */
-.tags {
-  margin: 0; }
-
-/******************************************************************
-PAGE NAVI STYLES
-******************************************************************/
-.pagination,
-.wp-prev-next {
-  margin: 1.5em 0; }
-
-.pagination {
-  text-align: center; }
-  .pagination ul {
-    display: inline-block;
-    background-color: #fff;
-    white-space: nowrap;
-    padding: 0;
-    clear: both;
-    border-radius: 3px; }
-  .pagination li {
-    padding: 0;
-    margin: 0;
-    float: left;
-    display: inline;
-    overflow: hidden;
-    border-right: 1px solid #eaedf2; }
-  .pagination a, .pagination span {
-    margin: 0;
-    text-decoration: none;
-    padding: 0;
-    line-height: 1em;
-    font-size: 1em;
-    font-weight: normal;
-    padding: 0.75em;
-    min-width: 1em;
-    display: block;
-    color: #2980b9; }
-    .pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus {
-      background-color: #2980b9;
+    #rodape #rodape-row-1 i {
+      font-size: 2.5rem; }
+    #rodape #rodape-row-1 p {
+      color: white;
+      font-size: 1.4rem; }
+    #rodape #rodape-row-1 #brunoluizgr-copyright {
+      height: 5vh;
+      margin: auto;
+      vertical-align: middle;
+      display: inline-block; }
+    #rodape #rodape-row-2 {
+      font-size: 1.2rem;
       color: #fff; }
-  .pagination .current {
-    cursor: default;
-    color: #5c6b80; }
-    .pagination .current:hover, .pagination .current:focus {
-      background-color: #fff;
-      color: #5c6b80; }
 
-/* end .bones_page_navi */
-/* fallback previous & next links */
-.wp-prev-next .prev-link {
-  float: left; }
-.wp-prev-next .next-link {
-  float: right; }
-
-/* end .wp-prev-next */
-/******************************************************************
-COMMENT STYLES
-******************************************************************/
-/* h3 comment title */
-#comments-title {
-  padding: 0.75em;
-  margin: 0;
-  border-top: 1px solid #f8f9fa;
-  /* number of comments span */ }
-
-.commentlist {
-  margin: 0;
-  list-style-type: none; }
-
-.comment {
-  position: relative;
-  clear: both;
-  overflow: hidden;
-  padding: 1.5em;
-  border-bottom: 1px solid #f8f9fa;
-  /* vcard */
-  /* end .commentlist .vcard */
-  /* end children */
-  /* general comment classes */ }
-  .comment .comment-author {
-    padding: 7px;
-    border: 0; }
-  .comment .vcard {
-    margin-left: 50px; }
-    .comment .vcard cite.fn {
-      font-weight: 700;
-      font-style: normal; }
-    .comment .vcard time {
-      display: block;
-      font-size: 0.9em;
-      font-style: italic; }
-      .comment .vcard time a {
-        color: #9fa6b4;
-        text-decoration: none; }
-        .comment .vcard time a:hover {
-          text-decoration: underline; }
-    .comment .vcard .avatar {
-      position: absolute;
-      left: 16px;
-      border-radius: 50%; }
-  .comment:last-child {
-    margin-bottom: 0; }
-  .comment .children {
-    margin: 0;
-    /* variations */
-    /* change number for different depth */ }
-  .comment[class*=depth-] {
-    margin-top: 1.1em; }
-  .comment.depth-1 {
-    margin-left: 0;
-    margin-top: 0; }
-  .comment:not(.depth-1) {
-    margin-top: 0;
-    margin-left: 7px;
-    padding: 7px; }
-  .comment.odd {
-    background-color: #fff; }
-  .comment.even {
-    background: #f8f9fa; }
-
-/* comment meta */
-/* comment content */
-.comment_content p {
-  margin: 0.7335em 0 1.5em;
-  font-size: 1em;
-  line-height: 1.5em; }
-
-/* end .commentlist .comment_content */
-/* comment reply link */
-.comment-reply-link {
-  font-size: 0.9em;
-  float: right; }
-
-/* end .commentlist .comment-reply-link */
-/* edit comment link */
-.comment-edit-link {
-  font-style: italic;
-  margin: 0 7px;
-  text-decoration: none;
-  font-size: 0.9em; }
-
-/******************************************************************
-COMMENT FORM STYLES
-******************************************************************/
-.comment-respond {
-  padding: 1.5em;
-  border-top: 1px solid #f8f9fa; }
-
-#reply-title {
-  margin: 0; }
-
-.logged-in-as {
-  color: #9fa6b4;
-  font-style: italic;
-  margin: 0; }
-  .logged-in-as a {
-    color: #5c6b80; }
-
-.comment-form-comment {
-  margin: 1.5em 0 0.75em; }
-
-.form-allowed-tags {
-  padding: 1.5em;
-  background-color: #f8f9fa;
-  font-size: 0.9em; }
-
-/* comment submit button */
-#submit {
-  float: right;
-  font-size: 1em; }
-
-/* comment form title */
-#comment-form-title {
-  margin: 0 0 1.1em; }
-
-/* cancel comment reply link */
-/* logged in comments */
-/* allowed tags */
-#allowed_tags {
-  margin: 1.5em 10px 0.7335em 0; }
-
-/* no comments */
-.nocomments {
-  margin: 0 20px 1.1em; }
-
-/*********************
-SIDEBARS & ASIDES
-*********************/
-.widget ul li {
-  /* deep nesting */ }
-
-.no-widgets {
-  background-color: #fff;
-  padding: 1.5em;
-  text-align: center;
-  border: 1px solid #ccc;
-  border-radius: 2px;
-  margin-bottom: 1.5em; }
-
-/*********************
-FOOTER STYLES
-*********************/
-.footer {
-  clear: both;
-  background-color: #000;
-  color: #f8f9fa; }
-
-/*
-if you checked out the link above:
-http://www.alistapart.com/articles/organizing-mobile/
-you'll want to style the footer nav
-a bit more in-depth. Remember to keep
-it simple because you'll have to
-override these styles for the desktop
-view.
-*/
-/* end .footer-links */
-/*********************
-LARGER MOBILE DEVICES
-This is for devices like the Galaxy Note or something that's
-larger than an iPhone but smaller than a tablet. Let's call them
-tweeners.
-*********************/
-@media only screen and (min-width: 481px) {
+  /********************
+  WORDPRESS BODY CLASSES
+  style a page via class
+  ********************/
+  /* for sites that are read right to left (i.e. hebrew) */
+  /* home page */
+  /* blog template page */
+  /* archive page */
+  /* date archive page */
+  /* replace the number to the corresponding page number */
+  /* search page */
+  /* search result page */
+  /* no results search page */
+  /* individual paged search (i.e. body.search-paged-3) */
+  /* 404 page */
+  /* single post page */
+  /* individual post page by id (i.e. body.postid-73) */
+  /* individual paged single (i.e. body.single-paged-3) */
+  /* attatchment page */
+  /* individual attatchment page (i.e. body.attachmentid-763) */
+  /* style mime type pages */
+  /* author page */
+  /* user nicename (i.e. body.author-samueladams) */
+  /* paged author archives (i.e. body.author-paged-4) for page 4 */
+  /* category page */
+  /* individual category page (i.e. body.category-6) */
+  /* replace the number to the corresponding page number */
+  /* tag page */
+  /* individual tag page (i.e. body.tag-news) */
+  /* replace the number to the corresponding page number */
+  /* custom page template page */
+  /* individual page template (i.e. body.page-template-contact-php */
+  /* replace the number to the corresponding page number */
+  /* parent page template */
+  /* child page template */
+  /* replace the number to the corresponding page number */
+  /* if user is logged in */
+  /* paged items like search results or archives */
+  /* individual paged (i.e. body.paged-3) */ }
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   /******************************************************************
-  Site Name:
-  Author:
+  Site Name: Tema de Broove
+  Author: brunoluizgr
   
-  Stylesheet: 481px and Up Stylesheet
-  
-  This stylesheet is loaded for larger devices. It's set to
-  481px because at 480px it would load on a landscaped iPhone.
-  This isn't ideal because then you would be loading all those
-  extra styles on that same mobile connection.
-  
-  A word of warning. This size COULD be a larger mobile device,
-  so you still want to keep it pretty light and simply expand
-  upon your base.scss styles.
-  
-  ******************************************************************/
-  /*
-  IMPORTANT NOTE ABOUT SASS 3.3 & UP
-  You can't use @extend within media queries
-  anymore, so just be aware that if you drop
-  them in here, they won't work.
-  */
-  /*********************
-  NAVIGATION STYLES
-  *********************/
-  /* .menu is clearfixed inside mixins.scss */
-  .menu {
-    /* end .menu ul */ }
-    .menu ul {
-      /* end .menu ul li */
-      /* highlight current page */
-      /* end current highlighters */ }
-      .menu ul li {
-        /*
-        plan your menus and drop-downs wisely.
-        */ }
-        .menu ul li a {
-          /*
-          you can use hover styles here even though this size
-          has the possibility of being a mobile device.
-          */ }
-
-  /* end .menu */
-  /*********************
-  POSTS & CONTENT STYLES
-  *********************/
-  /* entry content */
-  .entry-content {
-    /* at this larger size, we can start to align images */ }
-    .entry-content .alignleft, .entry-content img.alignleft {
-      margin-right: 1.5em;
-      display: inline;
-      float: left; }
-    .entry-content .alignright, .entry-content img.alignright {
-      margin-left: 1.5em;
-      display: inline;
-      float: right; }
-    .entry-content .aligncenter, .entry-content img.aligncenter {
-      margin-right: auto;
-      margin-left: auto;
-      display: block;
-      clear: both; }
-
-  /* end .entry-content */
-  /*********************
-  FOOTER STYLES
-  *********************/
-  /*
-  check your menus here. do they look good?
-  do they need tweaking?
-  */
-  /* end .footer-links */ }
-/*********************
-TABLET & SMALLER LAPTOPS
-This is the average viewing window. So Desktops, Laptops, and
-in general anyone not viewing on a mobile device. Here's where
-you can add resource intensive styles.
-*********************/
-@media only screen and (min-width: 768px) {
+  Stylesheet: 480px and Up Stylesheet
+  ******************************************************************/ }
+@media only screen and (min-width: 769px) and (max-width: 992px) {
   /******************************************************************
-  Site Name:
-  Author:
+  Site Name: Tema de Broove
+  Author: brunoluizgr
   
-  Stylesheet: Tablet & Small Desktop Stylesheet
-  
-  Here's where you can start getting into the good stuff.
-  This size will work on iPads, other tablets, and desktops.
-  So you can start working with more styles, background images,
-  and other resources. You'll also notice the grid starts to
-  come into play. Have fun!
-  
+  Stylesheet: 768px and Up Stylesheet
   ******************************************************************/
   /*********************
   GENERAL STYLES
@@ -2133,61 +1775,29 @@ you can add resource intensive styles.
     */ }
 
   /* end .footer-links */ }
-/*********************
-DESKTOP
-This is the average viewing window. So Desktops, Laptops, and
-in general anyone not viewing on a mobile device. Here's where
-you can add resource intensive styles.
-*********************/
-@media only screen and (min-width: 1030px) {
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
   /******************************************************************
-  Site Name:
-  Author:
+  Site Name: Tema de Broove
+  Author: brunoluizgr
   
-  Stylesheet: Desktop Stylsheet
-  
-  This is the desktop size. It's larger than an iPad so it will only
-  be seen on the Desktop.
-  
-  ******************************************************************/
-  .wrap {
-    width: 1040px; } }
-/*********************
-LARGE VIEWING SIZE
-This is for the larger monitors and possibly full screen viewers.
-*********************/
-@media only screen and (min-width: 1240px) {
-  /******************************************************************
-  Site Name: 
-  Author: 
-  
-  Stylesheet: Super Large Monitor Stylesheet
-  
-  You can add some advanced styles here if you like. This kicks in
-  on larger screens.
-  
+  Stylesheet: 992px and Up Stylesheet
   ******************************************************************/ }
-/*********************
-RETINA (2x RESOLUTION DEVICES)
-This applies to the retina iPhone (4s) and iPad (2,3) along with
-other displays with a 2x resolution. You can also create a media
-query for retina AND a certain size if you want. Go Nuts.
-*********************/
+@media only screen and (min-width: 1201px) {
+  /******************************************************************
+  Site Name: Tema de Broove
+  Author: brunoluizgr
+  
+  Stylesheet: 1200px and Up Stylesheet
+  ******************************************************************/ }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /******************************************************************
-  Site Name: 
-  Author: 
+  Site Name: Tema de Broove
+  Author: brunoluizgr
   
   Stylesheet: Retina Screens & Devices Stylesheet
-  
-  When handling retina screens you need to make adjustments, especially
-  if you're not using font icons. Here you can add them in one neat
-  place.
-  
   ******************************************************************/
-  /* 
-  
-  EXAMPLE 
+  /*
+  EXAMPLE
   Let's say you have an image and you need to make sure it looks ok
   on retina screens. Let's say we have an icon which dimension are
   24px x 24px. In your regular stylesheets, it would look something
@@ -2208,17 +1818,14 @@ query for retina AND a certain size if you want. Go Nuts.
   	background-size: 24px 24px;
   }
   
-  So, you would create the same icon, but at double the resolution, meaning 
+  So, you would create the same icon, but at double the resolution, meaning
   it would be 48px x 48px. You'd name it the same, but with a @2x at the end
   (this is pretty standard practice). Set the background image so it matches
-  the original dimensions and you are good to go. 
+  the original dimensions and you are good to go.
   
   */ }
 /*********************
 PRINT STYLESHEET
-Feel free to customize this. Remember to add things that won't make
-sense to print at the bottom. Things like nav, ads, and forms should
-be set to display none.
 *********************/
 @media print {
   /******************************************************************
@@ -2281,614 +1888,5 @@ be set to display none.
   .respond-form,
   nav {
     display: none; } }
-/*********************
-MEU STYLESHEET DO BROOVE
-*********************/
-/******************************************************************
-Site Name:
-Author:
-
-Stylesheet: Admin Stylesheet
-
-If you like living on the edge, you can add some styles here to
-customize the dashboard and WordPress admin area. This stylesheet
-is empty, but you can just start dropping your styles here to
-start customizing. All admin functions are located in lib/admin/
-
-******************************************************************/
-/******************************************************************
-Stylesheet: Variáveis
-******************************************************************/
-/*********************
-CORES
-*********************/
-/*********************
- MINHAS CORES
-*********************/
-/******************************************************************
-Site Name:
-Author:
-
-Stylesheet: Typography
-
-Need to import a font or set of icons for your site? Drop them in
-here or just use this to establish your typographical grid. Or not.
-Do whatever you want to...GOSH!
-
-Helpful Articles:
-http://trentwalton.com/2012/06/19/fluid-type/
-http://ia.net/blog/responsive-typography-the-basics/
-http://alistapart.com/column/responsive-typography-is-a-physical-discipline
-
-******************************************************************/
-/*********************
-FONT FACE (IN YOUR FACE)
-*********************/
-/*  To embed your own fonts, use this syntax
-  and place your fonts inside the
-  library/fonts folder. For more information
-  on embedding fonts, go to:
-  http://www.fontsquirrel.com/
-  Be sure to remove the comment brackets.
-*/
-/*  @font-face {
-      font-family: 'Font Name';
-      src: url('library/fonts/font-name.eot');
-      src: url('library/fonts/font-name.eot?#iefix') format('embedded-opentype'),
-             url('library/fonts/font-name.woff') format('woff'),
-             url('library/fonts/font-name.ttf') format('truetype'),
-             url('library/fonts/font-name.svg#font-name') format('svg');
-      font-weight: normal;
-      font-style: normal;
-  }
-*/
-/* Fonte site */
-@font-face {
-  font-family: 'Mari David';
-  src: url("../fonts/MariDavid/maridavid.eot");
-  src: url("../fonts/MariDavid/maridavid.eot?#iefix") format("embedded-opentype"), url("../fonts/MariDavid/maridavid.woff") format("woff"), url("../fonts/MariDavid/maridavid.ttf") format("truetype"), url("../fonts/MariDavid/maridavid.svg#MARI_DAVID") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-/* Fonte logotipo da Broove */
-@font-face {
-  font-family: 'Consolas-Bold';
-  src: url("../fonts/Consolas/consolasbold.eot");
-  src: url("../fonts/Consolas/consolasbold.eot?#iefix") format("embedded-opentype"), url("../fonts/Consolas/consolasbold.woff") format("woff"), url("../fonts/Consolas/consolasbold.ttf") format("truetype"), url("../fonts/Consolas/consolasbold.svg#Consolas-Bold") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-/*
-The following is based of Typebase:
-https://github.com/devinhunt/typebase.css
-I've edited it a bit, but it's a nice starting point.
-*/
-/*
- i imported this one in the functions file so bones would look sweet.
- don't forget to remove it for your site.
-*/
-/*
-some nice typographical defaults
-more here: http://www.newnet-soft.com/blog/csstypography
-*/
-p {
-  -ms-word-wrap: break-word;
-  word-break: break-word;
-  word-wrap: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto;
-  -webkit-hyphenate-before: 2;
-  -webkit-hyphenate-after: 3;
-  hyphenate-lines: 3;
-  -webkit-font-feature-settings: "liga", "dlig";
-  -moz-font-feature-settings: "liga=1, dlig=1";
-  -ms-font-feature-settings: "liga", "dlig";
-  -o-font-feature-settings: "liga", "dlig";
-  font-feature-settings: "liga", "dlig"; }
-
-/******************************************************************
-Site Name:
-Author:
-
-Stylesheet: Sass Functions
-
-You can do a lot of really cool things in Sass. Functions help you
-make repeated actions a lot easier. They are really similar to mixins,
-but can be used for so much more.
-
-Anyway, keep them all in here so it's easier to find when you're
-looking for one.
-
-For more info on functions, go here:
-http://sass-lang.com/documentation/Sass/Script/Functions.html
-
-******************************************************************/
-/*********************
-COLOR FUNCTIONS
-These are helpful when you're working
-with shadows and such things. It's essentially
-a quicker way to write RGBA.
-
-Example:
-box-shadow: 0 0 4px black(0.3);
-compiles to:
-box-shadow: 0 0 4px rgba(0,0,0,0.3);
-*********************/
-/*********************
-RESPONSIVE HELPER FUNCTION
-If you're creating a responsive site, then
-you've probably already read
-Responsive Web Design: http://www.abookapart.com/products/responsive-web-design
-
-Here's a nice little helper function for calculating
-target / context
-as mentioned in that book.
-
-Example:
-width: cp(650px, 1000px);
-or
-width: calc-percent(650px, 1000px);
-both compile to:
-width: 65%;
-*********************/
-/******************************************************************
-Stylesheet: EP-Miolo
-Media queries para ajustar os dois miolos do EP.
-******************************************************************/
-/******************************************************************
-  Celulares
-******************************************************************/
-/* ----------- iPhone 4 and 4S ----------- */
-/* Portrait and Landscape */
-/* Portrait */
-/* Landscape */
-/* ----------- iPhone 5 and 5S ----------- */
-/* Portrait and Landscape */
-/* Portrait */
-/* Landscape */
-/* ----------- iPhone 6 ----------- */
-/* Portrait and Landscape */
-/* Portrait */
-/* Landscape */
-/* ----------- iPhone 6+ ----------- */
-/* Portrait and Landscape */
-/* Portrait */
-/* Landscape */
-/* ----------- Galaxy S3 ----------- */
-/* Portrait and Landscape */
-/* Portrait */
-/* Landscape */
-/* ----------- Galaxy S4 ----------- */
-/* Portrait and Landscape */
-/* Portrait */
-/* Landscape */
-/* ----------- Galaxy S5 ----------- */
-/* Portrait and Landscape */
-/* Portrait */
-/* Landscape */
-/* ----------- HTC One ----------- */
-/* Portrait and Landscape */
-/* Portrait */
-/* Landscape */
-/******************************************************************
-  Tablets
-******************************************************************/
-/* ----------- iPad mini ----------- */
-/* Portrait and Landscape */
-/* Portrait */
-/* Landscape */
-/* ----------- iPad 1 and 2 ----------- */
-/* Portrait and Landscape */
-/* Portrait */
-/* Landscape */
-/* ----------- iPad 3 and 4 ----------- */
-/* Portrait and Landscape */
-/* Portrait */
-/* Landscape */
-/* ----------- Galaxy Tab 10.1 ----------- */
-/* Portrait and Landscape */
-/* Portrait */
-/* Landscape */
-/* ----------- Asus Nexus 7 ----------- */
-/* Portrait and Landscape */
-/* Portrait */
-/* Landscape */
-/* ----------- Kindle Fire HD 7" ----------- */
-/* Portrait and Landscape */
-/* Portrait */
-/* Landscape */
-/* ----------- Kindle Fire HD 8.9" ----------- */
-/* Portrait and Landscape */
-/* Portrait */
-/* Landscape */
-/******************************************************************
-  Desktops
-******************************************************************/
-/* ----------- Non-Retina Screens ----------- */
-/* ----------- Retina Screens ----------- */
-html, body {
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  z-index: -1;
-  font-family: 'Mari David';
-  font-size: 3vh;
-  background-color: #fff; }
-
-#btn-controla-menu #menu-sobe,
-#btn-controla-menu #menu-desce {
-  position: fixed;
-  display: block;
-  z-index: 2;
-  height: 6vh;
-  width: 5vw;
-  border: none;
-  background-color: transparent; }
-#btn-controla-menu #menu-sobe {
-  top: 36vh;
-  right: 4vw;
-  background-image: url("/wp-content/themes/tema-de-broove/library/images/btn_sobe.svg");
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center center; }
-#btn-controla-menu #menu-desce {
-  top: 44vh;
-  right: 4vw;
-  background-image: url("/wp-content/themes/tema-de-broove/library/images/btn_desce.svg");
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center center; }
-
-#menu-principal {
-  background-color: #443d2b; }
-  #menu-principal #menu li a {
-    color: #f4efe7;
-    background-color: #443d2b;
-    font-size: 1.5rem;
-    text-decoration: none;
-    transition: background-color 0.3s ease-in;
-    -webkit-transition: background-color 0.3s ease-in; }
-    #menu-principal #menu li a:hover {
-      background-color: #6c6145;
-      transition: background-color 0.2s ease-out;
-      -webkit-transition: background-color 0.2s ease-out; }
-
-#inicio {
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  padding: 2vw 1vw;
-  background-color: #fff;
-  z-index: -1; }
-  #inicio .secao-inicio {
-    background-color: #eee6d9;
-    width: 90.25vw;
-    height: 100%;
-    margin: 0 auto; }
-    #inicio .secao-inicio .logo-broove {
-      text-align: center; }
-      #inicio .secao-inicio .logo-broove #fita {
-        position: absolute;
-        z-index: 0;
-        height: 17.75vw;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: auto;
-        margin-bottom: auto;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0; }
-      #inicio .secao-inicio .logo-broove #miolo-esq,
-      #inicio .secao-inicio .logo-broove #miolo-dir {
-        width: 3.5vw;
-        height: 3.5vw;
-        -webkit-animation: rotation 2s infinite linear;
-        -moz-animation: rotation 2s infinite linear;
-        -o-animation: rotation 2s infinite linear;
-        animation: rotation 2s infinite linear;
-        transform-origin: 50% 50%;
-        -webkit-transform-origin: 50% 50%;
-        -moz-transform-origin: 50% 50%; }
-@-webkit-keyframes rotation {
-  from {
-    -webkit-transform: rotate(0deg); }
-  to {
-    -webkit-transform: rotate(359deg); } }
-@-moz-keyframes rotation {
-  from {
-    -moz-transform: rotate(0deg); }
-  to {
-    -moz-transform: rotate(359deg); } }
-@-o-keyframes rotation {
-  from {
-    -o-transform: rotate(0deg); }
-  to {
-    -o-transform: rotate(359deg); } }
-@keyframes rotation {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(359deg); } }
-      #inicio .secao-inicio .logo-broove #miolo-esq {
-        position: absolute;
-        display: block;
-        z-index: 1;
-        margin-top: auto;
-        margin-bottom: auto;
-        top: 0;
-        bottom: 1vw;
-        left: 42.00vw; }
-        @media all and (min-device-aspect-ratio: 1.95 / 1) {
-          #inicio .secao-inicio .logo-broove #miolo-esq #miolo-esq {
-            left: 42vw; } }
-      #inicio .secao-inicio .logo-broove #miolo-dir {
-        position: absolute;
-        display: block;
-        z-index: 1;
-        margin-top: auto;
-        margin-bottom: auto;
-        top: 0;
-        bottom: 1vw;
-        right: 41.5vw; }
-        @media all and (min-device-aspect-ratio: 1.95 / 1) {
-          #inicio .secao-inicio .logo-broove #miolo-dir #miolo-esq {
-            right: 41.5vw; } }
-
-#ep {
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  padding: 2vw 1vw;
-  background-color: #fff;
-  z-index: -1; }
-  #ep #secao-ep {
-    width: 90.25vw;
-    height: 100%;
-    margin: 0 auto;
-    background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-1.png");
-    background-repeat: repeat; }
-    #ep #secao-ep #titulo-ep h3 {
-      font-size: 10vh;
-      font-family: 'Mari David';
-      margin: 6vh auto 0;
-      color: #fff; }
-    #ep #secao-ep #corpo-ep #corpo-ep-col-2 a {
-      display: block;
-      font-family: 'Mari David';
-      font-size: 2em;
-      color: #fff;
-      text-decoration: none; }
-    #ep #secao-ep #corpo-ep #corpo-ep-col-2 #btn-ouca-agora,
-    #ep #secao-ep #corpo-ep #corpo-ep-col-2 #btn-baixar {
-      color: #6c6145;
-      background-color: rgba(255, 255, 255, 0.75);
-      font-size: 5vh; }
-    #ep #secao-ep #corpo-ep #corpo-ep-col-2 .broove-social-network {
-      font-size: 6vh; }
-
-#making-of {
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  padding: 2vw 1vw;
-  background-color: #fff;
-  z-index: -1; }
-  #making-of #secao-making-of {
-    width: 90.25vw;
-    height: 100%;
-    margin: 0 auto;
-    background-color: #000; }
-    #making-of #secao-making-of #titulo-making-of h3 {
-      font-size: 10vh;
-      font-family: 'Mari David';
-      margin: 6vh auto 0;
-      color: #fff; }
-
-#fotos {
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  padding: 2vw 1vw;
-  background-color: #fff;
-  z-index: -1; }
-  #fotos #secao-fotos {
-    width: 90.25vw;
-    height: 100%;
-    margin: 0 auto;
-    background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-2.png"); }
-    #fotos #secao-fotos #titulo-fotos h3 {
-      font-size: 10vh;
-      font-family: 'Mari David';
-      margin: 6vh auto 0;
-      color: #eee6d9; }
-
-#letras {
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  padding: 2vw 1vw;
-  background-color: #fff;
-  z-index: -1; }
-  #letras #secao-letras {
-    width: 90.25vw;
-    height: 100%;
-    margin: 0 auto;
-    background: #323944; }
-    #letras #secao-letras #titulo-letras h3 {
-      font-size: 10vh;
-      font-family: 'Mari David';
-      margin: 6vh auto 0;
-      color: #fff; }
-    #letras #secao-letras #corpo-letras p a {
-      color: #fff; }
-
-#contato {
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  padding: 2vw 1vw;
-  background-color: #fff;
-  z-index: -1;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box; }
-  #contato #secao-contato {
-    background-color: white;
-    width: 90.25vw;
-    height: 100%;
-    margin: 0 auto; }
-    #contato #secao-contato #titulo-contato {
-      border-top: 3px solid #d1c498;
-      border-left: 3px solid #d1c498;
-      border-right: 3px solid #d1c498; }
-      #contato #secao-contato #titulo-contato h3 {
-        font-size: 10vh;
-        font-family: 'Mari David';
-        margin: 6vh auto 0;
-        color: #d1c498; }
-    #contato #secao-contato #corpo-contato {
-      border-left: 3px solid #d1c498;
-      border-right: 3px solid #d1c498;
-      border-bottom: 3px solid #d1c498; }
-      #contato #secao-contato #corpo-contato .wpcf7-form p {
-        font-size: 2em;
-        font-family: 'Mari David';
-        color: #d1c498; }
-      #contato #secao-contato #corpo-contato .wpcf7-form input,
-      #contato #secao-contato #corpo-contato .wpcf7-form textarea {
-        font-family: 'Mari David';
-        background-color: #eee6d9;
-        color: #6c6145; }
-      #contato #secao-contato #corpo-contato .wpcf7-form textarea {
-        resize: none;
-        height: 35vh; }
-      #contato #secao-contato #corpo-contato .wpcf7-form input[type="submit"] {
-        font-size: 5vh;
-        padding: 5px 10px;
-        border: none; }
-        #contato #secao-contato #corpo-contato .wpcf7-form input[type="submit"]:hover {
-          color: #eee6d9;
-          background-color: #6c6145; }
-      #contato #secao-contato #corpo-contato span.wpcf7-not-valid-tip {
-        font-size: 3.5vh; }
-
-#rodape {
-  background-color: #6c6145; }
-  #rodape #rodape-row-1 {
-    font-size: 5vh;
-    padding: 1em 0 1em 0; }
-    #rodape #rodape-row-1 a {
-      color: #fff;
-      text-decoration: none;
-      transition: color 0.3s ease-out;
-      -webkit-transition: color 0.3s ease-out; }
-      #rodape #rodape-row-1 a:hover {
-        color: #d1c498;
-        text-decoration: none;
-        transition: color 0.2s ease-in;
-        -webkit-transition: color 0.2s ease-in; }
-    #rodape #rodape-row-1 .brunoluizgr-logo #logo {
-      width: 100%;
-      height: 7vh;
-      margin: 0;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;
-      background-image: url("/wp-content/themes/tema-de-broove/library/images/brunoluizgr-logo-bp.svg");
-      transition: background-image 2s ease-in;
-      -webkit-transition: background-image 2s ease-in; }
-      #rodape #rodape-row-1 .brunoluizgr-logo #logo:hover {
-        background-image: url("/wp-content/themes/tema-de-broove/library/images/brunoluizgr-logo-pb.svg");
-        transition: background-image 2s ease-out;
-        -webkit-transition: background-image 2s ease-out; }
-  #rodape #rodape-row-2 {
-    font-size: 3vh; }
-
-#apresentacao-ep #cabecalho #imagem-de-fundo {
-  position: fixed;
-  display: block;
-  z-index: -1;
-  background-image: url("/wp-content/themes/tema-de-broove/library/images/capa-ep.png");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
-  left: 0;
-  right: 0;
-  width: 100vw;
-  height: 100%; }
-#apresentacao-ep #corpo {
-  z-index: 0;
-  color: #272727;
-  background-color: #ededed; }
-  #apresentacao-ep #corpo #corpo-col-1 #titulo-ep {
-    font-family: 'Consolas-Black', Arial, sans-serif;
-    font-size: 2rem;
-    font-weight: bolder;
-    color: #272727;
-    margin-bottom: 0; }
-  #apresentacao-ep #corpo #corpo-col-1 #autor-ep {
-    font-family: 'Consolas-Black', Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: lighter;
-    color: #272727; }
-    #apresentacao-ep #corpo #corpo-col-1 #autor-ep #autor-broove {
-      text-decoration: underline; }
-  #apresentacao-ep #corpo #corpo-col-1 #btn-download-ep {
-    font-family: 'Mari David', Arial, sans-serif;
-    font-size: 1rem;
-    text-decoration: none;
-    color: #eee6d9;
-    background-color: #272727;
-    padding: 15px 10px;
-    border-radius: 50%;
-    border: 0;
-    transition: background-color 0.2s ease-in;
-    -webkit-transition: background-color 0.2s ease-in; }
-    #apresentacao-ep #corpo #corpo-col-1 #btn-download-ep:hover {
-      color: #eee6d9;
-      background-color: #9c8846;
-      transition: background-color 0.3s ease-out;
-      -webkit-transition: background-color 0.3s ease-out; }
-  #apresentacao-ep #corpo #corpo-col-1 #bio-ep {
-    font-family: 'Consolas-Black', Arial, sans-serif;
-    font-size: .8rem;
-    font-weight: lighter;
-    color: #272727;
-    margin-bottom: 0; }
-  #apresentacao-ep #corpo #corpo-col-1 #data-ep {
-    font-family: 'Consolas-Black', Arial, sans-serif;
-    font-size: .5rem;
-    font-weight: lighter;
-    color: #272727; }
-  #apresentacao-ep #corpo #corpo-col-2 .titulo-musica {
-    font-size: 1.2rem; }
-  #apresentacao-ep #corpo #corpo-col-2 .icon-letras {
-    color: #272727;
-    transition: color 0.2s ease-in;
-    -webkit-transition: color 0.2s ease-in; }
-    #apresentacao-ep #corpo #corpo-col-2 .icon-letras:hover {
-      color: #9c8846;
-      transition: color 0.3s ease-out;
-      -webkit-transition: color 0.3s ease-out; }
-  #apresentacao-ep #corpo #corpo-col-2 .letra-da-musica {
-    font-family: 'Consolas-Black', Arial, sans-serif;
-    font-size: 1rem; }
-  #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs {
-    background: #6c6145 !important; }
-    #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .play-pause {
-      width: 40px;
-      border-right: 0; }
-    #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber .progress {
-      background: #b5a05a !important; }
-    #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber .loaded {
-      background-image: -moz-linear-gradient(center top, #d1c498 0%, #d7cba5 50%, #d1c498 51%, #d1c498 100%) !important; }
-    #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
-      border-left: 0; }
 
 /*# sourceMappingURL=style.css.map */

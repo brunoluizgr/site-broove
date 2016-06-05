@@ -1,40 +1,50 @@
-<?php get_header(); ?>
+<!-- CABEÇALHO -->
+  <?php get_header(); ?>
+<!-- Fim do CABEÇALHO -->
 
-  <div id="conteudo" class="container-fluid padding-l-no padding-r-no margin-l-no margin-r-no">
-    <div id="conteudo-interno" class="row padding-l-no padding-r-no margin-l-no margin-r-no">
+  <div class="container-fluid">
+    <div class="row">
       <main>
-
-        <div id="btn-controla-menu">
+        <!-- Botões de SOBE e DESCE para controle das Seções -->
+        <div id="btn-controla-menu" class="hidden-xs hidden-sm">
           <button id="menu-sobe"></button>
           <button id="menu-desce"></button>
         </div>
+        <!-- Fim dos Botões de SOBE e DESCE -->
 
-        <section id="inicio" class="container-flex padding-l-no padding-r-no margin-l-no margin-r-no">
-          <?php get_template_part('sections/inicio'); ?>
+        <!-- Seção INICIO -->
+        <section id="inicio" class="container-flex">
+          <?php get_template_part('secoes/inicio'); ?>
         </section>
+        <!-- Fim da Seção INICIO -->
 
-        <section id="ep" class="container-flex padding-l-no padding-r-no margin-l-no margin-r-no">
-          <?php get_template_part('sections/ep'); ?>
+        <!-- Seção EP -->
+        <section id="ep" class="container-flex">
+          <?php get_template_part('secoes/ep'); ?>
         </section>
+        <!-- Fim da Seção EP -->
 
-        <section id="making-of" class="container-flex padding-l-no padding-r-no margin-l-no margin-r-no">
-          <?php get_template_part('sections/making-of'); ?>
+        <!-- Seção MAKING OF -->
+        <section id="making-of" class="container-flex">
+          <?php get_template_part('secoes/making-of'); ?>
         </section>
+        <!-- Fim da Seção MAKING OF -->
 
-        <section id="fotos" class="container-flex padding-l-no padding-r-no margin-l-no margin-r-no">
-          <?php get_template_part('sections/fotos'); ?>
+        <!-- Seção FOTOS -->
+        <section id="fotos" class="container-flex">
+          <?php get_template_part('secoes/fotos'); ?>
         </section>
+        <!-- Fim da Seção FOTOS -->
 
-        <!--section id="letras" class="container-flex padding-l-no padding-r-no margin-l-no margin-r-no">
-          <?php/* get_template_part('sections/letras'); */?>
-        </section-->
-
-        <section id="contato" class="container-flex padding-l-no padding-r-no margin-l-no margin-r-no">
-          <?php get_template_part('sections/contato'); ?>
+        <!-- Seção CONTATO -->
+        <section id="contato" class="container-flex">
+          <?php get_template_part('secoes/contato'); ?>
         </section>
-
+        <!-- Fim da Seção CONTATO -->
       </main>
     </div>
   </div>
 
-<?php get_footer(); ?>
+<!-- RODAPÉ -->
+  <?php get_footer(); ?>
+<!-- Fim do RODAPÉ -->

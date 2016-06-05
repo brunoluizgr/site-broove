@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--><html <?php language_attributes(); ?> class="no-js"><!--<![endif]-->
 
 <head>
-	<title><?php wp_title('-'); ?></title>
+	<title><?php wp_title('.'); ?></title>
 
 	<?php // Codificação ?>
 		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
@@ -41,7 +41,7 @@
 			<![endif]-->
 		<?php // Favicon WP-IE10 ?>
 			<meta name="msapplication-TileColor" content="#da532c">
-			<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/favicon/mstile-144x144.png">
+			<meta name="msapplication-TileImage" content="<?php echo(get_template_directory_uri() . '/library/favicon/mstile-144x144.png'); ?>">
 			<meta name="theme-color" content="#ffffff">
 
 	<?php // Pingback ?>
@@ -53,8 +53,8 @@
 		<meta property="og:type" content="website">
 		<meta property="og:site_name" content="<?php _e('Broove', 'temadebroove') ?>">
 		<meta property="og:title" content="<?php _e('Broove - Lançamento do EP', 'temadebroove') ?>">
-		<meta property="og:description" content="<?php _e('Ouça agora o EP de lançamento da banda Broove, incluindo \'Sesdotempo\' e \'Olhar\'. Download disponível!', 'temadebroove') ?>">
-		<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/library/images/facebook/facebook-og-img.png">
+		<meta property="og:description" content="<?php _e('Ouça agora o EP de lançamento da banda Broove, incluindo \'Sesdotempo\' e \'Olhar\'. Baixe agora, download disponível!', 'temadebroove') ?>">
+		<meta property="og:image" content="<?php echo(get_template_directory_uri() . '/library/images/facebook/facebook-og-img.png'); ?>">
 		<meta property="og:image:type" content="image/png">
 		<meta property="og:image:width" content="1200">
 		<meta property="og:image:height" content="630">
