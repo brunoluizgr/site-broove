@@ -1,0 +1,506 @@
+/******************************************************************
+Site Name: Tema de Broove
+Author: brunoluizgr
+
+Stylesheet: 320px and Up Stylesheet
+******************************************************************/
+// Miolo do EP ajustado para TODOS os tamanhos
+@import "../parciais/ep-miolo";
+
+/*********************
+GENERAL STYLES
+*********************/
+body {
+	width: 100%;
+	height:100%;
+	padding:0;
+	margin:0;
+	color: $black;
+	background-color: $white;
+	font-family:'Mari David';
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 100%;
+	line-height: 1.5;
+	z-index: -1;
+}
+
+// SEÇÃO DO INÍCIO
+#inicio{
+  display:block;
+  width:100vw;
+  height:100vh;
+  padding:2vw 1vw;
+  background-color:$white;
+  z-index:-1;
+
+  .secao-inicio{
+    background-color:$cor-capa-ep;
+    width:90.25vw;
+    height:100%;
+    margin:0 auto;
+
+    .logo-broove{
+      text-align: center;
+      #fita{
+        position:absolute;
+        z-index:0;
+        // Tamanho
+        height:17.75vw;
+        // Localização
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:auto;
+        margin-bottom:auto;
+        top:0;
+        bottom:0;
+        left: 0;
+        right: 0;
+      }
+      #miolo-esq,
+      #miolo-dir{
+        width:3.5vw;
+        height:3.5vw;
+        -webkit-animation: rotation 2s infinite linear;
+        -moz-animation: rotation 2s infinite linear;
+        -o-animation: rotation 2s infinite linear;
+        animation: rotation 2s infinite linear;
+        transform-origin: 50% 50%;
+        -webkit-transform-origin: 50% 50%;
+        -moz-transform-origin: 50% 50%;
+      }
+      @-webkit-keyframes rotation {
+          from {-webkit-transform: rotate(0deg);}
+          to   {-webkit-transform: rotate(359deg);}
+      }
+      @-moz-keyframes rotation {
+          from {-moz-transform: rotate(0deg);}
+          to   {-moz-transform: rotate(359deg);}
+      }
+      @-o-keyframes rotation {
+          from {-o-transform: rotate(0deg);}
+          to   {-o-transform: rotate(359deg);}
+      }
+      @keyframes rotation {
+          from {transform: rotate(0deg);}
+          to   {transform: rotate(359deg);}
+      }
+      #miolo-esq{
+        position:absolute;
+        display:block;
+        z-index:1;
+        margin-top:auto;
+        margin-bottom:auto;
+        top:0;
+        bottom:1vw;
+        left:42.00vw;
+        @media all and (min-device-aspect-ratio:1.95/1){
+          #miolo-esq{
+            left:42vw;
+          }
+        }
+      }
+      #miolo-dir{
+        position:absolute;
+        display:block;
+        z-index:1;
+        margin-top:auto;
+        margin-bottom:auto;
+        top:0;
+        bottom:1vw;
+        right:41.5vw;
+        @media all and (min-device-aspect-ratio:1.95/1){
+          #miolo-esq{
+            right:41.5vw;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+// SEÇÃO DO EP
+#ep{
+  display:block;
+  width:100vw;
+  height:100%;
+  padding:2vw 1vw;
+  background-color:$white;
+  z-index:-1;
+
+  #secao-ep{
+    width:90.25vw;
+    height:100%;
+    margin:0 auto;
+    background-image:url("/wp-content/themes/tema-de-broove/library/images/pattern-1.png");
+    background-repeat:repeat;
+
+    #titulo-ep{
+      font-size:3rem;
+      color:$white;
+			text-shadow: 1px 1px $cor-fita-ep-6;
+    }
+
+    #corpo-ep{
+      #corpo-ep-2{
+				margin-top: 1.5rem;
+				margin-bottom: 1.5rem;
+
+				.escute-link,
+				.baixe-link{
+					display: block;
+          text-decoration:none;
+					color: white;
+					transition: color 0.2s ease-in;
+					-webkit-transition: color 0.2s ease-in;
+					-moz-transition: color 0.2s ease-in;
+					-o-transition: color 0.2s ease-in;
+					text-shadow: 1px 1px $cor-fita-ep-6;
+					transition: text-shadow 0.2s ease;
+					-webkit-transition: text-shadow 0.2s ease;
+					-moz-transition: text-shadow 0.2s ease;
+					-o-transition: text-shadow 0.2s ease;
+					&:active,
+					&:focus,
+					&:hover{
+						color: $cor-fita-ep-6;
+						transition: color 0.2s ease-in;
+						-webkit-transition: color 0.2s ease-in;
+						-o-transition: color 0.2s ease-in;
+						text-shadow: 1px 1px $white;
+						transition: text-shadow 0.2s ease;
+						-webkit-transition: text-shadow 0.2s ease;
+						-o-transition: text-shadow 0.2s ease;
+					}
+					h4{
+						font-size: 2.5rem;
+						color: $cor-fita-ep-6;
+						transition: color 0.2s ease-in;
+						-webkit-transition: color 0.2s ease-in;
+						-moz-transition: color 0.2s ease-in;
+						-o-transition: color 0.2s ease-in;
+						text-shadow: 1px 1px $white;
+						transition: text-shadow 0.2s ease;
+						-webkit-transition: text-shadow 0.2s ease;
+						-moz-transition: text-shadow 0.2s ease;
+						-o-transition: text-shadow 0.2s ease;
+						&:active,
+						&:focus,
+						&:hover{
+							color: $white;
+							transition: color 0.2s ease-in;
+							-webkit-transition: color 0.2s ease-in;
+							-moz-transition: color 0.2s ease-in;
+							-o-transition: color 0.2s ease-in;
+							text-shadow: 1px 1px $cor-fita-ep-6;
+							transition: text-shadow 0.2s ease;
+							-webkit-transition: text-shadow 0.2s ease;
+							-moz-transition: text-shadow 0.2s ease;
+							-o-transition: text-shadow 0.2s ease;
+						}
+						background-color:rgba(237,237,237,.6);
+						&:active,
+						&:focus,
+						&:hover{
+							background-color:rgba(156,136,70,.5);
+						}
+					}
+				}
+
+        .social-link{
+          display: block;
+          font-size:1.6rem;
+          text-decoration:none;
+          color: $white;
+					transition: color 0.2s ease-in;
+					-webkit-transition: color 0.2s ease-in;
+					-o-transition: color 0.2s ease-in;
+					text-shadow: 1px 1px $cor-fita-ep-6;
+					transition: text-shadow 0.2s ease;
+					-webkit-transition: text-shadow 0.2s ease;
+					-o-transition: text-shadow 0.2s ease;
+					&:active,
+					&:focus,
+					&:hover{
+						color: $cor-fita-ep-6;
+						transition: color 0.2s ease-in;
+						-webkit-transition: color 0.2s ease-in;
+						-o-transition: color 0.2s ease-in;
+						text-shadow: 1px 1px $white;
+						transition: text-shadow 0.2s ease;
+						-webkit-transition: text-shadow 0.2s ease;
+						-o-transition: text-shadow 0.2s ease;
+					}
+        }
+
+      }
+    }
+  }
+}
+
+// SEÇÃO DO MAKING-OF
+#making-of {
+  display:block;
+  width:100vw;
+  height:100%;
+  padding:2vw 1vw;
+  background-color:$white;
+  z-index:-1;
+
+  #secao-making-of {
+    width:90.25vw;
+    height:100%;
+    margin:0 auto;
+    background-color: $black;
+
+    #titulo-making-of {
+			font-size:3rem;
+			color:$white;
+      text-shadow: 1px 1px $cor-capa-ep-1;
+    }
+		#corpo-making-of {
+			margin-bottom:2rem;
+			.video-container {
+				position: relative;
+				padding-bottom: 56.25%;
+				padding-top: 30px;
+				height: 0;
+				overflow: hidden;
+			}
+			.video-container iframe {
+				position: absolute;
+				top:0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+  	}
+
+	}
+}
+
+// SEÇÃO DE FOTOS
+#fotos {
+  display:block;
+  width:100vw;
+  height:100%;
+  padding:2vw 1vw;
+  background-color:$white;
+  z-index:-1;
+
+  #secao-fotos {
+    width:90.25vw;
+    height:100%;
+    margin:0 auto;
+    background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-2.png");
+
+    #titulo-fotos {
+			font-size:3rem;
+			color:$cor-capa-ep;
+			text-shadow: 1px 1px $cor-fita-ep-4;
+    }
+
+		#corpo-fotos {
+			margin-bottom: 3rem;
+			#bwg_container1_0 #bwg_container2_0 .bwg_slideshow_image_wrap_0{
+				background-color: transparent!important;
+				.bwg_slideshow_dots_0{
+					display:none!important;
+				}
+			}
+		}
+  }
+}
+
+// SEÇÃO DE CONTATO
+#contato{
+	display:block;
+	width:100vw;
+	height:100%;
+	padding:2vw 1vw;
+	background-color:$white;
+	z-index:-1;
+
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+
+  #secao-contato{
+    background-color: $cor-contracapa-ep;
+    width:90.25vw;
+    height:100%;
+    margin:0 auto;
+
+		.borda-titulo-contato{
+			border-top: 3px solid $cor-fita-interna-ep;
+	    border-left: 3px solid $cor-fita-interna-ep;
+	    border-right: 3px solid $cor-fita-interna-ep;
+			#titulo-contato{
+				font-size:3rem;
+				color:$cor-fita-ep-6;
+				text-shadow: 1px 1px $cor-fita-ep-1;
+	    }
+		}
+
+    #corpo-contato{
+      border-left: 3px solid $cor-fita-interna-ep;
+      border-right: 3px solid $cor-fita-interna-ep;
+      border-bottom: 3px solid $cor-fita-interna-ep;
+      .wpcf7-form{
+        p{
+          font-size: 2rem;
+          color: $cor-fita-interna-ep;
+        }
+        input,
+        textarea{
+          font-family:'Lato';
+					color:$cor-fita-ep;
+          background-color:$cor-capa-ep;
+        }
+        textarea{
+          resize:none;
+          height:35vh;
+        }
+        input[type="submit"]{
+					font-family:'Mari David';
+          font-size:2.2rem;
+          padding:5px 10px;
+					color:$cor-fita-ep;
+					transition: color 0.3s ease-in;
+					-webkit-transition: color 0.3s ease-in;
+					-moz-transition: color 0.3s ease-in;
+					-o-transition: color 0.3s ease-in;
+					background-color:$cor-capa-ep;
+					transition: background-color 0.2s ease-out;
+					-webkit-transition: background-color 0.2s ease-out;
+					-moz-transition: background-color 0.2s ease-out;
+					-o-transition: background-color 0.2s ease-out;
+          border:2px solid $cor-capa-ep-4;
+					transition: border 0.2s ease;
+					-webkit-transition: border 0.2s ease;
+					-moz-transition: border 0.2s ease;
+					-o-transition: border 0.2s ease;
+          &:active,
+					&:focus,
+					&:hover{
+            color:$cor-capa-ep-6;
+						transition: color 0.3s ease-out;
+						-webkit-transition: color 0.3s ease-out;
+						-moz-transition: color 0.3s ease-out;
+						-o-transition: color 0.3s ease-out;
+            background-color:$cor-fita-ep-4;
+						transition: background-color 0.2s ease-in;
+						-webkit-transition: background-color 0.2s ease-in;
+						-moz-transition: background-color 0.2s ease-in;
+						-o-transition: background-color 0.2s ease-in;
+						border:2px solid $cor-capa-ep-6;
+						transition: border 0.2s ease;
+						-webkit-transition: border 0.2s ease;
+						-moz-transition: border 0.2s ease;
+						-o-transition: border 0.2s ease;
+          }
+        }
+      }
+      .wpcf7-not-valid-tip{
+        font-size:1.5rem;
+      }
+			.wpcf7-response-output,
+			.wpcf7-display-none,
+			.wpcf7-validation-errors{
+				font-size:1.4rem;
+			}
+    }
+  }
+}
+
+// RODAPÉ
+#rodape{
+  background-color: $cor-fita-ep;
+
+  #rodape-row-1 {
+	  a {
+			font-size: 1.8rem;
+	    color: $white;
+	    text-decoration: none;
+	    transition: color 0.3s ease-out;
+	    -webkit-transition: color 0.3s ease-out;
+			-moz-transition: color 0.3s ease-out;
+			-o-transition: color 0.3s ease-out;
+	    &:hover{
+	      color: $cor-fita-interna-ep;
+	      text-decoration: none;
+	      transition: color 0.2s ease-in;
+	      -webkit-transition: color 0.2s ease-in;
+				-moz-transition: color 0.2s ease-in;
+				-o-transition: color 0.2s ease-in;
+	    }
+	  }
+		h3 {
+			font-size: 1.5rem;
+			color: $white;
+			text-decoration: none;
+			margin: 0;
+		}
+		i {
+			font-size:2.5rem;
+		}
+		p {
+			color: white;
+			font-size: 1.4rem;
+		}
+		#brunoluizgr-copyright {
+			height: 5vh;
+			margin: auto;
+			vertical-align: middle;
+			display: inline-block;
+		}
+  }
+
+  #rodape-row-2{
+		font-size: 1.2rem;
+		color: $white;
+  }
+}
+
+/********************
+WORDPRESS BODY CLASSES
+style a page via class
+********************/
+
+.rtl {}                           /* for sites that are read right to left (i.e. hebrew) */
+.home {}                          /* home page */
+.blog {}                          /* blog template page */
+.archive {}                       /* archive page */
+.date {}                          /* date archive page */
+	.date-paged-1 {}                /* replace the number to the corresponding page number */
+.search {}                        /* search page */
+	.search-results {}              /* search result page */
+	.search-no-results {}           /* no results search page */
+	.search-paged-1 {}              /* individual paged search (i.e. body.search-paged-3) */
+.error404 {}                      /* 404 page */
+.single {}                        /* single post page */
+	.postid-1 {}                    /* individual post page by id (i.e. body.postid-73) */
+	.single-paged-1 {}              /* individual paged single (i.e. body.single-paged-3) */
+.attachment {}                    /* attatchment page */
+	.attachmentid-1 {}              /* individual attatchment page (i.e. body.attachmentid-763) */
+	.attachment-mime-type {}        /* style mime type pages */
+.author {}                        /* author page */
+	.author-nicename {}             /* user nicename (i.e. body.author-samueladams) */
+	.author-paged-1 {}              /* paged author archives (i.e. body.author-paged-4) for page 4 */
+.category {}                      /* category page */
+	.category-1 {}                  /* individual category page (i.e. body.category-6) */
+	.category-paged-1 {}            /* replace the number to the corresponding page number */
+.tag {}                           /* tag page */
+	.tag-slug {}                    /* individual tag page (i.e. body.tag-news) */
+	.tag-paged-1 {}                 /* replace the number to the corresponding page number */
+.page-template {}                 /* custom page template page */
+	.page-template-page-php {}      /* individual page template (i.e. body.page-template-contact-php */
+	.page-paged-1 {}                /* replace the number to the corresponding page number */
+	.page-parent {}                 /* parent page template */
+	.page-child {}                  /* child page template */
+	.parent-pageid-1 {}             /* replace the number to the corresponding page number */
+.logged-in {}                     /* if user is logged in */
+.paged {}                         /* paged items like search results or archives */
+	.paged-1 {}                     /* individual paged (i.e. body.paged-3) */

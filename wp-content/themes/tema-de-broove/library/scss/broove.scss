@@ -57,6 +57,19 @@ html, body {
 
 #menu-principal{
   background-color:$cor-fita-ep-6;
+
+  .navbar-toggle:focus,
+  .navbar-toggle:hover {
+    background-color: $cor-fita-interna-ep-1;
+  }
+  .navbar-toggle .icon-bar {
+    background-color: $cor-fita-ep-1;
+    &:focus,
+    &:focus {
+      background-color: $cor-fita-ep-6;
+    }
+  }
+
   #menu{
     li a{
       color:$cor-capa-ep-1;
