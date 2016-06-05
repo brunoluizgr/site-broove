@@ -11,7 +11,10 @@
 
     <!-- Imagem do EP -->
     <div id="corpo-ep-1" class="col-xs-12 col-md-6 col-lg-6">
-      <img class="img-responsive" src="<?php echo get_template_directory_uri() . '/library/images/ep-exposicao.svg'?>" title="<?php _e( 'Broove - EP', 'temadebroove' ); ?>" alt="<?php _e( 'Broove - EP', 'temadebroove' ); ?>" />
+      <img id="img-ep" class="img-responsive hidden-sm hidden-md hidden-lg" src="<?php echo get_template_directory_uri() . '/library/images/ep-exposicao_480p.png'?>" title="<?php _e( 'Broove - EP', 'temadebroove' ); ?>" alt="<?php _e( 'Broove - EP', 'temadebroove' ); ?>" />
+      <img id="img-ep" class="img-responsive hidden-xs hidden-md hidden-lg" src="<?php echo get_template_directory_uri() . '/library/images/ep-exposicao_768p.png'?>" title="<?php _e( 'Broove - EP', 'temadebroove' ); ?>" alt="<?php _e( 'Broove - EP', 'temadebroove' ); ?>" />
+      <img id="img-ep" class="img-responsive hidden-xs hidden-sm hidden-lg" src="<?php echo get_template_directory_uri() . '/library/images/ep-exposicao_992p.png'?>" title="<?php _e( 'Broove - EP', 'temadebroove' ); ?>" alt="<?php _e( 'Broove - EP', 'temadebroove' ); ?>" />
+      <img id="img-ep" class="img-responsive hidden-xs hidden-sm hidden-md" src="<?php echo get_template_directory_uri() . '/library/images/ep-exposicao_1200p.png'?>" title="<?php _e( 'Broove - EP', 'temadebroove' ); ?>" alt="<?php _e( 'Broove - EP', 'temadebroove' ); ?>" />
     </div>
 
     <!-- Guias do EP -->

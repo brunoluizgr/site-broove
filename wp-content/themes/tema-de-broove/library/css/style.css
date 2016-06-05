@@ -1252,7 +1252,34 @@ STYLESHEETS (de acordo com o Bootstrap 3)
     -moz-osx-font-smoothing: grayscale;
     font-size: 100%;
     line-height: 1.5;
-    z-index: -1; }
+    z-index: -1;
+    overflow-x: hidden; }
+
+  #menu-principal {
+    background-color: #6c6145; }
+    #menu-principal .navbar-toggle:focus,
+    #menu-principal .navbar-toggle:hover {
+      background-color: #e2dabf; }
+    #menu-principal .navbar-toggle .icon-bar {
+      background-color: #aea180; }
+      #menu-principal .navbar-toggle .icon-bar:focus, #menu-principal .navbar-toggle .icon-bar:focus {
+        background-color: #443d2b; }
+    #menu-principal #menu {
+      background-color: #443d2b; }
+      #menu-principal #menu li {
+        text-align: center; }
+        #menu-principal #menu li:active, #menu-principal #menu li:focus, #menu-principal #menu li:hover {
+          background-color: #d1c498; }
+        #menu-principal #menu li a {
+          color: #f4efe7;
+          font-size: 2rem;
+          text-decoration: none;
+          transition: background-color 0.3s ease-in;
+          -webkit-transition: background-color 0.3s ease-in; }
+          #menu-principal #menu li a:hover {
+            background-color: #6c6145;
+            transition: background-color 0.2s ease-out;
+            -webkit-transition: background-color 0.2s ease-out; }
 
   #inicio {
     display: block;
@@ -1318,8 +1345,11 @@ STYLESHEETS (de acordo com o Bootstrap 3)
           margin-top: auto;
           margin-bottom: auto;
           top: 0;
-          bottom: 1vw;
-          left: 42.00vw; }
+          bottom: 1vw; } }
+        @media only screen and (min-width: 320px) and (max-width: 480px) and (min-width: 320px) and (max-width: 480px) {
+          #inicio .secao-inicio .logo-broove #miolo-esq {
+            left: 42.5vw; } }
+@media only screen and (min-width: 320px) and (max-width: 480px) {
         #inicio .secao-inicio .logo-broove #miolo-dir {
           position: absolute;
           display: block;
@@ -1327,8 +1357,12 @@ STYLESHEETS (de acordo com o Bootstrap 3)
           margin-top: auto;
           margin-bottom: auto;
           top: 0;
-          bottom: 1vw;
-          right: 41.5vw; }
+          bottom: 1vw; } }
+        @media only screen and (min-width: 320px) and (max-width: 480px) and (min-width: 320px) and (max-width: 480px) {
+          #inicio .secao-inicio .logo-broove #miolo-dir {
+            right: 42vw; } }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
   #ep {
     display: block;
     width: 100vw;
@@ -1346,6 +1380,9 @@ STYLESHEETS (de acordo com o Bootstrap 3)
         font-size: 3rem;
         color: #fff;
         text-shadow: 1px 1px #443d2b; }
+      #ep #secao-ep #corpo-ep #corpo-ep-1 #img-ep {
+        margin-right: auto;
+        margin-left: auto; }
       #ep #secao-ep #corpo-ep #corpo-ep-2 {
         margin-top: 1.5rem;
         margin-bottom: 1.5rem; }
@@ -1357,11 +1394,13 @@ STYLESHEETS (de acordo com o Bootstrap 3)
           transition: color 0.2s ease-in;
           -webkit-transition: color 0.2s ease-in;
           -moz-transition: color 0.2s ease-in;
+          -ms-transition: color 0.2s ease-in;
           -o-transition: color 0.2s ease-in;
           text-shadow: 1px 1px #443d2b;
           transition: text-shadow 0.2s ease;
           -webkit-transition: text-shadow 0.2s ease;
           -moz-transition: text-shadow 0.2s ease;
+          -ms-transition: text-shadow 0.2s ease;
           -o-transition: text-shadow 0.2s ease; }
           #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link:active, #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link:focus, #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link:hover,
           #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link:active,
@@ -1370,10 +1409,14 @@ STYLESHEETS (de acordo com o Bootstrap 3)
             color: #443d2b;
             transition: color 0.2s ease-in;
             -webkit-transition: color 0.2s ease-in;
+            -moz-transition: color 0.2s ease-in;
+            -ms-transition: color 0.2s ease-in;
             -o-transition: color 0.2s ease-in;
             text-shadow: 1px 1px #fff;
             transition: text-shadow 0.2s ease;
             -webkit-transition: text-shadow 0.2s ease;
+            -moz-transition: text-shadow 0.2s ease;
+            -ms-transition: text-shadow 0.2s ease;
             -o-transition: text-shadow 0.2s ease; }
           #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4,
           #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link h4 {
@@ -1382,11 +1425,13 @@ STYLESHEETS (de acordo com o Bootstrap 3)
             transition: color 0.2s ease-in;
             -webkit-transition: color 0.2s ease-in;
             -moz-transition: color 0.2s ease-in;
+            -ms-transition: color 0.2s ease-in;
             -o-transition: color 0.2s ease-in;
             text-shadow: 1px 1px #fff;
             transition: text-shadow 0.2s ease;
             -webkit-transition: text-shadow 0.2s ease;
             -moz-transition: text-shadow 0.2s ease;
+            -ms-transition: text-shadow 0.2s ease;
             -o-transition: text-shadow 0.2s ease;
             background-color: rgba(237, 237, 237, 0.6); }
             #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4:active, #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4:focus, #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4:hover,
@@ -1397,11 +1442,13 @@ STYLESHEETS (de acordo com o Bootstrap 3)
               transition: color 0.2s ease-in;
               -webkit-transition: color 0.2s ease-in;
               -moz-transition: color 0.2s ease-in;
+              -ms-transition: color 0.2s ease-in;
               -o-transition: color 0.2s ease-in;
               text-shadow: 1px 1px #443d2b;
               transition: text-shadow 0.2s ease;
               -webkit-transition: text-shadow 0.2s ease;
               -moz-transition: text-shadow 0.2s ease;
+              -ms-transition: text-shadow 0.2s ease;
               -o-transition: text-shadow 0.2s ease; }
             #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4:active, #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4:focus, #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4:hover,
             #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link h4:active,
@@ -1415,19 +1462,27 @@ STYLESHEETS (de acordo com o Bootstrap 3)
           color: #fff;
           transition: color 0.2s ease-in;
           -webkit-transition: color 0.2s ease-in;
+          -moz-transition: color 0.2s ease-in;
+          -ms-transition: color 0.2s ease-in;
           -o-transition: color 0.2s ease-in;
           text-shadow: 1px 1px #443d2b;
           transition: text-shadow 0.2s ease;
           -webkit-transition: text-shadow 0.2s ease;
+          -moz-transition: text-shadow 0.2s ease;
+          -ms-transition: text-shadow 0.2s ease;
           -o-transition: text-shadow 0.2s ease; }
           #ep #secao-ep #corpo-ep #corpo-ep-2 .social-link:active, #ep #secao-ep #corpo-ep #corpo-ep-2 .social-link:focus, #ep #secao-ep #corpo-ep #corpo-ep-2 .social-link:hover {
             color: #443d2b;
             transition: color 0.2s ease-in;
             -webkit-transition: color 0.2s ease-in;
+            -moz-transition: color 0.2s ease-in;
+            -ms-transition: color 0.2s ease-in;
             -o-transition: color 0.2s ease-in;
             text-shadow: 1px 1px #fff;
             transition: text-shadow 0.2s ease;
             -webkit-transition: text-shadow 0.2s ease;
+            -moz-transition: text-shadow 0.2s ease;
+            -ms-transition: text-shadow 0.2s ease;
             -o-transition: text-shadow 0.2s ease; }
 
   #making-of {
@@ -1499,7 +1554,8 @@ STYLESHEETS (de acordo com o Bootstrap 3)
       background-color: white;
       width: 90.25vw;
       height: 100%;
-      margin: 0 auto; }
+      margin: 0 auto;
+      margin-bottom: 2rem; }
       #contato #secao-contato .borda-titulo-contato {
         border-top: 3px solid #d1c498;
         border-left: 3px solid #d1c498;
@@ -1507,7 +1563,8 @@ STYLESHEETS (de acordo com o Bootstrap 3)
         #contato #secao-contato .borda-titulo-contato #titulo-contato {
           font-size: 3rem;
           color: #443d2b;
-          text-shadow: 1px 1px #aea180; }
+          text-shadow: 1px 1px #aea180;
+          margin-bottom: 0; }
       #contato #secao-contato #corpo-contato {
         border-left: 3px solid #d1c498;
         border-right: 3px solid #d1c498;
@@ -1601,6 +1658,119 @@ STYLESHEETS (de acordo com o Bootstrap 3)
       font-size: 1.2rem;
       color: #fff; }
 
+  #apresentacao-ep #cabecalho #imagem-de-fundo {
+    position: fixed;
+    display: block;
+    z-index: -1;
+    background-image: url("/wp-content/themes/tema-de-broove/library/images/capa-ep.png");
+    background-size: 70%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    filter: blur(5px);
+    -ms-filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100%; }
+  #apresentacao-ep #corpo {
+    z-index: 0;
+    color: #272727;
+    background-color: #ededed; }
+    #apresentacao-ep #corpo #corpo-col-1 #titulo-ep {
+      font-family: 'Lato', Arial, sans-serif;
+      font-size: 2rem;
+      font-weight: bolder;
+      color: #272727;
+      margin-bottom: 0; }
+    #apresentacao-ep #corpo #corpo-col-1 #autor-ep {
+      font-family: 'Lato', Arial, sans-serif;
+      font-size: 1rem;
+      font-weight: lighter;
+      color: #272727; }
+      #apresentacao-ep #corpo #corpo-col-1 #autor-ep #autor-broove {
+        text-decoration: underline; }
+    #apresentacao-ep #corpo #corpo-col-1 #bio-ep {
+      font-family: 'Consolas-Black', Arial, sans-serif;
+      font-weight: bolder;
+      color: #272727;
+      margin-bottom: 0; } }
+    @media only screen and (min-width: 320px) and (max-width: 480px) and (width: 320px) {
+      #apresentacao-ep #corpo #corpo-col-1 #bio-ep {
+        font-size: 1.4rem; } }
+    @media only screen and (min-width: 320px) and (max-width: 480px) and (width: 480px) {
+      #apresentacao-ep #corpo #corpo-col-1 #bio-ep {
+        font-size: 1.3rem; } }
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    #apresentacao-ep #corpo #corpo-col-1 #data-ep {
+      font-family: 'Consolas-Black', Arial, sans-serif;
+      font-size: 1rem;
+      font-weight: lighter;
+      color: #272727; }
+    #apresentacao-ep #corpo #corpo-col-2 .titulo-musica {
+      font-size: 1.6rem; }
+    #apresentacao-ep #corpo #corpo-col-2 .icon-letras {
+      color: #272727;
+      transition: color 0.2s ease-in;
+      -webkit-transition: color 0.2s ease-in; }
+      #apresentacao-ep #corpo #corpo-col-2 .icon-letras:hover {
+        color: #9c8846;
+        transition: color 0.3s ease-out;
+        -webkit-transition: color 0.3s ease-out; }
+    #apresentacao-ep #corpo #corpo-col-2 .letra-da-musica {
+      font-family: 'Consolas-Black', Arial, sans-serif;
+      font-size: 1.5rem; }
+    #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs {
+      width: 100% !important;
+      background: #6c6145 !important; }
+      #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .play-pause {
+        width: 40px;
+        border-right: 0; } }
+    @media only screen and (min-width: 320px) and (max-width: 480px) and (width: 320px) {
+      #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber {
+        width: 110px !important;
+        margin: 10px 0 10px 10px !important; }
+      #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
+        margin: 0px 0px 0px 1px !important;
+        font-size: 10px !important; } }
+    @media only screen and (min-width: 320px) and (max-width: 480px) and (width: 480px) {
+      #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber {
+        width: 265px !important; }
+      #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
+        font-size: 10px !important; } }
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+      #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber {
+        margin: 10px 0 10px 10px !important; }
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber .progress {
+          background: #b5a05a !important; }
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber .loaded {
+          background-image: -moz-linear-gradient(center top, #d1c498 0%, #d7cba5 50%, #d1c498 51%, #d1c498 100%) !important; }
+      #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
+        border-left: 0; }
+    #apresentacao-ep #corpo #corpo-col-3 #btn-download-ep {
+      font-size: 2rem;
+      text-decoration: none;
+      color: #eee6d9;
+      background-color: #272727;
+      padding: 15px 10px;
+      border-radius: 50%;
+      border: 0;
+      transition: background-color 0.2s ease-in;
+      -webkit-transition: background-color 0.2s ease-in;
+      -moz-transition: background-color 0.2s ease-in;
+      -ms-transition: background-color 0.2s ease-in;
+      -o-transition: background-color 0.2s ease-in; }
+      #apresentacao-ep #corpo #corpo-col-3 #btn-download-ep:hover {
+        color: #eee6d9;
+        background-color: #9c8846;
+        transition: background-color 0.3s ease-out;
+        -webkit-transition: background-color 0.3s ease-out;
+        -moz-transition: background-color 0.3s ease-out;
+        -ms-transition: background-color 0.3s ease-out;
+        -o-transition: background-color 0.3s ease-out; }
+
   /********************
   WORDPRESS BODY CLASSES
   style a page via class
@@ -1646,7 +1816,627 @@ STYLESHEETS (de acordo com o Bootstrap 3)
   Author: brunoluizgr
   
   Stylesheet: 480px and Up Stylesheet
-  ******************************************************************/ }
+  ******************************************************************/
+  /******************************************************************
+  Stylesheet: EP-Miolo
+  Media queries para ajustar os dois miolos do EP.
+  ******************************************************************/
+  /******************************************************************
+    Celulares
+  ******************************************************************/
+  /* ----------- iPhone 4 and 4S ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- iPhone 5 and 5S ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- iPhone 6 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- iPhone 6+ ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- Galaxy S3 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- Galaxy S4 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- Galaxy S5 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- HTC One ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /******************************************************************
+    Tablets
+  ******************************************************************/
+  /* ----------- iPad mini ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- iPad 1 and 2 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- iPad 3 and 4 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- Galaxy Tab 10.1 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- Asus Nexus 7 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- Kindle Fire HD 7" ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- Kindle Fire HD 8.9" ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /******************************************************************
+    Desktops
+  ******************************************************************/
+  /* ----------- Non-Retina Screens ----------- */
+  /* ----------- Retina Screens ----------- */
+  /*********************
+  GENERAL STYLES
+  *********************/
+  body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    color: #000;
+    background-color: #fff;
+    font-family: 'Mari David';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 100%;
+    line-height: 1.5;
+    z-index: -1;
+    overflow-x: hidden; }
+
+  #menu-principal {
+    background-color: #6c6145; }
+    #menu-principal .navbar-toggle:focus,
+    #menu-principal .navbar-toggle:hover {
+      background-color: #e2dabf; }
+    #menu-principal .navbar-toggle .icon-bar {
+      background-color: #aea180; }
+      #menu-principal .navbar-toggle .icon-bar:focus, #menu-principal .navbar-toggle .icon-bar:focus {
+        background-color: #443d2b; }
+    #menu-principal #menu {
+      background-color: #443d2b; }
+      #menu-principal #menu li {
+        text-align: center; }
+        #menu-principal #menu li:active, #menu-principal #menu li:focus, #menu-principal #menu li:hover {
+          background-color: #d1c498; }
+        #menu-principal #menu li a {
+          color: #f4efe7;
+          font-size: 2rem;
+          text-decoration: none;
+          transition: background-color 0.3s ease-in;
+          -webkit-transition: background-color 0.3s ease-in;
+          -moz-transition: background-color 0.3s ease-in;
+          -ms-transition: background-color 0.3s ease-in;
+          -o--transition: background-color 0.3s ease-in; }
+          #menu-principal #menu li a:hover {
+            transition: background-color 0.2s ease-out;
+            -webkit-transition: background-color 0.2s ease-out;
+            -moz-transition: background-color 0.2s ease-out;
+            -ms-transition: background-color 0.2s ease-out;
+            -o-transition: background-color 0.2s ease-out; }
+
+  #inicio {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    padding: 2vw 1vw;
+    background-color: #fff;
+    z-index: -1; }
+    #inicio .secao-inicio {
+      background-color: #eee6d9;
+      width: 90.25vw;
+      height: 100%;
+      margin: 0 auto; }
+      #inicio .secao-inicio .logo-broove {
+        text-align: center; }
+        #inicio .secao-inicio .logo-broove #fita {
+          position: absolute;
+          z-index: 0;
+          height: 17.75vw;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: auto;
+          margin-bottom: auto;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0; }
+        #inicio .secao-inicio .logo-broove #miolo-esq,
+        #inicio .secao-inicio .logo-broove #miolo-dir {
+          width: 3.5vw;
+          height: 3.5vw;
+          -webkit-animation: rotation 2s infinite linear;
+          -moz-animation: rotation 2s infinite linear;
+          -o-animation: rotation 2s infinite linear;
+          animation: rotation 2s infinite linear;
+          transform-origin: 50% 50%;
+          -webkit-transform-origin: 50% 50%;
+          -moz-transform-origin: 50% 50%; }
+  @-webkit-keyframes rotation {
+    from {
+      -webkit-transform: rotate(0deg); }
+    to {
+      -webkit-transform: rotate(359deg); } }
+  @-moz-keyframes rotation {
+    from {
+      -moz-transform: rotate(0deg); }
+    to {
+      -moz-transform: rotate(359deg); } }
+  @-o-keyframes rotation {
+    from {
+      -o-transform: rotate(0deg); }
+    to {
+      -o-transform: rotate(359deg); } }
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg); }
+    to {
+      transform: rotate(359deg); } }
+        #inicio .secao-inicio .logo-broove #miolo-esq {
+          position: absolute;
+          display: block;
+          z-index: 1;
+          margin-top: auto;
+          margin-bottom: auto;
+          top: 0;
+          bottom: 1vw;
+          left: 42.00vw; }
+        #inicio .secao-inicio .logo-broove #miolo-dir {
+          position: absolute;
+          display: block;
+          z-index: 1;
+          margin-top: auto;
+          margin-bottom: auto;
+          top: 0;
+          bottom: 1vw;
+          right: 41.5vw; }
+  #ep {
+    display: block;
+    width: 100vw;
+    height: 100%;
+    padding: 2vw 1vw;
+    background-color: #fff;
+    z-index: -1; }
+    #ep #secao-ep {
+      width: 90.25vw;
+      height: 100%;
+      margin: 0 auto;
+      background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-1.png");
+      background-repeat: repeat; }
+      #ep #secao-ep #titulo-ep {
+        font-size: 5rem;
+        color: #fff;
+        text-shadow: 1px 1px #443d2b; }
+      #ep #secao-ep #corpo-ep #corpo-ep-2 {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem; }
+        #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link,
+        #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link {
+          display: block;
+          margin-bottom: 4rem;
+          text-decoration: none;
+          color: white;
+          transition: color 0.2s ease-in;
+          -webkit-transition: color 0.2s ease-in;
+          -moz-transition: color 0.2s ease-in;
+          -ms-transition: color 0.2s ease-in;
+          -o-transition: color 0.2s ease-in;
+          text-shadow: 1px 1px #443d2b;
+          transition: text-shadow 0.2s ease;
+          -webkit-transition: text-shadow 0.2s ease;
+          -moz-transition: text-shadow 0.2s ease;
+          -ms-transition: text-shadow 0.2s ease;
+          -o-transition: text-shadow 0.2s ease; }
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link:active, #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link:focus, #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link:hover,
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link:active,
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link:focus,
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link:hover {
+            color: #443d2b;
+            transition: color 0.2s ease-in;
+            -webkit-transition: color 0.2s ease-in;
+            -moz-transition: color 0.2s ease-in;
+            -ms-transition: color 0.2s ease-in;
+            -o-transition: color 0.2s ease-in;
+            text-shadow: 1px 1px #fff;
+            transition: text-shadow 0.2s ease;
+            -webkit-transition: text-shadow 0.2s ease;
+            -moz-transition: text-shadow 0.2s ease;
+            -ms-transition: text-shadow 0.2s ease;
+            -o-transition: text-shadow 0.2s ease; }
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4,
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link h4 {
+            font-size: 3.5rem;
+            color: #443d2b;
+            transition: color 0.2s ease-in;
+            -webkit-transition: color 0.2s ease-in;
+            -moz-transition: color 0.2s ease-in;
+            -ms-transition: color 0.2s ease-in;
+            -o-transition: color 0.2s ease-in;
+            text-shadow: 1px 1px #fff;
+            transition: text-shadow 0.2s ease;
+            -webkit-transition: text-shadow 0.2s ease;
+            -moz-transition: text-shadow 0.2s ease;
+            -ms-transition: text-shadow 0.2s ease;
+            -o-transition: text-shadow 0.2s ease;
+            background-color: rgba(237, 237, 237, 0.6); }
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4:active, #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4:focus, #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4:hover,
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link h4:active,
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link h4:focus,
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link h4:hover {
+              color: #fff;
+              transition: color 0.2s ease-in;
+              -webkit-transition: color 0.2s ease-in;
+              -moz-transition: color 0.2s ease-in;
+              -ms-transition: color 0.2s ease-in;
+              -o-transition: color 0.2s ease-in;
+              text-shadow: 1px 1px #443d2b;
+              transition: text-shadow 0.2s ease;
+              -webkit-transition: text-shadow 0.2s ease;
+              -moz-transition: text-shadow 0.2s ease;
+              -ms-transition: text-shadow 0.2s ease;
+              -o-transition: text-shadow 0.2s ease; }
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4:active, #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4:focus, #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4:hover,
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link h4:active,
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link h4:focus,
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link h4:hover {
+              background-color: rgba(156, 136, 70, 0.5); }
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link p i,
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link p i {
+            font-size: 5rem; }
+        #ep #secao-ep #corpo-ep #corpo-ep-2 .social-link {
+          display: block;
+          font-size: 3rem;
+          text-decoration: none;
+          color: #fff;
+          transition: color 0.2s ease-in;
+          -webkit-transition: color 0.2s ease-in;
+          -moz-transition: color 0.2s ease-in;
+          -ms-transition: color 0.2s ease-in;
+          -o-transition: color 0.2s ease-in;
+          text-shadow: 1px 1px #443d2b;
+          transition: text-shadow 0.2s ease;
+          -webkit-transition: text-shadow 0.2s ease;
+          -moz-transition: text-shadow 0.2s ease;
+          -ms-transition: text-shadow 0.2s ease;
+          -o-transition: text-shadow 0.2s ease; }
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .social-link:active, #ep #secao-ep #corpo-ep #corpo-ep-2 .social-link:focus, #ep #secao-ep #corpo-ep #corpo-ep-2 .social-link:hover {
+            color: #443d2b;
+            transition: color 0.2s ease-in;
+            -webkit-transition: color 0.2s ease-in;
+            -moz-transition: color 0.2s ease-in;
+            -ms-transition: color 0.2s ease-in;
+            -o-transition: color 0.2s ease-in;
+            text-shadow: 1px 1px #fff;
+            transition: text-shadow 0.2s ease;
+            -webkit-transition: text-shadow 0.2s ease;
+            -moz-transition: text-shadow 0.2s ease;
+            -ms-transition: text-shadow 0.2s ease;
+            -o-transition: text-shadow 0.2s ease; }
+
+  #making-of {
+    display: block;
+    width: 100vw;
+    height: 100%;
+    padding: 2vw 1vw;
+    background-color: #fff;
+    z-index: -1; }
+    #making-of #secao-making-of {
+      width: 90.25vw;
+      height: 100%;
+      margin: 0 auto;
+      background-color: #000; }
+      #making-of #secao-making-of #titulo-making-of {
+        font-size: 5rem;
+        color: #fff;
+        text-shadow: 1px 1px #f4efe7; }
+      #making-of #secao-making-of #corpo-making-of {
+        margin-bottom: 2rem; }
+        #making-of #secao-making-of #corpo-making-of .video-container {
+          position: relative;
+          padding-bottom: 56.25%;
+          padding-top: 30px;
+          height: 0;
+          overflow: hidden; }
+        #making-of #secao-making-of #corpo-making-of .video-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%; }
+
+  #fotos {
+    display: block;
+    width: 100vw;
+    height: 100%;
+    padding: 2vw 1vw;
+    background-color: #fff;
+    z-index: -1; }
+    #fotos #secao-fotos {
+      width: 90.25vw;
+      height: 100%;
+      margin: 0 auto;
+      background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-2.png"); }
+      #fotos #secao-fotos #titulo-fotos {
+        font-size: 5rem;
+        color: #eee6d9;
+        text-shadow: 1px 1px #5f553c; }
+      #fotos #secao-fotos #corpo-fotos {
+        margin-bottom: 3rem; }
+        #fotos #secao-fotos #corpo-fotos #bwg_container1_0 #bwg_container2_0 .bwg_slideshow_image_wrap_0 {
+          background-color: transparent !important; }
+          #fotos #secao-fotos #corpo-fotos #bwg_container1_0 #bwg_container2_0 .bwg_slideshow_image_wrap_0 .bwg_slideshow_dots_0 {
+            display: none !important; }
+
+  #contato {
+    display: block;
+    width: 100vw;
+    height: 100%;
+    padding: 2vw 1vw;
+    background-color: #fff;
+    z-index: -1;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box; }
+    #contato #secao-contato {
+      background-color: white;
+      width: 90.25vw;
+      height: 100%;
+      margin: 0 auto; }
+      #contato #secao-contato .borda-titulo-contato {
+        border-top: 3px solid #d1c498;
+        border-left: 3px solid #d1c498;
+        border-right: 3px solid #d1c498; }
+        #contato #secao-contato .borda-titulo-contato #titulo-contato {
+          font-size: 5rem;
+          color: #443d2b;
+          text-shadow: 1px 1px #aea180; }
+      #contato #secao-contato #corpo-contato {
+        border-left: 3px solid #d1c498;
+        border-right: 3px solid #d1c498;
+        border-bottom: 3px solid #d1c498; }
+        #contato #secao-contato #corpo-contato .wpcf7-form p {
+          font-size: 2rem;
+          color: #d1c498; }
+        #contato #secao-contato #corpo-contato .wpcf7-form input,
+        #contato #secao-contato #corpo-contato .wpcf7-form textarea {
+          font-family: 'Lato';
+          color: #6c6145;
+          background-color: #eee6d9; }
+        #contato #secao-contato #corpo-contato .wpcf7-form textarea {
+          resize: none;
+          height: 35vh; }
+        #contato #secao-contato #corpo-contato .wpcf7-form input[type="submit"] {
+          font-family: 'Mari David';
+          font-size: 2.2rem;
+          padding: 5px 10px;
+          color: #6c6145;
+          transition: color 0.3s ease-in;
+          -webkit-transition: color 0.3s ease-in;
+          -moz-transition: color 0.3s ease-in;
+          -o-transition: color 0.3s ease-in;
+          background-color: #eee6d9;
+          transition: background-color 0.2s ease-out;
+          -webkit-transition: background-color 0.2s ease-out;
+          -moz-transition: background-color 0.2s ease-out;
+          -o-transition: background-color 0.2s ease-out;
+          border: 2px solid #cbb28a;
+          transition: border 0.2s ease;
+          -webkit-transition: border 0.2s ease;
+          -moz-transition: border 0.2s ease;
+          -o-transition: border 0.2s ease; }
+          #contato #secao-contato #corpo-contato .wpcf7-form input[type="submit"]:active, #contato #secao-contato #corpo-contato .wpcf7-form input[type="submit"]:focus, #contato #secao-contato #corpo-contato .wpcf7-form input[type="submit"]:hover {
+            color: #b99863;
+            transition: color 0.3s ease-out;
+            -webkit-transition: color 0.3s ease-out;
+            -moz-transition: color 0.3s ease-out;
+            -o-transition: color 0.3s ease-out;
+            background-color: #5f553c;
+            transition: background-color 0.2s ease-in;
+            -webkit-transition: background-color 0.2s ease-in;
+            -moz-transition: background-color 0.2s ease-in;
+            -o-transition: background-color 0.2s ease-in;
+            border: 2px solid #b99863;
+            transition: border 0.2s ease;
+            -webkit-transition: border 0.2s ease;
+            -moz-transition: border 0.2s ease;
+            -o-transition: border 0.2s ease; }
+        #contato #secao-contato #corpo-contato .wpcf7-not-valid-tip {
+          font-size: 1.5rem; }
+        #contato #secao-contato #corpo-contato .wpcf7-response-output,
+        #contato #secao-contato #corpo-contato .wpcf7-display-none,
+        #contato #secao-contato #corpo-contato .wpcf7-validation-errors {
+          font-size: 1.4rem; }
+
+  #rodape {
+    background-color: #6c6145; }
+    #rodape #rodape-row-1 a {
+      font-size: 2.5rem;
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease-out;
+      -webkit-transition: color 0.3s ease-out;
+      -moz-transition: color 0.3s ease-out;
+      -o-transition: color 0.3s ease-out; }
+      #rodape #rodape-row-1 a:hover {
+        color: #d1c498;
+        text-decoration: none;
+        transition: color 0.2s ease-in;
+        -webkit-transition: color 0.2s ease-in;
+        -moz-transition: color 0.2s ease-in;
+        -o-transition: color 0.2s ease-in; }
+    #rodape #rodape-row-1 h3 {
+      font-size: 2rem;
+      color: #fff;
+      text-decoration: none;
+      margin: 0; }
+    #rodape #rodape-row-1 i {
+      font-size: 3.5rem; }
+    #rodape #rodape-row-1 p {
+      color: white;
+      font-size: 2rem; }
+    #rodape #rodape-row-1 #brunoluizgr-copyright {
+      height: 10vh;
+      margin: auto;
+      vertical-align: middle;
+      display: inline-block; }
+    #rodape #rodape-row-2 {
+      font-size: 1.5rem;
+      color: #fff; }
+
+  #apresentacao-ep #cabecalho #imagem-de-fundo {
+    position: fixed;
+    display: block;
+    z-index: -1;
+    background-image: url("/wp-content/themes/tema-de-broove/library/images/capa-ep.png");
+    background-size: 70%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    filter: blur(5px);
+    -ms-filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100%; }
+  #apresentacao-ep #corpo {
+    z-index: 0;
+    color: #272727;
+    background-color: #ededed; }
+    #apresentacao-ep #corpo #corpo-col-1 #titulo-ep {
+      font-family: 'Lato', Arial, sans-serif;
+      font-size: 3rem;
+      font-weight: bolder;
+      text-align: right;
+      color: #272727;
+      margin-bottom: 0; }
+    #apresentacao-ep #corpo #corpo-col-1 #autor-ep {
+      font-family: 'Lato', Arial, sans-serif;
+      font-size: 2rem;
+      font-weight: lighter;
+      text-align: right;
+      color: #272727; }
+      #apresentacao-ep #corpo #corpo-col-1 #autor-ep #autor-broove {
+        text-decoration: underline; }
+    #apresentacao-ep #corpo #corpo-col-1 #bio-ep {
+      font-family: 'Consolas-Black', Arial, sans-serif;
+      font-weight: bolder;
+      color: #272727;
+      margin-bottom: 0; } }
+    @media only screen and (min-width: 481px) and (max-width: 768px) and (width: 481px) {
+      #apresentacao-ep #corpo #corpo-col-1 #bio-ep {
+        font-size: 1.4rem; } }
+    @media only screen and (min-width: 481px) and (max-width: 768px) and (width: 768px) {
+      #apresentacao-ep #corpo #corpo-col-1 #bio-ep {
+        font-size: 2rem; } }
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    #apresentacao-ep #corpo #corpo-col-1 #data-ep {
+      font-family: 'Consolas-Black', Arial, sans-serif;
+      font-weight: lighter;
+      color: #272727; } }
+    @media only screen and (min-width: 481px) and (max-width: 768px) and (min-width: 481px) {
+      #apresentacao-ep #corpo #corpo-col-1 #data-ep {
+        font-size: 1rem; } }
+    @media only screen and (min-width: 481px) and (max-width: 768px) and (width: 768px) {
+      #apresentacao-ep #corpo #corpo-col-1 #data-ep {
+        font-size: 1.5rem; } }
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    #apresentacao-ep #corpo #corpo-col-2 .titulo-musica {
+      font-size: 2.5rem; }
+    #apresentacao-ep #corpo #corpo-col-2 .icon-letras {
+      color: #272727;
+      transition: color 0.2s ease-in;
+      -webkit-transition: color 0.2s ease-in; }
+      #apresentacao-ep #corpo #corpo-col-2 .icon-letras:hover {
+        color: #9c8846;
+        transition: color 0.3s ease-out;
+        -webkit-transition: color 0.3s ease-out; } }
+    @media only screen and (min-width: 481px) and (max-width: 768px) and (min-width: 481px) {
+      #apresentacao-ep #corpo #corpo-col-2 .icon-letras i {
+        font-size: 1.5rem; } }
+    @media only screen and (min-width: 481px) and (max-width: 768px) and (width: 768px) {
+      #apresentacao-ep #corpo #corpo-col-2 .icon-letras i {
+        font-size: 2rem; } }
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    #apresentacao-ep #corpo #corpo-col-2 .letra-da-musica {
+      font-family: 'Consolas-Black', Arial, sans-serif;
+      font-size: 1.5rem; }
+    #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs {
+      width: 100% !important;
+      background: #6c6145 !important; }
+      #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .play-pause {
+        width: 40px;
+        border-right: 0; } }
+    @media only screen and (min-width: 481px) and (max-width: 768px) and (min-width: 481px) {
+      #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber {
+        width: 265px !important;
+        margin: 10px 0 10px 10px !important; }
+      #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
+        margin: 0px 0px 0px 1px !important;
+        font-size: 12px !important; } }
+    @media only screen and (min-width: 481px) and (max-width: 768px) and (width: 768px) {
+      #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber {
+        width: 550px !important; }
+      #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
+        font-size: 12px !important; } }
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+      #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber {
+        margin: 10px 0 10px 10px !important; }
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber .progress {
+          background: #b5a05a !important; }
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber .loaded {
+          background-image: -moz-linear-gradient(center top, #d1c498 0%, #d7cba5 50%, #d1c498 51%, #d1c498 100%) !important; }
+      #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
+        border-left: 0; }
+    #apresentacao-ep #corpo #corpo-col-3 #btn-download-ep {
+      font-size: 3rem;
+      text-decoration: none;
+      color: #eee6d9;
+      background-color: #272727;
+      padding: 15px 10px;
+      border-radius: 50%;
+      border: 0;
+      transition: background-color 0.2s ease-in;
+      -webkit-transition: background-color 0.2s ease-in;
+      -moz-transition: background-color 0.2s ease-in;
+      -ms-transition: background-color 0.2s ease-in;
+      -o-transition: background-color 0.2s ease-in; }
+      #apresentacao-ep #corpo #corpo-col-3 #btn-download-ep:hover {
+        color: #eee6d9;
+        background-color: #9c8846;
+        transition: background-color 0.3s ease-out;
+        -webkit-transition: background-color 0.3s ease-out;
+        -moz-transition: background-color 0.3s ease-out;
+        -ms-transition: background-color 0.3s ease-out;
+        -o-transition: background-color 0.3s ease-out; } }
 @media only screen and (min-width: 769px) and (max-width: 992px) {
   /******************************************************************
   Site Name: Tema de Broove
@@ -1654,141 +2444,1880 @@ STYLESHEETS (de acordo com o Bootstrap 3)
   
   Stylesheet: 768px and Up Stylesheet
   ******************************************************************/
+  /******************************************************************
+  Stylesheet: EP-Miolo
+  Media queries para ajustar os dois miolos do EP.
+  ******************************************************************/
+  /******************************************************************
+    Celulares
+  ******************************************************************/
+  /* ----------- iPhone 4 and 4S ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- iPhone 5 and 5S ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- iPhone 6 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- iPhone 6+ ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- Galaxy S3 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- Galaxy S4 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- Galaxy S5 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- HTC One ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /******************************************************************
+    Tablets
+  ******************************************************************/
+  /* ----------- iPad mini ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- iPad 1 and 2 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- iPad 3 and 4 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- Galaxy Tab 10.1 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- Asus Nexus 7 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- Kindle Fire HD 7" ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- Kindle Fire HD 8.9" ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /******************************************************************
+    Desktops
+  ******************************************************************/
+  /* ----------- Non-Retina Screens ----------- */
+  /* ----------- Retina Screens ----------- */
   /*********************
   GENERAL STYLES
   *********************/
-  /*********************
-  LAYOUT & GRID STYLES
-  *********************/
-  .wrap {
-    width: 760px; }
+  body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    color: #000;
+    background-color: #fff;
+    font-family: 'Mari David';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 100%;
+    line-height: 1.5;
+    z-index: -1;
+    overflow-x: hidden; }
 
-  /*********************
-  HEADER STYLES
-  *********************/
-  /*********************
-  NAVIGATION STYLES
-  *********************/
-  .nav {
-    border: 0;
-    /* end .menu ul li */
-    /* highlight current page */
-    /* end current highlighters */ }
-    .nav ul {
-      background: #000;
-      margin-top: 0; }
-    .nav li {
-      float: left;
-      position: relative;
-      /*
-      plan your menus and drop-downs wisely.
-      */
-      /* showing sub-menus */ }
-      .nav li a {
-        border-bottom: 0;
-        /*
-        you can use hover styles here even though this size
-        has the possibility of being a mobile device.
-        */ }
-        .nav li a:hover, .nav li a:focus {
+  #menu-principal {
+    background-color: #6c6145; }
+    #menu-principal .navbar-toggle:focus,
+    #menu-principal .navbar-toggle:hover {
+      background-color: #e2dabf; }
+    #menu-principal .navbar-toggle .icon-bar {
+      background-color: #aea180; }
+      #menu-principal .navbar-toggle .icon-bar:focus, #menu-principal .navbar-toggle .icon-bar:focus {
+        background-color: #443d2b; }
+    #menu-principal #menu {
+      background-color: #443d2b; }
+      #menu-principal #menu li {
+        text-align: center; }
+        #menu-principal #menu li:active, #menu-principal #menu li:focus, #menu-principal #menu li:hover {
+          background-color: #d1c498; }
+        #menu-principal #menu li a {
+          color: #f4efe7;
+          font-size: 2rem;
+          text-decoration: none;
+          transition: background-color 0.3s ease-in;
+          -webkit-transition: background-color 0.3s ease-in;
+          -moz-transition: background-color 0.3s ease-in;
+          -ms-transition: background-color 0.3s ease-in;
+          -o--transition: background-color 0.3s ease-in; }
+          #menu-principal #menu li a:hover {
+            transition: background-color 0.2s ease-out;
+            -webkit-transition: background-color 0.2s ease-out;
+            -moz-transition: background-color 0.2s ease-out;
+            -ms-transition: background-color 0.2s ease-out;
+            -o-transition: background-color 0.2s ease-out; }
+
+  #inicio {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    padding: 2vw 1vw;
+    background-color: #fff;
+    z-index: -1; }
+    #inicio .secao-inicio {
+      background-color: #eee6d9;
+      width: 90.25vw;
+      height: 100%;
+      margin: 0 auto; }
+      #inicio .secao-inicio .logo-broove {
+        text-align: center; }
+        #inicio .secao-inicio .logo-broove #fita {
+          position: absolute;
+          z-index: 0;
+          height: 17.75vw;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: auto;
+          margin-bottom: auto;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0; }
+        #inicio .secao-inicio .logo-broove #miolo-esq,
+        #inicio .secao-inicio .logo-broove #miolo-dir {
+          width: 3.5vw;
+          height: 3.5vw;
+          -webkit-animation: rotation 2s infinite linear;
+          -moz-animation: rotation 2s infinite linear;
+          -o-animation: rotation 2s infinite linear;
+          animation: rotation 2s infinite linear;
+          transform-origin: 50% 50%;
+          -webkit-transform-origin: 50% 50%;
+          -moz-transform-origin: 50% 50%; }
+  @-webkit-keyframes rotation {
+    from {
+      -webkit-transform: rotate(0deg); }
+    to {
+      -webkit-transform: rotate(359deg); } }
+  @-moz-keyframes rotation {
+    from {
+      -moz-transform: rotate(0deg); }
+    to {
+      -moz-transform: rotate(359deg); } }
+  @-o-keyframes rotation {
+    from {
+      -o-transform: rotate(0deg); }
+    to {
+      -o-transform: rotate(359deg); } }
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg); }
+    to {
+      transform: rotate(359deg); } }
+        #inicio .secao-inicio .logo-broove #miolo-esq {
+          position: absolute;
+          display: block;
+          z-index: 1;
+          margin-top: auto;
+          margin-bottom: auto;
+          top: 0;
+          bottom: 1vw;
+          left: 42.00vw; }
+        #inicio .secao-inicio .logo-broove #miolo-dir {
+          position: absolute;
+          display: block;
+          z-index: 1;
+          margin-top: auto;
+          margin-bottom: auto;
+          top: 0;
+          bottom: 1vw;
+          right: 41.5vw; }
+  #ep {
+    display: block;
+    width: 100vw;
+    height: 100%;
+    padding: 2vw 1vw;
+    background-color: #fff;
+    z-index: -1; }
+    #ep #secao-ep {
+      width: 90.25vw;
+      height: 100%;
+      margin: 0 auto;
+      background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-1.png");
+      background-repeat: repeat; }
+      #ep #secao-ep #titulo-ep {
+        font-size: 5rem;
+        color: #fff;
+        text-shadow: 1px 1px #443d2b; }
+      #ep #secao-ep #corpo-ep #corpo-ep-2 {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem; }
+        #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link,
+        #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link {
+          display: block;
+          margin-bottom: 4rem;
+          text-decoration: none;
+          color: white;
+          transition: color 0.2s ease-in;
+          -webkit-transition: color 0.2s ease-in;
+          -moz-transition: color 0.2s ease-in;
+          -ms-transition: color 0.2s ease-in;
+          -o-transition: color 0.2s ease-in;
+          text-shadow: 1px 1px #443d2b;
+          transition: text-shadow 0.2s ease;
+          -webkit-transition: text-shadow 0.2s ease;
+          -moz-transition: text-shadow 0.2s ease;
+          -ms-transition: text-shadow 0.2s ease;
+          -o-transition: text-shadow 0.2s ease; }
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link:active, #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link:focus, #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link:hover,
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link:active,
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link:focus,
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link:hover {
+            color: #443d2b;
+            transition: color 0.2s ease-in;
+            -webkit-transition: color 0.2s ease-in;
+            -moz-transition: color 0.2s ease-in;
+            -ms-transition: color 0.2s ease-in;
+            -o-transition: color 0.2s ease-in;
+            text-shadow: 1px 1px #fff;
+            transition: text-shadow 0.2s ease;
+            -webkit-transition: text-shadow 0.2s ease;
+            -moz-transition: text-shadow 0.2s ease;
+            -ms-transition: text-shadow 0.2s ease;
+            -o-transition: text-shadow 0.2s ease; }
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4,
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link h4 {
+            font-size: 3.5rem;
+            color: #443d2b;
+            transition: color 0.2s ease-in;
+            -webkit-transition: color 0.2s ease-in;
+            -moz-transition: color 0.2s ease-in;
+            -ms-transition: color 0.2s ease-in;
+            -o-transition: color 0.2s ease-in;
+            text-shadow: 1px 1px #fff;
+            transition: text-shadow 0.2s ease;
+            -webkit-transition: text-shadow 0.2s ease;
+            -moz-transition: text-shadow 0.2s ease;
+            -ms-transition: text-shadow 0.2s ease;
+            -o-transition: text-shadow 0.2s ease;
+            background-color: rgba(237, 237, 237, 0.6); }
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4:active, #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4:focus, #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4:hover,
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link h4:active,
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link h4:focus,
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link h4:hover {
+              color: #fff;
+              transition: color 0.2s ease-in;
+              -webkit-transition: color 0.2s ease-in;
+              -moz-transition: color 0.2s ease-in;
+              -ms-transition: color 0.2s ease-in;
+              -o-transition: color 0.2s ease-in;
+              text-shadow: 1px 1px #443d2b;
+              transition: text-shadow 0.2s ease;
+              -webkit-transition: text-shadow 0.2s ease;
+              -moz-transition: text-shadow 0.2s ease;
+              -ms-transition: text-shadow 0.2s ease;
+              -o-transition: text-shadow 0.2s ease; }
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4:active, #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4:focus, #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4:hover,
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link h4:active,
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link h4:focus,
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link h4:hover {
+              background-color: rgba(156, 136, 70, 0.5); }
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link p i,
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link p i {
+            font-size: 5rem; }
+        #ep #secao-ep #corpo-ep #corpo-ep-2 .social-link {
+          display: block;
+          font-size: 3rem;
+          text-decoration: none;
           color: #fff;
-          text-decoration: underline; }
-      .nav li ul.sub-menu,
-      .nav li ul.children {
-        margin-top: 0;
-        border: 1px solid #ccc;
-        border-top: 0;
-        position: absolute;
-        visibility: hidden;
-        z-index: 8999;
-        /* highlight sub-menu current page */ }
-        .nav li ul.sub-menu li,
-        .nav li ul.children li {
-          /*
-          if you need to go deeper, go nuts
-          just remember deeper menus suck
-          for usability. k, bai.
-          */ }
-          .nav li ul.sub-menu li a,
-          .nav li ul.children li a {
-            padding-left: 10px;
-            border-right: 0;
-            display: block;
-            width: 180px;
-            border-bottom: 1px solid #ccc; }
-          .nav li ul.sub-menu li:last-child a,
-          .nav li ul.children li:last-child a {
-            border-bottom: 0; }
-          .nav li ul.sub-menu li ul,
-          .nav li ul.children li ul {
-            top: 0;
-            left: 100%; }
-      .nav li:hover > ul {
-        top: auto;
-        visibility: visible; }
+          transition: color 0.2s ease-in;
+          -webkit-transition: color 0.2s ease-in;
+          -moz-transition: color 0.2s ease-in;
+          -ms-transition: color 0.2s ease-in;
+          -o-transition: color 0.2s ease-in;
+          text-shadow: 1px 1px #443d2b;
+          transition: text-shadow 0.2s ease;
+          -webkit-transition: text-shadow 0.2s ease;
+          -moz-transition: text-shadow 0.2s ease;
+          -ms-transition: text-shadow 0.2s ease;
+          -o-transition: text-shadow 0.2s ease; }
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .social-link:active, #ep #secao-ep #corpo-ep #corpo-ep-2 .social-link:focus, #ep #secao-ep #corpo-ep #corpo-ep-2 .social-link:hover {
+            color: #443d2b;
+            transition: color 0.2s ease-in;
+            -webkit-transition: color 0.2s ease-in;
+            -moz-transition: color 0.2s ease-in;
+            -ms-transition: color 0.2s ease-in;
+            -o-transition: color 0.2s ease-in;
+            text-shadow: 1px 1px #fff;
+            transition: text-shadow 0.2s ease;
+            -webkit-transition: text-shadow 0.2s ease;
+            -moz-transition: text-shadow 0.2s ease;
+            -ms-transition: text-shadow 0.2s ease;
+            -o-transition: text-shadow 0.2s ease; }
 
-  /* end .nav */
-  /*********************
-  SIDEBARS & ASIDES
-  *********************/
-  .sidebar {
-    margin-top: 2.2em; }
+  #making-of {
+    display: block;
+    width: 100vw;
+    height: 100%;
+    padding: 2vw 1vw;
+    background-color: #fff;
+    z-index: -1; }
+    #making-of #secao-making-of {
+      width: 90.25vw;
+      height: 100%;
+      margin: 0 auto;
+      background-color: #000; }
+      #making-of #secao-making-of #titulo-making-of {
+        font-size: 5rem;
+        color: #fff;
+        text-shadow: 1px 1px #f4efe7; }
+      #making-of #secao-making-of #corpo-making-of {
+        margin-bottom: 2rem; }
+        #making-of #secao-making-of #corpo-making-of .video-container {
+          position: relative;
+          padding-bottom: 56.25%;
+          padding-top: 30px;
+          height: 0;
+          overflow: hidden; }
+        #making-of #secao-making-of #corpo-making-of .video-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%; }
 
-  .widgettitle {
-    border-bottom: 2px solid #444;
-    margin-bottom: 0.75em; }
+  #fotos {
+    display: block;
+    width: 100vw;
+    height: 100%;
+    padding: 2vw 1vw;
+    background-color: #fff;
+    z-index: -1; }
+    #fotos #secao-fotos {
+      width: 90.25vw;
+      height: 100%;
+      margin: 0 auto;
+      background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-2.png"); }
+      #fotos #secao-fotos #titulo-fotos {
+        font-size: 5rem;
+        color: #eee6d9;
+        text-shadow: 1px 1px #5f553c; }
+      #fotos #secao-fotos #corpo-fotos {
+        margin-bottom: 3rem; }
+        #fotos #secao-fotos #corpo-fotos #bwg_container1_0 #bwg_container2_0 .bwg_slideshow_image_wrap_0 {
+          background-color: transparent !important; }
+          #fotos #secao-fotos #corpo-fotos #bwg_container1_0 #bwg_container2_0 .bwg_slideshow_image_wrap_0 .bwg_slideshow_dots_0 {
+            display: none !important; }
 
-  .widget {
-    padding: 0 10px;
-    margin: 2.2em 0; }
-    .widget ul li {
-      margin-bottom: 0.75em;
-      /* deep nesting */ }
-      .widget ul li ul {
-        margin-top: 0.75em;
-        padding-left: 1em; }
+  #contato {
+    display: block;
+    width: 100vw;
+    height: 100%;
+    padding: 2vw 1vw;
+    background-color: #fff;
+    z-index: -1;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box; }
+    #contato #secao-contato {
+      background-color: white;
+      width: 90.25vw;
+      height: 100%;
+      margin: 0 auto; }
+      #contato #secao-contato .borda-titulo-contato {
+        border-top: 3px solid #d1c498;
+        border-left: 3px solid #d1c498;
+        border-right: 3px solid #d1c498; }
+        #contato #secao-contato .borda-titulo-contato #titulo-contato {
+          font-size: 5rem;
+          color: #443d2b;
+          text-shadow: 1px 1px #aea180; }
+      #contato #secao-contato #corpo-contato {
+        border-left: 3px solid #d1c498;
+        border-right: 3px solid #d1c498;
+        border-bottom: 3px solid #d1c498; }
+        #contato #secao-contato #corpo-contato .wpcf7-form p {
+          font-size: 2rem;
+          color: #d1c498; }
+        #contato #secao-contato #corpo-contato .wpcf7-form input,
+        #contato #secao-contato #corpo-contato .wpcf7-form textarea {
+          font-family: 'Lato';
+          color: #6c6145;
+          background-color: #eee6d9; }
+        #contato #secao-contato #corpo-contato .wpcf7-form textarea {
+          resize: none;
+          height: 35vh; }
+        #contato #secao-contato #corpo-contato .wpcf7-form input[type="submit"] {
+          font-family: 'Mari David';
+          font-size: 2.2rem;
+          padding: 5px 10px;
+          color: #6c6145;
+          transition: color 0.3s ease-in;
+          -webkit-transition: color 0.3s ease-in;
+          -moz-transition: color 0.3s ease-in;
+          -o-transition: color 0.3s ease-in;
+          background-color: #eee6d9;
+          transition: background-color 0.2s ease-out;
+          -webkit-transition: background-color 0.2s ease-out;
+          -moz-transition: background-color 0.2s ease-out;
+          -o-transition: background-color 0.2s ease-out;
+          border: 2px solid #cbb28a;
+          transition: border 0.2s ease;
+          -webkit-transition: border 0.2s ease;
+          -moz-transition: border 0.2s ease;
+          -o-transition: border 0.2s ease; }
+          #contato #secao-contato #corpo-contato .wpcf7-form input[type="submit"]:active, #contato #secao-contato #corpo-contato .wpcf7-form input[type="submit"]:focus, #contato #secao-contato #corpo-contato .wpcf7-form input[type="submit"]:hover {
+            color: #b99863;
+            transition: color 0.3s ease-out;
+            -webkit-transition: color 0.3s ease-out;
+            -moz-transition: color 0.3s ease-out;
+            -o-transition: color 0.3s ease-out;
+            background-color: #5f553c;
+            transition: background-color 0.2s ease-in;
+            -webkit-transition: background-color 0.2s ease-in;
+            -moz-transition: background-color 0.2s ease-in;
+            -o-transition: background-color 0.2s ease-in;
+            border: 2px solid #b99863;
+            transition: border 0.2s ease;
+            -webkit-transition: border 0.2s ease;
+            -moz-transition: border 0.2s ease;
+            -o-transition: border 0.2s ease; }
+        #contato #secao-contato #corpo-contato .wpcf7-not-valid-tip {
+          font-size: 1.5rem; }
+        #contato #secao-contato #corpo-contato .wpcf7-response-output,
+        #contato #secao-contato #corpo-contato .wpcf7-display-none,
+        #contato #secao-contato #corpo-contato .wpcf7-validation-errors {
+          font-size: 1.4rem; }
 
-  /* links widget */
-  /* meta widget */
-  /* pages widget */
-  /* recent-posts widget */
-  /* archives widget */
-  /* tag-cloud widget */
-  /* calendar widget */
-  /* category widget */
-  /* recent-comments widget */
-  /* search widget */
-  /* text widget */
-  /*********************
-  FOOTER STYLES
-  *********************/
-  /*
-  you'll probably need to do quite a bit
-  of overriding here if you styled them for
-  mobile. Make sure to double check these!
-  */
-  .footer-links ul li {
-    /*
-    be careful with the depth of your menus.
-    it's very rare to have multi-depth menus in
-    the footer.
-    */ }
+  #rodape {
+    background-color: #6c6145; }
+    #rodape #rodape-row-1 a {
+      font-size: 2.5rem;
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease-out;
+      -webkit-transition: color 0.3s ease-out;
+      -moz-transition: color 0.3s ease-out;
+      -o-transition: color 0.3s ease-out; }
+      #rodape #rodape-row-1 a:hover {
+        color: #d1c498;
+        text-decoration: none;
+        transition: color 0.2s ease-in;
+        -webkit-transition: color 0.2s ease-in;
+        -moz-transition: color 0.2s ease-in;
+        -o-transition: color 0.2s ease-in; }
+    #rodape #rodape-row-1 h3 {
+      font-size: 2rem;
+      color: #fff;
+      text-decoration: none;
+      margin: 0; }
+    #rodape #rodape-row-1 i {
+      font-size: 3.5rem; }
+    #rodape #rodape-row-1 p {
+      color: white;
+      font-size: 2rem; }
+    #rodape #rodape-row-1 #brunoluizgr-copyright {
+      height: 10vh;
+      margin: auto;
+      vertical-align: middle;
+      display: inline-block; }
+    #rodape #rodape-row-2 {
+      font-size: 1.5rem;
+      color: #fff; }
 
-  /* end .footer-links */ }
+  #apresentacao-ep #cabecalho #imagem-de-fundo {
+    position: fixed;
+    display: block;
+    z-index: -1;
+    background-image: url("/wp-content/themes/tema-de-broove/library/images/capa-ep.png");
+    background-size: 70%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    filter: blur(5px);
+    -ms-filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100%; }
+  #apresentacao-ep #corpo {
+    z-index: 0;
+    color: #272727;
+    background-color: #ededed; }
+    #apresentacao-ep #corpo #corpo-col-1 #titulo-ep {
+      font-family: 'Lato', Arial, sans-serif;
+      font-size: 3rem;
+      font-weight: bolder;
+      text-align: right;
+      color: #272727;
+      margin-bottom: 0; }
+    #apresentacao-ep #corpo #corpo-col-1 #autor-ep {
+      font-family: 'Lato', Arial, sans-serif;
+      font-size: 2rem;
+      font-weight: lighter;
+      text-align: right;
+      color: #272727; }
+      #apresentacao-ep #corpo #corpo-col-1 #autor-ep #autor-broove {
+        text-decoration: underline; }
+    #apresentacao-ep #corpo #corpo-col-1 #bio-ep {
+      font-family: 'Consolas-Black', Arial, sans-serif;
+      font-weight: bolder;
+      color: #272727;
+      margin-bottom: 0; } }
+    @media only screen and (min-width: 769px) and (max-width: 992px) and (width: 481px) {
+      #apresentacao-ep #corpo #corpo-col-1 #bio-ep {
+        font-size: 1.4rem; } }
+    @media only screen and (min-width: 769px) and (max-width: 992px) and (width: 768px) {
+      #apresentacao-ep #corpo #corpo-col-1 #bio-ep {
+        font-size: 2rem; } }
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    #apresentacao-ep #corpo #corpo-col-1 #data-ep {
+      font-family: 'Consolas-Black', Arial, sans-serif;
+      font-weight: lighter;
+      color: #272727; } }
+    @media only screen and (min-width: 769px) and (max-width: 992px) and (min-width: 481px) {
+      #apresentacao-ep #corpo #corpo-col-1 #data-ep {
+        font-size: 1rem; } }
+    @media only screen and (min-width: 769px) and (max-width: 992px) and (width: 768px) {
+      #apresentacao-ep #corpo #corpo-col-1 #data-ep {
+        font-size: 1.5rem; } }
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    #apresentacao-ep #corpo #corpo-col-2 .titulo-musica {
+      font-size: 2.5rem; }
+    #apresentacao-ep #corpo #corpo-col-2 .icon-letras {
+      color: #272727;
+      transition: color 0.2s ease-in;
+      -webkit-transition: color 0.2s ease-in; }
+      #apresentacao-ep #corpo #corpo-col-2 .icon-letras:hover {
+        color: #9c8846;
+        transition: color 0.3s ease-out;
+        -webkit-transition: color 0.3s ease-out; } }
+    @media only screen and (min-width: 769px) and (max-width: 992px) and (min-width: 481px) {
+      #apresentacao-ep #corpo #corpo-col-2 .icon-letras i {
+        font-size: 1.5rem; } }
+    @media only screen and (min-width: 769px) and (max-width: 992px) and (width: 768px) {
+      #apresentacao-ep #corpo #corpo-col-2 .icon-letras i {
+        font-size: 2rem; } }
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    #apresentacao-ep #corpo #corpo-col-2 .letra-da-musica {
+      font-family: 'Consolas-Black', Arial, sans-serif;
+      font-size: 1.5rem; }
+    #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs {
+      width: 100% !important;
+      background: #6c6145 !important; }
+      #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .play-pause {
+        width: 40px;
+        border-right: 0; } }
+    @media only screen and (min-width: 769px) and (max-width: 992px) and (min-width: 481px) {
+      #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber {
+        width: 265px !important;
+        margin: 10px 0 10px 10px !important; }
+      #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
+        margin: 0px 0px 0px 1px !important;
+        font-size: 12px !important; } }
+    @media only screen and (min-width: 769px) and (max-width: 992px) and (width: 768px) {
+      #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber {
+        width: 550px !important; }
+      #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
+        font-size: 12px !important; } }
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+      #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber {
+        margin: 10px 0 10px 10px !important; }
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber .progress {
+          background: #b5a05a !important; }
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber .loaded {
+          background-image: -moz-linear-gradient(center top, #d1c498 0%, #d7cba5 50%, #d1c498 51%, #d1c498 100%) !important; }
+      #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
+        border-left: 0; }
+    #apresentacao-ep #corpo #corpo-col-3 #btn-download-ep {
+      font-size: 3rem;
+      text-decoration: none;
+      color: #eee6d9;
+      background-color: #272727;
+      padding: 15px 10px;
+      border-radius: 50%;
+      border: 0;
+      transition: background-color 0.2s ease-in;
+      -webkit-transition: background-color 0.2s ease-in;
+      -moz-transition: background-color 0.2s ease-in;
+      -ms-transition: background-color 0.2s ease-in;
+      -o-transition: background-color 0.2s ease-in; }
+      #apresentacao-ep #corpo #corpo-col-3 #btn-download-ep:hover {
+        color: #eee6d9;
+        background-color: #9c8846;
+        transition: background-color 0.3s ease-out;
+        -webkit-transition: background-color 0.3s ease-out;
+        -moz-transition: background-color 0.3s ease-out;
+        -ms-transition: background-color 0.3s ease-out;
+        -o-transition: background-color 0.3s ease-out; } }
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
   /******************************************************************
   Site Name: Tema de Broove
   Author: brunoluizgr
   
   Stylesheet: 992px and Up Stylesheet
-  ******************************************************************/ }
+  ******************************************************************/
+  /******************************************************************
+  Stylesheet: EP-Miolo
+  Media queries para ajustar os dois miolos do EP.
+  ******************************************************************/
+  /******************************************************************
+    Celulares
+  ******************************************************************/
+  /* ----------- iPhone 4 and 4S ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- iPhone 5 and 5S ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- iPhone 6 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- iPhone 6+ ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- Galaxy S3 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- Galaxy S4 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- Galaxy S5 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- HTC One ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /******************************************************************
+    Tablets
+  ******************************************************************/
+  /* ----------- iPad mini ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- iPad 1 and 2 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- iPad 3 and 4 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- Galaxy Tab 10.1 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- Asus Nexus 7 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- Kindle Fire HD 7" ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- Kindle Fire HD 8.9" ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /******************************************************************
+    Desktops
+  ******************************************************************/
+  /* ----------- Non-Retina Screens ----------- */
+  /* ----------- Retina Screens ----------- */
+  /*********************
+  GENERAL STYLES
+  *********************/
+  body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    color: #000;
+    background-color: #fff;
+    font-family: 'Mari David';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 100%;
+    line-height: 1.5;
+    z-index: -1;
+    overflow-x: hidden; }
+
+  #menu-principal {
+    background-color: #6c6145; }
+    #menu-principal .navbar-toggle:focus,
+    #menu-principal .navbar-toggle:hover {
+      background-color: #e2dabf; }
+    #menu-principal .navbar-toggle .icon-bar {
+      background-color: #aea180; }
+      #menu-principal .navbar-toggle .icon-bar:focus, #menu-principal .navbar-toggle .icon-bar:focus {
+        background-color: #443d2b; }
+    #menu-principal #menu {
+      background-color: #443d2b; }
+      #menu-principal #menu li {
+        text-align: center; }
+        #menu-principal #menu li:active, #menu-principal #menu li:focus, #menu-principal #menu li:hover {
+          background-color: #d1c498; }
+        #menu-principal #menu li a {
+          color: #f4efe7;
+          font-size: 2rem;
+          text-decoration: none;
+          transition: background-color 0.3s ease-in;
+          -webkit-transition: background-color 0.3s ease-in;
+          -moz-transition: background-color 0.3s ease-in;
+          -ms-transition: background-color 0.3s ease-in;
+          -o--transition: background-color 0.3s ease-in; }
+          #menu-principal #menu li a:hover {
+            transition: background-color 0.2s ease-out;
+            -webkit-transition: background-color 0.2s ease-out;
+            -moz-transition: background-color 0.2s ease-out;
+            -ms-transition: background-color 0.2s ease-out;
+            -o-transition: background-color 0.2s ease-out; }
+
+  #inicio {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    padding: 2vw 1vw;
+    background-color: #fff;
+    z-index: -1; }
+    #inicio .secao-inicio {
+      background-color: #eee6d9;
+      width: 90.25vw;
+      height: 100%;
+      margin: 0 auto; }
+      #inicio .secao-inicio .logo-broove {
+        text-align: center; }
+        #inicio .secao-inicio .logo-broove #fita {
+          position: absolute;
+          z-index: 0;
+          height: 17.75vw;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: auto;
+          margin-bottom: auto;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0; }
+        #inicio .secao-inicio .logo-broove #miolo-esq,
+        #inicio .secao-inicio .logo-broove #miolo-dir {
+          width: 3.5vw;
+          height: 3.5vw;
+          -webkit-animation: rotation 2s infinite linear;
+          -moz-animation: rotation 2s infinite linear;
+          -o-animation: rotation 2s infinite linear;
+          animation: rotation 2s infinite linear;
+          transform-origin: 50% 50%;
+          -webkit-transform-origin: 50% 50%;
+          -moz-transform-origin: 50% 50%; }
+  @-webkit-keyframes rotation {
+    from {
+      -webkit-transform: rotate(0deg); }
+    to {
+      -webkit-transform: rotate(359deg); } }
+  @-moz-keyframes rotation {
+    from {
+      -moz-transform: rotate(0deg); }
+    to {
+      -moz-transform: rotate(359deg); } }
+  @-o-keyframes rotation {
+    from {
+      -o-transform: rotate(0deg); }
+    to {
+      -o-transform: rotate(359deg); } }
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg); }
+    to {
+      transform: rotate(359deg); } }
+        #inicio .secao-inicio .logo-broove #miolo-esq {
+          position: absolute;
+          display: block;
+          z-index: 1;
+          margin-top: auto;
+          margin-bottom: auto;
+          top: 0;
+          bottom: 1vw;
+          left: 42.00vw; }
+        #inicio .secao-inicio .logo-broove #miolo-dir {
+          position: absolute;
+          display: block;
+          z-index: 1;
+          margin-top: auto;
+          margin-bottom: auto;
+          top: 0;
+          bottom: 1vw;
+          right: 41.5vw; }
+  #ep {
+    display: block;
+    width: 100vw;
+    height: 100%;
+    padding: 2vw 1vw;
+    background-color: #fff;
+    z-index: -1; }
+    #ep #secao-ep {
+      width: 90.25vw;
+      height: 100%;
+      margin: 0 auto;
+      background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-1.png");
+      background-repeat: repeat; }
+      #ep #secao-ep #titulo-ep {
+        font-size: 5rem;
+        color: #fff;
+        text-shadow: 1px 1px #443d2b; }
+      #ep #secao-ep #corpo-ep #corpo-ep-2 {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem; }
+        #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link,
+        #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link {
+          display: block;
+          margin-bottom: 4rem;
+          text-decoration: none;
+          color: white;
+          transition: color 0.2s ease-in;
+          -webkit-transition: color 0.2s ease-in;
+          -moz-transition: color 0.2s ease-in;
+          -ms-transition: color 0.2s ease-in;
+          -o-transition: color 0.2s ease-in;
+          text-shadow: 1px 1px #443d2b;
+          transition: text-shadow 0.2s ease;
+          -webkit-transition: text-shadow 0.2s ease;
+          -moz-transition: text-shadow 0.2s ease;
+          -ms-transition: text-shadow 0.2s ease;
+          -o-transition: text-shadow 0.2s ease; }
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link:active, #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link:focus, #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link:hover,
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link:active,
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link:focus,
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link:hover {
+            color: #443d2b;
+            transition: color 0.2s ease-in;
+            -webkit-transition: color 0.2s ease-in;
+            -moz-transition: color 0.2s ease-in;
+            -ms-transition: color 0.2s ease-in;
+            -o-transition: color 0.2s ease-in;
+            text-shadow: 1px 1px #fff;
+            transition: text-shadow 0.2s ease;
+            -webkit-transition: text-shadow 0.2s ease;
+            -moz-transition: text-shadow 0.2s ease;
+            -ms-transition: text-shadow 0.2s ease;
+            -o-transition: text-shadow 0.2s ease; }
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4,
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link h4 {
+            font-size: 3.5rem;
+            color: #443d2b;
+            transition: color 0.2s ease-in;
+            -webkit-transition: color 0.2s ease-in;
+            -moz-transition: color 0.2s ease-in;
+            -ms-transition: color 0.2s ease-in;
+            -o-transition: color 0.2s ease-in;
+            text-shadow: 1px 1px #fff;
+            transition: text-shadow 0.2s ease;
+            -webkit-transition: text-shadow 0.2s ease;
+            -moz-transition: text-shadow 0.2s ease;
+            -ms-transition: text-shadow 0.2s ease;
+            -o-transition: text-shadow 0.2s ease;
+            background-color: rgba(237, 237, 237, 0.6); }
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4:active, #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4:focus, #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4:hover,
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link h4:active,
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link h4:focus,
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link h4:hover {
+              color: #fff;
+              transition: color 0.2s ease-in;
+              -webkit-transition: color 0.2s ease-in;
+              -moz-transition: color 0.2s ease-in;
+              -ms-transition: color 0.2s ease-in;
+              -o-transition: color 0.2s ease-in;
+              text-shadow: 1px 1px #443d2b;
+              transition: text-shadow 0.2s ease;
+              -webkit-transition: text-shadow 0.2s ease;
+              -moz-transition: text-shadow 0.2s ease;
+              -ms-transition: text-shadow 0.2s ease;
+              -o-transition: text-shadow 0.2s ease; }
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4:active, #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4:focus, #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4:hover,
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link h4:active,
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link h4:focus,
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link h4:hover {
+              background-color: rgba(156, 136, 70, 0.5); }
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link p i,
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link p i {
+            font-size: 5rem; }
+        #ep #secao-ep #corpo-ep #corpo-ep-2 .social-link {
+          display: block;
+          font-size: 3rem;
+          text-decoration: none;
+          color: #fff;
+          transition: color 0.2s ease-in;
+          -webkit-transition: color 0.2s ease-in;
+          -moz-transition: color 0.2s ease-in;
+          -ms-transition: color 0.2s ease-in;
+          -o-transition: color 0.2s ease-in;
+          text-shadow: 1px 1px #443d2b;
+          transition: text-shadow 0.2s ease;
+          -webkit-transition: text-shadow 0.2s ease;
+          -moz-transition: text-shadow 0.2s ease;
+          -ms-transition: text-shadow 0.2s ease;
+          -o-transition: text-shadow 0.2s ease; }
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .social-link:active, #ep #secao-ep #corpo-ep #corpo-ep-2 .social-link:focus, #ep #secao-ep #corpo-ep #corpo-ep-2 .social-link:hover {
+            color: #443d2b;
+            transition: color 0.2s ease-in;
+            -webkit-transition: color 0.2s ease-in;
+            -moz-transition: color 0.2s ease-in;
+            -ms-transition: color 0.2s ease-in;
+            -o-transition: color 0.2s ease-in;
+            text-shadow: 1px 1px #fff;
+            transition: text-shadow 0.2s ease;
+            -webkit-transition: text-shadow 0.2s ease;
+            -moz-transition: text-shadow 0.2s ease;
+            -ms-transition: text-shadow 0.2s ease;
+            -o-transition: text-shadow 0.2s ease; }
+
+  #making-of {
+    display: block;
+    width: 100vw;
+    height: 100%;
+    padding: 2vw 1vw;
+    background-color: #fff;
+    z-index: -1; }
+    #making-of #secao-making-of {
+      width: 90.25vw;
+      height: 100%;
+      margin: 0 auto;
+      background-color: #000; }
+      #making-of #secao-making-of #titulo-making-of {
+        font-size: 5rem;
+        color: #fff;
+        text-shadow: 1px 1px #f4efe7; }
+      #making-of #secao-making-of #corpo-making-of {
+        margin-bottom: 2rem; }
+        #making-of #secao-making-of #corpo-making-of .video-container {
+          position: relative;
+          padding-bottom: 56.25%;
+          padding-top: 30px;
+          height: 0;
+          overflow: hidden; }
+        #making-of #secao-making-of #corpo-making-of .video-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%; }
+
+  #fotos {
+    display: block;
+    width: 100vw;
+    height: 100%;
+    padding: 2vw 1vw;
+    background-color: #fff;
+    z-index: -1; }
+    #fotos #secao-fotos {
+      width: 90.25vw;
+      height: 100%;
+      margin: 0 auto;
+      background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-2.png"); }
+      #fotos #secao-fotos #titulo-fotos {
+        font-size: 5rem;
+        color: #eee6d9;
+        text-shadow: 1px 1px #5f553c; }
+      #fotos #secao-fotos #corpo-fotos {
+        margin-bottom: 3rem; }
+        #fotos #secao-fotos #corpo-fotos #bwg_container1_0 #bwg_container2_0 .bwg_slideshow_image_wrap_0 {
+          background-color: transparent !important; }
+          #fotos #secao-fotos #corpo-fotos #bwg_container1_0 #bwg_container2_0 .bwg_slideshow_image_wrap_0 .bwg_slideshow_dots_0 {
+            display: none !important; }
+
+  #contato {
+    display: block;
+    width: 100vw;
+    height: 100%;
+    padding: 2vw 1vw;
+    background-color: #fff;
+    z-index: -1;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box; }
+    #contato #secao-contato {
+      background-color: white;
+      width: 90.25vw;
+      height: 100%;
+      margin: 0 auto; }
+      #contato #secao-contato .borda-titulo-contato {
+        border-top: 3px solid #d1c498;
+        border-left: 3px solid #d1c498;
+        border-right: 3px solid #d1c498; }
+        #contato #secao-contato .borda-titulo-contato #titulo-contato {
+          font-size: 5rem;
+          color: #443d2b;
+          text-shadow: 1px 1px #aea180; }
+      #contato #secao-contato #corpo-contato {
+        border-left: 3px solid #d1c498;
+        border-right: 3px solid #d1c498;
+        border-bottom: 3px solid #d1c498; }
+        #contato #secao-contato #corpo-contato .wpcf7-form p {
+          font-size: 2rem;
+          color: #d1c498; }
+        #contato #secao-contato #corpo-contato .wpcf7-form input,
+        #contato #secao-contato #corpo-contato .wpcf7-form textarea {
+          font-family: 'Lato';
+          color: #6c6145;
+          background-color: #eee6d9; }
+        #contato #secao-contato #corpo-contato .wpcf7-form textarea {
+          resize: none;
+          height: 35vh; }
+        #contato #secao-contato #corpo-contato .wpcf7-form input[type="submit"] {
+          font-family: 'Mari David';
+          font-size: 2.2rem;
+          padding: 5px 10px;
+          color: #6c6145;
+          transition: color 0.3s ease-in;
+          -webkit-transition: color 0.3s ease-in;
+          -moz-transition: color 0.3s ease-in;
+          -o-transition: color 0.3s ease-in;
+          background-color: #eee6d9;
+          transition: background-color 0.2s ease-out;
+          -webkit-transition: background-color 0.2s ease-out;
+          -moz-transition: background-color 0.2s ease-out;
+          -o-transition: background-color 0.2s ease-out;
+          border: 2px solid #cbb28a;
+          transition: border 0.2s ease;
+          -webkit-transition: border 0.2s ease;
+          -moz-transition: border 0.2s ease;
+          -o-transition: border 0.2s ease; }
+          #contato #secao-contato #corpo-contato .wpcf7-form input[type="submit"]:active, #contato #secao-contato #corpo-contato .wpcf7-form input[type="submit"]:focus, #contato #secao-contato #corpo-contato .wpcf7-form input[type="submit"]:hover {
+            color: #b99863;
+            transition: color 0.3s ease-out;
+            -webkit-transition: color 0.3s ease-out;
+            -moz-transition: color 0.3s ease-out;
+            -o-transition: color 0.3s ease-out;
+            background-color: #5f553c;
+            transition: background-color 0.2s ease-in;
+            -webkit-transition: background-color 0.2s ease-in;
+            -moz-transition: background-color 0.2s ease-in;
+            -o-transition: background-color 0.2s ease-in;
+            border: 2px solid #b99863;
+            transition: border 0.2s ease;
+            -webkit-transition: border 0.2s ease;
+            -moz-transition: border 0.2s ease;
+            -o-transition: border 0.2s ease; }
+        #contato #secao-contato #corpo-contato .wpcf7-not-valid-tip {
+          font-size: 1.5rem; }
+        #contato #secao-contato #corpo-contato .wpcf7-response-output,
+        #contato #secao-contato #corpo-contato .wpcf7-display-none,
+        #contato #secao-contato #corpo-contato .wpcf7-validation-errors {
+          font-size: 1.4rem; }
+
+  #rodape {
+    background-color: #6c6145; }
+    #rodape #rodape-row-1 a {
+      font-size: 2.5rem;
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease-out;
+      -webkit-transition: color 0.3s ease-out;
+      -moz-transition: color 0.3s ease-out;
+      -o-transition: color 0.3s ease-out; }
+      #rodape #rodape-row-1 a:hover {
+        color: #d1c498;
+        text-decoration: none;
+        transition: color 0.2s ease-in;
+        -webkit-transition: color 0.2s ease-in;
+        -moz-transition: color 0.2s ease-in;
+        -o-transition: color 0.2s ease-in; }
+    #rodape #rodape-row-1 h3 {
+      font-size: 2rem;
+      color: #fff;
+      text-decoration: none;
+      margin: 0; }
+    #rodape #rodape-row-1 i {
+      font-size: 3.5rem; }
+    #rodape #rodape-row-1 p {
+      color: white;
+      font-size: 2rem; }
+    #rodape #rodape-row-1 #brunoluizgr-copyright {
+      height: 10vh;
+      margin: auto;
+      vertical-align: middle;
+      display: inline-block; }
+    #rodape #rodape-row-2 {
+      font-size: 1.5rem;
+      color: #fff; }
+
+  #apresentacao-ep #cabecalho #imagem-de-fundo {
+    position: fixed;
+    display: block;
+    z-index: -1;
+    background-image: url("/wp-content/themes/tema-de-broove/library/images/capa-ep.png");
+    background-size: 70%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    filter: blur(5px);
+    -ms-filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100%; }
+  #apresentacao-ep #corpo {
+    z-index: 0;
+    color: #272727;
+    background-color: #ededed; }
+    #apresentacao-ep #corpo #corpo-col-1 #titulo-ep {
+      font-family: 'Lato', Arial, sans-serif;
+      font-size: 3rem;
+      font-weight: bolder;
+      text-align: right;
+      color: #272727;
+      margin-bottom: 0; }
+    #apresentacao-ep #corpo #corpo-col-1 #autor-ep {
+      font-family: 'Lato', Arial, sans-serif;
+      font-size: 2rem;
+      font-weight: lighter;
+      text-align: right;
+      color: #272727; }
+      #apresentacao-ep #corpo #corpo-col-1 #autor-ep #autor-broove {
+        text-decoration: underline; }
+    #apresentacao-ep #corpo #corpo-col-1 #bio-ep {
+      font-family: 'Consolas-Black', Arial, sans-serif;
+      font-weight: bolder;
+      color: #272727;
+      margin-bottom: 0; } }
+    @media only screen and (min-width: 993px) and (max-width: 1200px) and (width: 481px) {
+      #apresentacao-ep #corpo #corpo-col-1 #bio-ep {
+        font-size: 1.4rem; } }
+    @media only screen and (min-width: 993px) and (max-width: 1200px) and (width: 768px) {
+      #apresentacao-ep #corpo #corpo-col-1 #bio-ep {
+        font-size: 2rem; } }
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    #apresentacao-ep #corpo #corpo-col-1 #data-ep {
+      font-family: 'Consolas-Black', Arial, sans-serif;
+      font-weight: lighter;
+      color: #272727; } }
+    @media only screen and (min-width: 993px) and (max-width: 1200px) and (min-width: 481px) {
+      #apresentacao-ep #corpo #corpo-col-1 #data-ep {
+        font-size: 1rem; } }
+    @media only screen and (min-width: 993px) and (max-width: 1200px) and (width: 768px) {
+      #apresentacao-ep #corpo #corpo-col-1 #data-ep {
+        font-size: 1.5rem; } }
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    #apresentacao-ep #corpo #corpo-col-2 .titulo-musica {
+      font-size: 2.5rem; }
+    #apresentacao-ep #corpo #corpo-col-2 .icon-letras {
+      color: #272727;
+      transition: color 0.2s ease-in;
+      -webkit-transition: color 0.2s ease-in; }
+      #apresentacao-ep #corpo #corpo-col-2 .icon-letras:hover {
+        color: #9c8846;
+        transition: color 0.3s ease-out;
+        -webkit-transition: color 0.3s ease-out; } }
+    @media only screen and (min-width: 993px) and (max-width: 1200px) and (min-width: 481px) {
+      #apresentacao-ep #corpo #corpo-col-2 .icon-letras i {
+        font-size: 1.5rem; } }
+    @media only screen and (min-width: 993px) and (max-width: 1200px) and (width: 768px) {
+      #apresentacao-ep #corpo #corpo-col-2 .icon-letras i {
+        font-size: 2rem; } }
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    #apresentacao-ep #corpo #corpo-col-2 .letra-da-musica {
+      font-family: 'Consolas-Black', Arial, sans-serif;
+      font-size: 1.5rem; }
+    #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs {
+      width: 100% !important;
+      background: #6c6145 !important; }
+      #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .play-pause {
+        width: 40px;
+        border-right: 0; } }
+    @media only screen and (min-width: 993px) and (max-width: 1200px) and (min-width: 481px) {
+      #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber {
+        width: 265px !important;
+        margin: 10px 0 10px 10px !important; }
+      #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
+        margin: 0px 0px 0px 1px !important;
+        font-size: 12px !important; } }
+    @media only screen and (min-width: 993px) and (max-width: 1200px) and (width: 768px) {
+      #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber {
+        width: 550px !important; }
+      #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
+        font-size: 12px !important; } }
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+      #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber {
+        margin: 10px 0 10px 10px !important; }
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber .progress {
+          background: #b5a05a !important; }
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber .loaded {
+          background-image: -moz-linear-gradient(center top, #d1c498 0%, #d7cba5 50%, #d1c498 51%, #d1c498 100%) !important; }
+      #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
+        border-left: 0; }
+    #apresentacao-ep #corpo #corpo-col-3 #btn-download-ep {
+      font-size: 3rem;
+      text-decoration: none;
+      color: #eee6d9;
+      background-color: #272727;
+      padding: 15px 10px;
+      border-radius: 50%;
+      border: 0;
+      transition: background-color 0.2s ease-in;
+      -webkit-transition: background-color 0.2s ease-in;
+      -moz-transition: background-color 0.2s ease-in;
+      -ms-transition: background-color 0.2s ease-in;
+      -o-transition: background-color 0.2s ease-in; }
+      #apresentacao-ep #corpo #corpo-col-3 #btn-download-ep:hover {
+        color: #eee6d9;
+        background-color: #9c8846;
+        transition: background-color 0.3s ease-out;
+        -webkit-transition: background-color 0.3s ease-out;
+        -moz-transition: background-color 0.3s ease-out;
+        -ms-transition: background-color 0.3s ease-out;
+        -o-transition: background-color 0.3s ease-out; } }
 @media only screen and (min-width: 1201px) {
   /******************************************************************
   Site Name: Tema de Broove
   Author: brunoluizgr
   
   Stylesheet: 1200px and Up Stylesheet
-  ******************************************************************/ }
+  ******************************************************************/
+  /******************************************************************
+  Stylesheet: EP-Miolo
+  Media queries para ajustar os dois miolos do EP.
+  ******************************************************************/
+  /******************************************************************
+    Celulares
+  ******************************************************************/
+  /* ----------- iPhone 4 and 4S ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- iPhone 5 and 5S ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- iPhone 6 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- iPhone 6+ ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- Galaxy S3 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- Galaxy S4 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- Galaxy S5 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- HTC One ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /******************************************************************
+    Tablets
+  ******************************************************************/
+  /* ----------- iPad mini ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- iPad 1 and 2 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- iPad 3 and 4 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- Galaxy Tab 10.1 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- Asus Nexus 7 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- Kindle Fire HD 7" ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* ----------- Kindle Fire HD 8.9" ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /******************************************************************
+    Desktops
+  ******************************************************************/
+  /* ----------- Non-Retina Screens ----------- */
+  /* ----------- Retina Screens ----------- */
+  /*********************
+  GENERAL STYLES
+  *********************/
+  body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    color: #000;
+    background-color: #fff;
+    font-family: 'Mari David';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 100%;
+    line-height: 1.5;
+    z-index: -1;
+    overflow-x: hidden; }
+
+  #menu-principal {
+    background-color: #6c6145; }
+    #menu-principal .navbar-toggle:focus,
+    #menu-principal .navbar-toggle:hover {
+      background-color: #e2dabf; }
+    #menu-principal .navbar-toggle .icon-bar {
+      background-color: #aea180; }
+      #menu-principal .navbar-toggle .icon-bar:focus, #menu-principal .navbar-toggle .icon-bar:focus {
+        background-color: #443d2b; }
+    #menu-principal #menu {
+      background-color: #443d2b; }
+      #menu-principal #menu li {
+        text-align: center; }
+        #menu-principal #menu li:active, #menu-principal #menu li:focus, #menu-principal #menu li:hover {
+          background-color: #d1c498; }
+        #menu-principal #menu li a {
+          color: #f4efe7;
+          font-size: 2rem;
+          text-decoration: none;
+          transition: background-color 0.3s ease-in;
+          -webkit-transition: background-color 0.3s ease-in;
+          -moz-transition: background-color 0.3s ease-in;
+          -ms-transition: background-color 0.3s ease-in;
+          -o--transition: background-color 0.3s ease-in; }
+          #menu-principal #menu li a:hover {
+            transition: background-color 0.2s ease-out;
+            -webkit-transition: background-color 0.2s ease-out;
+            -moz-transition: background-color 0.2s ease-out;
+            -ms-transition: background-color 0.2s ease-out;
+            -o-transition: background-color 0.2s ease-out; }
+
+  #inicio {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    padding: 2vw 1vw;
+    background-color: #fff;
+    z-index: -1; }
+    #inicio .secao-inicio {
+      background-color: #eee6d9;
+      width: 90.25vw;
+      height: 100%;
+      margin: 0 auto; }
+      #inicio .secao-inicio .logo-broove {
+        text-align: center; }
+        #inicio .secao-inicio .logo-broove #fita {
+          position: absolute;
+          z-index: 0;
+          height: 17.75vw;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: auto;
+          margin-bottom: auto;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0; }
+        #inicio .secao-inicio .logo-broove #miolo-esq,
+        #inicio .secao-inicio .logo-broove #miolo-dir {
+          width: 3.5vw;
+          height: 3.5vw;
+          -webkit-animation: rotation 2s infinite linear;
+          -moz-animation: rotation 2s infinite linear;
+          -o-animation: rotation 2s infinite linear;
+          animation: rotation 2s infinite linear;
+          transform-origin: 50% 50%;
+          -webkit-transform-origin: 50% 50%;
+          -moz-transform-origin: 50% 50%; }
+  @-webkit-keyframes rotation {
+    from {
+      -webkit-transform: rotate(0deg); }
+    to {
+      -webkit-transform: rotate(359deg); } }
+  @-moz-keyframes rotation {
+    from {
+      -moz-transform: rotate(0deg); }
+    to {
+      -moz-transform: rotate(359deg); } }
+  @-o-keyframes rotation {
+    from {
+      -o-transform: rotate(0deg); }
+    to {
+      -o-transform: rotate(359deg); } }
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg); }
+    to {
+      transform: rotate(359deg); } }
+        #inicio .secao-inicio .logo-broove #miolo-esq {
+          position: absolute;
+          display: block;
+          z-index: 1;
+          margin-top: auto;
+          margin-bottom: auto;
+          top: 0;
+          bottom: 1vw;
+          left: 42.00vw; }
+        #inicio .secao-inicio .logo-broove #miolo-dir {
+          position: absolute;
+          display: block;
+          z-index: 1;
+          margin-top: auto;
+          margin-bottom: auto;
+          top: 0;
+          bottom: 1vw;
+          right: 41.5vw; }
+  #ep {
+    display: block;
+    width: 100vw;
+    height: 100%;
+    padding: 2vw 1vw;
+    background-color: #fff;
+    z-index: -1; }
+    #ep #secao-ep {
+      width: 90.25vw;
+      height: 100%;
+      margin: 0 auto;
+      background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-1.png");
+      background-repeat: repeat; }
+      #ep #secao-ep #titulo-ep {
+        font-size: 5rem;
+        color: #fff;
+        text-shadow: 1px 1px #443d2b; }
+      #ep #secao-ep #corpo-ep #corpo-ep-2 {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem; }
+        #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link,
+        #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link {
+          display: block;
+          margin-bottom: 4rem;
+          text-decoration: none;
+          color: white;
+          transition: color 0.2s ease-in;
+          -webkit-transition: color 0.2s ease-in;
+          -moz-transition: color 0.2s ease-in;
+          -ms-transition: color 0.2s ease-in;
+          -o-transition: color 0.2s ease-in;
+          text-shadow: 1px 1px #443d2b;
+          transition: text-shadow 0.2s ease;
+          -webkit-transition: text-shadow 0.2s ease;
+          -moz-transition: text-shadow 0.2s ease;
+          -ms-transition: text-shadow 0.2s ease;
+          -o-transition: text-shadow 0.2s ease; }
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link:active, #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link:focus, #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link:hover,
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link:active,
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link:focus,
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link:hover {
+            color: #443d2b;
+            transition: color 0.2s ease-in;
+            -webkit-transition: color 0.2s ease-in;
+            -moz-transition: color 0.2s ease-in;
+            -ms-transition: color 0.2s ease-in;
+            -o-transition: color 0.2s ease-in;
+            text-shadow: 1px 1px #fff;
+            transition: text-shadow 0.2s ease;
+            -webkit-transition: text-shadow 0.2s ease;
+            -moz-transition: text-shadow 0.2s ease;
+            -ms-transition: text-shadow 0.2s ease;
+            -o-transition: text-shadow 0.2s ease; }
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4,
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link h4 {
+            font-size: 3.5rem;
+            color: #443d2b;
+            transition: color 0.2s ease-in;
+            -webkit-transition: color 0.2s ease-in;
+            -moz-transition: color 0.2s ease-in;
+            -ms-transition: color 0.2s ease-in;
+            -o-transition: color 0.2s ease-in;
+            text-shadow: 1px 1px #fff;
+            transition: text-shadow 0.2s ease;
+            -webkit-transition: text-shadow 0.2s ease;
+            -moz-transition: text-shadow 0.2s ease;
+            -ms-transition: text-shadow 0.2s ease;
+            -o-transition: text-shadow 0.2s ease;
+            background-color: rgba(237, 237, 237, 0.6); }
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4:active, #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4:focus, #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4:hover,
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link h4:active,
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link h4:focus,
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link h4:hover {
+              color: #fff;
+              transition: color 0.2s ease-in;
+              -webkit-transition: color 0.2s ease-in;
+              -moz-transition: color 0.2s ease-in;
+              -ms-transition: color 0.2s ease-in;
+              -o-transition: color 0.2s ease-in;
+              text-shadow: 1px 1px #443d2b;
+              transition: text-shadow 0.2s ease;
+              -webkit-transition: text-shadow 0.2s ease;
+              -moz-transition: text-shadow 0.2s ease;
+              -ms-transition: text-shadow 0.2s ease;
+              -o-transition: text-shadow 0.2s ease; }
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4:active, #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4:focus, #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link h4:hover,
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link h4:active,
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link h4:focus,
+            #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link h4:hover {
+              background-color: rgba(156, 136, 70, 0.5); }
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .escute-link p i,
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .baixe-link p i {
+            font-size: 5rem; }
+        #ep #secao-ep #corpo-ep #corpo-ep-2 .social-link {
+          display: block;
+          font-size: 3rem;
+          text-decoration: none;
+          color: #fff;
+          transition: color 0.2s ease-in;
+          -webkit-transition: color 0.2s ease-in;
+          -moz-transition: color 0.2s ease-in;
+          -ms-transition: color 0.2s ease-in;
+          -o-transition: color 0.2s ease-in;
+          text-shadow: 1px 1px #443d2b;
+          transition: text-shadow 0.2s ease;
+          -webkit-transition: text-shadow 0.2s ease;
+          -moz-transition: text-shadow 0.2s ease;
+          -ms-transition: text-shadow 0.2s ease;
+          -o-transition: text-shadow 0.2s ease; }
+          #ep #secao-ep #corpo-ep #corpo-ep-2 .social-link:active, #ep #secao-ep #corpo-ep #corpo-ep-2 .social-link:focus, #ep #secao-ep #corpo-ep #corpo-ep-2 .social-link:hover {
+            color: #443d2b;
+            transition: color 0.2s ease-in;
+            -webkit-transition: color 0.2s ease-in;
+            -moz-transition: color 0.2s ease-in;
+            -ms-transition: color 0.2s ease-in;
+            -o-transition: color 0.2s ease-in;
+            text-shadow: 1px 1px #fff;
+            transition: text-shadow 0.2s ease;
+            -webkit-transition: text-shadow 0.2s ease;
+            -moz-transition: text-shadow 0.2s ease;
+            -ms-transition: text-shadow 0.2s ease;
+            -o-transition: text-shadow 0.2s ease; }
+
+  #making-of {
+    display: block;
+    width: 100vw;
+    height: 100%;
+    padding: 2vw 1vw;
+    background-color: #fff;
+    z-index: -1; }
+    #making-of #secao-making-of {
+      width: 90.25vw;
+      height: 100%;
+      margin: 0 auto;
+      background-color: #000; }
+      #making-of #secao-making-of #titulo-making-of {
+        font-size: 5rem;
+        color: #fff;
+        text-shadow: 1px 1px #f4efe7; }
+      #making-of #secao-making-of #corpo-making-of {
+        margin-bottom: 2rem; }
+        #making-of #secao-making-of #corpo-making-of .video-container {
+          position: relative;
+          padding-bottom: 56.25%;
+          padding-top: 30px;
+          height: 0;
+          overflow: hidden; }
+        #making-of #secao-making-of #corpo-making-of .video-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%; }
+
+  #fotos {
+    display: block;
+    width: 100vw;
+    height: 100%;
+    padding: 2vw 1vw;
+    background-color: #fff;
+    z-index: -1; }
+    #fotos #secao-fotos {
+      width: 90.25vw;
+      height: 100%;
+      margin: 0 auto;
+      background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-2.png"); }
+      #fotos #secao-fotos #titulo-fotos {
+        font-size: 5rem;
+        color: #eee6d9;
+        text-shadow: 1px 1px #5f553c; }
+      #fotos #secao-fotos #corpo-fotos {
+        margin-bottom: 3rem; }
+        #fotos #secao-fotos #corpo-fotos #bwg_container1_0 #bwg_container2_0 .bwg_slideshow_image_wrap_0 {
+          background-color: transparent !important; }
+          #fotos #secao-fotos #corpo-fotos #bwg_container1_0 #bwg_container2_0 .bwg_slideshow_image_wrap_0 .bwg_slideshow_dots_0 {
+            display: none !important; }
+
+  #contato {
+    display: block;
+    width: 100vw;
+    height: 100%;
+    padding: 2vw 1vw;
+    background-color: #fff;
+    z-index: -1;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box; }
+    #contato #secao-contato {
+      background-color: white;
+      width: 90.25vw;
+      height: 100%;
+      margin: 0 auto; }
+      #contato #secao-contato .borda-titulo-contato {
+        border-top: 3px solid #d1c498;
+        border-left: 3px solid #d1c498;
+        border-right: 3px solid #d1c498; }
+        #contato #secao-contato .borda-titulo-contato #titulo-contato {
+          font-size: 5rem;
+          color: #443d2b;
+          text-shadow: 1px 1px #aea180; }
+      #contato #secao-contato #corpo-contato {
+        border-left: 3px solid #d1c498;
+        border-right: 3px solid #d1c498;
+        border-bottom: 3px solid #d1c498; }
+        #contato #secao-contato #corpo-contato .wpcf7-form p {
+          font-size: 2rem;
+          color: #d1c498; }
+        #contato #secao-contato #corpo-contato .wpcf7-form input,
+        #contato #secao-contato #corpo-contato .wpcf7-form textarea {
+          font-family: 'Lato';
+          color: #6c6145;
+          background-color: #eee6d9; }
+        #contato #secao-contato #corpo-contato .wpcf7-form textarea {
+          resize: none;
+          height: 35vh; }
+        #contato #secao-contato #corpo-contato .wpcf7-form input[type="submit"] {
+          font-family: 'Mari David';
+          font-size: 2.2rem;
+          padding: 5px 10px;
+          color: #6c6145;
+          transition: color 0.3s ease-in;
+          -webkit-transition: color 0.3s ease-in;
+          -moz-transition: color 0.3s ease-in;
+          -o-transition: color 0.3s ease-in;
+          background-color: #eee6d9;
+          transition: background-color 0.2s ease-out;
+          -webkit-transition: background-color 0.2s ease-out;
+          -moz-transition: background-color 0.2s ease-out;
+          -o-transition: background-color 0.2s ease-out;
+          border: 2px solid #cbb28a;
+          transition: border 0.2s ease;
+          -webkit-transition: border 0.2s ease;
+          -moz-transition: border 0.2s ease;
+          -o-transition: border 0.2s ease; }
+          #contato #secao-contato #corpo-contato .wpcf7-form input[type="submit"]:active, #contato #secao-contato #corpo-contato .wpcf7-form input[type="submit"]:focus, #contato #secao-contato #corpo-contato .wpcf7-form input[type="submit"]:hover {
+            color: #b99863;
+            transition: color 0.3s ease-out;
+            -webkit-transition: color 0.3s ease-out;
+            -moz-transition: color 0.3s ease-out;
+            -o-transition: color 0.3s ease-out;
+            background-color: #5f553c;
+            transition: background-color 0.2s ease-in;
+            -webkit-transition: background-color 0.2s ease-in;
+            -moz-transition: background-color 0.2s ease-in;
+            -o-transition: background-color 0.2s ease-in;
+            border: 2px solid #b99863;
+            transition: border 0.2s ease;
+            -webkit-transition: border 0.2s ease;
+            -moz-transition: border 0.2s ease;
+            -o-transition: border 0.2s ease; }
+        #contato #secao-contato #corpo-contato .wpcf7-not-valid-tip {
+          font-size: 1.5rem; }
+        #contato #secao-contato #corpo-contato .wpcf7-response-output,
+        #contato #secao-contato #corpo-contato .wpcf7-display-none,
+        #contato #secao-contato #corpo-contato .wpcf7-validation-errors {
+          font-size: 1.4rem; }
+
+  #rodape {
+    background-color: #6c6145; }
+    #rodape #rodape-row-1 a {
+      font-size: 2.5rem;
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease-out;
+      -webkit-transition: color 0.3s ease-out;
+      -moz-transition: color 0.3s ease-out;
+      -o-transition: color 0.3s ease-out; }
+      #rodape #rodape-row-1 a:hover {
+        color: #d1c498;
+        text-decoration: none;
+        transition: color 0.2s ease-in;
+        -webkit-transition: color 0.2s ease-in;
+        -moz-transition: color 0.2s ease-in;
+        -o-transition: color 0.2s ease-in; }
+    #rodape #rodape-row-1 h3 {
+      font-size: 2rem;
+      color: #fff;
+      text-decoration: none;
+      margin: 0; }
+    #rodape #rodape-row-1 i {
+      font-size: 3.5rem; }
+    #rodape #rodape-row-1 p {
+      color: white;
+      font-size: 2rem; }
+    #rodape #rodape-row-1 #brunoluizgr-copyright {
+      height: 10vh;
+      margin: auto;
+      vertical-align: middle;
+      display: inline-block; }
+    #rodape #rodape-row-2 {
+      font-size: 1.5rem;
+      color: #fff; }
+
+  #apresentacao-ep #cabecalho #imagem-de-fundo {
+    position: fixed;
+    display: block;
+    z-index: -1;
+    background-image: url("/wp-content/themes/tema-de-broove/library/images/capa-ep.png");
+    background-size: 70%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    filter: blur(5px);
+    -ms-filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100%; }
+  #apresentacao-ep #corpo {
+    z-index: 0;
+    color: #272727;
+    background-color: #ededed; }
+    #apresentacao-ep #corpo #corpo-col-1 #titulo-ep {
+      font-family: 'Lato', Arial, sans-serif;
+      font-size: 3rem;
+      font-weight: bolder;
+      text-align: right;
+      color: #272727;
+      margin-bottom: 0; }
+    #apresentacao-ep #corpo #corpo-col-1 #autor-ep {
+      font-family: 'Lato', Arial, sans-serif;
+      font-size: 2rem;
+      font-weight: lighter;
+      text-align: right;
+      color: #272727; }
+      #apresentacao-ep #corpo #corpo-col-1 #autor-ep #autor-broove {
+        text-decoration: underline; }
+    #apresentacao-ep #corpo #corpo-col-1 #bio-ep {
+      font-family: 'Consolas-Black', Arial, sans-serif;
+      font-weight: bolder;
+      color: #272727;
+      margin-bottom: 0; } }
+    @media only screen and (min-width: 1201px) and (width: 481px) {
+      #apresentacao-ep #corpo #corpo-col-1 #bio-ep {
+        font-size: 1.4rem; } }
+    @media only screen and (min-width: 1201px) and (width: 768px) {
+      #apresentacao-ep #corpo #corpo-col-1 #bio-ep {
+        font-size: 2rem; } }
+@media only screen and (min-width: 1201px) {
+    #apresentacao-ep #corpo #corpo-col-1 #data-ep {
+      font-family: 'Consolas-Black', Arial, sans-serif;
+      font-weight: lighter;
+      color: #272727; } }
+    @media only screen and (min-width: 1201px) and (min-width: 481px) {
+      #apresentacao-ep #corpo #corpo-col-1 #data-ep {
+        font-size: 1rem; } }
+    @media only screen and (min-width: 1201px) and (width: 768px) {
+      #apresentacao-ep #corpo #corpo-col-1 #data-ep {
+        font-size: 1.5rem; } }
+@media only screen and (min-width: 1201px) {
+    #apresentacao-ep #corpo #corpo-col-2 .titulo-musica {
+      font-size: 2.5rem; }
+    #apresentacao-ep #corpo #corpo-col-2 .icon-letras {
+      color: #272727;
+      transition: color 0.2s ease-in;
+      -webkit-transition: color 0.2s ease-in; }
+      #apresentacao-ep #corpo #corpo-col-2 .icon-letras:hover {
+        color: #9c8846;
+        transition: color 0.3s ease-out;
+        -webkit-transition: color 0.3s ease-out; } }
+    @media only screen and (min-width: 1201px) and (min-width: 481px) {
+      #apresentacao-ep #corpo #corpo-col-2 .icon-letras i {
+        font-size: 1.5rem; } }
+    @media only screen and (min-width: 1201px) and (width: 768px) {
+      #apresentacao-ep #corpo #corpo-col-2 .icon-letras i {
+        font-size: 2rem; } }
+@media only screen and (min-width: 1201px) {
+    #apresentacao-ep #corpo #corpo-col-2 .letra-da-musica {
+      font-family: 'Consolas-Black', Arial, sans-serif;
+      font-size: 1.5rem; }
+    #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs {
+      width: 100% !important;
+      background: #6c6145 !important; }
+      #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .play-pause {
+        width: 40px;
+        border-right: 0; } }
+    @media only screen and (min-width: 1201px) and (min-width: 481px) {
+      #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber {
+        width: 265px !important;
+        margin: 10px 0 10px 10px !important; }
+      #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
+        margin: 0px 0px 0px 1px !important;
+        font-size: 12px !important; } }
+    @media only screen and (min-width: 1201px) and (width: 768px) {
+      #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber {
+        width: 550px !important; }
+      #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
+        font-size: 12px !important; } }
+@media only screen and (min-width: 1201px) {
+      #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber {
+        margin: 10px 0 10px 10px !important; }
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber .progress {
+          background: #b5a05a !important; }
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber .loaded {
+          background-image: -moz-linear-gradient(center top, #d1c498 0%, #d7cba5 50%, #d1c498 51%, #d1c498 100%) !important; }
+      #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
+        border-left: 0; }
+    #apresentacao-ep #corpo #corpo-col-3 #btn-download-ep {
+      font-size: 3rem;
+      text-decoration: none;
+      color: #eee6d9;
+      background-color: #272727;
+      padding: 15px 10px;
+      border-radius: 50%;
+      border: 0;
+      transition: background-color 0.2s ease-in;
+      -webkit-transition: background-color 0.2s ease-in;
+      -moz-transition: background-color 0.2s ease-in;
+      -ms-transition: background-color 0.2s ease-in;
+      -o-transition: background-color 0.2s ease-in; }
+      #apresentacao-ep #corpo #corpo-col-3 #btn-download-ep:hover {
+        color: #eee6d9;
+        background-color: #9c8846;
+        transition: background-color 0.3s ease-out;
+        -webkit-transition: background-color 0.3s ease-out;
+        -moz-transition: background-color 0.3s ease-out;
+        -ms-transition: background-color 0.3s ease-out;
+        -o-transition: background-color 0.3s ease-out; } }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /******************************************************************
   Site Name: Tema de Broove

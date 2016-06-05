@@ -10,7 +10,9 @@
   <div id="corpo-fotos" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
     <!-- Shortcode -->
     <div class="row">
-      <?php echo do_shortcode('[Best_Wordpress_Gallery id="1" gal_title="fotos"]' ); ?>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <?php echo do_shortcode('[Best_Wordpress_Gallery id="1" gal_title="fotos"]' ); ?>
+      </div>
     </div>
     <!-- Fim do Shortcode -->
   </div>

@@ -4,276 +4,695 @@ Author: brunoluizgr
 
 Stylesheet: 768px and Up Stylesheet
 ******************************************************************/
-
+// Miolo do EP ajustado para TODOS os tamanhos
+@import "../parciais/ep-miolo";
 
 /*********************
 GENERAL STYLES
 *********************/
-
-body {}
-
-/*********************
-LAYOUT & GRID STYLES
-*********************/
-
-.wrap {
-	width: 760px;
+body {
+	width: 100%;
+	height:100%;
+	padding:0;
+	margin:0;
+	color: $black;
+	background-color: $white;
+	font-family:'Mari David';
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 100%;
+	line-height: 1.5;
+	z-index: -1;
+	overflow-x: hidden;
 }
 
-/*********************
-HEADER STYLES
-*********************/
+// MENU INTERNO
+#menu-principal{
+  background-color:$cor-fita-ep;
 
-.header {}
+  .navbar-toggle:focus,
+  .navbar-toggle:hover {
+    background-color: $cor-fita-interna-ep-1;
+  }
+  .navbar-toggle .icon-bar {
+    background-color: $cor-fita-ep-1;
+    &:focus,
+    &:focus {
+      background-color: $cor-fita-ep-6;
+    }
+  }
 
-	#logo {}
-
-/*********************
-NAVIGATION STYLES
-*********************/
-
-.nav {
-	border: 0;
-	ul {
-		background:$black;
-		margin-top:0;
-	}
-	li {
-		float: left;
-		position: relative;
-
-		a {
-			border-bottom: 0;
-
-			/*
-			you can use hover styles here even though this size
-			has the possibility of being a mobile device.
-			*/
-			&:hover, &:focus {
-				color: $white;
-				text-decoration: underline;
+  #menu{
+  	background-color:$cor-fita-ep-6;
+    li {
+			text-align: center;
+			&:active,
+			&:focus,
+			&:hover{
+				background-color:$cor-fita-interna-ep;
 			}
-		}
-
-		&:first-child {}
-		&:last-child {}
-
-		/*
-		plan your menus and drop-downs wisely.
-		*/
-		ul.sub-menu,
-		ul.children {
-			margin-top: 0;
-			border: 1px solid #ccc;
-			border-top: 0;
-			position: absolute;
-			visibility: hidden;
-			z-index: 8999;
-
-			li {
-
-				a {
-					padding-left: 10px;
-					border-right: 0;
-					display: block;
-					width: 180px;
-					border-bottom: 1px solid #ccc;
-
-					&:hover,
-					&:focus {}
-
-					&:link {}
-				}
-
-				&:first-child {}
-
-				&:last-child {
-
-					a {
-						border-bottom: 0;
-					}
-				}
-
-				/*
-				if you need to go deeper, go nuts
-				just remember deeper menus suck
-				for usability. k, bai.
-				*/
-				ul {
-					top:0;
-					left:100%;
-				}
-			}
-
-			/* highlight sub-menu current page */
-			li.current-menu-item,
-			li.current_page_item,
-			li.current_page_ancestor {
-				a {}
-			}
-		}
-
-		/* showing sub-menus */
-		&:hover > ul {
-			top: auto;
-			visibility:visible;
-		}
-
-	} /* end .menu ul li */
-
-	/* highlight current page */
-	li.current-menu-item,
-	li.current_page_item,
-	li.current_page_ancestor {
-		a {}
-	}  /* end current highlighters */
-
-} /* end .nav */
-
-/*********************
-SIDEBARS & ASIDES
-*********************/
-
-.sidebar {
-	margin-top: 2.2em;
-}
-
-	.widgettitle {
-		border-bottom: 2px solid #444;
-		margin-bottom: 0.75em;
-	}
-
-	.widget {
-		padding: 0 10px;
-		margin: 2.2em 0;
-
-		ul {
-			li {
-				margin-bottom: 0.75em;
-
-				&:first-child {}
-				&:last-child {}
-				a {}
-				/* deep nesting */
-
-				ul {
-					margin-top: 0.75em;
-					padding-left: 1em;
-				}
-			}
-		}
-	}
-
-
-	/* links widget */
-	.widget_links {}
-	.widget_links ul {}
-	.widget_links ul li {}
-	.widget_links ul li a {}
-
-	/* meta widget */
-	.widget_meta {}
-	.widget_meta ul {}
-	.widget_meta ul li {}
-	.widget_meta ul li a {}
-
-	/* pages widget */
-	.widget_pages {}
-	.widget_pages ul {}
-	.widget_pages ul li {}
-	.widget_pages ul li a {}
-
-	/* recent-posts widget */
-	.widget_recent_entries {}
-	.widget_recent_entries ul {}
-	.widget_recent_entries ul li {}
-	.widget_recent_entries ul li a {}
-
-	/* archives widget */
-	.widget_archive {}
-	.widget_archive ul {}
-	.widget_archive ul li {}
-	.widget_archive ul li a {}
-	.widget_archive select {}
-	.widget_archive option {}
-
-	/* tag-cloud widget */
-	.widget_links {}
-	.widget_links li:after {}
-	.widget_links li:before {}
-	.widget_tag_cloud {}
-	.widget_tag_cloud a {}
-	.widget_tag_cloud a:after {}
-	.widget_tag_cloud a:before {}
-
-	/* calendar widget */
-	.widget_calendar {}
-	#calendar_wrap {}
-	#calendar_wrap th {}
-	#calendar_wrap td {}
-	#wp-calendar tr td {}
-	#wp-calendar caption {}
-	#wp-calendar a {}
-	#wp-calendar #today {}
-	#wp-calendar #prev {}
-	#wp-calendar #next {}
-	#wp-calendar #next a {}
-	#wp-calendar #prev a {}
-
-	/* category widget */
-	.widget_categories {}
-	.widget_categories ul {}
-	.widget_categories ul li {}
-	.widget_categories ul ul.children {}
-	.widget_categories a {}
-	.widget_categories select{}
-	.widget_categories select#cat {}
-	.widget_categories select.postform {}
-	.widget_categories option {}
-	.widget_categories .level-0 {}
-	.widget_categories .level-1 {}
-	.widget_categories .level-2 {}
-	.widget_categories .level-3 {}
-
-	/* recent-comments widget */
-	.recentcomments {}
-	#recentcomments {}
-	#recentcomments li {}
-	#recentcomments li a {}
-	.widget_recent_comments {}
-
-	/* search widget */
-	#searchform {}
-	.widget_search {}
-	.screen-reader-text {}
-
-	/* text widget */
-	.textwidget {}
-	.widget_text {}
-	.textwidget p {}
-
-
-/*********************
-FOOTER STYLES
-*********************/
-
-/*
-you'll probably need to do quite a bit
-of overriding here if you styled them for
-mobile. Make sure to double check these!
-*/
-.footer-links {
-	ul {
-		li {
 			a {
-				&:hover {}
+	      color:$cor-capa-ep-1;
+	      font-size:2rem;
+	      text-decoration: none;
+	      transition: background-color 0.3s ease-in;
+	      -webkit-transition: background-color 0.3s ease-in;
+        -moz-transition: background-color 0.3s ease-in;
+        -ms-transition: background-color 0.3s ease-in;
+        -o--transition: background-color 0.3s ease-in;
+	      &:hover{
+	        transition: background-color 0.2s ease-out;
+	        -webkit-transition: background-color 0.2s ease-out;
+          -moz-transition: background-color 0.2s ease-out;
+          -ms-transition: background-color 0.2s ease-out;
+          -o-transition: background-color 0.2s ease-out;
+	      }
+    	}
+		}
+  }
+}
+
+// SEÇÃO DO INÍCIO
+#inicio{
+  display:block;
+  width:100vw;
+  height:100vh;
+  padding:2vw 1vw;
+  background-color:$white;
+  z-index:-1;
+
+  .secao-inicio{
+    background-color:$cor-capa-ep;
+    width:90.25vw;
+    height:100%;
+    margin:0 auto;
+
+    .logo-broove{
+      text-align: center;
+      #fita{
+        position:absolute;
+        z-index:0;
+        // Tamanho
+        height:17.75vw;
+        // Localização
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:auto;
+        margin-bottom:auto;
+        top:0;
+        bottom:0;
+        left: 0;
+        right: 0;
+      }
+      #miolo-esq,
+      #miolo-dir{
+        width:3.5vw;
+        height:3.5vw;
+        -webkit-animation: rotation 2s infinite linear;
+        -moz-animation: rotation 2s infinite linear;
+        -o-animation: rotation 2s infinite linear;
+        animation: rotation 2s infinite linear;
+        transform-origin: 50% 50%;
+        -webkit-transform-origin: 50% 50%;
+        -moz-transform-origin: 50% 50%;
+      }
+      @-webkit-keyframes rotation {
+          from {-webkit-transform: rotate(0deg);}
+          to   {-webkit-transform: rotate(359deg);}
+      }
+      @-moz-keyframes rotation {
+          from {-moz-transform: rotate(0deg);}
+          to   {-moz-transform: rotate(359deg);}
+      }
+      @-o-keyframes rotation {
+          from {-o-transform: rotate(0deg);}
+          to   {-o-transform: rotate(359deg);}
+      }
+      @keyframes rotation {
+          from {transform: rotate(0deg);}
+          to   {transform: rotate(359deg);}
+      }
+      #miolo-esq{
+        position:absolute;
+        display:block;
+        z-index:1;
+        margin-top:auto;
+        margin-bottom:auto;
+        top:0;
+        bottom:1vw;
+        left:42.00vw;
+        @media all and (min-device-aspect-ratio:1.95/1){
+          #miolo-esq{
+            left:42vw;
+          }
+        }
+      }
+      #miolo-dir{
+        position:absolute;
+        display:block;
+        z-index:1;
+        margin-top:auto;
+        margin-bottom:auto;
+        top:0;
+        bottom:1vw;
+        right:41.5vw;
+        @media all and (min-device-aspect-ratio:1.95/1){
+          #miolo-esq{
+            right:41.5vw;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+// SEÇÃO DO EP
+#ep{
+  display:block;
+  width:100vw;
+  height:100%;
+  padding:2vw 1vw;
+  background-color:$white;
+  z-index:-1;
+
+  #secao-ep{
+    width:90.25vw;
+    height:100%;
+    margin:0 auto;
+    background-image:url("/wp-content/themes/tema-de-broove/library/images/pattern-1.png");
+    background-repeat:repeat;
+
+    #titulo-ep{
+      font-size:5rem;
+      color:$white;
+			text-shadow: 1px 1px $cor-fita-ep-6;
+    }
+
+    #corpo-ep{
+      #corpo-ep-2{
+				margin-top: 1.5rem;
+				margin-bottom: 1.5rem;
+				.escute-link,
+				.baixe-link{
+					display:block;
+          margin-bottom:4rem;
+          text-decoration:none;
+					color: white;
+					transition: color 0.2s ease-in;
+					-webkit-transition: color 0.2s ease-in;
+					-moz-transition: color 0.2s ease-in;
+					-ms-transition: color 0.2s ease-in;
+					-o-transition: color 0.2s ease-in;
+					text-shadow: 1px 1px $cor-fita-ep-6;
+					transition: text-shadow 0.2s ease;
+					-webkit-transition: text-shadow 0.2s ease;
+					-moz-transition: text-shadow 0.2s ease;
+					-ms-transition: text-shadow 0.2s ease;
+					-o-transition: text-shadow 0.2s ease;
+					&:active,
+					&:focus,
+					&:hover{
+						color: $cor-fita-ep-6;
+						transition: color 0.2s ease-in;
+						-webkit-transition: color 0.2s ease-in;
+						-moz-transition: color 0.2s ease-in;
+						-ms-transition: color 0.2s ease-in;
+						-o-transition: color 0.2s ease-in;
+						text-shadow: 1px 1px $white;
+						transition: text-shadow 0.2s ease;
+						-webkit-transition: text-shadow 0.2s ease;
+						-moz-transition: text-shadow 0.2s ease;
+						-ms-transition: text-shadow 0.2s ease;
+						-o-transition: text-shadow 0.2s ease;
+					}
+					h4{
+						font-size: 3.5rem;
+						color: $cor-fita-ep-6;
+						transition: color 0.2s ease-in;
+						-webkit-transition: color 0.2s ease-in;
+						-moz-transition: color 0.2s ease-in;
+						-ms-transition: color 0.2s ease-in;
+						-o-transition: color 0.2s ease-in;
+						text-shadow: 1px 1px $white;
+						transition: text-shadow 0.2s ease;
+						-webkit-transition: text-shadow 0.2s ease;
+						-moz-transition: text-shadow 0.2s ease;
+						-ms-transition: text-shadow 0.2s ease;
+						-o-transition: text-shadow 0.2s ease;
+						&:active,
+						&:focus,
+						&:hover{
+							color: $white;
+							transition: color 0.2s ease-in;
+							-webkit-transition: color 0.2s ease-in;
+							-moz-transition: color 0.2s ease-in;
+							-ms-transition: color 0.2s ease-in;
+							-o-transition: color 0.2s ease-in;
+							text-shadow: 1px 1px $cor-fita-ep-6;
+							transition: text-shadow 0.2s ease;
+							-webkit-transition: text-shadow 0.2s ease;
+							-moz-transition: text-shadow 0.2s ease;
+							-ms-transition: text-shadow 0.2s ease;
+							-o-transition: text-shadow 0.2s ease;
+						}
+						background-color:rgba(237,237,237,.6);
+						&:active,
+						&:focus,
+						&:hover{
+							background-color:rgba(156,136,70,.5);
+						}
+					}
+          p i {
+            font-size:5rem;
+          }
+        }
+
+        .social-link{
+          display: block;
+          font-size:3rem;
+          text-decoration:none;
+          color: $white;
+					transition: color 0.2s ease-in;
+					-webkit-transition: color 0.2s ease-in;
+					-moz-transition: color 0.2s ease-in;
+					-ms-transition: color 0.2s ease-in;
+					-o-transition: color 0.2s ease-in;
+					text-shadow: 1px 1px $cor-fita-ep-6;
+					transition: text-shadow 0.2s ease;
+					-webkit-transition: text-shadow 0.2s ease;
+					-moz-transition: text-shadow 0.2s ease;
+					-ms-transition: text-shadow 0.2s ease;
+					-o-transition: text-shadow 0.2s ease;
+					&:active,
+					&:focus,
+					&:hover{
+						color: $cor-fita-ep-6;
+						transition: color 0.2s ease-in;
+						-webkit-transition: color 0.2s ease-in;
+						-moz-transition: color 0.2s ease-in;
+						-ms-transition: color 0.2s ease-in;
+						-o-transition: color 0.2s ease-in;
+						text-shadow: 1px 1px $white;
+						transition: text-shadow 0.2s ease;
+						-webkit-transition: text-shadow 0.2s ease;
+						-moz-transition: text-shadow 0.2s ease;
+						-ms-transition: text-shadow 0.2s ease;
+						-o-transition: text-shadow 0.2s ease;
+					}
+        }
+
+      }
+    }
+  }
+}
+
+// SEÇÃO DO MAKING-OF
+#making-of {
+  display:block;
+  width:100vw;
+  height:100%;
+  padding:2vw 1vw;
+  background-color:$white;
+  z-index:-1;
+
+  #secao-making-of {
+    width:90.25vw;
+    height:100%;
+    margin:0 auto;
+    background-color: $black;
+
+    #titulo-making-of {
+			font-size:5rem;
+			color:$white;
+      text-shadow: 1px 1px $cor-capa-ep-1;
+    }
+		#corpo-making-of {
+			margin-bottom:2rem;
+			.video-container {
+				position: relative;
+				padding-bottom: 56.25%;
+				padding-top: 30px;
+				height: 0;
+				overflow: hidden;
 			}
-			/*
-			be careful with the depth of your menus.
-			it's very rare to have multi-depth menus in
-			the footer.
-			*/
-			ul {}
+			.video-container iframe {
+				position: absolute;
+				top:0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+  	}
+
+	}
+}
+
+// SEÇÃO DE FOTOS
+#fotos {
+  display:block;
+  width:100vw;
+  height:100%;
+  padding:2vw 1vw;
+  background-color:$white;
+  z-index:-1;
+
+  #secao-fotos {
+    width:90.25vw;
+    height:100%;
+    margin:0 auto;
+    background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-2.png");
+
+    #titulo-fotos {
+			font-size:5rem;
+			color:$cor-capa-ep;
+			text-shadow: 1px 1px $cor-fita-ep-4;
+    }
+
+		#corpo-fotos {
+			margin-bottom: 3rem;
+			#bwg_container1_0 #bwg_container2_0 .bwg_slideshow_image_wrap_0{
+				background-color: transparent!important;
+				.bwg_slideshow_dots_0{
+					display:none!important;
+				}
+			}
+		}
+  }
+}
+
+// SEÇÃO DE CONTATO
+#contato{
+	display:block;
+	width:100vw;
+	height:100%;
+	padding:2vw 1vw;
+	background-color:$white;
+	z-index:-1;
+
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+
+  #secao-contato{
+    background-color: $cor-contracapa-ep;
+    width:90.25vw;
+    height:100%;
+    margin:0 auto;
+
+		.borda-titulo-contato{
+			border-top: 3px solid $cor-fita-interna-ep;
+	    border-left: 3px solid $cor-fita-interna-ep;
+	    border-right: 3px solid $cor-fita-interna-ep;
+			#titulo-contato{
+				font-size:5rem;
+				color:$cor-fita-ep-6;
+				text-shadow: 1px 1px $cor-fita-ep-1;
+	    }
+		}
+
+    #corpo-contato{
+      border-left: 3px solid $cor-fita-interna-ep;
+      border-right: 3px solid $cor-fita-interna-ep;
+      border-bottom: 3px solid $cor-fita-interna-ep;
+      .wpcf7-form{
+        p{
+          font-size: 2rem;
+          color: $cor-fita-interna-ep;
+        }
+        input,
+        textarea{
+          font-family:'Lato';
+					color:$cor-fita-ep;
+          background-color:$cor-capa-ep;
+        }
+        textarea{
+          resize:none;
+          height:35vh;
+        }
+        input[type="submit"]{
+					font-family:'Mari David';
+          font-size:2.2rem;
+          padding:5px 10px;
+					color:$cor-fita-ep;
+					transition: color 0.3s ease-in;
+					-webkit-transition: color 0.3s ease-in;
+					-moz-transition: color 0.3s ease-in;
+					-o-transition: color 0.3s ease-in;
+					background-color:$cor-capa-ep;
+					transition: background-color 0.2s ease-out;
+					-webkit-transition: background-color 0.2s ease-out;
+					-moz-transition: background-color 0.2s ease-out;
+					-o-transition: background-color 0.2s ease-out;
+          border:2px solid $cor-capa-ep-4;
+					transition: border 0.2s ease;
+					-webkit-transition: border 0.2s ease;
+					-moz-transition: border 0.2s ease;
+					-o-transition: border 0.2s ease;
+          &:active,
+					&:focus,
+					&:hover{
+            color:$cor-capa-ep-6;
+						transition: color 0.3s ease-out;
+						-webkit-transition: color 0.3s ease-out;
+						-moz-transition: color 0.3s ease-out;
+						-o-transition: color 0.3s ease-out;
+            background-color:$cor-fita-ep-4;
+						transition: background-color 0.2s ease-in;
+						-webkit-transition: background-color 0.2s ease-in;
+						-moz-transition: background-color 0.2s ease-in;
+						-o-transition: background-color 0.2s ease-in;
+						border:2px solid $cor-capa-ep-6;
+						transition: border 0.2s ease;
+						-webkit-transition: border 0.2s ease;
+						-moz-transition: border 0.2s ease;
+						-o-transition: border 0.2s ease;
+          }
+        }
+      }
+      .wpcf7-not-valid-tip{
+        font-size:1.5rem;
+      }
+			.wpcf7-response-output,
+			.wpcf7-display-none,
+			.wpcf7-validation-errors{
+				font-size:1.4rem;
+			}
+    }
+  }
+}
+
+// RODAPÉ
+#rodape{
+  background-color: $cor-fita-ep;
+
+  #rodape-row-1 {
+	  a {
+			font-size: 2.5rem;
+	    color: $white;
+	    text-decoration: none;
+	    transition: color 0.3s ease-out;
+	    -webkit-transition: color 0.3s ease-out;
+			-moz-transition: color 0.3s ease-out;
+			-o-transition: color 0.3s ease-out;
+	    &:hover{
+	      color: $cor-fita-interna-ep;
+	      text-decoration: none;
+	      transition: color 0.2s ease-in;
+	      -webkit-transition: color 0.2s ease-in;
+				-moz-transition: color 0.2s ease-in;
+				-o-transition: color 0.2s ease-in;
+	    }
+	  }
+		h3 {
+			font-size: 2rem;
+			color: $white;
+			text-decoration: none;
+			margin: 0;
+		}
+		i {
+			font-size:3.5rem;
+		}
+		p {
+			color: white;
+			font-size: 2rem;
+		}
+		#brunoluizgr-copyright {
+			height: 10vh;
+			margin: auto;
+			vertical-align: middle;
+			display: inline-block;
+		}
+  }
+
+  #rodape-row-2{
+		font-size: 1.5rem;
+		color: $white;
+  }
+}
+
+// PÁGINA INTERNA - ESCUTE
+#apresentacao-ep {
+
+  #cabecalho {
+    #imagem-de-fundo {
+      position:fixed;
+      display:block;
+      z-index:-1;
+      background-image: url('/wp-content/themes/tema-de-broove/library/images/capa-ep.png');
+      background-size: 70%;
+      background-position: center top;
+      background-repeat: no-repeat;
+      filter: blur(5px);
+      -ms-filter: blur(5px);
+      -webkit-filter: blur(5px);
+      -moz-filter: blur(5px);
+      -o-filter: blur(5px);
+      left:0;
+      right:0;
+      width:100vw;
+      height:100%;
+    }
+  }
+  #corpo{
+    z-index:0;
+    color:$cor-texto-1;
+    background-color:$cor-fundo;
+    #corpo-col-1 {
+      #titulo-ep{
+        font-family:'Lato', Arial, sans-serif;
+        font-size:3rem;
+        font-weight:bolder;
+        text-align: right;
+        color:$cor-texto-1;
+        margin-bottom:0;
+      }
+      #autor-ep{
+        font-family:'Lato', Arial, sans-serif;
+        font-size:2rem;
+        font-weight:lighter;
+        text-align: right;
+        color:$cor-texto-1;
+        #autor-broove{
+          text-decoration:underline;
+        }
+      }
+      #bio-ep{
+        font-family:'Consolas-Black', Arial, sans-serif;
+        font-weight:bolder;
+        color:$cor-texto-1;
+        margin-bottom:0;
+				@media only screen and (width: 481px) {
+					font-size:1.4rem;
+				}
+				@media only screen and (width: 768px) {
+          font-size:2rem;
+				}
+      }
+      #data-ep{
+        font-family:'Consolas-Black', Arial, sans-serif;
+        font-weight:lighter;
+        color:$cor-texto-1;
+        @media only screen and (min-width: 481px) {
+					font-size:1rem;
+				}
+				@media only screen and (width: 768px) {
+          font-size:1.5rem;
+				}
+      }
+    }
+    #corpo-col-2 {
+      .titulo-musica{
+        font-size:2.5rem;
+      }
+      .icon-letras{
+        color:$cor-texto-1;
+        transition: color 0.2s ease-in;
+        -webkit-transition: color 0.2s ease-in;
+        &:hover{
+          color:$cor-fita-interna-ep-6;
+          transition: color 0.3s ease-out;
+          -webkit-transition: color 0.3s ease-out;
+        }
+        i {
+          @media only screen and (min-width: 481px) {
+  					font-size:1.5rem;
+  				}
+  				@media only screen and (width: 768px) {
+            font-size:2rem;
+  				}
+        }
+      }
+      .letra-da-musica{
+        font-family:'Consolas-Black', Arial, sans-serif;
+        font-size: 1.5rem;
+      }
+      .tocador-musica{
+        .audiojs{
+					width: 100%!important;
+          background:$cor-fita-ep!important;
+          .play-pause{
+            width:40px;
+            border-right:0;
+          }
+					@media only screen and (min-width: 481px) {
+	          .scrubber {
+								width:265px !important;
+								margin:10px 0 10px 10px!important;
+						}
+						.time {
+							margin:0px 0px 0px 1px!important;
+							font-size:12px!important;
+						}
+					}
+					@media only screen and (width: 768px) {
+						.scrubber {
+							width:550px!important;
+						}
+						.time {
+							font-size:12px!important;
+						}
+					}
+					.scrubber {
+						margin:10px 0 10px 10px!important;
+						.progress{
+              background:$cor-fita-interna-ep-5!important;
+            }
+            .loaded{
+              background-image:-moz-linear-gradient(center top, $cor-fita-interna-ep 0%, $cor-fita-interna-ep-3 50%, $cor-fita-interna-ep 51%, $cor-fita-interna-ep 100%)!important;
+            }
+          }
+          .time{
+            border-left:0;
+          }
+        }
+      }
+    }
+		#corpo-col-3 {
+			#btn-download-ep{
+				font-size:3rem;
+				text-decoration:none;
+				color:$cor-capa-ep;
+				background-color:$cor-texto-1;
+				padding:15px 10px;
+				border-radius:50%;
+				border:0;
+				transition: background-color 0.2s ease-in;
+				-webkit-transition: background-color 0.2s ease-in;
+				-moz-transition: background-color 0.2s ease-in;
+				-ms-transition: background-color 0.2s ease-in;
+				-o-transition: background-color 0.2s ease-in;
+				&:hover{
+					color:$cor-capa-ep;
+					background-color:$cor-fita-interna-ep-6;
+					transition: background-color 0.3s ease-out;
+					-webkit-transition: background-color 0.3s ease-out;
+					-moz-transition: background-color 0.3s ease-out;
+					-ms-transition: background-color 0.3s ease-out;
+					-o-transition: background-color 0.3s ease-out;
+				}
+			}
 		}
 	}
-} /* end .footer-links */
+}
