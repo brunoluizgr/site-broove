@@ -141,7 +141,7 @@ jQuery(document).ready(function($) {
  	});
 
 	// Remove 2º <br> da seção de Contato
-	var menu = ['inicio', 'ep', 'making-of', 'fotos', 'letras', 'contato'];
+	var menu = ['inicio', 'ep', 'fotos', 'contato'];
 	var i=0;
 
 	$('#menu-sobe').click(function () {
@@ -153,7 +153,7 @@ jQuery(document).ready(function($) {
 
 	$('#menu-desce').click(function () {
 		i++;
-		if(i>=5){i=5};
+		if(i>=3){i=3};
 		window.location.hash = menu[i];
 		return false;
 	});

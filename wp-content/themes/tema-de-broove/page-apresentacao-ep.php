@@ -10,7 +10,7 @@
 			<div class="row">
 
 				<!-- Seção do Cabeçalho -->
-				<div id="cabecalho" class="row padding-t-2 padding-b-1">
+				<div id="cabecalho" class="margin-t-4 padding-b-4">
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
 						<div id="imagem-de-fundo"></div>
 						<div id="imagem-da-frente" class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
@@ -21,33 +21,48 @@
 				<!-- Fim da Seção do Cabeçalho -->
 
 				<!-- Seção do Corpo -->
-				<div id="corpo" class="row">
+				<div id="corpo">
 
 					<!-- Inicio da Bio e Titulo da banda -->
-					<div id="corpo-col-1" class="col-xs-12 col-sm-12">
+					<div id="corpo-col-1" class="col-xs-12 col-sm-12 col-md-5 col-lg-5 padding-t-2">
 						<!-- Versão Mobile/Tablet -->
 						<div class="hidden-md hidden-lg">
-							<div class="col-xs-12 padding-t-2 margin-b-2">
-								<div class="col-xs-6">
+							<div class="col-xs-12 col-sm-12 padding-t-2 margin-b-2">
+								<div class="col-xs-6 col-sm-6">
 									<p id="titulo-ep"><?php _e('Broove EP','temadebroove') ?></p>
 									<p id="autor-ep"><?php _e('por', 'temadebroove') ?> <span id="autor-broove"><?php _e('Broove', 'temadebroove') ?></span></p>
 								</div>
-								<div class="col-xs-6">
+								<div class="col-xs-6 col-sm-6">
 									<p id="bio-ep"><?php _e('Banda brasileira de verdades.', 'temadebroove') ?></p>
-									<p id="data-ep"><?php _e('Lancamento 2016', 'temadebroove') ?></p>
+									<p id="data-ep"><?php _e('Lançamento 2016', 'temadebroove') ?></p>
 								</div>
 							</div>
 						</div>
 						<!-- Fim da Versão Mobile/Tablet -->
 						<!-- Versão Desktop -->
-						<div class="hidden-xs hidden-sm">
+						<div class="hidden-xs hidden-sm ajuste-altura">
+							<div class="padding-t-2 margin-b-2">
+								<div class="col-md-12 col-lg-12">
+									<p id="titulo-ep"><?php _e('Broove EP','temadebroove') ?></p>
+									<p id="autor-ep"><?php _e('por', 'temadebroove') ?> <span id="autor-broove"><?php _e('Broove', 'temadebroove') ?></span></p>
+								</div>
+								<div class="col-md-12 col-lg-12 margin-t-2">
+									<p id="bio-ep"><?php _e('Banda brasileira de verdades.', 'temadebroove') ?></p>
+									<p id="data-ep"><?php _e('Lançamento 2016', 'temadebroove') ?></p>
+								</div>
+								<div id="btn-download-div" class="col-md-12 col-lg-12 margin-t-2">
+									<a id="btn-download-ep" href="/baixe/Broove-Broove[EP].zip" download>
+										<?php _e('Baixar Album', 'temadebroove') ?>
+									</a>
+								</div>
+							</div>
 						</div>
 						<!-- Fim da Versão Desktop -->
 					</div>
 					<!-- Fim da Bio e Titulo da banda -->
 
 					<!-- Inicio dos Players e Letras -->
-					<div id="corpo-col-2" class="col-xs-12">
+					<div id="corpo-col-2" class="col-xs-12 col-sm-12 col-md-7 col-lg-7 ajuste-altura-2">
 
 						<!-- Inicio de TEMA DE BROOVE -->
 						<div class="row margin-b-2">
@@ -140,8 +155,6 @@
 																Os seus problemas você deve esquecer (4x)<br/>
 															</p>
 													</div>
-													<div class="modal-footer">
-													</div>
 											</div>
 									</div>
 								</div>
@@ -210,8 +223,6 @@
 																Ah... Finjo que não sei entender<br/>
 																tudo o que eu sinto quando olho pra você…<br/>
 															</p>
-													</div>
-													<div class="modal-footer">
 													</div>
 											</div>
 									</div>
@@ -282,8 +293,6 @@
 																Sempre seguidos de um sorriso tímido<br/>
 																Se soubéssemos mesmo, soubéssemos dele e de nós…(bis)<br/>
 															</p>
-													</div>
-													<div class="modal-footer">
 													</div>
 											</div>
 									</div>
@@ -390,8 +399,6 @@
 																Mas sei que posso voar (x2)</br>
 															</p>
 													</div>
-													<div class="modal-footer">
-													</div>
 											</div>
 									</div>
 								</div>
@@ -465,8 +472,6 @@
 																Plin! A realidade é pior depois de um sonho bom…<br/>
 															</p>
 													</div>
-													<div class="modal-footer">
-													</div>
 											</div>
 									</div>
 								</div>
@@ -535,8 +540,6 @@
 																É meu, é meu, é meu…
 															</p>
 													</div>
-													<div class="modal-footer">
-													</div>
 											</div>
 									</div>
 								</div>
@@ -547,7 +550,7 @@
 					</div>
 					<!-- Fim dos Players e Letras -->
 
-					<div id="corpo-col-3" class="col-xs-12 col-sm-12">
+					<div id="corpo-col-3" class="col-xs-12 col-sm-12 hidden-md hidden-lg">
 						<div class="padding-t-2 padding-b-2 margin-b-2 text-center">
 							<a id="btn-download-ep" href="/baixe/Broove-Broove[EP].zip" download>
 								<?php _e('Baixar Album', 'temadebroove') ?>

@@ -72,32 +72,10 @@
 
 	<nav id="menu-principal" class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
-				<div class="navbar-header col-sm-12 col-md-2 col-lg-2 text-center">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
+				<div class="navbar-header">
 					<a class="navbar-brand" href="<?php echo(get_site_url()) ?>">
 						<img src="<?php echo get_template_directory_uri() .'/library/images/broove-logo-ep-navbar.svg'?>" alt="<?php _e('Broove','temadebroove') ?>" title="<?php _e('Broove','temadebroove') ?>" height="30vh" width="100%"></img>
 					</a>
-				</div>
-				<div class="collapse navbar-collapse" id="navbar-collapse">
-					<ul class="nav navbar-nav">
-						<?php wp_nav_menu(array(
-											 'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
-											 'menu_class' => 'nav',// adding custom nav class
-											 'menu_id' => 'menu',
-											 'theme_location' => 'main-nav',                 // where it's located in the theme
-											 'before' => '',                                 // before the menu
-														 'after' => '',                                  // after the menu
-														 'link_before' => '',                            // before each link
-														 'link_after' => '',                             // after each link
-														 'depth' => 0,                                   // limit the depth of the nav
-											 'fallback_cb' => ''                             // fallback function (if there is one)
-						)); ?>
-					</ul>
 				</div>
 		</div>
 	</nav>

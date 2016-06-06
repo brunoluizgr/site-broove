@@ -56,12 +56,12 @@
 					<!-- Fim da Seção das REDES SOCIAIS -->
 
 					<!-- Seção dos DIREITOS RESERVADOS -->
-					<section class="col-xs-12 col-md-4 col-lg-4 text-center margin-t-1">
-						<span class="col-xs-12 col-md-6 col-lg-6 text-center">
+					<section class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center margin-t-1">
+						<span class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center ajuste-rodape-1">
 							<p class="margin-b-no"><?php _e( 'Desenvolvido por ', 'temadebroove' ); ?></p>
 						</span>
-						<span class="col-xs-4 col-sm-4 hidden-md hidden-lg"></span>
-						<span class="col-xs-4 col-sm-4 col-md-6 col-lg-6">
+						<span class="col-xs-4 col-sm-4 col-sm-4 hidden-md hidden-lg"></span>
+						<span class="col-xs-4 col-sm-4 col-md-6 col-lg-6 ajuste-rodape-2">
 							<a href="http://brunoluizgr.com" title="<?php _e( 'brunoluizgr', 'temadebroove' ); ?>" alt="<?php _e( 'brunoluizgr', 'temadebroove' ); ?>" target="_blank">
 								<img id="brunoluizgr-copyright" class="img-responsive" src="<?php echo(get_template_directory_uri() . '/library/images/brunoluizgr-logo-bp.svg'); ?>">
 							</a>

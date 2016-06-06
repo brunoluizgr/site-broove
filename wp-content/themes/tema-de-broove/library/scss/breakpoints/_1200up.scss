@@ -26,6 +26,36 @@ body {
 	overflow-x: hidden;
 }
 
+// BOTÃO SOBE E DESCE
+#btn-controla-menu{
+  #menu-sobe,
+  #menu-desce{
+    position:fixed;
+    display:block;
+    z-index:2;
+    height:6vh;
+    width:5vw;
+    border:none;
+    background-color:transparent;
+  }
+  #menu-sobe{
+    top:5vh;
+    right:4vw;
+    background-image:url("/wp-content/themes/tema-de-broove/library/images/btn_sobe.svg");
+    background-size:auto;
+    background-repeat:no-repeat;
+    background-position:center center;
+  }
+  #menu-desce{
+    top:12vh;
+    right:4vw;
+    background-image:url("/wp-content/themes/tema-de-broove/library/images/btn_desce.svg");
+    background-size:auto;
+    background-repeat:no-repeat;
+    background-position:center center;
+  }
+}
+
 // MENU INTERNO
 #menu-principal{
   background-color:$cor-fita-ep;
@@ -57,15 +87,10 @@ body {
 	      text-decoration: none;
 	      transition: background-color 0.3s ease-in;
 	      -webkit-transition: background-color 0.3s ease-in;
-        -moz-transition: background-color 0.3s ease-in;
-        -ms-transition: background-color 0.3s ease-in;
-        -o--transition: background-color 0.3s ease-in;
 	      &:hover{
+	        background-color:$cor-fita-ep;
 	        transition: background-color 0.2s ease-out;
 	        -webkit-transition: background-color 0.2s ease-out;
-          -moz-transition: background-color 0.2s ease-out;
-          -ms-transition: background-color 0.2s ease-out;
-          -o-transition: background-color 0.2s ease-out;
 	      }
     	}
 		}
@@ -84,7 +109,7 @@ body {
   .secao-inicio{
     background-color:$cor-capa-ep;
     width:90.25vw;
-    height:100%;
+    height:100vh;
     margin:0 auto;
 
     .logo-broove{
@@ -140,12 +165,18 @@ body {
         margin-bottom:auto;
         top:0;
         bottom:1vw;
-        left:42.00vw;
-        @media all and (min-device-aspect-ratio:1.95/1){
-          #miolo-esq{
-            left:42vw;
-          }
+				@media screen and (min-width:1200px) and (max-width:1279px) {
+          left:42vw;
         }
+				@media screen and (min-width:1280px) and (max-width:1365px) {
+					left:42vw;
+				}
+				@media screen and (min-width:1366px) and (max-width:1919px) {
+					left:42.5vw;
+				}
+				@media screen and (min-width:1920px) {
+					left:42.5vw;
+				}
       }
       #miolo-dir{
         position:absolute;
@@ -155,14 +186,19 @@ body {
         margin-bottom:auto;
         top:0;
         bottom:1vw;
-        right:41.5vw;
-        @media all and (min-device-aspect-ratio:1.95/1){
-          #miolo-esq{
-            right:41.5vw;
-          }
-        }
+				@media screen and (min-width:1200px) and (max-width:1279px) {
+					right:41.6vw;
+				}
+				@media screen and (min-width:1280px) and (max-width:1365px) {
+					right:41.6vw;
+				}
+				@media screen and (min-width:1366px) and (max-width:1919px) {
+					right:42vw;
+				}
+				@media screen and (min-width:1920px) {
+					right:42vw;
+				}
       }
-
     }
   }
 }
@@ -171,7 +207,7 @@ body {
 #ep{
   display:block;
   width:100vw;
-  height:100%;
+  height:100vh;
   padding:2vw 1vw;
   background-color:$white;
   z-index:-1;
@@ -184,19 +220,24 @@ body {
     background-repeat:repeat;
 
     #titulo-ep{
-      font-size:5rem;
+      font-size:7rem;
       color:$white;
 			text-shadow: 1px 1px $cor-fita-ep-6;
     }
 
     #corpo-ep{
+			#corpo-ep-1{
+				#img-ep{
+					margin-right: auto;
+					margin-left: auto;
+				}
+			}
       #corpo-ep-2{
 				margin-top: 1.5rem;
 				margin-bottom: 1.5rem;
 				.escute-link,
 				.baixe-link{
-					display:block;
-          margin-bottom:4rem;
+					display: block;
           text-decoration:none;
 					color: white;
 					transition: color 0.2s ease-in;
@@ -263,14 +304,18 @@ body {
 							background-color:rgba(156,136,70,.5);
 						}
 					}
-          p i {
-            font-size:5rem;
-          }
-        }
+					p i{
+						font-size:5rem;
+					}
+				}
+
+				.escute-link{
+					margin-bottom: 6rem;
+				}
 
         .social-link{
           display: block;
-          font-size:3rem;
+          font-size:3.2rem;
           text-decoration:none;
           color: $white;
 					transition: color 0.2s ease-in;
@@ -311,7 +356,7 @@ body {
 #making-of {
   display:block;
   width:100vw;
-  height:100%;
+  height:100vh;
   padding:2vw 1vw;
   background-color:$white;
   z-index:-1;
@@ -323,7 +368,7 @@ body {
     background-color: $black;
 
     #titulo-making-of {
-			font-size:5rem;
+			font-size:6rem;
 			color:$white;
       text-shadow: 1px 1px $cor-capa-ep-1;
     }
@@ -352,7 +397,7 @@ body {
 #fotos {
   display:block;
   width:100vw;
-  height:100%;
+  height:100vh;
   padding:2vw 1vw;
   background-color:$white;
   z-index:-1;
@@ -364,9 +409,10 @@ body {
     background-image: url("/wp-content/themes/tema-de-broove/library/images/pattern-2.png");
 
     #titulo-fotos {
-			font-size:5rem;
+			font-size:6rem;
 			color:$cor-capa-ep;
-			text-shadow: 1px 1px $cor-fita-ep-4;
+			text-shadow: 2px 2px $cor-fita-ep-4;
+			margin-bottom:0;
     }
 
 		#corpo-fotos {
@@ -377,6 +423,10 @@ body {
 					display:none!important;
 				}
 			}
+			.bwg_slideshow_image_wrap_0, .bwg_slideshow_dots_container_0,
+			.bwg_slideshow_image_container_0, .bwg_slideshow_image_container_0{
+				width:100%!important;
+			}
 		}
   }
 }
@@ -385,11 +435,10 @@ body {
 #contato{
 	display:block;
 	width:100vw;
-	height:100%;
+	height:100vh;
 	padding:2vw 1vw;
 	background-color:$white;
 	z-index:-1;
-
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -400,15 +449,17 @@ body {
     width:90.25vw;
     height:100%;
     margin:0 auto;
+		margin-bottom:2rem;
 
 		.borda-titulo-contato{
 			border-top: 3px solid $cor-fita-interna-ep;
 	    border-left: 3px solid $cor-fita-interna-ep;
 	    border-right: 3px solid $cor-fita-interna-ep;
 			#titulo-contato{
-				font-size:5rem;
+				font-size:6rem;
 				color:$cor-fita-ep-6;
 				text-shadow: 1px 1px $cor-fita-ep-1;
+				margin-bottom: 0;
 	    }
 		}
 
@@ -418,7 +469,7 @@ body {
       border-bottom: 3px solid $cor-fita-interna-ep;
       .wpcf7-form{
         p{
-          font-size: 2rem;
+          font-size: 2.5rem;
           color: $cor-fita-interna-ep;
         }
         input,
@@ -433,7 +484,7 @@ body {
         }
         input[type="submit"]{
 					font-family:'Mari David';
-          font-size:2.2rem;
+          font-size:3rem;
           padding:5px 10px;
 					color:$cor-fita-ep;
 					transition: color 0.3s ease-in;
@@ -472,12 +523,14 @@ body {
         }
       }
       .wpcf7-not-valid-tip{
-        font-size:1.5rem;
+        font-family:'Lato', Arial, sans-serif;
+        font-size:2rem;
       }
 			.wpcf7-response-output,
 			.wpcf7-display-none,
 			.wpcf7-validation-errors{
-				font-size:1.4rem;
+				font-family:'Lato', Arial, sans-serif;
+				font-size:2rem;
 			}
     }
   }
@@ -489,7 +542,7 @@ body {
 
   #rodape-row-1 {
 	  a {
-			font-size: 2.5rem;
+			font-size: 3rem;
 	    color: $white;
 	    text-decoration: none;
 	    transition: color 0.3s ease-out;
@@ -506,35 +559,40 @@ body {
 	    }
 	  }
 		h3 {
-			font-size: 2rem;
+			font-size: 2.5rem;
 			color: $white;
 			text-decoration: none;
 			margin: 0;
 		}
 		i {
-			font-size:3.5rem;
+			font-size:4rem;
 		}
 		p {
 			color: white;
 			font-size: 2rem;
 		}
 		#brunoluizgr-copyright {
-			height: 10vh;
+			height: 6vh;
 			margin: auto;
 			vertical-align: middle;
 			display: inline-block;
 		}
-  }
+		.ajuste-rodape-1{
+			text-align: right!important;
+		}
+		.ajuste-rodape-2{
+			text-align: left!important;
+		}
+	}
 
   #rodape-row-2{
-		font-size: 1.5rem;
+		font-size: 2rem;
 		color: $white;
   }
 }
 
 // PÁGINA INTERNA - ESCUTE
 #apresentacao-ep {
-
   #cabecalho {
     #imagem-de-fundo {
       position:fixed;
@@ -554,26 +612,32 @@ body {
       width:100vw;
       height:100%;
     }
-  }
+		#imagem-da-frente{
+			margin-bottom:2rem;
+			img{
+				box-shadow: 10px 10px 5px #888888;
+			}
+		}
+	}
   #corpo{
     z-index:0;
     color:$cor-texto-1;
-    background-color:$cor-fundo;
     #corpo-col-1 {
+	    background-color:$cor-fundo;
       #titulo-ep{
         font-family:'Lato', Arial, sans-serif;
-        font-size:3rem;
+        font-size:4rem;
         font-weight:bolder;
-        text-align: right;
         color:$cor-texto-1;
         margin-bottom:0;
+				text-align:right;
       }
       #autor-ep{
         font-family:'Lato', Arial, sans-serif;
         font-size:2rem;
         font-weight:lighter;
-        text-align: right;
         color:$cor-texto-1;
+				text-align:right;
         #autor-broove{
           text-decoration:underline;
         }
@@ -583,28 +647,63 @@ body {
         font-weight:bolder;
         color:$cor-texto-1;
         margin-bottom:0;
-				@media only screen and (width: 481px) {
+				text-align:right;
+				@media only screen and (min-width: 481px) {
 					font-size:1.4rem;
 				}
-				@media only screen and (width: 768px) {
-          font-size:2rem;
+				@media only screen and (max-width: 768px) {
+					font-size:2rem;
 				}
       }
       #data-ep{
         font-family:'Consolas-Black', Arial, sans-serif;
-        font-weight:lighter;
-        color:$cor-texto-1;
-        @media only screen and (min-width: 481px) {
+				text-align:right;
+				@media only screen and (min-width: 481px) {
 					font-size:1rem;
 				}
-				@media only screen and (width: 768px) {
-          font-size:1.5rem;
+				@media only screen and (max-width: 768px) {
+					font-size:1.5rem;
 				}
+        font-weight:lighter;
+        color:$cor-texto-1;
       }
-    }
+			#btn-download-div{
+				text-align:right;
+			}
+			#btn-download-ep{
+				font-size:3rem;
+				text-decoration:none;
+				color:$cor-capa-ep;
+				background-color:$cor-texto-1;
+				padding:15px 10px;
+				border-radius:50%;
+				border:0;
+				transition: background-color 0.2s ease-in;
+				-webkit-transition: background-color 0.2s ease-in;
+				-moz-transition: background-color 0.2s ease-in;
+				-ms-transition: background-color 0.2s ease-in;
+				-o-transition: background-color 0.2s ease-in;
+				&:hover{
+					color:$cor-capa-ep;
+					background-color:$cor-fita-interna-ep-6;
+					transition: background-color 0.3s ease-out;
+					-webkit-transition: background-color 0.3s ease-out;
+					-moz-transition: background-color 0.3s ease-out;
+					-ms-transition: background-color 0.3s ease-out;
+					-o-transition: background-color 0.3s ease-out;
+				}
+			}
+			.ajuste-altura{
+				height:82.021vh;
+			}
+		}
+		.ajuste-altura-2{
+			padding-top:2rem;
+		}
     #corpo-col-2 {
+	    background-color:$cor-fundo;
       .titulo-musica{
-        font-size:2.5rem;
+        font-size:2.4rem;
       }
       .icon-letras{
         color:$cor-texto-1;
@@ -615,18 +714,13 @@ body {
           transition: color 0.3s ease-out;
           -webkit-transition: color 0.3s ease-out;
         }
-        i {
-          @media only screen and (min-width: 481px) {
-  					font-size:1.5rem;
-  				}
-  				@media only screen and (width: 768px) {
-            font-size:2rem;
-  				}
-        }
+				i{
+					font-size:2.5rem;
+				}
       }
       .letra-da-musica{
         font-family:'Consolas-Black', Arial, sans-serif;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
       }
       .tocador-musica{
         .audiojs{
@@ -636,19 +730,9 @@ body {
             width:40px;
             border-right:0;
           }
-					@media only screen and (min-width: 481px) {
-	          .scrubber {
-								width:265px !important;
-								margin:10px 0 10px 10px!important;
-						}
-						.time {
-							margin:0px 0px 0px 1px!important;
-							font-size:12px!important;
-						}
-					}
-					@media only screen and (width: 768px) {
+					@media only screen and (min-width: 1200px) {
 						.scrubber {
-							width:550px!important;
+							width:500px!important;
 						}
 						.time {
 							font-size:12px!important;
@@ -670,6 +754,7 @@ body {
       }
     }
 		#corpo-col-3 {
+	    background-color:$cor-fundo;
 			#btn-download-ep{
 				font-size:3rem;
 				text-decoration:none;
@@ -694,5 +779,8 @@ body {
 				}
 			}
 		}
+	}
+	.modal-title{
+		font-size:3rem;
 	}
 }
