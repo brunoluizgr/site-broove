@@ -55,7 +55,7 @@
 		<meta property="og:type" content="website">
 		<meta property="og:site_name" content="<?php _e('Broove', 'temadebroove') ?>">
 		<meta property="og:title" content="<?php _e('Broove - Lançamento do EP', 'temadebroove') ?>">
-		<meta property="og:description" content="<?php _e('Ouça agora o EP de lançamento da banda Broove, incluindo \'Sesdotempo\' e \'Olhar\'. Baixe agora, download disponível!', 'temadebroove') ?>">
+		<meta property="og:description" content="<?php _e('Ouça agora o EP de lançamento do Broove, incluindo \'Sesdotempo\' e \'Olhar\'. Baixe agora, download disponível!', 'temadebroove') ?>">
 		<meta property="og:image" content="<?php echo(get_template_directory_uri() . '/library/images/facebook/facebook-og-img.png'); ?>">
 		<meta property="og:image:type" content="image/png">
 		<meta property="og:image:width" content="1200">
@@ -65,8 +65,7 @@
 		<?php wp_head(); ?>
 		<?php // end of wordpress head ?>
 
-		<?php // drop Google Analytics Here ?>
-		<?php // end analytics ?>
+		<?php // Google Analytics ?>
 
 </head>
 

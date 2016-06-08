@@ -51,7 +51,7 @@
 									<p id="data-ep"><?php _e('Lançamento 2016', 'temadebroove') ?></p>
 								</div>
 								<div id="btn-download-div" class="col-md-12 col-lg-12 margin-t-2">
-									<a id="btn-download-ep" href="/baixe/Broove-Broove[EP].zip" download>
+									<a id="btn-download-ep" href="https://goo.gl/LQ4zdz" target="_blank">
 										<?php _e('Baixar Album', 'temadebroove') ?>
 									</a>
 								</div>
@@ -78,7 +78,7 @@
 											</a>
 										</span>
 										<span class="col-xs-6 col-sm-6 text-right" title="<?php _e('Download', 'temadebroove') ?>">
-												<a class="icon-letras" href="<?php echo('/baixe/Broove - Tema de Broove.mp3'); ?>" download>
+												<a class="icon-letras" href="https://goo.gl/gOpBLa" target="_blank">
 													<i class="fa fa-download"></i>
 												</a>
 										</span>
@@ -176,7 +176,7 @@
 											</a>
 										</span>
 										<span class="col-xs-6 col-sm-6 text-right" title="<?php _e('Download', 'temadebroove') ?>">
-												<a class="icon-letras" href="<?php echo('/baixe/Broove - Olhar.mp3'); ?>" download>
+												<a class="icon-letras" href="https://goo.gl/derc6G" target="_blank">
 													<i class="fa fa-download"></i>
 												</a>
 										</span>
@@ -245,7 +245,7 @@
 											</a>
 										</span>
 										<span class="col-xs-6 col-sm-6 text-right" title="<?php _e('Download', 'temadebroove') ?>">
-												<a class="icon-letras" href="<?php echo('/baixe/Broove - Sesdotempo.mp3'); ?>" download>
+												<a class="icon-letras" href="http://goo.gl/nPni4s" target="_blank">
 													<i class="fa fa-download"></i>
 												</a>
 										</span>
@@ -315,7 +315,7 @@
 											</a>
 										</span>
 										<span class="col-xs-6 col-sm-6 text-right" title="<?php _e('Download', 'temadebroove') ?>">
-												<a class="icon-letras" href="<?php echo('/baixe/Broove - Icaro.mp3'); ?>" download>
+												<a class="icon-letras" href="https://goo.gl/TjYUqV" target="_blank">
 													<i class="fa fa-download"></i>
 												</a>
 										</span>
@@ -420,7 +420,7 @@
 											</a>
 										</span>
 										<span class="col-xs-6 col-sm-6 text-right" title="<?php _e('Download', 'temadebroove') ?>">
-												<a class="icon-letras" href="<?php echo('/baixe/Broove - Plin.mp3'); ?>" download>
+												<a class="icon-letras" href="https://goo.gl/C857zs" target="_blank">
 													<i class="fa fa-download"></i>
 												</a>
 										</span>
@@ -493,7 +493,7 @@
 											</a>
 										</span>
 										<span class="col-xs-6 col-sm-6 text-right" title="<?php _e('Download', 'temadebroove') ?>">
-												<a class="icon-letras" href="<?php echo('/baixe/Broove - De Hoje Nao Passa.mp3'); ?>" download>
+												<a class="icon-letras" href="https://goo.gl/GOf0a1" target="_blank">
 													<i class="fa fa-download"></i>
 												</a>
 										</span>

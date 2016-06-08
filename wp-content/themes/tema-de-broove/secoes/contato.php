@@ -10,7 +10,7 @@
   <div id="corpo-contato" class="col-md-12 col-lg-12">
     <!-- Shortcode -->
     <div class="row">
-      <?php echo do_shortcode('[contact-form-7 id="4" title="Contato"]');?>
+      <?php echo do_shortcode('[contact-form-7 id="10" title="Contato"]');?>
     </div>
     <!-- Fim do Shortcode -->
   </div>

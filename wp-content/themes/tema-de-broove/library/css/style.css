@@ -2631,6 +2631,8 @@ STYLESHEETS (de acordo com o Bootstrap 3)
 
   #menu-principal {
     background-color: #6c6145; }
+    #menu-principal .navbar-brand {
+      margin-bottom: 1rem; }
     #menu-principal .navbar-toggle:focus,
     #menu-principal .navbar-toggle:hover {
       background-color: #e2dabf; }
@@ -3307,6 +3309,8 @@ STYLESHEETS (de acordo com o Bootstrap 3)
 
   #menu-principal {
     background-color: #6c6145; }
+    #menu-principal .navbar-brand {
+      margin-bottom: 1rem; }
     #menu-principal .navbar-toggle:focus,
     #menu-principal .navbar-toggle:hover {
       background-color: #e2dabf; }
@@ -4001,6 +4005,8 @@ STYLESHEETS (de acordo com o Bootstrap 3)
 
   #menu-principal {
     background-color: #6c6145; }
+    #menu-principal .navbar-brand {
+      margin-bottom: 1rem; }
     #menu-principal .navbar-toggle:focus,
     #menu-principal .navbar-toggle:hover {
       background-color: #e2dabf; }

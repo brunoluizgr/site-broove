@@ -6,7 +6,7 @@
 					<!-- Seção do EMAIL DE CONTATO -->
 					<section class="col-xs-12 col-md-4 col-lg-4 text-center margin-t-1">
 						<span>
-							<a href="mailto:contatobroove@gmail.com.br?Subject=[Contato-automatico] Mensagem pro Broove" target="_bla">
+							<a href="mailto:contato@broove.com.br?Subject=[Contato-automatico] Mensagem pro Broove" target="_bla">
 								contato@broove.com.br
 							</a>
 						</span>

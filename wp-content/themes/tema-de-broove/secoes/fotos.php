@@ -11,7 +11,7 @@
     <!-- Shortcode -->
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <?php echo do_shortcode('[Best_Wordpress_Gallery id="1" gal_title="fotos"]' ); ?>
+        <?php echo do_shortcode('[Best_Wordpress_Gallery id="2" gal_title="fotos"]' ); ?>
       </div>
     </div>
     <!-- Fim do Shortcode -->

@@ -37,7 +37,7 @@
           <!-- Botão de Baixar o Álbum -->
           <div class="row">
             <div class="col-xs-12">
-              <a class="baixe-link text-center" href="/baixe/Broove-Broove[EP].zip" download>
+              <a class="baixe-link text-center" href="https://goo.gl/LQ4zdz" target="_blank">
                 <p title="<?php _e( 'Download', 'temadebroove' ); ?>"><i class="fa fa-3x fa-download" aria-hidden="true"></i></p>
                 <h4><?php _e( 'Baixar', 'temadebroove' ); ?></h4>
               </a>

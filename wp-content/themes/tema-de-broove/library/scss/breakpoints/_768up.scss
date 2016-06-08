@@ -60,6 +60,10 @@ body {
 #menu-principal{
   background-color:$cor-fita-ep;
 
+	.navbar-brand{
+		margin-bottom:1rem;
+	}
+
   .navbar-toggle:focus,
   .navbar-toggle:hover {
     background-color: $cor-fita-interna-ep-1;
