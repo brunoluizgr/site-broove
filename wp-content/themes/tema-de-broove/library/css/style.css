@@ -907,12 +907,11 @@ textarea,
   margin-bottom: 14px;
   font-size: 1em;
   color: #5c6b80;
-  border-radius: 3px;
+  border-radius: 0;
   vertical-align: middle;
   box-shadow: none;
   border: 0;
   width: 100%;
-  max-width: 400px;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #eaedf2;
   -webkit-transition: background-color 0.24s ease-in-out;
@@ -1603,7 +1602,7 @@ STYLESHEETS (de acordo com o Bootstrap 3)
           background-color: #eee6d9; }
         #contato #secao-contato #corpo-contato .wpcf7-form textarea {
           resize: none;
-          height: 35vh; }
+          height: 25vh; }
         #contato #secao-contato #corpo-contato .wpcf7-form input[type="submit"] {
           font-family: 'Mari David';
           font-size: 2.2rem;
@@ -1770,6 +1769,41 @@ STYLESHEETS (de acordo com o Bootstrap 3)
         #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
           margin: 0px 0px 0px 1px !important;
           font-size: 10px !important; } }
+      @media only screen and (min-width: 320px) and (max-width: 480px) and (width: 360px) {
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber {
+          width: 120px !important; }
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
+          font-size: 10px !important; } }
+      @media only screen and (min-width: 320px) and (max-width: 480px) and (width: 375px) {
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber {
+          width: 125px !important; }
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
+          font-size: 10px !important; } }
+      @media only screen and (min-width: 320px) and (max-width: 480px) and (width: 384px) {
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber {
+          width: 135px !important; }
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
+          font-size: 10px !important; } }
+      @media only screen and (min-width: 320px) and (max-width: 480px) and (width: 411px) {
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber {
+          width: 160px !important; }
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
+          font-size: 10px !important; } }
+      @media only screen and (min-width: 320px) and (max-width: 480px) and (width: 412px) {
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber {
+          width: 160px !important; }
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
+          font-size: 10px !important; } }
+      @media only screen and (min-width: 320px) and (max-width: 480px) and (width: 414px) {
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber {
+          width: 160px !important; }
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
+          font-size: 10px !important; } }
+      @media only screen and (min-width: 320px) and (max-width: 480px) and (width: 425px) {
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber {
+          width: 170px !important; }
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
+          font-size: 10px !important; } }
       @media only screen and (min-width: 320px) and (max-width: 480px) and (width: 480px) {
         #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber {
           width: 235px !important; }
@@ -1807,6 +1841,34 @@ STYLESHEETS (de acordo com o Bootstrap 3)
           -moz-transition: background-color 0.3s ease-out;
           -ms-transition: background-color 0.3s ease-out;
           -o-transition: background-color 0.3s ease-out; }
+
+  #pagina-nao-encontrada {
+    height: 100vh; }
+    #pagina-nao-encontrada h1 {
+      font-size: 3rem; }
+    #pagina-nao-encontrada p {
+      font-size: 1.5rem;
+      font-family: 'Lato', Arial, sans-serif; }
+    #pagina-nao-encontrada #nota-nao-encontrada {
+      color: #9e8e67; }
+    #pagina-nao-encontrada #btn-volta-home {
+      color: #e2dabf;
+      background-color: #6c6145;
+      border-radius: 0; }
+      #pagina-nao-encontrada #btn-volta-home:hover {
+        background-color: #514934;
+        transition: background-color 0.3s ease-in;
+        -webkit-transition: background-color 0.3s ease-in;
+        -moz-transition: background-color 0.3s ease-in;
+        -ms-transition: background-color 0.3s ease-in;
+        -o-transition: background-color 0.3s ease-in; }
+      #pagina-nao-encontrada #btn-volta-home:active, #pagina-nao-encontrada #btn-volta-home:focus {
+        background-color: #443d2b;
+        transition: background-color 0.3s ease-in;
+        -webkit-transition: background-color 0.3s ease-in;
+        -moz-transition: background-color 0.3s ease-in;
+        -ms-transition: background-color 0.3s ease-in;
+        -o-transition: background-color 0.3s ease-in; }
 
   /********************
   WORDPRESS BODY CLASSES
@@ -1973,6 +2035,10 @@ STYLESHEETS (de acordo com o Bootstrap 3)
 
   #menu-principal {
     background-color: #6c6145; }
+    #menu-principal .navbar-header {
+      width: 100%; }
+    #menu-principal .navbar-brand {
+      float: none; }
     #menu-principal .navbar-toggle:focus,
     #menu-principal .navbar-toggle:hover {
       background-color: #e2dabf; }
@@ -2468,6 +2534,46 @@ STYLESHEETS (de acordo com o Bootstrap 3)
           width: 235px !important; }
         #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
           font-size: 10px !important; } }
+      @media only screen and (min-width: 481px) and (max-width: 768px) and (width: 533px) {
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber {
+          width: 280px !important; }
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
+          font-size: 10px !important; } }
+      @media only screen and (min-width: 481px) and (max-width: 768px) and (width: 568px) {
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber {
+          width: 330px !important; }
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
+          font-size: 10px !important; } }
+      @media only screen and (min-width: 481px) and (max-width: 768px) and (width: 600px) {
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber {
+          width: 340px !important; }
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
+          font-size: 10px !important; } }
+      @media only screen and (min-width: 481px) and (max-width: 768px) and (width: 667px) {
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber {
+          width: 400px !important; }
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
+          font-size: 10px !important; } }
+      @media only screen and (min-width: 481px) and (max-width: 768px) and (width: 640px) {
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber {
+          width: 390px !important; }
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
+          font-size: 10px !important; } }
+      @media only screen and (min-width: 481px) and (max-width: 768px) and (width: 731px) {
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber {
+          width: 470px !important; }
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
+          font-size: 10px !important; } }
+      @media only screen and (min-width: 481px) and (max-width: 768px) and (width: 732px) {
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber {
+          width: 470px !important; }
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
+          font-size: 10px !important; } }
+      @media only screen and (min-width: 481px) and (max-width: 768px) and (width: 736px) {
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber {
+          width: 500px !important; }
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
+          font-size: 10px !important; } }
       @media only screen and (min-width: 481px) and (max-width: 768px) and (width: 768px) {
         #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber {
           width: 520px !important; }
@@ -2504,7 +2610,35 @@ STYLESHEETS (de acordo com o Bootstrap 3)
           -webkit-transition: background-color 0.3s ease-out;
           -moz-transition: background-color 0.3s ease-out;
           -ms-transition: background-color 0.3s ease-out;
-          -o-transition: background-color 0.3s ease-out; } }
+          -o-transition: background-color 0.3s ease-out; }
+
+  #pagina-nao-encontrada {
+    height: 100vh; }
+    #pagina-nao-encontrada h1 {
+      font-size: 3rem; }
+    #pagina-nao-encontrada p {
+      font-size: 1.5rem;
+      font-family: 'Lato', Arial, sans-serif; }
+    #pagina-nao-encontrada #nota-nao-encontrada {
+      color: #9e8e67; }
+    #pagina-nao-encontrada #btn-volta-home {
+      color: #e2dabf;
+      background-color: #6c6145;
+      border-radius: 0; }
+      #pagina-nao-encontrada #btn-volta-home:hover {
+        background-color: #514934;
+        transition: background-color 0.3s ease-in;
+        -webkit-transition: background-color 0.3s ease-in;
+        -moz-transition: background-color 0.3s ease-in;
+        -ms-transition: background-color 0.3s ease-in;
+        -o-transition: background-color 0.3s ease-in; }
+      #pagina-nao-encontrada #btn-volta-home:active, #pagina-nao-encontrada #btn-volta-home:focus {
+        background-color: #443d2b;
+        transition: background-color 0.3s ease-in;
+        -webkit-transition: background-color 0.3s ease-in;
+        -moz-transition: background-color 0.3s ease-in;
+        -ms-transition: background-color 0.3s ease-in;
+        -o-transition: background-color 0.3s ease-in; } }
 @media only screen and (min-width: 769px) and (max-width: 992px) {
   /******************************************************************
   Site Name: Tema de Broove
@@ -2631,7 +2765,10 @@ STYLESHEETS (de acordo com o Bootstrap 3)
 
   #menu-principal {
     background-color: #6c6145; }
+    #menu-principal .navbar-header {
+      width: 100%; }
     #menu-principal .navbar-brand {
+      float: none;
       margin-bottom: 1rem; }
     #menu-principal .navbar-toggle:focus,
     #menu-principal .navbar-toggle:hover {
@@ -3182,7 +3319,37 @@ STYLESHEETS (de acordo com o Bootstrap 3)
           -webkit-transition: background-color 0.3s ease-out;
           -moz-transition: background-color 0.3s ease-out;
           -ms-transition: background-color 0.3s ease-out;
-          -o-transition: background-color 0.3s ease-out; } }
+          -o-transition: background-color 0.3s ease-out; }
+  #apresentacao-ep .ajuste-bg {
+    background-color: #ededed; }
+
+  #pagina-nao-encontrada {
+    height: 100vh; }
+    #pagina-nao-encontrada h1 {
+      font-size: 3rem; }
+    #pagina-nao-encontrada p {
+      font-size: 1.5rem;
+      font-family: 'Lato', Arial, sans-serif; }
+    #pagina-nao-encontrada #nota-nao-encontrada {
+      color: #9e8e67; }
+    #pagina-nao-encontrada #btn-volta-home {
+      color: #e2dabf;
+      background-color: #6c6145;
+      border-radius: 0; }
+      #pagina-nao-encontrada #btn-volta-home:hover {
+        background-color: #514934;
+        transition: background-color 0.3s ease-in;
+        -webkit-transition: background-color 0.3s ease-in;
+        -moz-transition: background-color 0.3s ease-in;
+        -ms-transition: background-color 0.3s ease-in;
+        -o-transition: background-color 0.3s ease-in; }
+      #pagina-nao-encontrada #btn-volta-home:active, #pagina-nao-encontrada #btn-volta-home:focus {
+        background-color: #443d2b;
+        transition: background-color 0.3s ease-in;
+        -webkit-transition: background-color 0.3s ease-in;
+        -moz-transition: background-color 0.3s ease-in;
+        -ms-transition: background-color 0.3s ease-in;
+        -o-transition: background-color 0.3s ease-in; } }
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
   /******************************************************************
   Site Name: Tema de Broove
@@ -3835,23 +4002,12 @@ STYLESHEETS (de acordo com o Bootstrap 3)
         #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .play-pause {
           width: 40px;
           border-right: 0; } }
-      @media only screen and (min-width: 993px) and (max-width: 1200px) and (width: 480px) {
+      @media only screen and (min-width: 993px) and (max-width: 1200px) and (width: 1024px) {
         #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber {
-          width: 235px !important; }
+          width: 350px !important; }
         #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
-          font-size: 10px !important; } }
-      @media only screen and (min-width: 993px) and (max-width: 1200px) and (width: 768px) {
-        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber {
-          width: 520px !important; }
-        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
-          font-size: 10px !important; } }
+          font-size: 12px !important; } }
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
-        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber {
-          margin: 10px 0 10px 10px !important; }
-          #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber .progress {
-            background: #b5a05a !important; }
-          #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber .loaded {
-            background-image: -moz-linear-gradient(center top, #d1c498 0%, #d7cba5 50%, #d1c498 51%, #d1c498 100%) !important; }
         #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
           border-left: 0; }
     #apresentacao-ep #corpo #corpo-col-3 {
@@ -3878,7 +4034,38 @@ STYLESHEETS (de acordo com o Bootstrap 3)
           -ms-transition: background-color 0.3s ease-out;
           -o-transition: background-color 0.3s ease-out; }
   #apresentacao-ep .modal-title {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  #apresentacao-ep .ajuste-bg {
+    background-color: #ededed; }
+
+  #pagina-nao-encontrada {
+    height: 100vh; }
+    #pagina-nao-encontrada h1 {
+      font-size: 3rem; }
+    #pagina-nao-encontrada p {
+      font-size: 1.5rem;
+      font-family: 'Lato', Arial, sans-serif; }
+    #pagina-nao-encontrada #nota-nao-encontrada {
+      color: #9e8e67;
+      font-size: 15rem; }
+    #pagina-nao-encontrada #btn-volta-home {
+      color: #e2dabf;
+      background-color: #6c6145;
+      border-radius: 0; }
+      #pagina-nao-encontrada #btn-volta-home:hover {
+        background-color: #514934;
+        transition: background-color 0.3s ease-in;
+        -webkit-transition: background-color 0.3s ease-in;
+        -moz-transition: background-color 0.3s ease-in;
+        -ms-transition: background-color 0.3s ease-in;
+        -o-transition: background-color 0.3s ease-in; }
+      #pagina-nao-encontrada #btn-volta-home:active, #pagina-nao-encontrada #btn-volta-home:focus {
+        background-color: #443d2b;
+        transition: background-color 0.3s ease-in;
+        -webkit-transition: background-color 0.3s ease-in;
+        -moz-transition: background-color 0.3s ease-in;
+        -ms-transition: background-color 0.3s ease-in;
+        -o-transition: background-color 0.3s ease-in; } }
 @media only screen and (min-width: 1201px) {
   /******************************************************************
   Site Name: Tema de Broove
@@ -4099,7 +4286,13 @@ STYLESHEETS (de acordo com o Bootstrap 3)
         @media only screen and (min-width: 1201px) and (min-width: 1200px) and (max-width: 1279px) {
           #inicio .secao-inicio .logo-broove #miolo-esq {
             left: 42vw; } }
-        @media only screen and (min-width: 1201px) and (min-width: 1280px) and (max-width: 1365px) {
+        @media only screen and (min-width: 1201px) and (min-width: 1269px) and (max-width: 1279px) {
+          #inicio .secao-inicio .logo-broove #miolo-esq {
+            left: 42.5vw; } }
+        @media only screen and (min-width: 1201px) and (min-width: 1280px) and (max-width: 1299px) {
+          #inicio .secao-inicio .logo-broove #miolo-esq {
+            left: 42.5vw; } }
+        @media only screen and (min-width: 1201px) and (min-width: 1300px) and (max-width: 1365px) {
           #inicio .secao-inicio .logo-broove #miolo-esq {
             left: 42vw; } }
         @media only screen and (min-width: 1201px) and (min-width: 1366px) and (max-width: 1919px) {
@@ -4120,7 +4313,13 @@ STYLESHEETS (de acordo com o Bootstrap 3)
         @media only screen and (min-width: 1201px) and (min-width: 1200px) and (max-width: 1279px) {
           #inicio .secao-inicio .logo-broove #miolo-dir {
             right: 41.6vw; } }
-        @media only screen and (min-width: 1201px) and (min-width: 1280px) and (max-width: 1365px) {
+        @media only screen and (min-width: 1201px) and (min-width: 1269px) and (max-width: 1279px) {
+          #inicio .secao-inicio .logo-broove #miolo-dir {
+            right: 41.9vw; } }
+        @media only screen and (min-width: 1201px) and (min-width: 1280px) and (max-width: 1299px) {
+          #inicio .secao-inicio .logo-broove #miolo-dir {
+            right: 41.9vw; } }
+        @media only screen and (min-width: 1201px) and (min-width: 1300px) and (max-width: 1365px) {
           #inicio .secao-inicio .logo-broove #miolo-dir {
             right: 41.6vw; } }
         @media only screen and (min-width: 1201px) and (min-width: 1366px) and (max-width: 1919px) {
@@ -4562,6 +4761,11 @@ STYLESHEETS (de acordo com o Bootstrap 3)
           width: 500px !important; }
         #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
           font-size: 12px !important; } }
+      @media only screen and (min-width: 1201px) and (min-width: 1440px) {
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber {
+          width: 590px !important; }
+        #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .time {
+          font-size: 12px !important; } }
 @media only screen and (min-width: 1201px) {
         #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs .scrubber {
           margin: 10px 0 10px 10px !important; }
@@ -4595,7 +4799,38 @@ STYLESHEETS (de acordo com o Bootstrap 3)
           -ms-transition: background-color 0.3s ease-out;
           -o-transition: background-color 0.3s ease-out; }
   #apresentacao-ep .modal-title {
-    font-size: 3rem; } }
+    font-size: 3rem; }
+  #apresentacao-ep .ajuste-bg {
+    background-color: #ededed; }
+
+  #pagina-nao-encontrada {
+    height: 100vh; }
+    #pagina-nao-encontrada h1 {
+      font-size: 3rem; }
+    #pagina-nao-encontrada p {
+      font-size: 1.5rem;
+      font-family: 'Lato', Arial, sans-serif; }
+    #pagina-nao-encontrada #nota-nao-encontrada {
+      color: #9e8e67;
+      font-size: 20rem; }
+    #pagina-nao-encontrada #btn-volta-home {
+      color: #e2dabf;
+      background-color: #6c6145;
+      border-radius: 0; }
+      #pagina-nao-encontrada #btn-volta-home:hover {
+        background-color: #514934;
+        transition: background-color 0.3s ease-in;
+        -webkit-transition: background-color 0.3s ease-in;
+        -moz-transition: background-color 0.3s ease-in;
+        -ms-transition: background-color 0.3s ease-in;
+        -o-transition: background-color 0.3s ease-in; }
+      #pagina-nao-encontrada #btn-volta-home:active, #pagina-nao-encontrada #btn-volta-home:focus {
+        background-color: #443d2b;
+        transition: background-color 0.3s ease-in;
+        -webkit-transition: background-color 0.3s ease-in;
+        -moz-transition: background-color 0.3s ease-in;
+        -ms-transition: background-color 0.3s ease-in;
+        -o-transition: background-color 0.3s ease-in; } }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /******************************************************************
   Site Name: Tema de Broove

@@ -172,7 +172,13 @@ body {
 				@media screen and (min-width:1200px) and (max-width:1279px) {
           left:42vw;
         }
-				@media screen and (min-width:1280px) and (max-width:1365px) {
+				@media screen and (min-width:1269px) and (max-width:1279px) {
+					left:42.5vw;
+				}
+				@media screen and (min-width:1280px) and (max-width:1299px) {
+					left:42.5vw;
+				}
+				@media screen and (min-width:1300px) and (max-width:1365px) {
 					left:42vw;
 				}
 				@media screen and (min-width:1366px) and (max-width:1919px) {
@@ -193,7 +199,13 @@ body {
 				@media screen and (min-width:1200px) and (max-width:1279px) {
 					right:41.6vw;
 				}
-				@media screen and (min-width:1280px) and (max-width:1365px) {
+				@media screen and (min-width:1269px) and (max-width:1279px) {
+					right:41.9vw;
+				}
+				@media screen and (min-width:1280px) and (max-width:1299px) {
+					right:41.9vw;
+				}
+				@media screen and (min-width:1300px) and (max-width:1365px) {
 					right:41.6vw;
 				}
 				@media screen and (min-width:1366px) and (max-width:1919px) {
@@ -742,6 +754,14 @@ body {
 							font-size:12px!important;
 						}
 					}
+					@media only screen and (min-width: 1440px) {
+						.scrubber {
+							width:590px!important;
+						}
+						.time {
+							font-size:12px!important;
+						}
+					}
 					.scrubber {
 						margin:10px 0 10px 10px!important;
 						.progress{
@@ -786,5 +806,46 @@ body {
 	}
 	.modal-title{
 		font-size:3rem;
+	}
+	.ajuste-bg{
+		background-color:$cor-fundo;
+	}
+}
+
+// PÁGINA INTERNA - 404 NOT FOUND
+#pagina-nao-encontrada{
+	height: 100vh;
+	h1{
+		font-size: 3rem;
+	}
+	p{
+		font-size: 1.5rem;
+		font-family: 'Lato', Arial, sans-serif;
+	}
+	#nota-nao-encontrada{
+		color:$cor-fita-ep-2;
+		font-size: 20rem;
+	}
+	#btn-volta-home{
+		color:$cor-fita-interna-ep-1;
+		background-color:$cor-fita-ep;
+		border-radius: 0;
+		&:hover{
+			background-color:$cor-fita-ep-5;
+			transition: background-color 0.3s ease-in;
+			-webkit-transition: background-color 0.3s ease-in;
+			-moz-transition: background-color 0.3s ease-in;
+			-ms-transition: background-color 0.3s ease-in;
+			-o-transition: background-color 0.3s ease-in;
+		}
+		&:active,
+		&:focus{
+			background-color:$cor-fita-ep-6;
+			transition: background-color 0.3s ease-in;
+			-webkit-transition: background-color 0.3s ease-in;
+			-moz-transition: background-color 0.3s ease-in;
+			-ms-transition: background-color 0.3s ease-in;
+			-o-transition: background-color 0.3s ease-in;
+		}
 	}
 }
