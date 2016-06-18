@@ -1753,9 +1753,6 @@ STYLESHEETS (de acordo com o Bootstrap 3)
           -webkit-transition: color 0.3s ease-out; }
         #apresentacao-ep #corpo #corpo-col-2 .icon-letras i {
           font-size: 1rem; }
-      #apresentacao-ep #corpo #corpo-col-2 .letra-da-musica {
-        font-family: 'Consolas-Black', Arial, sans-serif;
-        font-size: 1.5rem; }
       #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs {
         width: 100% !important;
         background: #6c6145 !important; }
@@ -1841,6 +1838,9 @@ STYLESHEETS (de acordo com o Bootstrap 3)
           -moz-transition: background-color 0.3s ease-out;
           -ms-transition: background-color 0.3s ease-out;
           -o-transition: background-color 0.3s ease-out; }
+  #apresentacao-ep #modals .letra-da-musica {
+    font-family: 'Consolas-Black', Arial, sans-serif;
+    font-size: 1.5rem; }
 
   #pagina-nao-encontrada {
     height: 100vh; }
@@ -2520,9 +2520,6 @@ STYLESHEETS (de acordo com o Bootstrap 3)
           -webkit-transition: color 0.3s ease-out; }
         #apresentacao-ep #corpo #corpo-col-2 .icon-letras i {
           font-size: 1.5rem; }
-      #apresentacao-ep #corpo #corpo-col-2 .letra-da-musica {
-        font-family: 'Consolas-Black', Arial, sans-serif;
-        font-size: 1.5rem; }
       #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs {
         width: 100% !important;
         background: #6c6145 !important; }
@@ -2611,6 +2608,9 @@ STYLESHEETS (de acordo com o Bootstrap 3)
           -moz-transition: background-color 0.3s ease-out;
           -ms-transition: background-color 0.3s ease-out;
           -o-transition: background-color 0.3s ease-out; }
+  #apresentacao-ep #modals .letra-da-musica {
+    font-family: 'Consolas-Black', Arial, sans-serif;
+    font-size: 1.5rem; }
 
   #pagina-nao-encontrada {
     height: 100vh; }
@@ -3274,9 +3274,6 @@ STYLESHEETS (de acordo com o Bootstrap 3)
           -webkit-transition: color 0.3s ease-out; }
         #apresentacao-ep #corpo #corpo-col-2 .icon-letras i {
           font-size: 1.5rem; }
-      #apresentacao-ep #corpo #corpo-col-2 .letra-da-musica {
-        font-family: 'Consolas-Black', Arial, sans-serif;
-        font-size: 1.5rem; }
       #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs {
         width: 100% !important;
         background: #6c6145 !important; }
@@ -3320,6 +3317,9 @@ STYLESHEETS (de acordo com o Bootstrap 3)
           -moz-transition: background-color 0.3s ease-out;
           -ms-transition: background-color 0.3s ease-out;
           -o-transition: background-color 0.3s ease-out; }
+  #apresentacao-ep #modals .letra-da-musica {
+    font-family: 'Consolas-Black', Arial, sans-serif;
+    font-size: 1.5rem; }
   #apresentacao-ep .ajuste-bg {
     background-color: #ededed; }
 
@@ -3993,9 +3993,6 @@ STYLESHEETS (de acordo com o Bootstrap 3)
           -webkit-transition: color 0.3s ease-out; }
         #apresentacao-ep #corpo #corpo-col-2 .icon-letras i {
           font-size: 1.5rem; }
-      #apresentacao-ep #corpo #corpo-col-2 .letra-da-musica {
-        font-family: 'Consolas-Black', Arial, sans-serif;
-        font-size: 1.5rem; }
       #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs {
         width: 100% !important;
         background: #6c6145 !important; }
@@ -4033,8 +4030,11 @@ STYLESHEETS (de acordo com o Bootstrap 3)
           -moz-transition: background-color 0.3s ease-out;
           -ms-transition: background-color 0.3s ease-out;
           -o-transition: background-color 0.3s ease-out; }
-  #apresentacao-ep .modal-title {
+  #apresentacao-ep #modals .modal-title {
     font-size: 2rem; }
+  #apresentacao-ep #modals .letra-da-musica {
+    font-family: 'Consolas-Black', Arial, sans-serif;
+    font-size: 1.5rem; }
   #apresentacao-ep .ajuste-bg {
     background-color: #ededed; }
 
@@ -4747,9 +4747,6 @@ STYLESHEETS (de acordo com o Bootstrap 3)
           -webkit-transition: color 0.3s ease-out; }
         #apresentacao-ep #corpo #corpo-col-2 .icon-letras i {
           font-size: 2.5rem; }
-      #apresentacao-ep #corpo #corpo-col-2 .letra-da-musica {
-        font-family: 'Consolas-Black', Arial, sans-serif;
-        font-size: 1.8rem; }
       #apresentacao-ep #corpo #corpo-col-2 .tocador-musica .audiojs {
         width: 100% !important;
         background: #6c6145 !important; }
@@ -4798,8 +4795,11 @@ STYLESHEETS (de acordo com o Bootstrap 3)
           -moz-transition: background-color 0.3s ease-out;
           -ms-transition: background-color 0.3s ease-out;
           -o-transition: background-color 0.3s ease-out; }
-  #apresentacao-ep .modal-title {
+  #apresentacao-ep #modals .modal-title {
     font-size: 3rem; }
+  #apresentacao-ep #modals .letra-da-musica {
+    font-family: 'Consolas-Black', Arial, sans-serif;
+    font-size: 1.8rem; }
   #apresentacao-ep .ajuste-bg {
     background-color: #ededed; }
 

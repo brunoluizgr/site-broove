@@ -693,10 +693,6 @@ body {
 					font-size:1.5rem;
 				}
       }
-      .letra-da-musica{
-        font-family:'Consolas-Black', Arial, sans-serif;
-        font-size: 1.5rem;
-      }
       .tocador-musica{
         .audiojs{
 					width: 100%!important;
@@ -746,8 +742,14 @@ body {
 			}
 		}
 	}
-	.modal-title{
-		font-size:2rem;
+	#modals{
+		.modal-title{
+			font-size:2rem;
+		}
+		.letra-da-musica{
+			font-family:'Consolas-Black', Arial, sans-serif;
+			font-size: 1.5rem;
+		}
 	}
 	.ajuste-bg{
 		background-color:$cor-fundo;
