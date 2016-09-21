@@ -1343,24 +1343,24 @@ STYLESHEETS (de acordo com o Bootstrap 3)
           -moz-transform-origin: 50% 50%; }
   @-webkit-keyframes rotation {
     from {
-      -webkit-transform: rotate(0deg); }
+      -webkit-transform: rotate(359deg); }
     to {
-      -webkit-transform: rotate(359deg); } }
+      -webkit-transform: rotate(0deg); } }
   @-moz-keyframes rotation {
     from {
-      -moz-transform: rotate(0deg); }
+      -moz-transform: rotate(359deg); }
     to {
-      -moz-transform: rotate(359deg); } }
+      -moz-transform: rotate(0deg); } }
   @-o-keyframes rotation {
     from {
-      -o-transform: rotate(0deg); }
+      -o-transform: rotate(359deg); }
     to {
-      -o-transform: rotate(359deg); } }
+      -o-transform: rotate(0deg); } }
   @keyframes rotation {
     from {
-      transform: rotate(0deg); }
+      transform: rotate(359deg); }
     to {
-      transform: rotate(359deg); } }
+      transform: rotate(0deg); } }
         #inicio .secao-inicio .logo-broove #miolo-esq {
           position: absolute;
           display: block;
@@ -1371,7 +1371,7 @@ STYLESHEETS (de acordo com o Bootstrap 3)
           bottom: 1vw; } }
         @media only screen and (min-width: 320px) and (max-width: 480px) and (min-width: 320px) and (max-width: 480px) {
           #inicio .secao-inicio .logo-broove #miolo-esq {
-            left: 42.5vw; } }
+            left: 42.5%; } }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
         #inicio .secao-inicio .logo-broove #miolo-dir {
           position: absolute;
@@ -1383,7 +1383,7 @@ STYLESHEETS (de acordo com o Bootstrap 3)
           bottom: 1vw; } }
         @media only screen and (min-width: 320px) and (max-width: 480px) and (min-width: 320px) and (max-width: 480px) {
           #inicio .secao-inicio .logo-broove #miolo-dir {
-            right: 42vw; } }
+            right: 42%; } }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   #ep {
@@ -2102,24 +2102,24 @@ STYLESHEETS (de acordo com o Bootstrap 3)
           -moz-transform-origin: 50% 50%; }
   @-webkit-keyframes rotation {
     from {
-      -webkit-transform: rotate(0deg); }
+      -webkit-transform: rotate(359deg); }
     to {
-      -webkit-transform: rotate(359deg); } }
+      -webkit-transform: rotate(0deg); } }
   @-moz-keyframes rotation {
     from {
-      -moz-transform: rotate(0deg); }
+      -moz-transform: rotate(359deg); }
     to {
-      -moz-transform: rotate(359deg); } }
+      -moz-transform: rotate(0deg); } }
   @-o-keyframes rotation {
     from {
-      -o-transform: rotate(0deg); }
+      -o-transform: rotate(359deg); }
     to {
-      -o-transform: rotate(359deg); } }
+      -o-transform: rotate(0deg); } }
   @keyframes rotation {
     from {
-      transform: rotate(0deg); }
+      transform: rotate(359deg); }
     to {
-      transform: rotate(359deg); } }
+      transform: rotate(0deg); } }
         #inicio .secao-inicio .logo-broove #miolo-esq {
           position: absolute;
           display: block;
@@ -2130,7 +2130,7 @@ STYLESHEETS (de acordo com o Bootstrap 3)
           bottom: 1vw; } }
         @media only screen and (min-width: 481px) and (max-width: 768px) and (min-width: 481px) and (max-width: 768px) {
           #inicio .secao-inicio .logo-broove #miolo-esq {
-            left: 42.5vw; } }
+            left: 42.5%; } }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
         #inicio .secao-inicio .logo-broove #miolo-dir {
           position: absolute;
@@ -2142,7 +2142,7 @@ STYLESHEETS (de acordo com o Bootstrap 3)
           bottom: 1vw; } }
         @media only screen and (min-width: 481px) and (max-width: 768px) and (min-width: 481px) and (max-width: 768px) {
           #inicio .secao-inicio .logo-broove #miolo-dir {
-            right: 42vw; } }
+            right: 42%; } }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   #ep {
@@ -2833,14 +2833,14 @@ STYLESHEETS (de acordo com o Bootstrap 3)
           -moz-transform-origin: 50% 50%; }
   @-webkit-keyframes rotation {
     from {
-      -webkit-transform: rotate(0deg); }
+      -webkit-transform: rotate(359deg); }
     to {
-      -webkit-transform: rotate(359deg); } }
+      -webkit-transform: rotate(0deg); } }
   @-moz-keyframes rotation {
     from {
-      -moz-transform: rotate(0deg); }
+      -moz-transform: rotate(359deg); }
     to {
-      -moz-transform: rotate(359deg); } }
+      -moz-transform: rotate(0deg); } }
   @-o-keyframes rotation {
     from {
       -o-transform: rotate(0deg); }
@@ -2848,9 +2848,9 @@ STYLESHEETS (de acordo com o Bootstrap 3)
       -o-transform: rotate(359deg); } }
   @keyframes rotation {
     from {
-      transform: rotate(0deg); }
+      transform: rotate(359deg); }
     to {
-      transform: rotate(359deg); } }
+      transform: rotate(0deg); } }
         #inicio .secao-inicio .logo-broove #miolo-esq {
           position: absolute;
           display: block;
@@ -2861,7 +2861,7 @@ STYLESHEETS (de acordo com o Bootstrap 3)
           bottom: 1vw; } }
         @media only screen and (min-width: 769px) and (max-width: 992px) and (min-width: 769px) and (max-width: 992px) {
           #inicio .secao-inicio .logo-broove #miolo-esq {
-            left: 42vw; } }
+            left: 42%; } }
 @media only screen and (min-width: 769px) and (max-width: 992px) {
         #inicio .secao-inicio .logo-broove #miolo-dir {
           position: absolute;
@@ -2873,7 +2873,7 @@ STYLESHEETS (de acordo com o Bootstrap 3)
           bottom: 1vw; } }
         @media only screen and (min-width: 769px) and (max-width: 992px) and (min-width: 769px) and (max-width: 992px) {
           #inicio .secao-inicio .logo-broove #miolo-dir {
-            right: 41.5vw; } }
+            right: 41.5%; } }
 
 @media only screen and (min-width: 769px) and (max-width: 992px) {
   #ep {
@@ -3541,24 +3541,24 @@ STYLESHEETS (de acordo com o Bootstrap 3)
           -moz-transform-origin: 50% 50%; }
   @-webkit-keyframes rotation {
     from {
-      -webkit-transform: rotate(0deg); }
+      -webkit-transform: rotate(359deg); }
     to {
-      -webkit-transform: rotate(359deg); } }
+      -webkit-transform: rotate(0deg); } }
   @-moz-keyframes rotation {
     from {
-      -moz-transform: rotate(0deg); }
+      -moz-transform: rotate(359deg); }
     to {
-      -moz-transform: rotate(359deg); } }
+      -moz-transform: rotate(0deg); } }
   @-o-keyframes rotation {
     from {
-      -o-transform: rotate(0deg); }
+      -o-transform: rotate(359deg); }
     to {
-      -o-transform: rotate(359deg); } }
+      -o-transform: rotate(0deg); } }
   @keyframes rotation {
     from {
-      transform: rotate(0deg); }
+      transform: rotate(359deg); }
     to {
-      transform: rotate(359deg); } }
+      transform: rotate(0deg); } }
         #inicio .secao-inicio .logo-broove #miolo-esq {
           position: absolute;
           display: block;
@@ -3569,7 +3569,7 @@ STYLESHEETS (de acordo com o Bootstrap 3)
           bottom: 1vw; } }
         @media only screen and (min-width: 993px) and (max-width: 1200px) and (min-width: 993px) and (max-width: 1200px) {
           #inicio .secao-inicio .logo-broove #miolo-esq {
-            left: 42.5vw; } }
+            left: 42.5%; } }
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
         #inicio .secao-inicio .logo-broove #miolo-dir {
           position: absolute;
@@ -3581,7 +3581,7 @@ STYLESHEETS (de acordo com o Bootstrap 3)
           bottom: 1vw; } }
         @media only screen and (min-width: 993px) and (max-width: 1200px) and (min-width: 993px) and (max-width: 1200px) {
           #inicio .secao-inicio .logo-broove #miolo-dir {
-            right: 42vw; } }
+            right: 42%; } }
 
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
   #ep {
@@ -4257,24 +4257,24 @@ STYLESHEETS (de acordo com o Bootstrap 3)
           -moz-transform-origin: 50% 50%; }
   @-webkit-keyframes rotation {
     from {
-      -webkit-transform: rotate(0deg); }
+      -webkit-transform: rotate(359deg); }
     to {
-      -webkit-transform: rotate(359deg); } }
+      -webkit-transform: rotate(0deg); } }
   @-moz-keyframes rotation {
     from {
-      -moz-transform: rotate(0deg); }
+      -moz-transform: rotate(359deg); }
     to {
-      -moz-transform: rotate(359deg); } }
+      -moz-transform: rotate(0deg); } }
   @-o-keyframes rotation {
     from {
-      -o-transform: rotate(0deg); }
+      -o-transform: rotate(359deg); }
     to {
-      -o-transform: rotate(359deg); } }
+      -o-transform: rotate(0deg); } }
   @keyframes rotation {
     from {
-      transform: rotate(0deg); }
+      transform: rotate(359deg); }
     to {
-      transform: rotate(359deg); } }
+      transform: rotate(0deg); } }
         #inicio .secao-inicio .logo-broove #miolo-esq {
           position: absolute;
           display: block;
@@ -4285,22 +4285,22 @@ STYLESHEETS (de acordo com o Bootstrap 3)
           bottom: 1vw; } }
         @media only screen and (min-width: 1201px) and (min-width: 1200px) and (max-width: 1279px) {
           #inicio .secao-inicio .logo-broove #miolo-esq {
-            left: 42vw; } }
+            left: 42%; } }
         @media only screen and (min-width: 1201px) and (min-width: 1269px) and (max-width: 1279px) {
           #inicio .secao-inicio .logo-broove #miolo-esq {
-            left: 42.5vw; } }
+            left: 42.5%; } }
         @media only screen and (min-width: 1201px) and (min-width: 1280px) and (max-width: 1299px) {
           #inicio .secao-inicio .logo-broove #miolo-esq {
-            left: 42.5vw; } }
+            left: 42.5%; } }
         @media only screen and (min-width: 1201px) and (min-width: 1300px) and (max-width: 1365px) {
           #inicio .secao-inicio .logo-broove #miolo-esq {
-            left: 42vw; } }
+            left: 42%; } }
         @media only screen and (min-width: 1201px) and (min-width: 1366px) and (max-width: 1919px) {
           #inicio .secao-inicio .logo-broove #miolo-esq {
-            left: 42.5vw; } }
+            left: 42.5%; } }
         @media only screen and (min-width: 1201px) and (min-width: 1920px) {
           #inicio .secao-inicio .logo-broove #miolo-esq {
-            left: 42.5vw; } }
+            left: 42.5%; } }
 @media only screen and (min-width: 1201px) {
         #inicio .secao-inicio .logo-broove #miolo-dir {
           position: absolute;
@@ -4312,22 +4312,22 @@ STYLESHEETS (de acordo com o Bootstrap 3)
           bottom: 1vw; } }
         @media only screen and (min-width: 1201px) and (min-width: 1200px) and (max-width: 1279px) {
           #inicio .secao-inicio .logo-broove #miolo-dir {
-            right: 41.6vw; } }
+            right: 41.6%; } }
         @media only screen and (min-width: 1201px) and (min-width: 1269px) and (max-width: 1279px) {
           #inicio .secao-inicio .logo-broove #miolo-dir {
-            right: 41.9vw; } }
+            right: 41.9%; } }
         @media only screen and (min-width: 1201px) and (min-width: 1280px) and (max-width: 1299px) {
           #inicio .secao-inicio .logo-broove #miolo-dir {
-            right: 41.9vw; } }
+            right: 41.9%; } }
         @media only screen and (min-width: 1201px) and (min-width: 1300px) and (max-width: 1365px) {
           #inicio .secao-inicio .logo-broove #miolo-dir {
-            right: 41.6vw; } }
+            right: 41.6%; } }
         @media only screen and (min-width: 1201px) and (min-width: 1366px) and (max-width: 1919px) {
           #inicio .secao-inicio .logo-broove #miolo-dir {
-            right: 42vw; } }
+            right: 42%; } }
         @media only screen and (min-width: 1201px) and (min-width: 1920px) {
           #inicio .secao-inicio .logo-broove #miolo-dir {
-            right: 42vw; } }
+            right: 42%; } }
 
 @media only screen and (min-width: 1201px) {
   #ep {

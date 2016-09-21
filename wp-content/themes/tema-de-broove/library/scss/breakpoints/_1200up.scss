@@ -146,20 +146,20 @@ body {
         -moz-transform-origin: 50% 50%;
       }
       @-webkit-keyframes rotation {
-          from {-webkit-transform: rotate(0deg);}
-          to   {-webkit-transform: rotate(359deg);}
+          from {-webkit-transform: rotate(359deg);}
+          to   {-webkit-transform: rotate(0deg);}
       }
       @-moz-keyframes rotation {
-          from {-moz-transform: rotate(0deg);}
-          to   {-moz-transform: rotate(359deg);}
+          from {-moz-transform: rotate(359deg);}
+          to   {-moz-transform: rotate(0deg);}
       }
       @-o-keyframes rotation {
-          from {-o-transform: rotate(0deg);}
-          to   {-o-transform: rotate(359deg);}
+          from {-o-transform: rotate(359deg);}
+          to   {-o-transform: rotate(0deg);}
       }
       @keyframes rotation {
-          from {transform: rotate(0deg);}
-          to   {transform: rotate(359deg);}
+          from {transform: rotate(359deg);}
+          to   {transform: rotate(0deg);}
       }
       #miolo-esq{
         position:absolute;
@@ -170,22 +170,22 @@ body {
         top:0;
         bottom:1vw;
 				@media screen and (min-width:1200px) and (max-width:1279px) {
-          left:42vw;
+          left:42%;
         }
 				@media screen and (min-width:1269px) and (max-width:1279px) {
-					left:42.5vw;
+					left:42.5%;
 				}
 				@media screen and (min-width:1280px) and (max-width:1299px) {
-					left:42.5vw;
+					left:42.5%;
 				}
 				@media screen and (min-width:1300px) and (max-width:1365px) {
-					left:42vw;
+					left:42%;
 				}
 				@media screen and (min-width:1366px) and (max-width:1919px) {
-					left:42.5vw;
+					left:42.5%;
 				}
 				@media screen and (min-width:1920px) {
-					left:42.5vw;
+					left:42.5%;
 				}
       }
       #miolo-dir{
@@ -197,22 +197,22 @@ body {
         top:0;
         bottom:1vw;
 				@media screen and (min-width:1200px) and (max-width:1279px) {
-					right:41.6vw;
+					right:41.6%;
 				}
 				@media screen and (min-width:1269px) and (max-width:1279px) {
-					right:41.9vw;
+					right:41.9%;
 				}
 				@media screen and (min-width:1280px) and (max-width:1299px) {
-					right:41.9vw;
+					right:41.9%;
 				}
 				@media screen and (min-width:1300px) and (max-width:1365px) {
-					right:41.6vw;
+					right:41.6%;
 				}
 				@media screen and (min-width:1366px) and (max-width:1919px) {
-					right:42vw;
+					right:42%;
 				}
 				@media screen and (min-width:1920px) {
-					right:42vw;
+					right:42%;
 				}
       }
     }
