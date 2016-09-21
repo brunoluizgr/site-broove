@@ -2843,9 +2843,9 @@ STYLESHEETS (de acordo com o Bootstrap 3)
       -moz-transform: rotate(0deg); } }
   @-o-keyframes rotation {
     from {
-      -o-transform: rotate(0deg); }
+      -o-transform: rotate(359deg); }
     to {
-      -o-transform: rotate(359deg); } }
+      -o-transform: rotate(0deg); } }
   @keyframes rotation {
     from {
       transform: rotate(359deg); }

@@ -159,8 +159,8 @@ body {
           to   {-moz-transform: rotate(0deg);}
       }
       @-o-keyframes rotation {
-          from {-o-transform: rotate(0deg);}
-          to   {-o-transform: rotate(359deg);}
+          from {-o-transform: rotate(359deg);}
+          to   {-o-transform: rotate(0deg);}
       }
       @keyframes rotation {
           from {transform: rotate(359deg);}
