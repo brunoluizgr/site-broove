@@ -1279,7 +1279,8 @@ STYLESHEETS (de acordo com o Bootstrap 3)
     background-position: center center; }
 
   #menu-principal {
-    background-color: #6c6145; }
+    background-color: #6c6145;
+    padding: 1rem 0; }
     #menu-principal .navbar-toggle:focus,
     #menu-principal .navbar-toggle:hover {
       background-color: #e2dabf; }
@@ -2034,11 +2035,8 @@ STYLESHEETS (de acordo com o Bootstrap 3)
     background-position: center center; }
 
   #menu-principal {
-    background-color: #6c6145; }
-    #menu-principal .navbar-header {
-      width: 100%; }
-    #menu-principal .navbar-brand {
-      float: none; }
+    background-color: #6c6145;
+    padding: 1rem 0; }
     #menu-principal .navbar-toggle:focus,
     #menu-principal .navbar-toggle:hover {
       background-color: #e2dabf; }
@@ -2764,12 +2762,8 @@ STYLESHEETS (de acordo com o Bootstrap 3)
     background-position: center center; }
 
   #menu-principal {
-    background-color: #6c6145; }
-    #menu-principal .navbar-header {
-      width: 100%; }
-    #menu-principal .navbar-brand {
-      float: none;
-      margin-bottom: 1rem; }
+    background-color: #6c6145;
+    padding: 1rem 0; }
     #menu-principal .navbar-toggle:focus,
     #menu-principal .navbar-toggle:hover {
       background-color: #e2dabf; }
@@ -3475,9 +3469,8 @@ STYLESHEETS (de acordo com o Bootstrap 3)
     background-position: center center; }
 
   #menu-principal {
-    background-color: #6c6145; }
-    #menu-principal .navbar-brand {
-      margin-bottom: 1rem; }
+    background-color: #6c6145;
+    padding: 1rem 0; }
     #menu-principal .navbar-toggle:focus,
     #menu-principal .navbar-toggle:hover {
       background-color: #e2dabf; }
@@ -4191,9 +4184,8 @@ STYLESHEETS (de acordo com o Bootstrap 3)
     background-position: center center; }
 
   #menu-principal {
-    background-color: #6c6145; }
-    #menu-principal .navbar-brand {
-      margin-bottom: 1rem; }
+    background-color: #6c6145;
+    padding: 1rem 0; }
     #menu-principal .navbar-toggle:focus,
     #menu-principal .navbar-toggle:hover {
       background-color: #e2dabf; }

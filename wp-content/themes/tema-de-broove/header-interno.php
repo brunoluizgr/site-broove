@@ -72,9 +72,9 @@
 
 	<nav id="menu-principal" class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
-				<div class="navbar-header">
-					<a class="navbar-brand" href="<?php echo(get_site_url()) ?>">
-						<img src="<?php echo get_template_directory_uri() .'/library/images/broove-logo-ep-navbar.svg'?>" alt="<?php _e('Broove','temadebroove') ?>" title="<?php _e('Broove','temadebroove') ?>" height="30vh" width="100%"></img>
+				<div class="col-xs-4 col-xs-offset-4 col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-5 col-lg-2 col-lg-offset-5">
+					<a href="<?php echo(get_site_url()) ?>">
+						<img class="img-responsive" src="<?php echo get_template_directory_uri() .'/library/images/broove-logo-ep-navbar.svg'?>" alt="<?php _e('Broove','temadebroove') ?>" title="<?php _e('Broove','temadebroove') ?>"></img>
 					</a>
 				</div>
 		</div>

@@ -59,13 +59,7 @@ body {
 // MENU INTERNO
 #menu-principal{
   background-color:$cor-fita-ep;
-
-	.navbar-header{
-		width: 100%;
-	}
-	.navbar-brand{
-		float: none;
-	}
+	padding: 1rem 0;
 
   .navbar-toggle:focus,
   .navbar-toggle:hover {
